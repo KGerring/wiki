@@ -1,7 +1,8 @@
-[https://link.springer.com/content/pdf/10.1007/s40745-015-0032-1.pdf?pdf=button%20sticky](https://link.springer.com/content/pdf/10.1007/s40745-015-0032-1.pdf?pdf=button%20sticky)
 
-[https://angryloki.github.io/wikidata-graph-builder/?property=P279&item=Q169470&mode=reverse&size_property=P106](https://angryloki.github.io/wikidata-graph-builder/?property=P279&item=Q169470&mode=reverse&size_property=P106)
+## New Links
 
+* [https://link.springer.com/content/pdf/10.1007/s40745-015-0032-1.pdf?pdf=button%20sticky](https://link.springer.com/content/pdf/10.1007/s40745-015-0032-1.pdf?pdf=button%20sticky)
+* [https://angryloki.github.io/wikidata-graph-builder/?property=P279&item=Q169470&mode=reverse&size_property=P106](https://angryloki.github.io/wikidata-graph-builder/?property=P279&item=Q169470&mode=reverse&size_property=P106)
 * [wikidataClasses.php](https://bambots.brucemyers.com/WikidataClasses.php)
 * [https://arxiv.org/pdf/1505.03671.pdf#page40](https://arxiv.org/pdf/1505.03671.pdf#page40)
 * [nowledge_Organization_Systems_KOS](https://www.researchgate.net/publication/297530633_Knowledge_Organization_Systems_KOS)
