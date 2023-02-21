@@ -1,5 +1,8 @@
 https://en.m.wikipedia.org/wiki/Wikipedia:Instructional_material
 
+https://microservices.io/about.html
+
+https://en.m.wikipedia.org/wiki/Wikipedia:Stub
 
 
 
