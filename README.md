@@ -2,6 +2,9 @@ https://m.wikidata.org/wiki/Wikidata:Tools/Enhance_user_interface#Userscripts_to
 https://m.wikidata.org/wiki/Wikidata:Tools/Enhance_user_interface#Userscripts_to_aid_editing
 https://meta.m.wikimedia.org/wiki/Mix%27n%27match/Catalogues
 
+https://gist.github.com/zuphilip/90acdc3eac4109830db1b3ab855fcb24
+
+
 
 https://en.m.wikipedia.org/wiki/Wikipedia:Instructional_material
 
