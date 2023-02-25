@@ -2,7 +2,12 @@ https://m.wikidata.org/wiki/Wikidata:Tools/Enhance_user_interface#Userscripts_to
 https://m.wikidata.org/wiki/Wikidata:Tools/Enhance_user_interface#Userscripts_to_aid_editing
 https://meta.m.wikimedia.org/wiki/Mix%27n%27match/Catalogues
 
+## zot
+
 https://gist.github.com/zuphilip/90acdc3eac4109830db1b3ab855fcb24
+https://gist.github.com/zuphilip/aa9f59271fcb0807fb20c7d0110d26e4
+
+----
 
 
 
