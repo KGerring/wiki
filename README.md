@@ -6,6 +6,8 @@ https://meta.m.wikimedia.org/wiki/Mix%27n%27match/Catalogues
 
 https://gist.github.com/zuphilip/90acdc3eac4109830db1b3ab855fcb24
 https://gist.github.com/zuphilip/aa9f59271fcb0807fb20c7d0110d26e4
+https://ws-cat-browser.toolforge.org
+
 
 ----
 
