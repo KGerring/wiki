@@ -1,3 +1,7 @@
+https://m.wikidata.org/wiki/Wikidata:Tools/Enhance_user_interface#Userscripts_to_aid_editing
+https://m.wikidata.org/wiki/Wikidata:Tools/Enhance_user_interface#Userscripts_to_aid_editing
+
+
 https://en.m.wikipedia.org/wiki/Wikipedia:Instructional_material
 
 https://microservices.io/about.html
