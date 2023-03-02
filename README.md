@@ -12,8 +12,12 @@ https://ws-cat-browser.toolforge.org
 ----
 
 ## new
+
 [tags](https://data.stackexchange.com/stackoverflow/query/1069131/get-all-tags)
 blob:https://query.wikidata.org/022fe998-3e0b-4ffb-b33d-629423679403
+
+https://data.stackexchange.com/stackoverflow/query/1069131/get-all-tags
+
 
 
 
