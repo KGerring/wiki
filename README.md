@@ -11,6 +11,8 @@ https://ws-cat-browser.toolforge.org
 
 ----
 
+blob:https://query.wikidata.org/022fe998-3e0b-4ffb-b33d-629423679403
+
 
 
 https://en.m.wikipedia.org/wiki/Wikipedia:Instructional_material
