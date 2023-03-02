@@ -1,3 +1,4 @@
+
 Filetwo
 
 wikipedia = """
@@ -224,3 +225,64 @@ Category:Wikipedia supplemental pages
 Portal:Computer programming
 Portal:Free and open-source software/Categories
 """
+
+
+
+wikidata = """
+Q18614948
+Q19833377
+Q2118176
+Q45340488
+Q54919
+Q56216056
+Q580334
+User:KDGerring
+User:KDGerring/common.js
+User:MartinPoulter/queries/collections
+Wikidata:Community portal
+Wikidata:Contribute
+Wikidata:Data access
+Wikidata:Data model
+Wikidata:Database download
+Wikidata:Database reports/Units of measurements
+Wikidata:Development
+Wikidata:Edit groups
+Wikidata:External identifiers
+Wikidata:Glossary
+Wikidata:List of policies and guidelines
+Wikidata:List of properties
+Wikidata:Notability
+Wikidata:Requests for comment/How to classify items: lots of specific type properties or a few generic ones?
+Wikidata:SPARQL query service/Wikidata Query Help
+Wikidata:SPARQL tutorial
+Wikidata:Scholia
+Wikidata:Stable Interface Policy
+Wikidata:Tools
+Wikidata:Tools/Visualize data
+Wikidata:WikiProject Authority control
+Wikidata:WikiProject Authority control/Archive
+Wikidata:WikiProject KOS
+Wikidata:WikiProject Source MetaData
+Wikidata:Wikidata front ends
+Wikidata:Wikiversity
+Template:Cite Q
+Help:Authority control
+Help:Basic membership properties
+Help:Contents
+Help:Items
+Help:Modelling/General
+Help:Navigating Wikidata/User Options
+Help:Properties
+Help:Property constraints portal
+Help:QuickStatements
+Help:Sitelinks
+Help:Sources
+Help:Statements
+Property:P1687
+Property:P2037
+Property:P2860
+Property:P4011
+Property:P496
+"""
+
+
