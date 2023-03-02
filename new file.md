@@ -28,21 +28,20 @@ https://meta.m.
 BibLaTeX.js
 BibTeX.js
 
-Bibliontology RDF.js
+Bibliontology 
 
+
+https://github.com/zotero/translators/raw/master/{}
+RDF.js
 CSV.js
-
 Wikidata QuickStatements.js
 Wikidata.js
-
 Wikimedia Commons.js
-
 Wikipedia Citation Templates.js
-
 Wikipedia.js
 
 zotero/translators
-https://github.com/Wiktionary.js
+Wiktionary.js
 
 https://github.com/zotero/translators/blob/master/Wikidata.js
 
