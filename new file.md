@@ -1,7 +1,9 @@
 
+
+[Properties software](https://m.wikidata.org/wiki/Q21126229)
 [Wikidata property for items about scholarly articles](https://m.wikidata.org/wiki/Q29548341)
-[](https://m.wikidata.org/wiki/Q107212108)
-[links](https://m.wikidata.org/w/index.php?title=Special:WhatLinksHere&target=Q107212108)
+[Q107212108](https://m.wikidata.org/wiki/Q107212108)
+[links:Q107212108](https://m.wikidata.org/w/index.php?title=Special:WhatLinksHere&target=Q107212108)
 
 https://m.wikidata.org/wiki/Q61058429
 
@@ -12,10 +14,10 @@ https://m.wikidata.org/wiki/Q61058429
 https://m.wikidata.org/wiki/Wikidata:List_of_properties/research
 https://m.wikidata.org/wiki/Wikidata:List_of_properties/scientific_research
 https://m.wikidata.org/w/index.php?title=Special:WhatLinksHere&target=Wikidata%3AList+of+properties%2Fscientific+research
-https://m.wikidata.org/wiki/Property:P496
-https://m.wikidata.org/wiki/Property:P859
-https://m.wikidata.org/wiki/Wikidata:Database_reports/Descriptions_with_Q
-https://m.wikidata.org/wiki/Property:P932
+[P496]https://m.wikidata.org/wiki/Property:P496
+[P859]https://m.wikidata.org/wiki/Property:P859
+[Descriptions with Q](https://m.wikidata.org/wiki/Wikidata:Database_reports/Descriptions_with_Q)
+[P932](https://m.wikidata.org/wiki/Property:P932)
 [PMCID](https://m.wikidata.org/wiki/Property:P932)
 [authority_control_journals](https://m.wikidata.org/wiki/Q57589544)
 [software](https://m.wikidata.org/wiki/Q57589544)
