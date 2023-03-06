@@ -5,7 +5,10 @@
 
 https://m.wikidata.org/wiki/Q61058429
 
-[sic19](https://m.wikidata.org/wiki/User:Sic19)
+[User:Wd-Ryan/Software_resources/auto](https://m.wikidata.org/wiki/User:Wd-Ryan/Software_resources/auto)
+
+
+[User:Sic19](https://m.wikidata.org/wiki/User:Sic19)
 https://m.wikidata.org/wiki/Wikidata:List_of_properties/research
 https://m.wikidata.org/wiki/Wikidata:List_of_properties/scientific_research
 https://m.wikidata.org/w/index.php?title=Special:WhatLinksHere&target=Wikidata%3AList+of+properties%2Fscientific+research
