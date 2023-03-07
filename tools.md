@@ -14,13 +14,18 @@
 * [toolhub](https://toolhub.wikimedia.org/api-docs#put-/api/tools/-name-/annotations/)
 * [semantic_scholar_doc](https://api.semanticscholar.org/graph/v1/swagger.json)
 
-## tree
- * [prop_tree_template.rq](https://raw.githubusercontent.com/stevenliuyi/wikidata-prop-explorer/master/public/queries/prop-tree-template.rq)
- * [prop_template.rq](https://raw.githubusercontent.com/stevenliuyi/wikidata-prop-explorer/master/public/queries/prop-template.rq)
+
+ * [wikidata-prop-explorer](https://github.com/stevenliuyi/wikidata-prop-explorer/)
+
+## tree from  #public/queries/
+ * [prop-tree-template.rq](https://raw.githubusercontent.com/stevenliuyi/wikidata-prop-explorer/master/public/queries/prop-tree-template.rq)
+ * [prop_"-template.rq](https://raw.githubusercontent.com/stevenliuyi/wikidata-prop-explorer/master/public/queries/prop-template.rq)
  * [prop-seealso-template.rq](https://raw.githubusercontent.com/stevenliuyi/wikidata-prop-explorer/master/public/queries/prop-seealso-template.rq)
  * [prop-example-template.rq](https://raw.githubusercontent.com/stevenliuyi/wikidata-prop-explorer/master/public/queries/prop-example-template.rq)
  * [prop-detail-template.rq](https://raw.githubusercontent.com/stevenliuyi/wikidata-prop-explorer/master/public/queries/prop-detail-template.rq)
 
+
+  https://github.com/stevenliuyi/wikidata-prop-explorer/]
 
 
 
