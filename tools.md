@@ -12,3 +12,4 @@
 
 * [quickcat](https://meta.m.wikimedia.org/wiki/User:Lucas_Werkmeister/QuickCategories)
 * [toolhub](https://toolhub.wikimedia.org/api-docs#put-/api/tools/-name-/annotations/)
+* [semantic_scholar_doc](https://api.semanticscholar.org/graph/v1/swagger.json)
