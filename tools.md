@@ -7,3 +7,7 @@
 * [author-disamb](https://author-disambiguator.toolforge.org)
 * [scholia](https://scholia.toolforge.org/)
 * [property-explorer](https://prop-explorer.toolforge.org)
+
+
+
+* [quickcat](https://meta.m.wikimedia.org/wiki/User:Lucas_Werkmeister/QuickCategories)
