@@ -1,5 +1,6 @@
 
 
+
 [Properties software](https://m.wikidata.org/wiki/Q21126229)
 [Wikidata property for items about scholarly articles](https://m.wikidata.org/wiki/Q29548341)
 [Q107212108](https://m.wikidata.org/wiki/Q107212108)
@@ -28,6 +29,6 @@ https://m.wikidata.org/w/index.php?title=Special:WhatLinksHere&target=Wikidata%3
 
 
 [Bibsonomy](git clone https://bitbucket.org/bibsonomy/bibsonomy-python.git)
-
+[bibsonomy.py](https://bitbucket.org/bibsonomy/bibsonomy-python/raw/d019d0631523d3a84547172abb14853e2baa5208/bibsonomy.py)
 
 
