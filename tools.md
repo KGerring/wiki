@@ -13,3 +13,12 @@
 * [quickcat](https://meta.m.wikimedia.org/wiki/User:Lucas_Werkmeister/QuickCategories)
 * [toolhub](https://toolhub.wikimedia.org/api-docs#put-/api/tools/-name-/annotations/)
 * [semantic_scholar_doc](https://api.semanticscholar.org/graph/v1/swagger.json)
+
+##} tree
+ * [prop_tree_template.rq](https://raw.githubusercontent.com/stevenliuyi/wikidata-prop-explorer/master/public/queries/prop-tree-template.rq)
+ * [prop_template.rq](https://raw.githubusercontent.com/stevenliuyi/wikidata-prop-explorer/master/public/queries/prop-template.rq)
+
+
+
+
+
