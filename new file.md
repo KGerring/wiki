@@ -9,6 +9,10 @@ https://m.wikidata.org/wiki/Q61058429
 
 [User:Wd-Ryan/Software_resources/auto](https://m.wikidata.org/wiki/User:Wd-Ryan/Software_resources/auto)
 
+[Software Resource:Q110832782](Q110832782)
+[RefRecord](Q111513414)
+
+
 
 [User:Sic19](https://m.wikidata.org/wiki/User:Sic19)
 https://m.wikidata.org/wiki/Wikidata:List_of_properties/research
@@ -21,3 +25,9 @@ https://m.wikidata.org/w/index.php?title=Special:WhatLinksHere&target=Wikidata%3
 [PMCID](https://m.wikidata.org/wiki/Property:P932)
 [authority_control_journals](https://m.wikidata.org/wiki/Q57589544)
 [software](https://m.wikidata.org/wiki/Q57589544)
+
+
+[Bibsonomy](git clone https://bitbucket.org/bibsonomy/bibsonomy-python.git)
+
+
+
