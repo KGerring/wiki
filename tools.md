@@ -5,3 +5,4 @@
 * [https://github.com/wmde/wikidata-item-quality-evaluator](https://item-quality-evaluator.toolforge.org/)
 * [tabernacle](https://tabernacle.toolforge.org/#/)
 * [author-disamb](https://author-disambiguator.toolforge.org)
+* [scholia](https://scholia.toolforge.org/)
