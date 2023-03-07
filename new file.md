@@ -1,4 +1,6 @@
 
+[props.json](https://hay.toolforge.org/propbrowse/props.json)
+
 
 
 [Properties software](https://m.wikidata.org/wiki/Q21126229)
