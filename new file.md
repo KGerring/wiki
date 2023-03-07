@@ -14,6 +14,8 @@ https://m.wikidata.org/wiki/Q61058429
 [RefRecord](Q111513414)
 
 
+[crossref.py](https://raw.githubusercontent.com/fabiobatalha/crossrefapi/master/crossref/restful.py)
+
 
 [User:Sic19](https://m.wikidata.org/wiki/User:Sic19)
 https://m.wikidata.org/wiki/Wikidata:List_of_properties/research
