@@ -3,5 +3,4 @@
 * [squid](https://sqid.toolforge.org/#/)
 
 * [https://github.com/wmde/wikidata-item-quality-evaluator](https://item-quality-evaluator.toolforge.org/)
-
-
+*[tabernacle](https://tabernacle.toolforge.org/#/)
