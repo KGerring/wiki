@@ -1,5 +1,4 @@
 https://m.wikidata.org/wiki/Wikidata:Tools/Enhance_user_interface#Userscripts_to_aid_editing
-https://m.wikidata.org/wiki/Wikidata:Tools/Enhance_user_interface#Userscripts_to_aid_editing
 https://meta.m.wikimedia.org/wiki/Mix%27n%27match/Catalogues
 
 ## zot
@@ -15,7 +14,6 @@ https://ws-cat-browser.toolforge.org
 
 [stack-exchange-tags](https://data.stackexchange.com/stackoverflow/query/1069131/get-all-tags)
 blob:https://query.wikidata.org/022fe998-3e0b-4ffb-b33d-629423679403
-
 https://data.stackexchange.com/stackoverflow/query/1069131/get-all-tags
 
 
