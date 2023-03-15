@@ -1,0 +1,94 @@
+Wikipedia="""
+
+Q14615401
+Q15634466
+Q18614948
+Q19833377
+Q2118176
+Q30337063
+Q45340488
+Q47512165
+Q4989342
+Q54919
+Q56005592
+Q56216056
+Q580334
+Q93590016
+User:JakobVoss/Authority control
+User:KDGerring
+User:KDGerring/common.js
+User:MartinPoulter/queries/collections
+User:Pasleim
+User:YULdigitalpreservation/FileFormatsList
+Wikidata:Book sources
+Wikidata:Community portal
+Wikidata:Contribute
+Wikidata:Data Import Hub/Imported data sets
+Wikidata:Data access
+Wikidata:Data model
+Wikidata:Database download
+Wikidata:Database download/en
+Wikidata:Database reports/Most linked category items
+Wikidata:Database reports/Units of measurements
+Wikidata:Development
+Wikidata:Edit groups
+Wikidata:Entity Explosion
+Wikidata:External identifiers
+Wikidata:Glossary
+Wikidata:List of policies and guidelines
+Wikidata:List of properties
+Wikidata:List of properties/computer science
+Wikidata:List of properties/science
+Wikidata:List of properties/unique identifier
+Wikidata:List of properties/unique identifier/authority control
+Wikidata:Lists/outlines/enwiki
+Wikidata:Notability
+Wikidata:Property proposal/ID pattern
+Wikidata:Query Builder
+Wikidata:Requests for comment/How to classify items: lots of specific type properties or a few generic ones?
+Wikidata:SPARQL query service/Wikidata Query Help
+Wikidata:SPARQL query service/Wikidata Query Help/Result Views
+Wikidata:SPARQL tutorial
+Wikidata:Scholia
+Wikidata:Stable Interface Policy
+Wikidata:TABernacle
+Wikidata:Tools
+Wikidata:Tools/Visualize data
+Wikidata:Types of part-whole relations
+Wikidata:WikiProject Authority control
+Wikidata:WikiProject Authority control/Archive
+Wikidata:WikiProject KOS
+Wikidata:WikiProject Source MetaData
+Wikidata:WikiProject Source MetaData/Wikidata lists/Items with arXiv IDs
+Wikidata:Wikidata front ends
+Wikidata:Wikiversity
+MediaWiki:Gadget-AuthorityControl.js
+MediaWiki:Gadget-relateditems.js
+Template:Cite Q
+Help:Authority control
+Help:Basic membership properties
+Help:Contents
+Help:Dataset sizing
+Help:Frequently used properties
+Help:Items
+Help:Modelling/General
+Help:Navigating Wikidata/User Options
+Help:Properties
+Help:Property constraints portal
+Help:QuickStatements
+Help:Sitelinks
+Help:Sources
+Help:Statements
+Help:TABernacle
+Category:Authority control properties
+Category:Properties
+Category:Properties by subject
+Category:Wikidata
+Property:P1482
+Property:P1687
+Property:P2037
+Property:P2860
+Property:P4011
+Property:P496
+Topic:X8jvjhcx3iyb947b
+"""
