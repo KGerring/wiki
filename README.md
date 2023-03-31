@@ -14,6 +14,7 @@ https://paulhoule.github.io/gastrodon/api.html
 
 https://rich.readthedocs.io/en/latest/index.html
 
+https://meta.m.wikimedia.org/wiki/List_of_Wikipedias
 
 
 
