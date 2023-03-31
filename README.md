@@ -16,6 +16,8 @@ https://rich.readthedocs.io/en/latest/index.html
 
 https://meta.m.wikimedia.org/wiki/List_of_Wikipedias
 
+https://fairsharing.github.io/JSONschema-documenter/?schema_url=https://api.fairsharing.org/model/fairsharing_record_schema.json
+
 
 
 https://www.oclc.org/bibformats/en.html
