@@ -2,6 +2,8 @@ http://lahwaacz.github.io/wiki-scripts/
 
 https://xtools.wmflabs.org/ec/www.mediawiki.org/KDGerring
 
+https://wikibase-registry.wmflabs.org/wiki/Main_Page
+
 
 
 
