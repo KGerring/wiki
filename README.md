@@ -12,6 +12,8 @@ https://fairsharing.gitbook.io/fairsharing/record-sections-and-fields/general-in
 
 https://fairsharing.gitbook.io/fairsharing/record-sections-and-fields/general-information/registry-type#policies
 
+https://www.crossref.org/services/metadata-retrieval/
+
 
 
 
