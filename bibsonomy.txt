@@ -3,4 +3,6 @@
 
 https://traviswimer.com/blog/github-search-cheatsheet/
 
+pip install somef
+
 
