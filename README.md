@@ -1,6 +1,6 @@
 http://lahwaacz.github.io/wiki-scripts/
 
-
+https://xtools.wmflabs.org/ec/www.mediawiki.org/KDGerring
 
 
 
