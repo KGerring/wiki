@@ -10,6 +10,8 @@ https://fairsharing.gitbook.io/fairsharing/
 
 https://fairsharing.gitbook.io/fairsharing/record-sections-and-fields/general-information/registry-type#standards
 
+https://fairsharing.gitbook.io/fairsharing/record-sections-and-fields/general-information/registry-type#policies
+
 
 
 
