@@ -5,4 +5,5 @@ https://traviswimer.com/blog/github-search-cheatsheet/
 
 pip install somef
 
+https://patterns.dataincubator.org
 
