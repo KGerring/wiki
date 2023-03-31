@@ -6,6 +6,13 @@ https://getitdaily.com/justrefs/r/Web_crawler
 
 https://api.mendeley.com/apidocs/docs#!/annotations/getAnnotations
 
+https://fairsharing.gitbook.io/fairsharing/
+
+
+
+
+
+
 
 
 -----
