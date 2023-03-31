@@ -22,6 +22,9 @@ https://api.crossref.org/v1/works?filter=has-orcid:true
 
 https://wiki.inventaire.io/wiki/Main_Page
 
+https://fairassist.org/#!/
+
+
 
 
 
