@@ -12,6 +12,8 @@ https://bitbucket.org/bibsonomy/bibsonomy-python/raw/d019d0631523d3a84547172abb1
 
 https://paulhoule.github.io/gastrodon/api.html
 
+https://rich.readthedocs.io/en/latest/index.html
+
 
 
 
