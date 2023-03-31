@@ -14,6 +14,9 @@ https://fairsharing.gitbook.io/fairsharing/record-sections-and-fields/general-in
 
 https://www.crossref.org/services/metadata-retrieval/
 
+https://www.crossref.org/documentation/retrieve-metadata/rest-api/tips-for-using-the-crossref-rest-api/
+
+
 
 
 
