@@ -8,6 +8,9 @@ https://bitbucket.org/bibsonomy/bibsonomy-python/raw/d019d0631523d3a84547172abb1
 
 https://bitbucket.org/bibsonomy/bibsonomy-python/raw/d019d0631523d3a84547172abb14853e2baa5208/onefile.py
 
+https://bitbucket.org/bibsonomy/bibsonomy-python/raw/d019d0631523d3a84547172abb14853e2baa5208/bibsonomy.py
+
+
 
 
 
