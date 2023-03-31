@@ -2,6 +2,8 @@ https://service.elsevier.com/app/answers/detail/a_id/25793/supporthub/sciencedir
 
 https://wdtaxonomy.readthedocs.io/en/latest/README.html#
 
+https://www.sciencedirect.com/topics/computer-science
+
 
 
 
