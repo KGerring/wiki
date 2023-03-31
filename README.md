@@ -33,6 +33,8 @@ https://www.w3.org/TR/dwbp/
 
 https://pageviews.wmcloud.org/massviews/
 
+https://en.m.wikipedia.org/wiki/Link_relation
+
 
 
 
