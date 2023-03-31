@@ -31,6 +31,7 @@ https://bitbucket.org/bibsonomy/bibsonomy-python/raw/d019d0631523d3a84547172abb1
 
 https://www.w3.org/TR/dwbp/
 
+https://pageviews.wmcloud.org/massviews/
 
 
 
