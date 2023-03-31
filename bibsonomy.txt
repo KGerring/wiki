@@ -7,6 +7,13 @@ git clone https://kgerring@bitbucket.org/bibsonomy/bibsonomy.git/wiki
 https://m.wikidata.org/wiki/Wikidata:Property_navboxes
 
 
+https://www.w3.org/TR/dcat-ucr/
+
+
+
+
+
+
 
 
 https://traviswimer.com/blog/github-search-cheatsheet/
