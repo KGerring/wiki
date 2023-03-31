@@ -14,6 +14,8 @@ https://toolhub.wikimedia.org/api/?
 
 https://sparontologies.github.io
 
+https://info.orcid.org/documentation/integration-and-api-faq/#easy-faq-2698
+
 
 
 
