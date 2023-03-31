@@ -2,8 +2,10 @@ https://service.elsevier.com/app/answers/detail/a_id/25793/supporthub/sciencedir
 
 https://dev.elsevier.com/documentation/SubjectClassificationsAPI.wadl
 
+https://getitdaily.com/justrefs/r/Web_crawler
 
 
+-----
 
 
 
