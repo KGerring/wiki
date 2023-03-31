@@ -1,3 +1,10 @@
+https://service.elsevier.com/app/answers/detail/a_id/25793/supporthub/sciencedirect/
+
+
+
+
+
+
 https://m.wikidata.org/wiki/Wikidata:Tools/Enhance_user_interface#Userscripts_to_aid_editing
 https://meta.m.wikimedia.org/wiki/Mix%27n%27match/Catalogues
 
