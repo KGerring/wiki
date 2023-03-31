@@ -4,6 +4,8 @@ https://wdtaxonomy.readthedocs.io/en/latest/README.html#
 
 https://www.sciencedirect.com/topics/computer-science
 
+https://fairplus-project.eu/impact/kpi-dashboard
+
 
 
 
