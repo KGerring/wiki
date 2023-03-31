@@ -2,6 +2,8 @@
 #aa56dc3ee148a87627da8037c171e221
 git clone https://kgerring@bitbucket.org/bibsonomy/bibsonomy-python.git
 
+git clone https://kgerring@bitbucket.org/bibsonomy/bibsonomy.git/wiki
+
 
 
 
