@@ -24,6 +24,9 @@ https://wiki.inventaire.io/wiki/Main_Page
 
 https://fairassist.org/#!/
 
+https://raw.githubusercontent.com/fabiobatalha/crossrefapi/master/crossref/restful.py
+
+
 
 
 
