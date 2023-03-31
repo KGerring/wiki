@@ -29,6 +29,7 @@ https://raw.githubusercontent.com/fabiobatalha/crossrefapi/master/crossref/restf
 https://bitbucket.org/bibsonomy/bibsonomy-python/raw/d019d0631523d3a84547172abb14853e2baa5208/bibsonomy.py
 
 
+https://www.w3.org/TR/dwbp/
 
 
 
