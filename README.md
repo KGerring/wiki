@@ -26,6 +26,8 @@ https://fairassist.org/#!/
 
 https://raw.githubusercontent.com/fabiobatalha/crossrefapi/master/crossref/restful.py
 
+https://bitbucket.org/bibsonomy/bibsonomy-python/raw/d019d0631523d3a84547172abb14853e2baa5208/bibsonomy.py
+
 
 
 
