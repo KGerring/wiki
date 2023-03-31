@@ -2,6 +2,8 @@ http://lahwaacz.github.io/wiki-scripts/
 
 https://cirosantilli.com/markdown-style-guide/#dollar-signs-in-shell-code
 
+https://about.gitlab.com/handbook/markdown-guide/#links
+
 
 
 
