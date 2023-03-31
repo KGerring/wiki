@@ -15,6 +15,9 @@ https://www.oclc.org/bibformats/en.html
 
 https://linkml.io/linkml/data/index.html
 
+https://peta-pico.github.io/FAIR-nanopubs/principles/index-en.html
+
+
 
 
 https://xtools.wmflabs.org/ec/www.mediawiki.org/KDGerring
