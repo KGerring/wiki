@@ -18,6 +18,10 @@ https://info.orcid.org/documentation/integration-and-api-faq/#easy-faq-2698
 
 http://rawgit2.com/VladimirAlexiev/CH-names/master/README.html#org0fa9d87
 
+https://api.crossref.org/v1/works?filter=has-orcid:true
+
+
+
 
 
 
