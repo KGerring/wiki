@@ -20,6 +20,10 @@ http://rawgit2.com/VladimirAlexiev/CH-names/master/README.html#org0fa9d87
 
 https://api.crossref.org/v1/works?filter=has-orcid:true
 
+https://wiki.inventaire.io/wiki/Main_Page
+
+
+
 
 
 
