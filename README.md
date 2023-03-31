@@ -8,6 +8,8 @@ https://api.mendeley.com/apidocs/docs#!/annotations/getAnnotations
 
 https://fairsharing.gitbook.io/fairsharing/
 
+https://fairsharing.gitbook.io/fairsharing/record-sections-and-fields/general-information/registry-type#standards
+
 
 
 
