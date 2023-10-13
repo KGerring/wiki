@@ -6,4 +6,4 @@
 
 https://catonmat.net/ftp/bash-redirections-cheat-sheet.txt
 
-[oct](oct2023.md)
+[oct23](oct2023.md)
