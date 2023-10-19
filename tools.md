@@ -24,9 +24,9 @@
  * [prop-example-template.rq](https://raw.githubusercontent.com/stevenliuyi/wikidata-prop-explorer/master/public/queries/prop-example-template.rq)
  * [prop-detail-template.rq](https://raw.githubusercontent.com/stevenliuyi/wikidata-prop-explorer/master/public/queries/prop-detail-template.rq)
 
-
+---
   https://github.com/stevenliuyi/wikidata-prop-explorer/]
-
+* [citeseerx](https://citeseerx.ist.psu.edu)
 
 
 
