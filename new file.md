@@ -13,7 +13,7 @@ https://m.wikidata.org/wiki/Q61058429
 [User:Wd-Ryan/Software_resources/auto](https://m.wikidata.org/wiki/User:Wd-Ryan/Software_resources/auto)
 
 [Software Resource:Q110832782](Q110832782)
-[RefRecord](Q111513414)
+[RefRecord](https://m.wikidata.org/wiki/Q111513414)
 
 
 [crossref.py](https://raw.githubusercontent.com/fabiobatalha/crossrefapi/master/crossref/restful.py)
