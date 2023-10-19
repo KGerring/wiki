@@ -28,6 +28,9 @@
   https://github.com/stevenliuyi/wikidata-prop-explorer/]
 * [citeseerx](https://citeseerx.ist.psu.edu)
 [acl](https://aclanthology.org)
+[proceedings](https://proceedings.mlr.press)
+[arxiv](https://arxiv.org)
+[drv](https://developers.google.com/freebase/)
 
 
 
