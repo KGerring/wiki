@@ -21,7 +21,7 @@ scrops
 * [User:Sic19](https://m.wikidata.org/wiki/User:Sic19)
 * [research](https://m.wikidata.org/wiki/Wikidata:List_of_properties/research)
 * [scientific research](https://m.wikidata.org/wiki/Wikidata:List_of_properties/scientific_research)
-https://m.wikidata.org/w/index.php?title=Special:WhatLinksHere&target=Wikidata%3AList+of+properties%2Fscientific+research
+* [ex](https://m.wikidata.org/w/index.php?title=Special:WhatLinksHere&target=Wikidata%3AList+of+properties%2Fscientific+research)
 * [P496]https://m.wikidata.org/wiki/Property:P496
 * [P859]https://m.wikidata.org/wiki/Property:P859
 * [Descriptions with Q](https://m.wikidata.org/wiki/Wikidata:Database_reports/Descriptions_with_Q)
