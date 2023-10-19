@@ -7,3 +7,6 @@
 [bash redirections](https://catonmat.net/ftp/bash-redirections-cheat-sheet.txt)
 
 [oct23](oct2023.md)
+
+
+[awesome](https://awesomeopensource.com)
