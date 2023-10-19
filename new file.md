@@ -17,11 +17,12 @@ https://m.wikidata.org/wiki/Q61058429
 
 
 [crossref.py](https://raw.githubusercontent.com/fabiobatalha/crossrefapi/master/crossref/restful.py)
+--
 
-
-[User:Sic19](https://m.wikidata.org/wiki/User:Sic19)
-https://m.wikidata.org/wiki/Wikidata:List_of_properties/research
-https://m.wikidata.org/wiki/Wikidata:List_of_properties/scientific_research
+scrops
+* [User:Sic19](https://m.wikidata.org/wiki/User:Sic19)
+* [research](https://m.wikidata.org/wiki/Wikidata:List_of_properties/research)
+* [scientific research](https://m.wikidata.org/wiki/Wikidata:List_of_properties/scientific_research)
 https://m.wikidata.org/w/index.php?title=Special:WhatLinksHere&target=Wikidata%3AList+of+properties%2Fscientific+research
 * [P496]https://m.wikidata.org/wiki/Property:P496
 * [P859]https://m.wikidata.org/wiki/Property:P859
