@@ -8,15 +8,9 @@
 * [scholia](https://scholia.toolforge.org/)
 * [property-explorer](https://prop-explorer.toolforge.org)
 
-
-
-* [quickcat](https://meta.m.wikimedia.org/wiki/User:Lucas_Werkmeister/QuickCategories)
-* [toolhub](https://toolhub.wikimedia.org/api-docs#put-/api/tools/-name-/annotations/)
-* [semantic_scholar_doc](https://api.semanticscholar.org/graph/v1/swagger.json)
-
-
  * [wikidata-prop-explorer](https://github.com/stevenliuyi/wikidata-prop-explorer/)
-
+* [repo](https://github.com/stevenliuyi/wikidata-prop-explorer/
+* )
 ## tree from  #public/queries/
  * [prop-tree-template.rq](https://raw.githubusercontent.com/stevenliuyi/wikidata-prop-explorer/master/public/queries/prop-tree-template.rq)
  * [prop_"-template.rq](https://raw.githubusercontent.com/stevenliuyi/wikidata-prop-explorer/master/public/queries/prop-template.rq)
@@ -25,12 +19,14 @@
  * [prop-detail-template.rq](https://raw.githubusercontent.com/stevenliuyi/wikidata-prop-explorer/master/public/queries/prop-detail-template.rq)
 
 ---
-  https://github.com/stevenliuyi/wikidata-prop-explorer/]
+* [quickcat](https://meta.m.wikimedia.org/wiki/User:Lucas_Werkmeister/QuickCategories)
+* [toolhub](https://toolhub.wikimedia.org/api-docs#put-/api/tools/-name-/annotations/)
+* [semantic_scholar_doc](https://api.semanticscholar.org/graph/v1/swagger.json)
 * [citeseerx](https://citeseerx.ist.psu.edu)
-[acl](https://aclanthology.org)
-[proceedings](https://proceedings.mlr.press)
-[arxiv](https://arxiv.org)
-[drv](https://developers.google.com/freebase/)
+* [aclanthology](https://aclanthology.org)
+* [proceedings](https://proceedings.mlr.press)
+* [arxiv](https://arxiv.org)
+* [drv](https://developers.google.com/freebase/)
 
 
 
