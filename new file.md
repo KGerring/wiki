@@ -30,7 +30,7 @@ scrops
 * [authority_control_journals](https://m.wikidata.org/wiki/Q57589544)
 * [software](https://m.wikidata.org/wiki/Q57589544)
 
-[a](https://toolhub.wikimedia.org/lists/353)
+(https://toolhub.wikimedia.org/lists/353)
 
 [Bibsonomy](git clone https://bitbucket.org/bibsonomy/bibsonomy-python.git)
 [bibsonomy.py](https://bitbucket.org/bibsonomy/bibsonomy-python/raw/d019d0631523d3a84547172abb14853e2baa5208/bibsonomy.py)
