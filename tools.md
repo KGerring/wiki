@@ -19,12 +19,14 @@
  * [prop-detail-template.rq](https://raw.githubusercontent.com/stevenliuyi/wikidata-prop-explorer/master/public/queries/prop-detail-template.rq)
 
 ---
-* [quickcat](https://meta.m.wikimedia.org/wiki/User:Lucas_Werkmeister/QuickCategories)
+* [quickcat](https://meta.m.wikimedia.org/wiki/User:
+
+
 * [toolhub](https://toolhub.wikimedia.org/api-docs#put-/api/tools/-name-/annotations/)
-* [semantic_scholar_doc](https://api.semanticscholar.org/graph/v1/swagger.json)
+* [semantic_scholar_swagger](https://api.semanticscholar.org/graph/v1/swagger.json)
 * [citeseerx](https://citeseerx.ist.psu.edu)
 * [aclanthology](https://aclanthology.org)
-* [proceedings](https://proceedings.mlr.press)
+* [proceedings_mlr_press](https://proceedings.mlr.press)
 * [arxiv](https://arxiv.org)
 * [drv](https://developers.google.com/freebase/)
 
