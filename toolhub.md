@@ -8,4 +8,5 @@ https://hay.toolforge.org/wdview/index.php?id=Q226915
 
 https://bambots.brucemyers.com/drb/WikiProjectList.html
 
+[metasat](https://schema.space/resources/basic-topics)
 
