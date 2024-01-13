@@ -10,6 +10,11 @@ https://lod-cloud.net/lod-data.json
 
 https://www.base-search.net/
 
+https://www.base-search.net/
+
+https://xtools.wmcloud.org/globalcontribs/KDGerring
+
+
 
 
 
