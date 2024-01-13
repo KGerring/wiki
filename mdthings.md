@@ -8,6 +8,8 @@ https://lod-cloud.net/lod-data.json
 
 [mediawiki-developer](https://developer.wikimedia.org/)
 
+https://www.base-search.net/
+
 
 
 
