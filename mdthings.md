@@ -21,6 +21,7 @@ https://jupyter-tutorial.readthedocs.io/en/latest/sphinx/nbsphinx.html
 
 https://ipywidgets.readthedocs.io/en/stable/reference/ipywidgets.html
 
+https://mystmd.org/spec
 
 
 
