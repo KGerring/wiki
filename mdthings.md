@@ -19,6 +19,8 @@ https://kbpedia.org/resources/downloads/
 https://jupyter-tutorial.readthedocs.io/en/latest/sphinx/nbsphinx.html
 
 
+https://ipywidgets.readthedocs.io/en/stable/reference/ipywidgets.html
+
 
 
 
