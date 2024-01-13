@@ -16,6 +16,8 @@ https://xtools.wmcloud.org/globalcontribs/KDGerring
 
 https://kbpedia.org/resources/downloads/
 
+https://jupyter-tutorial.readthedocs.io/en/latest/sphinx/nbsphinx.html
+
 
 
 
