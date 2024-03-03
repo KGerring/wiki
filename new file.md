@@ -4,8 +4,11 @@
 
 
 [Properties software](https://m.wikidata.org/wiki/Q21126229)
+
 [Wikidata property for items about scholarly articles](https://m.wikidata.org/wiki/Q29548341)
+
 [Q107212108](https://m.wikidata.org/wiki/Q107212108)
+
 [links:Q107212108](https://m.wikidata.org/w/index.php?title=Special:WhatLinksHere&target=Q107212108)
 
 * [Q6](https://m.wikidata.org/wiki/Q61058429)
