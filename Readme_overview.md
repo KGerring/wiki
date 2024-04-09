@@ -23,7 +23,7 @@ https://en.m.wikipedia.org/wiki/Wikipedia:Instructional_material
 
 https://microservices.io/about.html
 
-https://en.m.wikipedia.org/wiki/Wikipedia:Stub
+[WP:Stub](https://en.m.wikipedia.org/wiki/Wikipedia:Stub)
 https://m.wikidata.org/wiki/Wikidata:Tools/Enhance_user_interface#Userscripts_to_aid_editing
 
 
@@ -32,9 +32,9 @@ https://m.wikidata.org/wiki/Wikidata:Tools/Enhance_user_interface#Userscripts_to
 
 * [https://link.springer.com/content/pdf/10.1007/s40745-015-0032-1.pdf?pdf=button%20sticky](https://link.springer.com/content/pdf/10.1007/s40745-015-0032-1.pdf?pdf=button%20sticky)
 * [https://angryloki.github.io/wikidata-graph-builder/?property=P279&item=Q169470&mode=reverse&size_property=P106](https://angryloki.github.io/wikidata-graph-builder/?property=P279&item=Q169470&mode=reverse&size_property=P106)
-* [wikidataClasses.php](https://bambots.brucemyers.com/WikidataClasses.php)
+* [bambots-wikidataClasses](https://bambots.brucemyers.com/WikidataClasses.php)
 * [https://arxiv.org/pdf/1505.03671.pdf#page40](https://arxiv.org/pdf/1505.03671.pdf#page40)
-* [nowledge_Organization_Systems_KOS](https://www.researchgate.net/publication/297530633_Knowledge_Organization_Systems_KOS)
+* [Knowledge_Organization_Systems_KOS](https://www.researchgate.net/publication/297530633_Knowledge_Organization_Systems_KOS)
 * [Wikidata-kb](https://www.semanticscholar.org/paper/Wikidata:-a-free-collaborative-knowledgebase-Vrandečić-Krötzsch/dab7e605237ad4f4fe56dcba2861b8f0a57112be)
 * [Classification-of-Knowledge-Organization-Systems](https://www.semanticscholar.org/paper/Classification-of-Knowledge-Organization-Systems-Voß/e4a3af08c54e128be02e639bcd1fdae48b9e7fa5)
 * [how-did-we-get-here/](https://www.synaptica.com/how-did-we-get-here/)
