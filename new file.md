@@ -6,7 +6,7 @@
 [Properties software](https://m.wikidata.org/wiki/Q21126229)
 [Wikidata property for items about scholarly articles](https://m.wikidata.org/wiki/Q29548341)
 [Q107212108](https://m.wikidata.org/wiki/Q107212108)
-[links:Q107212108](https://m.wikidata.org/w/index.php?title=Special:WhatLinksHere&target=Q107212108)
+[linkshere:Q107212108](https://m.wikidata.org/w/index.php?title=Special:WhatLinksHere&target=Q107212108)
 
 https://m.wikidata.org/wiki/Q61058429
 
@@ -20,7 +20,7 @@ https://m.wikidata.org/wiki/Q61058429
 
 
 [User:Sic19](https://m.wikidata.org/wiki/User:Sic19)
-https://m.wikidata.org/wiki/Wikidata:List_of_properties/research
+[P:research](https://m.wikidata.org/wiki/Wikidata:List_of_properties/research)
 https://m.wikidata.org/wiki/Wikidata:List_of_properties/scientific_research
 https://m.wikidata.org/w/index.php?title=Special:WhatLinksHere&target=Wikidata%3AList+of+properties%2Fscientific+research
 [P496]https://m.wikidata.org/wiki/Property:P496
