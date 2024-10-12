@@ -9,8 +9,7 @@
 * [property-explorer](https://prop-explorer.toolforge.org)
 
  * [wikidata-prop-explorer](https://github.com/stevenliuyi/wikidata-prop-explorer/)
-* [repo](https://github.com/stevenliuyi/wikidata-prop-explorer/
-* )
+* [repo](https://github.com/stevenliuyi/wikidata-prop-explorer/)
 ## tree from  #public/queries/
  * [prop-tree-template.rq](https://raw.githubusercontent.com/stevenliuyi/wikidata-prop-explorer/master/public/queries/prop-tree-template.rq)
  * [prop_"-template.rq](https://raw.githubusercontent.com/stevenliuyi/wikidata-prop-explorer/master/public/queries/prop-template.rq)
