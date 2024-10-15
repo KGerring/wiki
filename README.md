@@ -9,4 +9,4 @@
 [oct23](oct2023.md)
 
 * [paws](https://wikitech.wikimedia.org/wiki/PAWS/PAWS_examples_and_recipes)
-* [awesome](https://awesomeopensource.com)
+* [awesomeopensource](https://awesomeopensource.com)
