@@ -7,3 +7,5 @@ export LIBRARIES_IO_API_KEY="e49c64d56761dca6fd0f15af5b3fe48d"
 
 export AGROPORTAL_API_KEY="a224572e-028f-4389-ba27-7dad00853a99"
 
+export FAIRSHARING_LOGIN="kgerring@gmail.com"
+export FAIRSHARING_PASSWORD="R@siePosie1!"
