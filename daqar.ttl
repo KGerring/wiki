@@ -1,0 +1,298 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://purl.org/net/vsr/daqar#> a owl:Ontology .
+<http://purl.org/net/vsr/daqar#hasEndValue>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/net/vsr/daqar#FunctionParam> ;
+  rdfs:comment "Represents the end value of a function" ;
+  rdfs:label "hasEndValue" .
+
+<http://purl.org/net/vsr/daqar#hasReturnType>
+  a owl:ObjectProperty, owl:Class ;
+  rdfs:domain <http://purl.org/net/vsr/daqar#QualityAssessment>, <http://purl.org/net/vsr/daqar#QualityAssessmentCombination> ;
+  rdfs:range <http://purl.org/net/vsr/daqar#ReturnType> ;
+  rdfs:label "hasReturnType" ;
+  rdfs:comment """Indicates the numeric type of the returned assessment result or
+Indicates the type of the returned value for the assessment result""" .
+
+<http://purl.org/net/vsr/daqar#hasReturnValue>
+  a owl:ObjectProperty, owl:Class ;
+  rdfs:domain <http://purl.org/net/vsr/daqar#FunctionParam>, <http://purl.org/net/vsr/daqar#QualityAssessment> ;
+  rdfs:range <http://purl.org/net/vsr/daqar#ReturnValue> ;
+  rdfs:comment """Indicates the computation type of the returned assessment value or
+Represents the (constant) return value of a function""" ;
+  rdfs:label "hasReturnValue" .
+
+<http://purl.org/net/vsr/daqar#hasStartValue>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/net/vsr/daqar#FunctionParam> ;
+  rdfs:comment "Represents the start value of a function" ;
+  rdfs:label "hasStartValue" .
+
+<http://purl.org/net/vsr/daqar#hasValueGreaterEqualThan>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/net/vsr/daqar#AssessmentCondition> ;
+  rdfs:comment "Indicates what happens if the measured value is greater or euqal than the specified value" ;
+  rdfs:label "hasValueGreaterEqualThan" .
+
+<http://purl.org/net/vsr/daqar#hasValueGreaterThan>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/net/vsr/daqar#AssessmentCondition> ;
+  rdfs:comment "Indicates what happens if the measured value is greater than the specified value" ;
+  rdfs:label "hasValueGreaterThan" .
+
+<http://purl.org/net/vsr/daqar#hasValueLowerEqualThan>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/net/vsr/daqar#AssessmentCondition> ;
+  rdfs:comment "Indicates what happens if the measured value is lower or euqal than the specified value" ;
+  rdfs:label "hasValueLowerEqualThan" .
+
+<http://purl.org/net/vsr/daqar#hasValueLowerThan>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/net/vsr/daqar#AssessmentCondition> ;
+  rdfs:comment "Indicates what happens if the measured value is lower than the specified value" ;
+  rdfs:label "hasValueLowerThan" .
+
+<http://purl.org/net/vsr/daqar#expectedDataType>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/net/vsr/daqar#QualityRequirement> ;
+  rdfs:comment "Indicates the expected return type of the measurement result" ;
+  rdfs:label "expectedDataType" .
+
+<http://purl.org/net/vsr/daqar#hasAssessment>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/net/vsr/daqar#QualityAssessmentTerm>, <http://purl.org/net/vsr/daqar#QualityRequirement>, <http://purl.org/net/vsr/daqar#QualityRequirementSpec> ;
+  rdfs:range <http://purl.org/net/vsr/daqar#QualityAssessment>, <http://purl.org/net/vsr/daqar#QualityAssessmentCombination> ;
+  rdfs:comment """Indicates the definition of an overall assessment relation how the quality of a data source has to be calculated or
+Indicates a quality assessment that shall be calculated or
+Indicates a calculation function for assessing the measurement result""" ;
+  rdfs:label "hasAssessment" .
+
+<http://purl.org/net/vsr/daqar#hasAssessmentFunction>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/net/vsr/daqar#AssessmentCondition> ;
+  rdfs:range <http://purl.org/net/vsr/daqar#AssessmentFunction> ;
+  rdfs:comment "Defines a mapping function how to represent the measured value as an assessment value" ;
+  rdfs:label "hasAssessmentFunction" .
+
+<http://purl.org/net/vsr/daqar#hasAssessmentParam>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/net/vsr/daqar#QualityRequirement> ;
+  rdfs:range <http://purl.org/net/vsr/daqar#AssessmentParam> ;
+  rdfs:comment "Specifies parameter values that can be used in combination with well-known assessment function definitions." ;
+  rdfs:label "hasAssessmentParam" .
+
+<http://purl.org/net/vsr/daqar#hasAssessmentTerms>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/net/vsr/daqar#QualityAssessmentCombination> ;
+  rdfs:range <http://purl.org/net/vsr/daqar#QualityAssessmentTerm> ;
+  rdfs:comment "Represents a list of independent QualityAssessment subcalculations that should be combined to an overall assessment result" ;
+  rdfs:label "hasAssessmentTerms" .
+
+<http://purl.org/net/vsr/daqar#hasCondition>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/net/vsr/daqar#QualityAssessment> ;
+  rdfs:range <http://purl.org/net/vsr/daqar#AssessmentCondition> ;
+  rdfs:comment "Specifies an operation or a condition that has to be met by the measured value in order to calculate an assessment result" ;
+  rdfs:label "hasCondition" .
+
+<http://purl.org/net/vsr/daqar#hasFunctionParam>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/net/vsr/daqar#AssessmentFunction> ;
+  rdfs:comment "Defines values for the functional parameters required by dqr:FunctionType" ;
+  rdfs:label "hasFunctionParam" .
+
+<http://purl.org/net/vsr/daqar#hasFunctionType>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/net/vsr/daqar#AssessmentFunction> ;
+  rdfs:range <http://purl.org/net/vsr/daqar#FunctionType> ;
+  rdfs:comment "Indicates the functional type of the calculation" ;
+  rdfs:label "hasFunctionType" .
+
+<http://purl.org/net/vsr/daqar#hasImplementation>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/net/vsr/daqar#QualityRequirement> ;
+  rdfs:comment "Indicates if the calculation relies on a concrete, mandatory implementation of a quality requirement concept" ;
+  rdfs:label "hasImplementation" .
+
+<http://purl.org/net/vsr/daqar#hasParamType>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/net/vsr/daqar#AssessmentParam> ;
+  rdfs:comment "Indicates the type of the assessment param" ;
+  rdfs:label "hasParamType" .
+
+<http://purl.org/net/vsr/daqar#hasRequirementConcept>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/net/vsr/daqar#QualityRequirement> ;
+  rdfs:comment """Represents the particular quality concepts in form of a URI
+This can be a daq:Metric, a dqv:Metric, a SHACL URL or any other URI representing a quality requirement""" ;
+  rdfs:label "hasRequirementConcept" .
+
+<http://purl.org/net/vsr/daqar#hasRequirementType>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/net/vsr/daqar#QualityRequirement> ;
+  rdfs:range <http://purl.org/net/vsr/daqar#RequirementType> ;
+  rdfs:comment "Indicates the type of examined quality aspect" ;
+  rdfs:label "hasRequirementType" .
+
+<http://purl.org/net/vsr/daqar#hasRequirements>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/net/vsr/daqar#QualityRequirementSpec> ;
+  rdfs:range <http://purl.org/net/vsr/daqar#QualityRequirement> ;
+  rdfs:comment "Indicates the QualityRequirements that have to be checked" ;
+  rdfs:label "hasRequirements" .
+
+<http://purl.org/net/vsr/daqar#hasUnit>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/net/vsr/daqar#QualityRequirement> ;
+  rdfs:comment "Indicates the unit of the measurement result" ;
+  rdfs:label "hasUnit" .
+
+<http://purl.org/net/vsr/daqar#hasValue>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/net/vsr/daqar#AssessmentParam> ;
+  rdfs:comment "Specified the value of the assessment parameter" ;
+  rdfs:label "hasValue" .
+
+<http://purl.org/net/vsr/daqar#hasWeight>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/net/vsr/daqar#QualityAssessmentTerm> ;
+  rdfs:comment "Indicates the influence of the current assessment to the overall assessment score" ;
+  rdfs:label "hasWeight" .
+
+<http://purl.org/net/vsr/daqar#AssessmentCondition>
+  a owl:Class ;
+  rdfs:comment "Represents a measurement value range and a mapping function to an assessment value" ;
+  rdfs:label "AssessmentCondition" .
+
+<http://purl.org/net/vsr/daqar#AssessmentFunction>
+  a owl:Class ;
+  rdfs:comment "Represents a mapping function to map an actual measurement value to a corrresponding assessment value" ;
+  rdfs:label "AssessmentFunction" .
+
+<http://purl.org/net/vsr/daqar#AssessmentParam>
+  a owl:Class ;
+  rdfs:comment "Represents a parameter with a defined value that can be reused by an assessment tool in combination with a well-known dqr:Assessment function" ;
+  rdfs:label "AsssessmentParam" .
+
+<http://purl.org/net/vsr/daqar#AverageParam>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/net/vsr/daqar#ParamType> .
+
+<http://purl.org/net/vsr/daqar#ConstantFunction>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/net/vsr/daqar#FunctionType> ;
+  rdfs:comment "A mapping function defined through a constant dqr:hasReturnValue" ;
+  rdfs:label "ConstantFunction" .
+
+<http://purl.org/net/vsr/daqar#ConstantValue>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/net/vsr/daqar#ReturnValue> ;
+  rdfs:comment "A constant ReturnValue" ;
+  rdfs:label "ConstantValue" .
+
+<http://purl.org/net/vsr/daqar#CustomFunction>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/net/vsr/daqar#FunctionType> ;
+  rdfs:comment "A custom defined mapping function defined through a dqr:hasCustomFunctionTerm" ;
+  rdfs:label "CustomFunction" .
+
+<http://purl.org/net/vsr/daqar#FunctionParam>
+  a owl:Class ;
+  rdfs:comment "Represents a bound value used by a dqr:FunctionType function for calculation purposes" ;
+  rdfs:label "FunctionParam" .
+
+<http://purl.org/net/vsr/daqar#FunctionType>
+  a owl:Class ;
+  rdfs:comment "The mathematical function how to map a measured value to an assessment value" ;
+  rdfs:label "FunctionType" .
+
+<http://purl.org/net/vsr/daqar#FunctionalValue>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/net/vsr/daqar#ReturnValue> ;
+  rdfs:comment "A ReturnValue described through a Function" ;
+  rdfs:label "FunctionalValue" .
+
+<http://purl.org/net/vsr/daqar#GreaterEqualThanParam>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/net/vsr/daqar#ParamType> .
+
+<http://purl.org/net/vsr/daqar#GreaterThanParam>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/net/vsr/daqar#ParamType> .
+
+<http://purl.org/net/vsr/daqar#LinearFunction>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/net/vsr/daqar#FunctionType> ;
+  rdfs:comment "A mapping function defined through a dqr:hasStartValue and dqr:hasEndValue" ;
+  rdfs:label "LinearFunction" .
+
+<http://purl.org/net/vsr/daqar#LowerEqualThanParam>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/net/vsr/daqar#ParamType> .
+
+<http://purl.org/net/vsr/daqar#LowerThanParam>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/net/vsr/daqar#ParamType> .
+
+<http://purl.org/net/vsr/daqar#ParamType> a owl:Class .
+<http://purl.org/net/vsr/daqar#QualityAssessment>
+  a owl:Class ;
+  rdfs:comment "Represents the defintion of a function of measurement boundaries on how to assess the measured value of a related quality concept of interest" ;
+  rdfs:label "QualityAssessment" .
+
+<http://purl.org/net/vsr/daqar#QualityAssessmentCombination>
+  a owl:Class ;
+  rdfs:comment "Represents an instruction on how to combine the results from multiple dqr:QualityAssessments to an overall assessment score" ;
+  rdfs:label "QualityAssessmentCombination" .
+
+<http://purl.org/net/vsr/daqar#QualityAssessmentTerm>
+  a owl:Class ;
+  rdfs:comment "Represents a weighted assessment sub-calculation for a particular requirement" ;
+  rdfs:label "QualityAssessmentTerm" .
+
+<http://purl.org/net/vsr/daqar#QualityGrade>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/net/vsr/daqar#ReturnType> ;
+  rdfs:label "QualityGrade", "ReturnType for an integer representation 1 (best) <= DQ <= 6 (worst)" .
+
+<http://purl.org/net/vsr/daqar#QualityRatio>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/net/vsr/daqar#ReturnType> ;
+  rdfs:comment "ReturnType for a decimal representation 0.0 (worst) <= DQ <= 1.0 (best)" ;
+  rdfs:label "QualityRatio" .
+
+<http://purl.org/net/vsr/daqar#QualityRequirement>
+  a owl:Class ;
+  rdfs:comment "Represents a particular measurable quality aspect of interest whose result is assesseable" ;
+  rdfs:label "QualityRequirement" .
+
+<http://purl.org/net/vsr/daqar#QualityRequirementSpec>
+  a owl:Class ;
+  rdfs:comment "Represents a specification of requirements on a data set or data service from consumer side for quality assessment purposes" ;
+  rdfs:label "QualityRequirementSpec" .
+
+<http://purl.org/net/vsr/daqar#QualityStar>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/net/vsr/daqar#ReturnType> ;
+  rdfs:comment "ReturnType for an integer representation 0 (worst) <= DQ <= 5 (best)" ;
+  rdfs:label "QualityStar" .
+
+<http://purl.org/net/vsr/daqar#RequirementType>
+  a owl:Class ;
+  rdfs:comment "Indicates the type of examined quality aspect" ;
+  rdfs:label "RequirementType" .
+
+<http://purl.org/net/vsr/daqar#ShapeConstraint>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/net/vsr/daqar#RequirementType> ;
+  rdfs:comment "a RequirementType for SHACL-like template graph descriptors that are run by a separate processor" ;
+  rdfs:label "ShapeConstraint" .
+
+<http://purl.org/net/vsr/daqar#SimpleMetric>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/net/vsr/daqar#RequirementType> ;
+  rdfs:comment "a RequirementType for directly calculable metrics such as DQV, daq or ISO metrics" ;
+  rdfs:label "SimpleMetric" .
+
