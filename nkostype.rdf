@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core"
+    xmlns:nkostype="http://w3id.org/nkos/nkostype"
+    xmlns:owl="http://www.w3.org/2002/07/owl"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema"
+    xml:base="http://w3id.org/nkos/nkostype" > 
+  <rdf:Description rdf:about="http://w3id.org/nkos/nkostype">
+    <dcterms:title xml:lang="en">KOS Type Vocabulary</dcterms:title>
+    <dcterms:creator>Marcia Zeng</dcterms:creator>
+	  <dcterms:creator>Maja Žumer</dcterms:creator>
+	  <dcterms:contributor>DCMI/NKOS Task Group</dcterms:contributor>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <rdfs:seeAlso rdf:resource="http://wiki.dublincore.org/index.php/NKOS_Vocabularies"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/nkos/nkostype#pick_list">
+    <skos:inScheme rdf:resource="http://w3id.org/nkos/nkostype"/>
+    <skos:prefLabel xml:lang="en">pick list</skos:prefLabel>
+    <owl:sameAs rdf:resource="http://w3id.org/nkos/nkostype#list"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/nkos/nkostype#thesaurus">
+    <skos:prefLabel xml:lang="en">thesaurus</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://w3id.org/nkos/nkostype"/>
+    <rdfs:comment xml:lang="en">controlled and structured vocabulary in which concepts are represented by terms, organized so that relationships between concepts are made explicit, and preferred terms are accompanied by lead-in entries for synonyms or quasi-synonyms</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/nkos/nkostype#semantic_network">
+    <skos:prefLabel xml:lang="en">semantic network</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://w3id.org/nkos/nkostype"/>
+    <rdfs:comment xml:lang="en">set of terms representing concepts, modeled as the nodes in a network of variable relationship types</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/nkos/nkostype#glossary">
+    <skos:prefLabel xml:lang="en">glossary</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://w3id.org/nkos/nkostype"/>
+    <rdfs:comment xml:lang="en">a collection of textual glosses or of specialized terms with their meanings</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/nkos/nkostype#dictionary">
+    <skos:prefLabel xml:lang="en">dictionary</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://w3id.org/nkos/nkostype"/>
+    <rdfs:comment xml:lang="en">a reference source containing words usually alphabetically arranged along with information about their forms, pronunciations, functions, etymologies, meanings, and syntactical and idiomatic uses</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/nkos/nkostype#name_authority_list">
+    <skos:prefLabel xml:lang="en">name authority list</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://w3id.org/nkos/nkostype"/>
+    <rdfs:comment xml:lang="en">controlled vocabulary for use in naming particular entities consistently</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/nkos/nkostype#taxonomy">
+    <skos:prefLabel xml:lang="en">taxonomy</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://w3id.org/nkos/nkostype"/>
+    <rdfs:comment xml:lang="en">scheme of categories and subcategories that can be used to sort and otherwise organize items of knowledge or information</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/nkos/nkostype#subject_heading_scheme">
+    <skos:prefLabel xml:lang="en">subject heading scheme</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://w3id.org/nkos/nkostype"/>
+    <rdfs:comment xml:lang="en">structured vocabulary comprising terms available for subject indexing, plus rules for combining them into pre-coordinated strings of terms where necessary</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/nkos/nkostype#synonym_ring">
+    <skos:prefLabel xml:lang="en">synonym ring</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://w3id.org/nkos/nkostype"/>
+    <rdfs:comment xml:lang="en">set of synonymous or almost synonymous terms, any of which can be used to refer to a particular concept</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/nkos/nkostype#gazetteer">
+    <skos:prefLabel xml:lang="en">gazetteer</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://w3id.org/nkos/nkostype"/>
+    <rdfs:comment xml:lang="en">geospatial dictionary of named and typed places</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/nkos/nkostype#authority_file">
+    <skos:inScheme rdf:resource="http://w3id.org/nkos/nkostype"/>
+    <skos:prefLabel xml:lang="en">authority file</skos:prefLabel>
+    <owl:sameAs rdf:resource="http://w3id.org/nkos/nkostype#name_authority_list"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/nkos/nkostype#ontology">
+    <skos:prefLabel xml:lang="en">ontology</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://w3id.org/nkos/nkostype"/>
+    <rdfs:comment xml:lang="en">A formal model that allows knowledge to be represented for a specific domain. An ontology describes the types of things that exist (classes), the relationships between them (properties) and the logical ways those classes and properties can be used together (axioms)</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/nkos/nkostype#classification_schema">
+    <skos:prefLabel xml:lang="en">classification schema</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://w3id.org/nkos/nkostype"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/nkos/nkostype#terminology">
+    <skos:prefLabel xml:lang="en">terminology</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://w3id.org/nkos/nkostype"/>
+    <rdfs:comment xml:lang="en">set of designations belonging to one special language [ISO 1087-1:2000, definition 3.5.1]</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/nkos/nkostype#categorization_schema">
+    <skos:prefLabel xml:lang="en">categorization schema</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://w3id.org/nkos/nkostype"/>
+    <rdfs:comment xml:lang="en">schedule of concepts and pre-coordinated combinations of concepts, arranged by classification</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/nkos/nkostype#list">
+    <skos:prefLabel xml:lang="en">list</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://w3id.org/nkos/nkostype"/>
+    <rdfs:comment xml:lang="en">a limited set of terms arranged as a simple alphabetical list or in some other logically evident way; containing no relationships of any kind</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+</rdf:RDF>

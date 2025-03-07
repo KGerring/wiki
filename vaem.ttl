@@ -718,7 +718,9 @@ vaem:revision
 .
 vaem:specificity
   rdf:type owl:DatatypeProperty ;
-  dct:description "The property \"vaem:specificity\" is intended to specify the level of detail of an ontology.  The values that can be set for this property are restriced to an integer from 1 to 5. An ontology at level 1 has concepts of more general applicability than one at level 5. By having graphs at different levels of specificity it is possible to support greater modularity for selective imports"^^xsd:string ;
+  dct:description "The property \"vaem:specificity\" is intended to specify the level of detail of an ontology.  
+       The values that can be set for this property are restriced to an integer from 1 to 5. An ontology at level 1 has concepts of more general applicability than one at level 5. 
+       By having graphs at different levels of specificity it is possible to support greater modularity for selective imports"^^xsd:string ;
   rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem> ;
   rdfs:isDefinedBy <http://www.linkedmodel.org/schema/vaem> ;
   rdfs:label "specificity"^^xsd:string ;
