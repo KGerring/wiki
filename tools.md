@@ -12,7 +12,7 @@
 * [repo](https://github.com/stevenliuyi/wikidata-prop-explorer/)
 ## tree from  #public/queries/
  * [prop-tree-template.rq](https://raw.githubusercontent.com/stevenliuyi/wikidata-prop-explorer/master/public/queries/prop-tree-template.rq)
- * [prop_"-template.rq](https://raw.githubusercontent.com/stevenliuyi/wikidata-prop-explorer/master/public/queries/prop-template.rq)
+ * [prop-template.rq](https://raw.githubusercontent.com/stevenliuyi/wikidata-prop-explorer/master/public/queries/prop-template.rq)
  * [prop-seealso-template.rq](https://raw.githubusercontent.com/stevenliuyi/wikidata-prop-explorer/master/public/queries/prop-seealso-template.rq)
  * [prop-example-template.rq](https://raw.githubusercontent.com/stevenliuyi/wikidata-prop-explorer/master/public/queries/prop-example-template.rq)
  * [prop-detail-template.rq](https://raw.githubusercontent.com/stevenliuyi/wikidata-prop-explorer/master/public/queries/prop-detail-template.rq)
@@ -21,8 +21,8 @@
 * [quickcat](https://meta.m.wikimedia.org/wiki/User:
 
 
-* [toolhub](https://toolhub.wikimedia.org/api-docs#put-/api/tools/-name-/annotations/)
-* [semantic_scholar_swagger](https://api.semanticscholar.org/graph/v1/swagger.json)
+* [](https://toolhub.wikimedia.org/api-docs#put-/api/tools/-name-/annotations/)
+* [api-semantic_scholar_swagger](https://api.semanticscholar.org/graph/v1/swagger.json)
 * [citeseerx](https://citeseerx.ist.psu.edu)
 * [aclanthology](https://aclanthology.org)
 * [proceedings_mlr_press](https://proceedings.mlr.press)
