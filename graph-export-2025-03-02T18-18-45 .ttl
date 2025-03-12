@@ -1,0 +1,787 @@
+@prefix schema: <https://schema.org/> .
+@prefix soa: <https://semopenalex.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix jsfn: <http://www.ontotext.com/js#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbp: <http://dbpedia.org/property/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<https://linkedpaperswithcode.com/class/dataset> a owl:Class;
+  rdfs:comment "A dataset is a collection of data"@en;
+  rdfs:label "Dataset"@en .
+
+dct:description a owl:DatatypeProperty;
+  rdfs:domain _:node616;
+  rdfs:range xsd:string .
+
+dct:issued a owl:DatatypeProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/dataset>;
+  rdfs:range xsd:date .
+
+dct:title a owl:DatatypeProperty;
+  rdfs:domain _:node613;
+  rdfs:range xsd:string .
+
+foaf:homepage a owl:DatatypeProperty;
+  rdfs:domain _:node626;
+  rdfs:range xsd:anyURI .
+
+<https://linkedpaperswithcode.com/property/hasVariant> a owl:DatatypeProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/dataset>;
+  rdfs:range xsd:string;
+  rdfs:comment "This property specifies the variant of a dataset"@en;
+  rdfs:label "has variant"@en .
+
+<https://linkedpaperswithcode.com/property/numberPapers> a owl:DatatypeProperty;
+  rdfs:domain _:node620;
+  rdfs:range xsd:integer;
+  rdfs:comment "This property specifies the number of papers that use a method or a dataset"@en;
+  rdfs:label "number papers"@en .
+
+<https://linkedpaperswithcode.com/property/usedForTask> a owl:ObjectProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/dataset>;
+  rdfs:range <https://linkedpaperswithcode.com/class/task>;
+  rdfs:comment "This property specifies a task a dataset is used for"@en;
+  rdfs:label "used for task"@en .
+
+<https://linkedpaperswithcode.com/property/hasDataLoader> a owl:ObjectProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/dataset>;
+  rdfs:range <https://linkedpaperswithcode.com/class/dataloader>;
+  rdfs:comment "This property specifies the dataloader of a dataset"@en;
+  rdfs:label "has dataloader"@en .
+
+<https://linkedpaperswithcode.com/property/introducedBy> a owl:ObjectProperty;
+  rdfs:domain _:node632;
+  rdfs:range <https://linkedpaperswithcode.com/class/paper>;
+  rdfs:comment "This property specifies the paper that introduced a method or a dataset"@en;
+  rdfs:label "introduced by"@en .
+
+<https://linkedpaperswithcode.com/property/modality> a owl:DatatypeProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/dataset>;
+  rdfs:range xsd:string;
+  rdfs:comment "This property specifies the modality of a dataset"@en;
+  rdfs:label "modality"@en .
+
+dct:language a owl:DatatypeProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/dataset>;
+  rdfs:range xsd:string .
+
+<https://linkedpaperswithcode.com/property/introducedByUrl> a owl:DatatypeProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/dataset>;
+  rdfs:range xsd:anyURI;
+  rdfs:comment "This property specifies the url of the paper that introduced a dataset"@en;
+  rdfs:label "introduced by url"@en .
+
+<https://linkedpaperswithcode.com/property/hasDataset> a owl:ObjectProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/evaluation>;
+  rdfs:range <https://linkedpaperswithcode.com/class/dataset>;
+  rdfs:comment "This property specifies the dataset for an evaluation"@en;
+  rdfs:label "has dataset"@en .
+
+<https://linkedpaperswithcode.com/property/hasEvaluationResult> a owl:ObjectProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/evaluation>;
+  rdfs:range <https://linkedpaperswithcode.com/class/evaluationresult>;
+  rdfs:comment "This property specifies the evaluation result of an evaluation"@en;
+  rdfs:label "has evaluation result"@en .
+
+<https://linkedpaperswithcode.com/property/hasModel> a owl:ObjectProperty;
+  rdfs:domain _:node629;
+  rdfs:range <https://linkedpaperswithcode.com/class/model>;
+  rdfs:comment "This property specifies the model that is used by a paper or an evaluation"@en;
+  rdfs:label "has model"@en .
+
+<https://linkedpaperswithcode.com/property/hasTask> a owl:ObjectProperty;
+  rdfs:domain _:node623;
+  rdfs:range <https://linkedpaperswithcode.com/class/task>;
+  rdfs:comment "This property specifies the task that is addresed by a paper or an evaluation"@en;
+  rdfs:label "has task"@en .
+
+<https://linkedpaperswithcode.com/class/method> a owl:Class;
+  rdfs:comment """
+A method is a machine learning component that refers to a specific procedure or technique used to solve problems or accomplish tasks.
+"""@en;
+  rdfs:label "Method"@en .
+
+foaf:name a owl:DatatypeProperty;
+  rdfs:domain _:node645;
+  rdfs:range xsd:string .
+
+<https://linkedpaperswithcode.com/property/introducedYear> a owl:DatatypeProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/method>;
+  rdfs:range xsd:gYear;
+  rdfs:comment "This property specifies the year a method was introduced"@en;
+  rdfs:label "introduced year"@en .
+
+<https://linkedpaperswithcode.com/property/codeSnippet> a owl:DatatypeProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/method>;
+  rdfs:range xsd:anyURI;
+  rdfs:comment "This property specifies the code snippet of a method"@en;
+  rdfs:label "code snippet"@en .
+
+<https://linkedpaperswithcode.com/property/hasEvaluation> a owl:ObjectProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/paper>;
+  rdfs:range <https://linkedpaperswithcode.com/class/evaluation>;
+  rdfs:comment "This property specifies the evaluation of a paper"@en;
+  rdfs:label "has evaluation"@en .
+
+<https://linkedpaperswithcode.com/property/usesDataset> a owl:ObjectProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/paper>;
+  rdfs:range <https://linkedpaperswithcode.com/class/dataset>;
+  rdfs:comment "This property specifies the dataset used by a paper"@en;
+  rdfs:label "uses dataset"@en .
+
+<https://linkedpaperswithcode.com/class/paper> a owl:Class;
+  rdfs:comment """
+A paper makes content and research results available to the general public
+"""@en;
+  rdfs:label "Paper"@en .
+
+dct:abstract a owl:DatatypeProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/paper>;
+  rdfs:range xsd:string .
+
+dct:date a owl:DatatypeProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/paper>;
+  rdfs:range xsd:date .
+
+fabio:hasURL a owl:DatatypeProperty;
+  rdfs:domain _:node638;
+  rdfs:range xsd:anyURI .
+
+<https://linkedpaperswithcode.com/property/creatorName> a owl:DatatypeProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/paper>;
+  rdfs:range xsd:string;
+  rdfs:comment "This property specifies the name of a creator of a paper"@en;
+  rdfs:label "creator name"@en .
+
+<https://linkedpaperswithcode.com/property/hasMethod> a owl:ObjectProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/paper>;
+  rdfs:range <https://linkedpaperswithcode.com/class/method>;
+  rdfs:comment "This property specifies the method that is used by a paper"@en;
+  rdfs:label "has method"@en .
+
+<https://linkedpaperswithcode.com/property/hasURLAbstract> a owl:DatatypeProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/paper>;
+  rdfs:range xsd:anyURI;
+  rdfs:comment "This property specifies the url of the abstract of a paper"@en;
+  rdfs:label "has url abstract"@en .
+
+<https://linkedpaperswithcode.com/property/hasOfficialRepository> a owl:ObjectProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/paper>;
+  rdfs:range <https://linkedpaperswithcode.com/class/repository>;
+  rdfs:comment "This property specifies the official repository of a paper"@en;
+  rdfs:label "has official repository"@en .
+
+<https://linkedpaperswithcode.com/property/hasRepositoryReferences> a owl:ObjectProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/paper>;
+  rdfs:range <https://linkedpaperswithcode.com/class/repositoryreferences>;
+  rdfs:comment "This property specifies the repository references of a paper"@en;
+  rdfs:label "has repository references"@en .
+
+<https://linkedpaperswithcode.com/property/hasRepository> a owl:ObjectProperty;
+  rdfs:domain _:node641;
+  rdfs:range <https://linkedpaperswithcode.com/class/repository>;
+  rdfs:comment "This property specifies a repository"@en;
+  rdfs:label "has repository"@en .
+
+dct:creator a owl:ObjectProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/paper>;
+  rdfs:range <https://semopenalex.org/class/Author> .
+
+<https://linkedpaperswithcode.com/property/hasConference> a owl:ObjectProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/paper>;
+  rdfs:range <https://linkedpaperswithcode.com/class/conference>;
+  rdfs:comment "This property specifies the conference of a paper"@en;
+  rdfs:label "has conference"@en .
+
+<https://linkedpaperswithcode.com/class/task> a owl:Class;
+  rdfs:comment """
+A task is a specific problem or operation for which solutions are developed and applied.
+"""@en;
+  rdfs:label "Task"@en .
+
+<https://linkedpaperswithcode.com/property/hasSubtask> a owl:ObjectProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/task>;
+  rdfs:range <https://linkedpaperswithcode.com/class/task>;
+  rdfs:comment "This property specifies a subtask of a task"@en;
+  rdfs:label "has subtask"@en .
+
+<https://linkedpaperswithcode.com/class/conference> a owl:Class;
+  rdfs:comment "A Conference where Papers are published"@en;
+  rdfs:label "Conference"@en .
+
+<https://linkedpaperswithcode.com/property/dblpURL> a owl:DatatypeProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/conference>;
+  rdfs:range xsd:anyURI;
+  rdfs:comment "This property specifies the dblp url of a conference"@en;
+  rdfs:label "dblp url"@en .
+
+<https://linkedpaperswithcode.com/class/dataloader> a owl:Class;
+  rdfs:comment """
+A dataloader is a place where a dataset can be loaded
+"""@en;
+  rdfs:label "Dataloader"@en .
+
+<https://linkedpaperswithcode.com/class/evaluation> a owl:Class;
+  rdfs:comment """
+An evaluation is a comparison given a task, a datasets and a model
+"""@en;
+  rdfs:label "Evaluation"@en .
+
+<https://linkedpaperswithcode.com/class/evaluationresult> a owl:Class;
+  rdfs:comment "An evaluation result is a result of an evaluation"@en;
+  rdfs:label "Evaluation Result"@en .
+
+<https://linkedpaperswithcode.com/property/metricName> a owl:DatatypeProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/evaluationresult>;
+  rdfs:range xsd:string;
+  rdfs:comment "This property specifies the name of a metric"@en;
+  rdfs:label "metric name"@en .
+
+<https://linkedpaperswithcode.com/property/metricValue> a owl:DatatypeProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/evaluationresult>;
+  rdfs:range xsd:string;
+  rdfs:comment "This property specifies the value of a metric"@en;
+  rdfs:label "metric value"@en .
+
+<https://linkedpaperswithcode.com/property/usesExtraTrainingData> a owl:DatatypeProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/evaluationresult>;
+  rdfs:range xsd:boolean;
+  rdfs:comment "This property specifies whether extra training data was used"@en;
+  rdfs:label "uses extra training data"@en .
+
+<https://linkedpaperswithcode.com/property/mainCategory> a owl:ObjectProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/method>;
+  rdfs:range <https://linkedpaperswithcode.com/class/category>;
+  rdfs:comment "This property specifies the main category of a method"@en;
+  rdfs:label "main category"@en .
+
+<https://linkedpaperswithcode.com/class/category> a owl:Class;
+  rdfs:comment "A Category is a set of methods"@en;
+  rdfs:label "Category"@en .
+
+<https://linkedpaperswithcode.com/class/repository> a owl:Class;
+  rdfs:comment """
+A repository is a place where code and data is stored
+"""@en;
+  rdfs:label "Repository"@en .
+
+<https://linkedpaperswithcode.com/property/hasFramework> a owl:DatatypeProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/repository>;
+  rdfs:range xsd:string;
+  rdfs:comment "This property specifies the framework of a repository"@en;
+  rdfs:label "has framework"@en .
+
+<https://linkedpaperswithcode.com/class/repositoryreferences> a owl:Class;
+  rdfs:comment """
+A repository references holds information whether a paper is referenced in the associated repositroy and whether the repositroy is referenced in the paper.
+"""@en;
+  rdfs:label "Repository References"@en .
+
+<https://linkedpaperswithcode.com/property/paperMentionsRepository> a owl:DatatypeProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/repositoryreferences>;
+  rdfs:range xsd:boolean;
+  rdfs:comment "This property specifies whether a paper mentions a repository"@en;
+  rdfs:label "paper mentions repository"@en .
+
+<https://linkedpaperswithcode.com/property/repositoryMentionsPaper> a owl:DatatypeProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/repositoryreferences>;
+  rdfs:range xsd:boolean;
+  rdfs:comment "This property specifies whether a repository mentions a paper"@en;
+  rdfs:label "repository mentions paper"@en .
+
+<https://linkedpaperswithcode.com/property/hasParent> a owl:ObjectProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/category>;
+  rdfs:range <https://linkedpaperswithcode.com/class/category>;
+  rdfs:comment "This property specifies a parent category of a category"@en;
+  rdfs:label "has parent"@en .
+
+<https://linkedpaperswithcode.com/class/model> a owl:Class;
+  rdfs:comment "A machine learning model"@en;
+  rdfs:label "Model"@en .
+
+<https://linkedpaperswithcode.com/class/area> a owl:Class;
+  rdfs:comment "An area is a broad concept"@en;
+  rdfs:label "Area"@en .
+
+fabio:hasArXivID a owl:DatatypeProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/paper>;
+  rdfs:range xsd:string .
+
+<https://semopenalex.org/class/Author> a owl:Class;
+  rdfs:comment "An author of a paper"@en;
+  rdfs:label "Author"@en .
+
+<https://linkedpaperswithcode.com/class/areaShape> a sh:NodeShape;
+  sh:property _:node655;
+  sh:targetClass <https://linkedpaperswithcode.com/class/area> .
+
+<https://linkedpaperswithcode.com/class/categoryShape> a sh:NodeShape;
+  sh:property _:node656, _:node657, _:node658;
+  sh:targetClass <https://linkedpaperswithcode.com/class/category> .
+
+<https://linkedpaperswithcode.com/class/conferenceShape> a sh:NodeShape;
+  sh:property _:node659, _:node660, _:node661;
+  sh:targetClass <https://linkedpaperswithcode.com/class/conference> .
+
+<https://linkedpaperswithcode.com/class/dataloaderShape> a sh:NodeShape;
+  sh:property _:node662, _:node663;
+  sh:targetClass <https://linkedpaperswithcode.com/class/dataloader> .
+
+<https://linkedpaperswithcode.com/class/datasetShape> a sh:NodeShape;
+  sh:property _:node664, _:node665, _:node666, _:node667, _:node668, _:node669, _:node670,
+    _:node671, _:node672, _:node673, _:node674, _:node675, _:node676;
+  sh:targetClass <https://linkedpaperswithcode.com/class/dataset> .
+
+<https://linkedpaperswithcode.com/class/evaluationShape> a sh:NodeShape;
+  sh:property _:node677, _:node678, _:node679, _:node680;
+  sh:targetClass <https://linkedpaperswithcode.com/class/evaluation> .
+
+<https://linkedpaperswithcode.com/class/evaluationresultShape> a sh:NodeShape;
+  sh:property _:node681, _:node682, _:node683;
+  sh:targetClass <https://linkedpaperswithcode.com/class/evaluationresult> .
+
+<https://linkedpaperswithcode.com/class/methodShape> a sh:NodeShape;
+  sh:property _:node684, _:node685, _:node686, _:node687, _:node688, _:node689, _:node690,
+    _:node691, _:node692;
+  sh:targetClass <https://linkedpaperswithcode.com/class/method> .
+
+<https://linkedpaperswithcode.com/class/modelShape> a sh:NodeShape;
+  sh:property _:node693;
+  sh:targetClass <https://linkedpaperswithcode.com/class/model> .
+
+<https://linkedpaperswithcode.com/class/paperShape> a sh:NodeShape;
+  sh:property _:node694, _:node695, _:node696, _:node697, _:node698, _:node699, _:node700,
+    _:node701, _:node702, _:node703, _:node704, _:node705, _:node706, _:node707, _:node708,
+    _:node709, _:node710;
+  sh:targetClass <https://linkedpaperswithcode.com/class/paper> .
+
+<https://linkedpaperswithcode.com/class/repositoryShape> a sh:NodeShape;
+  sh:property _:node711, _:node712;
+  sh:targetClass <https://linkedpaperswithcode.com/class/repository> .
+
+<https://linkedpaperswithcode.com/class/repositoryreferencesShape> a sh:NodeShape;
+  sh:property _:node713, _:node714, _:node715;
+  sh:targetClass <https://linkedpaperswithcode.com/class/repositoryreferences> .
+
+<https://linkedpaperswithcode.com/class/taskShape> a sh:NodeShape;
+  sh:property _:node716, _:node717, _:node718, _:node719;
+  sh:targetClass <https://linkedpaperswithcode.com/class/task> .
+
+<https://linkedpaperswithcode.com/ontology#> a owl:Ontology;
+  rdfs:comment """
+The Linked Papers With Code Ontology, described using W3C RDF Schema and the Web Ontology Language OWL.
+"""@en;
+  rdfs:label "Linked Papers With Code Ontology"@en .
+
+dbp:fullname a owl:DatatypeProperty;
+  rdfs:domain _:node652;
+  rdfs:range xsd:string .
+
+dbp:category a owl:ObjectProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/method>;
+  rdfs:range <https://linkedpaperswithcode.com/class/category> .
+
+dbp:area a owl:ObjectProperty;
+  rdfs:domain _:node635;
+  rdfs:range <https://linkedpaperswithcode.com/class/area> .
+
+dbp:acronym a owl:DatatypeProperty;
+  rdfs:domain <https://linkedpaperswithcode.com/class/conference>;
+  rdfs:range xsd:string .
+
+_:node613 a owl:Class;
+  owl:unionOf _:node614 .
+
+_:node616 a owl:Class;
+  owl:unionOf _:node617 .
+
+_:node620 a owl:Class;
+  owl:unionOf _:node621 .
+
+_:node623 a owl:Class;
+  owl:unionOf _:node624 .
+
+_:node626 a owl:Class;
+  owl:unionOf _:node627 .
+
+_:node629 a owl:Class;
+  owl:unionOf _:node630 .
+
+_:node632 a owl:Class;
+  owl:unionOf _:node633 .
+
+_:node635 a owl:Class;
+  owl:unionOf _:node636 .
+
+_:node638 a owl:Class;
+  owl:unionOf _:node639 .
+
+_:node641 a owl:Class;
+  owl:unionOf _:node642 .
+
+_:node645 a owl:Class;
+  owl:unionOf _:node646 .
+
+_:node652 a owl:Class;
+  owl:unionOf _:node653 .
+
+_:node655 a sh:PropertyShape;
+  sh:path foaf:name;
+  sh:datatype xsd:string .
+
+_:node656 a sh:PropertyShape;
+  sh:path foaf:name;
+  sh:datatype xsd:string .
+
+_:node657 a sh:PropertyShape;
+  sh:class <https://linkedpaperswithcode.com/class/category>;
+  sh:path <https://linkedpaperswithcode.com/property/hasParent> .
+
+_:node658 a sh:PropertyShape;
+  sh:class <https://linkedpaperswithcode.com/class/area>;
+  sh:path dbp:area .
+
+_:node659 a sh:PropertyShape;
+  sh:path foaf:name;
+  sh:datatype xsd:string .
+
+_:node660 a sh:PropertyShape;
+  sh:path <https://linkedpaperswithcode.com/property/dblpURL>;
+  sh:datatype xsd:anyURI .
+
+_:node661 a sh:PropertyShape;
+  sh:path dbp:acronym;
+  sh:datatype xsd:string .
+
+_:node662 a sh:PropertyShape;
+  sh:path foaf:homepage;
+  sh:datatype xsd:anyURI .
+
+_:node663 a sh:PropertyShape;
+  sh:class <https://linkedpaperswithcode.com/class/repository>;
+  sh:path <https://linkedpaperswithcode.com/property/hasRepository> .
+
+_:node664 a sh:PropertyShape;
+  sh:class <https://linkedpaperswithcode.com/class/paper>;
+  sh:path <https://linkedpaperswithcode.com/property/introducedBy> .
+
+_:node665 a sh:PropertyShape;
+  sh:class <https://linkedpaperswithcode.com/class/dataloader>;
+  sh:path <https://linkedpaperswithcode.com/property/hasDataLoader> .
+
+_:node666 a sh:PropertyShape;
+  sh:path dct:language;
+  sh:datatype xsd:string .
+
+_:node667 a sh:PropertyShape;
+  sh:path foaf:homepage;
+  sh:datatype xsd:anyURI .
+
+_:node668 a sh:PropertyShape;
+  sh:path <https://linkedpaperswithcode.com/property/numberPapers>;
+  sh:datatype xsd:integer .
+
+_:node669 a sh:PropertyShape;
+  sh:path dct:title;
+  sh:datatype xsd:string .
+
+_:node670 a sh:PropertyShape;
+  sh:class <https://linkedpaperswithcode.com/class/task>;
+  sh:path <https://linkedpaperswithcode.com/property/usedForTask> .
+
+_:node671 a sh:PropertyShape;
+  sh:path dct:issued;
+  sh:datatype xsd:date .
+
+_:node672 a sh:PropertyShape;
+  sh:path <https://linkedpaperswithcode.com/property/modality>;
+  sh:datatype xsd:string .
+
+_:node673 a sh:PropertyShape;
+  sh:path dbp:fullname;
+  sh:datatype xsd:string .
+
+_:node674 a sh:PropertyShape;
+  sh:path <https://linkedpaperswithcode.com/property/hasVariant>;
+  sh:datatype xsd:string .
+
+_:node675 a sh:PropertyShape;
+  sh:path <https://linkedpaperswithcode.com/property/introducedByUrl>;
+  sh:datatype xsd:anyURI .
+
+_:node676 a sh:PropertyShape;
+  sh:path dct:description;
+  sh:datatype xsd:string .
+
+_:node677 a sh:PropertyShape;
+  sh:class <https://linkedpaperswithcode.com/class/evaluationresult>;
+  sh:path <https://linkedpaperswithcode.com/property/hasEvaluationResult> .
+
+_:node678 a sh:PropertyShape;
+  sh:class <https://linkedpaperswithcode.com/class/model>;
+  sh:path <https://linkedpaperswithcode.com/property/hasModel> .
+
+_:node679 a sh:PropertyShape;
+  sh:class <https://linkedpaperswithcode.com/class/task>;
+  sh:path <https://linkedpaperswithcode.com/property/hasTask> .
+
+_:node680 a sh:PropertyShape;
+  sh:class <https://linkedpaperswithcode.com/class/dataset>;
+  sh:path <https://linkedpaperswithcode.com/property/hasDataset> .
+
+_:node681 a sh:PropertyShape;
+  sh:path <https://linkedpaperswithcode.com/property/usesExtraTrainingData>;
+  sh:datatype xsd:boolean .
+
+_:node682 a sh:PropertyShape;
+  sh:path <https://linkedpaperswithcode.com/property/metricName>;
+  sh:datatype xsd:string .
+
+_:node683 a sh:PropertyShape;
+  sh:path <https://linkedpaperswithcode.com/property/metricValue>;
+  sh:datatype xsd:string .
+
+_:node684 a sh:PropertyShape;
+  sh:path dbp:fullname;
+  sh:datatype xsd:string .
+
+_:node685 a sh:PropertyShape;
+  sh:path <https://linkedpaperswithcode.com/property/codeSnippet>;
+  sh:datatype xsd:anyURI .
+
+_:node686 a sh:PropertyShape;
+  sh:path dct:description;
+  sh:datatype xsd:string .
+
+_:node687 a sh:PropertyShape;
+  sh:class <https://linkedpaperswithcode.com/class/category>;
+  sh:path <https://linkedpaperswithcode.com/property/mainCategory> .
+
+_:node688 a sh:PropertyShape;
+  sh:path foaf:name;
+  sh:datatype xsd:string .
+
+_:node689 a sh:PropertyShape;
+  sh:class <https://linkedpaperswithcode.com/class/category>;
+  sh:path dbp:category .
+
+_:node690 a sh:PropertyShape;
+  sh:path <https://linkedpaperswithcode.com/property/introducedYear>;
+  sh:datatype xsd:gYear .
+
+_:node691 a sh:PropertyShape;
+  sh:path <https://linkedpaperswithcode.com/property/numberPapers>;
+  sh:datatype xsd:integer .
+
+_:node692 a sh:PropertyShape;
+  sh:class <https://linkedpaperswithcode.com/class/paper>;
+  sh:path <https://linkedpaperswithcode.com/property/introducedBy> .
+
+_:node693 a sh:PropertyShape;
+  sh:path foaf:name;
+  sh:datatype xsd:string .
+
+_:node694 a sh:PropertyShape;
+  sh:class <https://semopenalex.org/class/Author>;
+  sh:path dct:creator .
+
+_:node695 a sh:PropertyShape;
+  sh:class <https://linkedpaperswithcode.com/class/dataset>;
+  sh:path <https://linkedpaperswithcode.com/property/usesDataset> .
+
+_:node696 a sh:PropertyShape;
+  sh:path fabio:hasURL;
+  sh:datatype xsd:anyURI .
+
+_:node697 a sh:PropertyShape;
+  sh:path <https://linkedpaperswithcode.com/property/creatorName>;
+  sh:datatype xsd:string .
+
+_:node698 a sh:PropertyShape;
+  sh:class <https://linkedpaperswithcode.com/class/model>;
+  sh:path <https://linkedpaperswithcode.com/property/hasModel> .
+
+_:node699 a sh:PropertyShape;
+  sh:class <https://linkedpaperswithcode.com/class/repository>;
+  sh:path <https://linkedpaperswithcode.com/property/hasRepository> .
+
+_:node700 a sh:PropertyShape;
+  sh:path fabio:hasArXivID;
+  sh:datatype xsd:string .
+
+_:node701 a sh:PropertyShape;
+  sh:class <https://linkedpaperswithcode.com/class/method>;
+  sh:path <https://linkedpaperswithcode.com/property/hasMethod> .
+
+_:node702 a sh:PropertyShape;
+  sh:class <https://linkedpaperswithcode.com/class/evaluation>;
+  sh:path <https://linkedpaperswithcode.com/property/hasEvaluation> .
+
+_:node703 a sh:PropertyShape;
+  sh:path dct:date;
+  sh:datatype xsd:date .
+
+_:node704 a sh:PropertyShape;
+  sh:path dct:title;
+  sh:datatype xsd:string .
+
+_:node705 a sh:PropertyShape;
+  sh:class <https://linkedpaperswithcode.com/class/task>;
+  sh:path <https://linkedpaperswithcode.com/property/hasTask> .
+
+_:node706 a sh:PropertyShape;
+  sh:path <https://linkedpaperswithcode.com/property/hasURLAbstract>;
+  sh:datatype xsd:anyURI .
+
+_:node707 a sh:PropertyShape;
+  sh:class <https://linkedpaperswithcode.com/class/repositoryreferences>;
+  sh:path <https://linkedpaperswithcode.com/property/hasRepositoryReferences> .
+
+_:node708 a sh:PropertyShape;
+  sh:class <https://linkedpaperswithcode.com/class/repository>;
+  sh:path <https://linkedpaperswithcode.com/property/hasOfficialRepository> .
+
+_:node709 a sh:PropertyShape;
+  sh:path dct:abstract;
+  sh:datatype xsd:string .
+
+_:node710 a sh:PropertyShape;
+  sh:class <https://linkedpaperswithcode.com/class/conference>;
+  sh:path <https://linkedpaperswithcode.com/property/hasConference> .
+
+_:node711 a sh:PropertyShape;
+  sh:path fabio:hasURL;
+  sh:datatype xsd:anyURI .
+
+_:node712 a sh:PropertyShape;
+  sh:path <https://linkedpaperswithcode.com/property/hasFramework>;
+  sh:datatype xsd:string .
+
+_:node713 a sh:PropertyShape;
+  sh:class <https://linkedpaperswithcode.com/class/repository>;
+  sh:path <https://linkedpaperswithcode.com/property/hasRepository> .
+
+_:node714 a sh:PropertyShape;
+  sh:path <https://linkedpaperswithcode.com/property/paperMentionsRepository>;
+  sh:datatype xsd:boolean .
+
+_:node715 a sh:PropertyShape;
+  sh:path <https://linkedpaperswithcode.com/property/repositoryMentionsPaper>;
+  sh:datatype xsd:boolean .
+
+_:node716 a sh:PropertyShape;
+  sh:path dct:description;
+  sh:datatype xsd:string .
+
+_:node717 a sh:PropertyShape;
+  sh:path foaf:name;
+  sh:datatype xsd:string .
+
+_:node718 a sh:PropertyShape;
+  sh:class <https://linkedpaperswithcode.com/class/task>;
+  sh:path <https://linkedpaperswithcode.com/property/hasSubtask> .
+
+_:node719 a sh:PropertyShape;
+  sh:class <https://linkedpaperswithcode.com/class/area>;
+  sh:path dbp:area .
+
+_:node614 rdf:first <https://linkedpaperswithcode.com/class/paper>;
+  rdf:rest _:node615 .
+
+_:node615 rdf:first <https://linkedpaperswithcode.com/class/dataset>;
+  rdf:rest rdf:nil .
+
+_:node617 rdf:first <https://linkedpaperswithcode.com/class/method>;
+  rdf:rest _:node618 .
+
+_:node618 rdf:first <https://linkedpaperswithcode.com/class/dataset>;
+  rdf:rest _:node619 .
+
+_:node619 rdf:first <https://linkedpaperswithcode.com/class/task>;
+  rdf:rest rdf:nil .
+
+_:node621 rdf:first <https://linkedpaperswithcode.com/class/method>;
+  rdf:rest _:node622 .
+
+_:node622 rdf:first <https://linkedpaperswithcode.com/class/dataset>;
+  rdf:rest rdf:nil .
+
+_:node624 rdf:first <https://linkedpaperswithcode.com/class/paper>;
+  rdf:rest _:node625 .
+
+_:node625 rdf:first <https://linkedpaperswithcode.com/class/evaluation>;
+  rdf:rest rdf:nil .
+
+_:node627 rdf:first <https://linkedpaperswithcode.com/class/dataloader>;
+  rdf:rest _:node628 .
+
+_:node628 rdf:first <https://linkedpaperswithcode.com/class/dataset>;
+  rdf:rest rdf:nil .
+
+_:node630 rdf:first <https://linkedpaperswithcode.com/class/paper>;
+  rdf:rest _:node631 .
+
+_:node631 rdf:first <https://linkedpaperswithcode.com/class/evaluation>;
+  rdf:rest rdf:nil .
+
+_:node633 rdf:first <https://linkedpaperswithcode.com/class/method>;
+  rdf:rest _:node634 .
+
+_:node634 rdf:first <https://linkedpaperswithcode.com/class/dataset>;
+  rdf:rest rdf:nil .
+
+_:node636 rdf:first <https://linkedpaperswithcode.com/class/category>;
+  rdf:rest _:node637 .
+
+_:node637 rdf:first <https://linkedpaperswithcode.com/class/task>;
+  rdf:rest rdf:nil .
+
+_:node639 rdf:first <https://linkedpaperswithcode.com/class/paper>;
+  rdf:rest _:node640 .
+
+_:node640 rdf:first <https://linkedpaperswithcode.com/class/repository>;
+  rdf:rest rdf:nil .
+
+_:node642 rdf:first <https://linkedpaperswithcode.com/class/dataloader>;
+  rdf:rest _:node643 .
+
+_:node643 rdf:first <https://linkedpaperswithcode.com/class/paper>;
+  rdf:rest _:node644 .
+
+_:node644 rdf:first <https://linkedpaperswithcode.com/class/repositoryreferences>;
+  rdf:rest rdf:nil .
+
+_:node646 rdf:first <https://linkedpaperswithcode.com/class/method>;
+  rdf:rest _:node647 .
+
+_:node647 rdf:first <https://linkedpaperswithcode.com/class/category>;
+  rdf:rest _:node648 .
+
+_:node648 rdf:first <https://linkedpaperswithcode.com/class/area>;
+  rdf:rest _:node649 .
+
+_:node649 rdf:first <https://linkedpaperswithcode.com/class/task>;
+  rdf:rest _:node650 .
+
+_:node650 rdf:first <https://linkedpaperswithcode.com/class/model>;
+  rdf:rest _:node651 .
+
+_:node651 rdf:first <https://linkedpaperswithcode.com/class/conference>;
+  rdf:rest rdf:nil .
+
+_:node653 rdf:first <https://linkedpaperswithcode.com/class/method>;
+  rdf:rest _:node654 .
+
+_:node654 rdf:first <https://linkedpaperswithcode.com/class/dataset>;
+  rdf:rest rdf:nil .
