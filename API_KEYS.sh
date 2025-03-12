@@ -1,5 +1,9 @@
 #/usr/bin/env bash
 
+
+export BIOPORTAL_API_KEY="68cae1e0-11b7-4996-ba01-65000b69b233"
+
+
 export FLATICON_API_KEY="jGke4ziKbZvTrByAEU4OuHwPsAiLzOOAtNI7PFDJsFjZ6kK7"
 
 export LIBRARIES_IO_API_KEY="e49c64d56761dca6fd0f15af5b3fe48d"
