@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//TaxonX//DTD Taxonomic Treatment Publishing DTD v0 20100105//EN" "../../nlm/tax-treatment-NS0.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tp="http://www.plazi.org/taxpub" article-type="research-article">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="publisher-id">63</journal-id>
+      <journal-id journal-id-type="index">urn:lsid:arphahub.com:pub:0E0032F4-55AE-5263-8B3C-F4DD637C30C2</journal-id>
+      <journal-title-group>
+        <journal-title xml:lang="en">Biodiversity Information Science and Standards</journal-title>
+        <abbrev-journal-title xml:lang="en">BISS</abbrev-journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">2535-0897</issn>
+      <publisher>
+        <publisher-name>Pensoft Publishers</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="doi">10.3897/biss.7.112223</article-id>
+      <article-id pub-id-type="publisher-id">112223</article-id>
+      <article-id pub-id-type="manuscript">22898</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Conference Abstract</subject>
+        </subj-group>
+        <subj-group subj-group-type="conference-part">
+          <subject>SYM02 Building bridges: Mapping from, to and between TDWG standards</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Making Schemas and Mappings Available and FAIR: A metadata and schema crosswalk registry from the FAIRCORE4EOSC project</article-title>
+      </title-group>
+      <contrib-group content-type="authors">
+        <contrib contrib-type="author" corresp="no">
+          <name name-style="western">
+            <surname>Suominen</surname>
+            <given-names>Tommi</given-names>
+          </name>
+          <uri content-type="orcid">https://orcid.org/0000-0002-4382-7425</uri>
+          <xref ref-type="aff" rid="A1">1</xref>
+          <role content-type="http://credit.niso.org/contributor-roles/conceptualization/">Conceptualization</role>
+        </contrib>
+        <contrib contrib-type="author" corresp="no">
+          <name name-style="western">
+            <surname>Kesäniemi</surname>
+            <given-names>Joonas</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">1</xref>
+          <role content-type="http://credit.niso.org/contributor-roles/conceptualization/">Conceptualization</role>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes">
+          <name name-style="western">
+            <surname>Koivula</surname>
+            <given-names>Hanna</given-names>
+          </name>
+          <email xlink:type="simple">hanna.koivula@csc.fi</email>
+          <uri content-type="orcid">https://orcid.org/0000-0001-5605-9122</uri>
+          <xref ref-type="aff" rid="A1">1</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="A1">
+        <label>1</label>
+        <addr-line content-type="verbatim">CSC - IT Center for Science, Espoo, Finland</addr-line>
+        <institution>CSC - IT Center for Science</institution>
+        <addr-line content-type="city">Espoo</addr-line>
+        <country>Finland</country>
+      </aff>
+      <author-notes>
+        <fn fn-type="corresp">
+          <p>Corresponding author: Hanna Koivula (<email xlink:type="simple">hanna.koivula@csc.fi</email>).</p>
+        </fn>
+        <fn fn-type="edited-by">
+          <p>Academic editor: </p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2023</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>07</day>
+        <month>09</month>
+        <year>2023</year>
+      </pub-date>
+      <volume>7</volume>
+      <elocation-id>e112223</elocation-id>
+      <uri content-type="arpha" xlink:href="http://openbiodiv.net/655C3410-7902-5A33-A581-3D91E36BEC74">655C3410-7902-5A33-A581-3D91E36BEC74</uri>
+      <permissions>
+        <copyright-statement>Tommi Suominen, Joonas Kesäniemi, Hanna Koivula</copyright-statement>
+        <license license-type="creative-commons-attribution" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+          <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License (CC BY 4.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <label>Abstract</label>
+        <p>Community standards like the Darwin Core (<xref ref-type="bibr" rid="B9986082">Darwin Core Task Group 2009</xref>) together with semantic artefacts (controlled vocabularies, ontologies, thesauri, and other knowledge organisation systems) are key building blocks for the implementation of the FAIR (Findable, Accessible, Interoperable, Reusable) principles (<xref ref-type="bibr" rid="B10376830">Wilkinson et al. 2016</xref>), specifically as emphasized in the Interoperability <ext-link ext-link-type="uri" xlink:href="https://www.go-fair.org/fair-principles/i2-metadata-use-vocabularies-follow-fair-principles/">principle I2 “(Meta)data use vocabularies that follow FAIR principles”</ext-link>. However, most of these artefacts are actually not FAIR themselves (<xref ref-type="bibr" rid="B9986098">Le Franc et al. 2020</xref>). </p>
+        <p>To address this, the <ext-link ext-link-type="uri" xlink:href="https://faircore4eosc.eu/">FAIRCORE4EOSC project (2022-25)</ext-link> is developing a <ext-link ext-link-type="uri" xlink:href="https://faircore4eosc.eu/eosc-core-components/metadata-schema-and-crosswalk-registry-mscr">Metadata Schema and Crosswalk Registry</ext-link> (MSCR) that will allow registered users and communities to create, register and version schemas and crosswalks that all have persistent identifiers (PIDs). The published content can then be searched, browsed and downloaded without restrictions. The MSCR will also provide an API to facilitate the transformation of data from one schema to another via registered crosswalks. It will provide projects and individual researchers with the possibility to manage their metadata schemas and/or relevant metadata schema crosswalks. The schema and crosswalks will be shared with the community for reuse and extension supported by a proper versioning mechanism.</p>
+        <p>The registry tool will facilitate better interoperability between resource catalogues and information systems using different (metadata) schemas and encourage organisations and especially researchers to share their metadata interoperability by publishing the metadata crosswalks used in their workflows, which are currently not visible (FAIRification). By providing an easy-to-use graphical user interface (GUI) for creating crosswalks, the GUI will attract users currently relying on project-specific solutions.  </p>
+      </abstract>
+      <kwd-group>
+        <label>Keywords</label>
+        <kwd>semantic artefacts</kwd>
+        <kwd>linked open data</kwd>
+        <kwd>interoperability</kwd>
+        <kwd>persistent identifiers</kwd>
+        <kwd>European Open Science Cloud</kwd>
+      </kwd-group>
+      <counts>
+        <fig-count count="0"/>
+        <table-count count="0"/>
+        <ref-count count="3"/>
+      </counts>
+    </article-meta>
+    <notes>
+      <sec sec-type="Presenting author">
+        <title>Presenting author</title>
+        <p>Hanna Koivula</p>
+      </sec>
+      <sec sec-type="Presented at">
+        <title>Presented at</title>
+        <p>TDWG 2023</p>
+      </sec>
+      <sec sec-type="Hosting institution">
+        <title>Hosting institution</title>
+        <p>CSC - IT Center for Science</p>
+      </sec>
+    </notes>
+  </front>
+  
+  <back>
+    <sec sec-type="Conflicts of interest">
+      <title>Conflicts of interest</title>
+      <p>No conflict of interest to declare</p>
+      <p>Disclaimer: This article is (co-)authored by any of the Editors-in-Chief, Managing Editors or their deputies in this journal.</p>
+    </sec>
+    <ref-list>
+      <title>References</title>
+      <ref id="B9986082">
+        <element-citation publication-type="website">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Group</surname>
+              <given-names>Darwin Core Task</given-names>
+            </name>
+          </person-group>
+          <article-title>Darwin Core. Biodiversity Information Standards (TDWG)</article-title>
+          <uri>http://www.tdwg.org/standards/450</uri>
+          <date-in-citation content-type="access-date">2023-06-30T00:00:00+03:00</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B9986098">
+        <element-citation publication-type="other">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Le Franc</surname>
+              <given-names>Yann</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Parland-von Essen</surname>
+              <given-names>Jessica</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Bonino</surname>
+              <given-names>Luiz</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Lehväslaiho</surname>
+              <given-names>Heikki</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Coen</surname>
+              <given-names>Gerard</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Staiger</surname>
+              <given-names>Christine</given-names>
+            </name>
+          </person-group>
+          <year>2020</year>
+          <article-title>D2.2 FAIR Semantics: First recommendation</article-title>
+          <pub-id pub-id-type="doi">10.5281/zenodo.5361930</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B10376830">
+        <element-citation publication-type="article">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Wilkinson</surname>
+              <given-names>Mark D.</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Dumontier</surname>
+              <given-names>Michel</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Aalbersberg</surname>
+              <given-names>IJsbrand Jan</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Appleton</surname>
+              <given-names>Gabrielle</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Axton</surname>
+              <given-names>Myles</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Baak</surname>
+              <given-names>Arie</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Blomberg</surname>
+              <given-names>Niklas</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Boiten</surname>
+              <given-names>Jan-Willem</given-names>
+            </name>
+            <name name-style="western">
+              <surname>da Silva Santos</surname>
+              <given-names>Luiz Bonino</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Bourne</surname>
+              <given-names>Philip E.</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Bouwman</surname>
+              <given-names>Jildau</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Brookes</surname>
+              <given-names>Anthony J.</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Clark</surname>
+              <given-names>Tim</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Crosas</surname>
+              <given-names>Mercè</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Dillo</surname>
+              <given-names>Ingrid</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Dumon</surname>
+              <given-names>Olivier</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Edmunds</surname>
+              <given-names>Scott</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Evelo</surname>
+              <given-names>Chris T.</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Finkers</surname>
+              <given-names>Richard</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Gonzalez-Beltran</surname>
+              <given-names>Alejandra</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Gray</surname>
+              <given-names>Alasdair J. G.</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Groth</surname>
+              <given-names>Paul</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Goble</surname>
+              <given-names>Carole</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Grethe</surname>
+              <given-names>Jeffrey S.</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Heringa</surname>
+              <given-names>Jaap</given-names>
+            </name>
+            <name name-style="western">
+              <surname>’t Hoen</surname>
+              <given-names>Peter A. C</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Hooft</surname>
+              <given-names>Rob</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kuhn</surname>
+              <given-names>Tobias</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kok</surname>
+              <given-names>Ruben</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kok</surname>
+              <given-names>Joost</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Lusher</surname>
+              <given-names>Scott J.</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Martone</surname>
+              <given-names>Maryann E.</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Mons</surname>
+              <given-names>Albert</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Packer</surname>
+              <given-names>Abel L.</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Persson</surname>
+              <given-names>Bengt</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rocca-Serra</surname>
+              <given-names>Philippe</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Roos</surname>
+              <given-names>Marco</given-names>
+            </name>
+            <name name-style="western">
+              <surname>van Schaik</surname>
+              <given-names>Rene</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Sansone</surname>
+              <given-names>Susanna-Assunta</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Schultes</surname>
+              <given-names>Erik</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Sengstag</surname>
+              <given-names>Thierry</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Slater</surname>
+              <given-names>Ted</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Strawn</surname>
+              <given-names>George</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Swertz</surname>
+              <given-names>Morris A.</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Thompson</surname>
+              <given-names>Mark</given-names>
+            </name>
+            <name name-style="western">
+              <surname>van der Lei</surname>
+              <given-names>Johan</given-names>
+            </name>
+            <name name-style="western">
+              <surname>van Mulligen</surname>
+              <given-names>Erik</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Velterop</surname>
+              <given-names>Jan</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Waagmeester</surname>
+              <given-names>Andra</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Wittenburg</surname>
+              <given-names>Peter</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Wolstencroft</surname>
+              <given-names>Katherine</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Zhao</surname>
+              <given-names>Jun</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Mons</surname>
+              <given-names>Barend</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2016</year>
+          <article-title>The FAIR Guiding Principles for scientific data management and stewardship</article-title>
+          <source>Scientific Data</source>
+          <volume>3</volume>
+          <issue>1</issue>
+          <pub-id pub-id-type="doi">10.1038/sdata.2016.18</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
