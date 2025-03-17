@@ -1,0 +1,43 @@
+{
+    "title": "arXiv",
+    "description": "arXiv is an e-print service in the fields of physics, mathematics, non-linear science, computer science, and quantitative biology.",
+    "organization": "Cornell University",
+    "type": "dataset",
+    "keywords": [
+        "bibliography"
+    ],
+    "homepage": "http://arxiv.org",
+    "preferredPrefix": "arxiv",
+    "exampleId": "0807.4956v1",
+    "regex": "^(\\w+(\\-\\w+)?(\\.\\w+)?/)?\\d{4,7}(\\.\\d{4}(v\\d+)?)?$",
+    "providerHtmlUrl": "http://arxiv.org/abs/$id",
+    "lastUpdated": "January 23, 2022",
+    "lastUpdatedBy": "Michel Dumontier",
+    "lastUpdatedByOrcid": "0000-0003-4727-9435",
+    "@id": "https://w3id.org/bio2kg/registry/resource/arxiv",
+    "@context": {
+        "preferredPrefix": "http://identifiers.org/idot/preferredPrefix",
+        "altPrefix": "http://identifiers.org/idot/alternatePrefix",
+        "providerBaseUri": "http://rdfs.org/ns/void#uriRegexPattern",
+        "alternativeBaseUri": "http://w3id.org/bio2kg/vocabulary#alternativeBaseUri",
+        "title": "http://purl.org/dc/terms/title",
+        "description": "http://purl.org/dc/terms/description",
+        "organization": "http://purl.org/dc/terms/publisher",
+        "keywords": "http://www.w3.org/ns/dcat#keyword",
+        "homepage": "http://xmlns.com/foaf/0.1/homepage",
+        "regex": "http://identifiers.org/idot/identifierPattern",
+        "exampleId": "http://identifiers.org/idot/exampleIdentifier",
+        "providerHtmlUrl": "http://identifiers.org/idot/accessPattern",
+        "identifiersPrefix": "http://identifiersPrefix",
+        "yearLastAccessible": "http://yearLastAccessible",
+        "waybackUrl": "http://waybackUrl",
+        "lastUpdated": "http://lastUpdated",
+        "lastUpdatedBy": "http://lastUpdatedBy",
+        "lastUpdatedByOrcid": "http://lastUpdatedByOrcid",
+        "exampleUrl": "http://exampleUrl",
+        "orcidUrl": "http://orcidUrl"
+    },
+    "@type": "http://www.w3.org/ns/dcat#Dataset",
+    "exampleUrl": "http://arxiv.org/abs/0807.4956v1",
+    "orcidUrl": "https://orcid.org/0000-0003-4727-9435"
+}
