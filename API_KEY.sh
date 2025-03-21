@@ -4,7 +4,7 @@
 
 
 
-
+export SCICRUNCH_API_KEY="39hws5krMT3rZPhysVwTBiVIBsVGmcDe"
 
 export ADS_TOKEN="E2qOsvGu9xpcwQsIqZmhyAK6aq0Wbn7YSCM7X8yG"
 ##
