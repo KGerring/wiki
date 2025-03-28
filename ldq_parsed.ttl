@@ -1,0 +1,463 @@
+@base <http://www.linkeddata.es/ontology/ldq> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix eval: <http://purl.org/net/EvaluationResult#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix daq: <http://purl.org/eis/vocab/daq#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix om: <http://www.wurvoc.org/vocabularies/om-1.8/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix qmo: <http://purl.org/net/QualityModel#> .
+
+dc:description
+    a owl:DatatypeProperty ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf (:AssessmentTechnique
+            dqv:Metric
+        )
+    ] ;
+    rdfs:label "description" ;
+    rdfs:range xsd:string .
+
+daq:Dimension
+    a owl:Class ;
+    rdfs:label "Dimension" ;
+    owl:equivalentClass dqv:Dimension .
+
+daq:Metric
+    a owl:Class ;
+    rdfs:label "Metric" ;
+    owl:equivalentClass qmo:QualityMeasure .
+
+daq:Observation
+    a owl:Class ;
+    rdfs:label "Observation" ;
+    owl:equivalentClass eval:QualityValue .
+
+daq:isEstimate
+    a owl:DatatypeProperty ;
+    rdfs:domain daq:Observation ;
+    rdfs:label "isEstimate" ;
+    rdfs:range xsd:boolean .
+
+eval:Evaluation
+    a owl:Class ;
+    rdfs:label "Evaluation" .
+
+eval:QualityValue
+    a owl:Class ;
+    rdfs:label "QualityValue" ;
+    owl:equivalentClass dqv:QualityMeasure .
+
+eval:forMeasure
+    a owl:ObjectProperty ;
+    rdfs:label "forMeasure" ;
+    owl:equivalentProperty dqv:metric .
+
+eval:hasLiteralValue
+    a owl:DatatypeProperty ;
+    rdfs:domain eval:QualityValue ;
+    rdfs:label "hasLiteralValue" ;
+    rdfs:range rdfs:Literal .
+
+eval:isMeasuredInUnit
+    a owl:ObjectProperty ;
+    rdfs:domain qmo:QualityMeasure ;
+    rdfs:label "isMeasuredInUnit" ;
+    rdfs:range om:Unit_of_measure .
+
+eval:obtainedFrom
+    a owl:ObjectProperty ;
+    rdfs:domain eval:QualityValue ;
+    rdfs:label "obtainedFrom" ;
+    rdfs:range eval:Evaluation .
+
+eval:performedOn
+    a owl:ObjectProperty ;
+    rdfs:domain eval:Evaluation ;
+    rdfs:label "performedOn" ;
+    rdfs:range time:Instant .
+
+qmo:BaseMeasure
+    a owl:Class ;
+    rdfs:label "BaseMeasure" ;
+    rdfs:subClassOf qmo:QualityMeasure .
+
+qmo:DerivedMeasure
+    a owl:Class ;
+    rdfs:label "DerivedMeasure" ;
+    rdfs:subClassOf qmo:QualityMeasure .
+
+qmo:QualityCharacteristic
+    a owl:Class ;
+    rdfs:label "QualityCharacteristic" ;
+    owl:equivalentClass dqv:Dimension .
+
+qmo:QualityIndicator
+    a owl:Class ;
+    rdfs:label "QualityIndicator" ;
+    rdfs:subClassOf qmo:QualityMeasure .
+
+qmo:QualityMeasure
+    a owl:Class ;
+    rdfs:label "QualityMeasure" ;
+    owl:equivalentClass dqv:Metric .
+
+qmo:RankingFunction
+    a owl:Class ;
+    rdfs:label "RankingFunction" .
+
+qmo:hasRankingFunction
+    a owl:ObjectProperty ;
+    rdfs:domain om:Measurement_scale ;
+    rdfs:label "hasRankingFunction" ;
+    rdfs:range qmo:RankingFunction .
+
+qmo:hasScale
+    a owl:ObjectProperty ;
+    rdfs:domain qmo:QualityMeasure ;
+    rdfs:label "hasScale" ;
+    rdfs:range om:Measurement_scale .
+
+qmo:hasSubCharacteristic
+    a owl:ObjectProperty ;
+    rdfs:domain qmo:QualityMeasure ;
+    rdfs:label "hasSubCharacteristic" ;
+    rdfs:range qmo:QualityMeasure ;
+    owl:equivalentProperty :hasSubDimension .
+
+qmo:measuresCharacteristic
+    a owl:ObjectProperty ;
+    rdfs:label "measuresCharacteristic" ;
+    owl:equivalentProperty dqv:hasDimension .
+
+<>
+    dc:creator "http://id.nandana.org/card#me", "http://purl.org/net/filiprd", "http://www.garcia-castro.com/foaf#me" ;
+    dc:description "The Linked Data Quality ontology is an ontology for describing quality specification and assessment of Linked Data." ;
+    dc:title "Linked Data Quality Ontology" ;
+    terms:created "2015-11-02" ;
+    terms:license "http://creativecommons.org/licenses/by-nc-sa/2.0/" ;
+    vann:preferredNamespacePrefix "ldq" ;
+    vann:preferredNamespaceUri "http://www.linkeddata.es/ontology/ldq#" ;
+    a owl:Ontology ;
+    rdfs:comment "The LDQ is an ontology for capturing information about the Linked Data quality specification and assesment" ;
+    rdfs:label "Linked Data quality ontology" ;
+    owl:versionInfo "1.0" .
+
+:AssessmentFrequency
+    a owl:Class ;
+    rdfs:comment "The frequency of assessment of a certain quality value" ;
+    rdfs:label "AssessmentFrequency" .
+
+:AssessmentTechnique
+    a owl:Class ;
+    rdfs:comment "A technique for assesing the quality of a certain quality measure" ;
+    rdfs:label "AssessmentTechnique" .
+
+:Automatic
+    a :AutomationLevel, owl:NamedIndividual ;
+    rdfs:comment "Automatic assessment" ;
+    rdfs:label "Automatic" .
+
+:AutomationLevel
+    a owl:Class ;
+    rdfs:comment "The level of automation in assessing the quality with respect to a certain quality measure" ;
+    rdfs:label "AutomationLevel" .
+
+:Dataset
+    a :Granularity, owl:NamedIndividual ;
+    rdfs:comment "Dataset level of evaluation" ;
+    rdfs:label "Dataset" .
+
+:DomainData
+    a :QualityAspect, owl:NamedIndividual ;
+    rdfs:comment "Domain data quality aspect" ;
+    rdfs:label "DomainData" .
+
+:EvaluationData
+    a owl:Class ;
+    rdfs:label "EvaluationData" .
+
+:ExpectedDuration
+    a owl:Class ;
+    rdfs:comment "The expected duration of the quality assessment process" ;
+    rdfs:label "ExpectedDuration" .
+
+:FileServer
+    a :QualityAspect, owl:NamedIndividual ;
+    rdfs:comment "File server quality aspect" ;
+    rdfs:label "FileServer" .
+
+:Granularity
+    a owl:Class ;
+    rdfs:comment "RDF level a quality measure or a quality value obtained inthe evaluation is related to" ;
+    rdfs:label "Granularity" .
+
+:Graph
+    a :Granularity, owl:NamedIndividual ;
+    rdfs:comment "Graph level of evaluation" ;
+    rdfs:label "Graph" .
+
+:IRI
+    a :Granularity, owl:NamedIndividual ;
+    rdfs:comment "IRI level of evaluation" ;
+    rdfs:label "IRI" .
+
+:Interlinks
+    a :QualityAspect, owl:NamedIndividual ;
+    rdfs:comment "Interlinks quality aspect" ;
+    rdfs:label "Interlinks" .
+
+:LinkedDataFragments
+    a :QualityAspect, owl:NamedIndividual ;
+    rdfs:comment "Linked Data fragments quality aspect" ;
+    rdfs:label "LinkedDataFragments" .
+
+:LinkedDataServer
+    a :QualityAspect, owl:NamedIndividual ;
+    rdfs:comment "Linked Data server quality aspect" ;
+    rdfs:label "LinkedDataServer" .
+
+:Manual
+    a :AutomationLevel, owl:NamedIndividual ;
+    rdfs:comment "Manual assessment" ;
+    rdfs:label "Manual" .
+
+:Metadata
+    a :QualityAspect, owl:NamedIndividual ;
+    rdfs:comment "Metadata quality aspect" ;
+    rdfs:label "Metadata" .
+
+:QualityAspect
+    a owl:Class ;
+    rdfs:comment "Aspect of Linked Data quality a certain quality measure is related to" ;
+    rdfs:label "QualityAspect" .
+
+:RDFModel
+    a :QualityAspect, owl:NamedIndividual ;
+    rdfs:comment "RDF model quality aspect" ;
+    rdfs:label "RDFModel" .
+
+:SPARQL
+    a :QualityAspect, owl:NamedIndividual ;
+    rdfs:comment "SPARQL quality aspect" ;
+    rdfs:label "SPARQL" .
+
+:Semi-automatic
+    a :AutomationLevel, owl:NamedIndividual ;
+    rdfs:comment "Semi-automatic assessment" ;
+    rdfs:label "Semi-automatic" .
+
+:Serialization
+    a :QualityAspect, owl:NamedIndividual ;
+    rdfs:comment "Serialization quality aspect" ;
+    rdfs:label "Serialization" .
+
+:TemporalValidity
+    a owl:Class ;
+    rdfs:comment "The period of time during which a quality value obtained in an evaluation is valid" ;
+    rdfs:label "TemporalValidity" .
+
+:Triple
+    a :Granularity, owl:NamedIndividual ;
+    rdfs:comment "Triple level of evaluation" ;
+    rdfs:label "Triple" .
+
+:Vocabulary
+    a :QualityAspect, owl:NamedIndividual ;
+    rdfs:comment "Vocabulary quality aspect" ;
+    rdfs:label "Vocabulary" .
+
+:about
+    a owl:ObjectProperty ;
+    rdfs:comment "The dataset a user quality feedback is related to" ;
+    rdfs:domain dqv:UserQualityFeedback ;
+    rdfs:label "about" ;
+    rdfs:range dcat:Dataset .
+
+:calculatedWith
+    a owl:ObjectProperty ;
+    rdfs:comment "Assessment technique used in the calculation of a quality value in the evaluation" ;
+    rdfs:domain dqv:Metric ;
+    rdfs:label "calculatedWith" ;
+    rdfs:range :AssessmentTechnique .
+
+:computedOn
+    a owl:ObjectProperty ;
+    rdfs:comment "A dataset a quality value is computed on in the evaluation" ;
+    rdfs:domain dqv:Metric ;
+    rdfs:label "computedOn" ;
+    rdfs:range dcat:Dataset .
+
+:duration
+    a owl:ObjectProperty ;
+    rdfs:comment "Time interval related to expected duration for an assessment technique" ;
+    rdfs:domain :ExpectedDuration ;
+    rdfs:label "duration" ;
+    rdfs:range time:Interval .
+
+:frequency
+    a owl:ObjectProperty ;
+    rdfs:comment "Interval of calculation of a quality value" ;
+    rdfs:domain :AssessmentFrequency ;
+    rdfs:label "frequency" ;
+    rdfs:range time:Interval .
+
+:from
+    a owl:ObjectProperty ;
+    rdfs:comment "Time moment from which a quality value is valid" ;
+    rdfs:domain :TemporalValidity ;
+    rdfs:label "from" ;
+    rdfs:range time:Instant .
+
+:hasAspect
+    a owl:ObjectProperty ;
+    rdfs:comment "Quality aspect of a quality measure" ;
+    rdfs:domain dqv:Metric ;
+    rdfs:label "hasAspect" ;
+    rdfs:range :QualityAspect .
+
+:hasAssessmentFrequency
+    a owl:ObjectProperty ;
+    rdfs:comment "Assessment frequency of a quality value" ;
+    rdfs:domain dqv:QualityMeasure ;
+    rdfs:label "hasAssessmentFrequency" ;
+    rdfs:range :AssessmentFrequency .
+
+:hasAutomationLevel
+    a owl:ObjectProperty ;
+    rdfs:comment "Automation level of an assessment technique" ;
+    rdfs:domain :AssessmentTechnique ;
+    rdfs:label "hasAutomationLevel" ;
+    rdfs:range :AutomationLevel .
+
+:hasDuration
+    a owl:ObjectProperty ;
+    rdfs:comment "Expected duration of an assessment technique" ;
+    rdfs:domain :AssessmentTechnique ;
+    rdfs:label "hasDuration" ;
+    rdfs:range :ExpectedDuration .
+
+:hasGranularity
+    a owl:ObjectProperty ;
+    rdfs:comment "Granularity of a quality measure or of a quality value obtained in the evaluation." ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf (dqv:Metric
+            dqv:QualityMeasure
+        )
+    ] ;
+    rdfs:label "hasGranularity" ;
+    rdfs:range :Granularity .
+
+:hasSubDimension
+    a owl:ObjectProperty ;
+    rdfs:comment "Sub-dimension of a quality dimension" ;
+    rdfs:domain dqv:Dimension ;
+    rdfs:label "hasSubDimension" ;
+    rdfs:range dqv:Dimension .
+
+:isSubjective
+    a owl:DatatypeProperty ;
+    rdfs:comment "Whether an assessment technique is subjective or not" ;
+    rdfs:domain :AssessmentTechnique ;
+    rdfs:label "isSubjective" ;
+    rdfs:range xsd:boolean .
+
+:isSystemDependent
+    a owl:DatatypeProperty ;
+    rdfs:comment "Whether a quality value obtained in evaluation is dependent on the system" ;
+    rdfs:domain dqv:QualityMeasure ;
+    rdfs:label "isSystemDependent" ;
+    rdfs:range xsd:boolean .
+
+:requires
+    a owl:ObjectProperty ;
+    rdfs:comment "Input data needed for the calculation of a quality value" ;
+    rdfs:domain dqv:Metric ;
+    rdfs:label "requires" ;
+    rdfs:range :EvaluationData .
+
+:toAssessOn
+    a owl:ObjectProperty ;
+    rdfs:comment "Time moment on which the assessment should be performed" ;
+    rdfs:domain :AssessmentFrequency ;
+    rdfs:label "toAssessOn" ;
+    rdfs:range time:Instant .
+
+:until
+    a owl:ObjectProperty ;
+    rdfs:comment "Time moment until which quality value is valid" ;
+    rdfs:domain :TemporalValidity ;
+    rdfs:label "until" ;
+    rdfs:range time:Instant .
+
+:utilizes
+    a owl:ObjectProperty ;
+    rdfs:comment "Assessment technique used in the evaluation" ;
+    rdfs:domain eval:Evaluation ;
+    rdfs:label "utilizes" ;
+    rdfs:range :AssessmentTechnique .
+
+:validDuring
+    a owl:ObjectProperty ;
+    rdfs:comment "Temporal validity of a quality value" ;
+    rdfs:domain dqv:Metric ;
+    rdfs:label "validDuring" ;
+    rdfs:range :TemporalValidity .
+
+time:Instant
+    a owl:Class ;
+    rdfs:label "Instant" .
+
+time:Interval
+    a owl:Class ;
+    rdfs:label "Interval" .
+
+dcat:Dataset
+    a owl:Class ;
+    rdfs:label "Dataset" .
+
+dqv:Dimension
+    a owl:Class ;
+    rdfs:label "Dimension" .
+
+dqv:Metric
+    a owl:Class ;
+    rdfs:label "Metric" .
+
+dqv:QualityMeasure
+    a owl:Class ;
+    rdfs:label "QualityMeasure" .
+
+dqv:UserQualityFeedback
+    a owl:Class ;
+    rdfs:label "UserQualityFeedback" .
+
+dqv:hasDimension
+    a owl:ObjectProperty ;
+    rdfs:domain dqv:Metric ;
+    rdfs:label "hasDimension" ;
+    rdfs:range dqv:Dimension .
+
+dqv:metric
+    a owl:ObjectProperty ;
+    rdfs:domain dqv:QualityMeasure ;
+    rdfs:label "metric" ;
+    rdfs:range dqv:Metric .
+
+om:Measurement_scale
+    a owl:Class ;
+    rdfs:label "Measurement_scale" .
+
+om:Unit_of_measure
+    a owl:Class ;
+    rdfs:label "Unit_of_measure" .
+
