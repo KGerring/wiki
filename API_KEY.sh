@@ -10,6 +10,8 @@ export ADS_TOKEN="E2qOsvGu9xpcwQsIqZmhyAK6aq0Wbn7YSCM7X8yG"
 ##
 ##curl -H 'Authorization: Bearer E2qOsvGu9xpcwQsIqZmhyAK6aq0Wbn7YSCM7X8yG' 'https://api.adsabs.harvard.edu/v1/search/query?q=star&fl=bibcode'
 
+export MQI_ID="71"
+export MQI_PASSWORD="57HYLKUXR6"
 
 export BIOPORTAL_API_KEY="68cae1e0-11b7-4996-ba01-65000b69b233"
 export FLATICON_API_KEY="jGke4ziKbZvTrByAEU4OuHwPsAiLzOOAtNI7PFDJsFjZ6kK7"
