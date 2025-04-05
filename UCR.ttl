@@ -1,0 +1,1646 @@
+@prefix : <http://w3.dwbp.org/ucr#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ucr: <http://w3.dwbp.ucr/ucr#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://w3.dwbp.org/ucr> .
+
+<http://w3.dwbp.org/ucr> rdf:type owl:Ontology ;
+                         
+                         owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://w3.dwbp.org/ucr#addressedby
+
+:addressedby rdf:type owl:ObjectProperty ;
+             
+             rdfs:label "addressedby"^^xsd:string ;
+             
+             rdfs:domain :Challenge ;
+             
+             rdfs:range :Requirement ;
+             
+             owl:inverseOf :addresses .
+
+
+
+###  http://w3.dwbp.org/ucr#addresses
+
+:addresses rdf:type owl:ObjectProperty ;
+           
+           rdfs:label "addresses"^^xsd:string ;
+           
+           rdfs:range :Challenge ;
+           
+           rdfs:domain :Requirement .
+
+
+
+###  http://w3.dwbp.org/ucr#definedby
+
+:definedby rdf:type owl:ObjectProperty ;
+           
+           rdfs:label "definedby"^^xsd:string ;
+           
+           rdfs:domain :Requirement ;
+           
+           rdfs:range :UseCase .
+
+
+
+###  http://w3.dwbp.org/ucr#defines
+
+:defines rdf:type owl:ObjectProperty ;
+         
+         rdfs:label "defines"^^xsd:string ;
+         
+         rdfs:range :Requirement ;
+         
+         rdfs:domain :UseCase ;
+         
+         owl:inverseOf :definedby .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://purl.org/dc/terms/description
+
+dct:description rdf:type owl:DatatypeProperty ;
+                
+                rdfs:label "description"^^xsd:string .
+
+
+
+###  http://purl.org/dc/terms/identifier
+
+dct:identifier rdf:type owl:DatatypeProperty ;
+               
+               rdfs:label "identifier"^^xsd:string .
+
+
+
+###  http://purl.org/dc/terms/title
+
+dct:title rdf:type owl:DatatypeProperty ;
+          
+          rdfs:label "title"^^xsd:string .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://w3.dwbp.org/ucr#Action
+
+:Action rdf:type owl:Class ;
+        
+        rdfs:label "Action"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#Challenge
+
+:Challenge rdf:type owl:Class ;
+           
+           rdfs:label "Challenge"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#Issue
+
+:Issue rdf:type owl:Class ;
+       
+       rdfs:label "Issue"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#Requirement
+
+:Requirement rdf:type owl:Class ;
+             
+             rdfs:label "Requirement"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#UseCase
+
+:UseCase rdf:type owl:Class ;
+         
+         rdfs:label "UseCase"^^xsd:string .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://w3.dwbp.org/ucr#APIDocumented
+
+:APIDocumented rdf:type :Requirement ,
+                        owl:NamedIndividual ;
+               
+               rdfs:label "APIDocumented"^^xsd:string ;
+               
+               dct:description "If the data is available via an API, the API should be documented."^^xsd:string ;
+               
+               dct:identifier "R-APIDocumented"^^xsd:string ;
+               
+               dct:title "R-APIDocumented"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#ASO
+
+:ASO rdf:type :UseCase ,
+              owl:NamedIndividual ;
+     
+     rdfs:label "ASO"^^xsd:string ;
+     
+     dct:identifier "2.26"^^xsd:string ;
+     
+     dct:title "ASO: Airborne Snow Observatory"^^xsd:string ;
+     
+     :defines :AccessUpToDate ,
+              :Citable ,
+              :DataIrreproducibility ,
+              :DataMissingIncomplete ,
+              :FormatMachineRead ,
+              :GranularityLevels ,
+              :LicenseLiability ,
+              :Location ,
+              :MetadataAvailable ,
+              :ProvAvailable ,
+              :QualityCompleteness ,
+              :QualityMetrics ,
+              :TrackDataUsage ,
+              :UsageFeedback ,
+              :VocabDocum .
+
+
+
+###  http://w3.dwbp.org/ucr#AccessBulk
+
+:AccessBulk rdf:type :Requirement ,
+                     owl:NamedIndividual ;
+            
+            rdfs:label "AccessBulk"^^xsd:string ;
+            
+            dct:description "Data should be available for bulk download."^^xsd:string ;
+            
+            dct:title "R-AccessBulk"^^xsd:string ;
+            
+            dct:identifier "R-AccessBulk"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#AccessLevel
+
+:AccessLevel rdf:type :Requirement ,
+                      owl:NamedIndividual ;
+             
+             dct:title "R-AccessLevel"^^xsd:string ;
+             
+             dct:identifier "R-AccessLevel"^^xsd:string ;
+             
+             dct:description "The access level of the data should be provided along with conditions of access, for example, Open, restricted or closed."^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#AccessRealTime
+
+:AccessRealTime rdf:type :Requirement ,
+                         owl:NamedIndividual ;
+                
+                rdfs:label "AccessRealTime"^^xsd:string ;
+                
+                dct:title "R-AccessRealTime"^^xsd:string ;
+                
+                dct:identifier "R-AccessRealTime"^^xsd:string ;
+                
+                dct:description "Where data is produced in real-time, itshould be available on the Web in real-time. "^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#AccessUpToDate
+
+:AccessUpToDate rdf:type :Requirement ,
+                         owl:NamedIndividual ;
+                
+                rdfs:label "AccessUpToDate"^^xsd:string ;
+                
+                dct:description "Data should be available in an up-to-date manner and the update cycle made explicit."^^xsd:string ;
+                
+                dct:identifier "R-AccessUpToDate"^^xsd:string ;
+                
+                dct:title "R-AccessUpToDate"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#BBC
+
+:BBC rdf:type :UseCase ,
+              owl:NamedIndividual ;
+     
+     rdfs:label "BBC"^^xsd:string ;
+     
+     dct:identifier "2.33"^^xsd:string ;
+     
+     dct:title "BBC Ontology Versioning and Metadata"^^xsd:string ;
+     
+     :defines :DataVersion ,
+              :MetadataDocum ,
+              :MetadataMachineRead ,
+              :MetadataStandardized ,
+              :FormatMultiple ,
+              :VocabVersion .
+
+
+
+###  http://w3.dwbp.org/ucr#Bio2RDF
+
+:Bio2RDF rdf:type :UseCase ,
+                  owl:NamedIndividual ;
+         
+         rdfs:label "Bio2RDF"^^xsd:string ;
+         
+         dct:identifier "2.14"^^xsd:string ;
+         
+         dct:title "Bio2RDF"^^xsd:string ;
+         
+         :defines :AccessLevel ,
+                  :AccessUpToDate ,
+                  :DataLifecyclePrivacy ,
+                  :FormatMultiple ,
+                  :FormatStandardized ,
+                  :PersistentIdentification ,
+                  :VocabReference .
+
+
+
+###  http://w3.dwbp.org/ucr#BuildingEye
+
+:BuildingEye rdf:type :UseCase ,
+                      owl:NamedIndividual ;
+             
+             rdfs:label "BuildingEye"^^xsd:string ;
+             
+             dct:identifier "2.1"^^xsd:string ;
+             
+             dct:title "BuildingEye: SME use of public data"^^xsd:string ;
+             
+             :defines :AccessBulk ,
+                      :AccessRealTime ,
+                      :DataLifecyclePrivacy ,
+                      :DataMissingIncomplete ,
+                      :DesignatedThingsServiceProvdiers ,
+                      :FormatMachineRead ,
+                      :FormatOpen ,
+                      :FormatStandardized ,
+                      :LicenseAvailable ,
+                      :Location ,
+                      :MetadataAvailable ,
+                      :MetadataDocum ,
+                      :QualityComparable ,
+                      :QualityCompleteness ,
+                      :SensitivePrivacy ,
+                      :SensitiveSecurity ,
+                      :VocabDocum ,
+                      :VocabReference .
+
+
+
+###  http://w3.dwbp.org/ucr#Citable
+
+:Citable rdf:type :Requirement ,
+                  owl:NamedIndividual ;
+         
+         rdfs:label "Citable"^^xsd:string ;
+         
+         dct:description "It should be possible to cite data on the Web."^^xsd:string ;
+         
+         dct:identifier "R-Citable"^^xsd:string ;
+         
+         dct:title "R-Citable"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#DadosGovBr
+
+:DadosGovBr rdf:type :UseCase ,
+                     owl:NamedIndividual ;
+            
+            rdfs:label "DadosGovBr"^^xsd:string ;
+            
+            dct:identifier "2.4"^^xsd:string ;
+            
+            dct:title "Dados.gov.br"^^xsd:string ;
+            
+            :defines :AccessLevel ,
+                     :DataLifecyclePrivacy ,
+                     :DataLifecycleStage ,
+                     :DataMissingIncomplete ,
+                     :FormatStandardized ,
+                     :LicenseAvailable ,
+                     :MetadataAvailable ,
+                     :GeographicalContext,
+                     :MetadataDocum ,
+                     :ProvAvailable ,
+                     :QualityOpinions ,
+                     :UsageFeedback ,
+                     :VocabReference ,
+                     :VocabVersion .
+
+
+
+###  http://w3.dwbp.org/ucr#Data
+
+:Data rdf:type :Challenge ,
+               owl:NamedIndividual ;
+      
+      rdfs:label "DataFormats"^^xsd:string ;
+      
+      :addressedby :FormatLocalize ,
+                   :FormatMachineRead ,
+                   :FormatMultiple ,
+                   :FormatOpen ,
+                   :FormatStandardized .
+
+
+
+###  http://w3.dwbp.org/ucr#DataAccess
+
+:DataAccess rdf:type :Challenge ,
+                     owl:NamedIndividual ;
+            
+            rdfs:label "DataAccess"^^xsd:string ;
+            
+            :addressedby :APIDocumented ,
+                         :AccessBulk ,
+                         :AccessLevel ,
+                         :AccessRealTime ,
+                         :AccessUpToDate .
+
+
+
+###  http://w3.dwbp.org/ucr#DataGranularity
+
+:DataGranularity rdf:type :Challenge ,
+                          owl:NamedIndividual ;
+                 
+                 rdfs:label "DataGranularity"^^xsd:string ;
+                 
+                 :addressedby :GranularityLevels .
+
+
+
+###  http://w3.dwbp.org/ucr#DataIdentification
+
+:DataIdentification rdf:type :Challenge ,
+                             owl:NamedIndividual ;
+                    
+                    rdfs:label "DataIdentification"^^xsd:string ;
+                    
+                    :addressedby :UniqueIdentifier .
+
+
+
+###  http://w3.dwbp.org/ucr#DataIrreproducibility
+
+:DataIrreproducibility rdf:type :Requirement ,
+                                owl:NamedIndividual ;
+                       
+                       rdfs:label "DataIrreproducibility"^^xsd:string ;
+                       
+                       dct:description "Data should be designated if it is irreproducible."^^xsd:string ;
+                       
+                       dct:title "R-DataIrreproducibility"^^xsd:string ;
+                       
+                       dct:identifier "R-DataIrreproducibility"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#DataLifecyclePrivacy
+
+:DataLifecyclePrivacy rdf:type :Requirement ,
+                               owl:NamedIndividual ;
+                      
+                      rdfs:label "DataLifecyclePrivacy"^^xsd:string ;
+                      
+                      dct:description "Preliminary steps in the data lifecycle should not infringe upon individual's intellectual property rights. "^^xsd:string ;
+                      
+                      dct:title "R-DataLifecyclePrivacy"^^xsd:string ;
+                      
+                      dct:identifier "R-DataLifecyclePrivacy"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#DataLifecycleStage
+
+:DataLifecycleStage rdf:type :Requirement ,
+                             owl:NamedIndividual ;
+                    
+                    rdfs:label "DataLifecycleStage"^^xsd:string ;
+                    
+                    dct:description "Data should be identified by a designated lifecycle stage."^^xsd:string ;
+                    
+                    dct:identifier "R-DataLifecycleStage"^^xsd:string ;
+                    
+                    dct:title "R-DataLifecycleStage"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#DataMissingIncomplete
+
+:DataMissingIncomplete rdf:type :Requirement ,
+                                owl:NamedIndividual ;
+                       
+                       rdfs:label "DataMissingIncomplete"^^xsd:string ;
+                       
+                       dct:description "Publishers should indicate if data is partially missing or if the dataset is incomplete."^^xsd:string ;
+                       
+                       dct:identifier "R-DataMissingIncomplete"^^xsd:string ;
+                       
+                       dct:title "R-DataMissingIncomplete"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#DataQuality
+
+:DataQuality rdf:type :Challenge ,
+                      owl:NamedIndividual ;
+             
+             rdfs:label "DataQuality"^^xsd:string ;
+             
+             :addressedby :DataMissingIncomplete ,
+                          :QualityComparable ,
+                          :QualityCompleteness ,
+                          :QualityMetrics ,
+                          :QualityOpinions .
+
+
+
+###  http://w3.dwbp.org/ucr#DataSelection
+
+:DataSelection rdf:type :Challenge ,
+                        owl:NamedIndividual ;
+               
+               rdfs:label "DataSelection"^^xsd:string ;
+               
+               :addressedby :DataIrreproducibility ,
+                            :DataLifecyclePrivacy ,
+                            :DataLifecycleStage .
+
+
+
+###  http://w3.dwbp.org/ucr#DataUsage
+
+:DataUsage rdf:type :Challenge ,
+                    owl:NamedIndividual ;
+           
+           rdfs:label "DataUsage"^^xsd:string ;
+           
+           :addressedby :Citable ,
+                        :TrackDataUsage ,
+                        :UsageFeedback .
+
+
+
+###  http://w3.dwbp.org/ucr#DataVersion
+
+:DataVersion rdf:type :Requirement ,
+                      owl:NamedIndividual ;
+             
+             rdfs:label "DataVersion"^^xsd:string ;
+             
+             dct:description "If different versions of data exist, data versioning should be provided."^^xsd:string ;
+             
+             dct:identifier "R-DataVersion"^^xsd:string ;
+             
+             dct:title "R-DataVersion"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#DataVocabularies
+
+:DataVocabularies rdf:type :Challenge ,
+                           owl:NamedIndividual ;
+                  
+                  rdfs:label "DataVocabularies"^^xsd:string ;
+                  
+                  :addressedby :VocabDocum ,
+                               :VocabOpen ,
+                               :VocabReference ,
+                               :VocabVersion .
+
+
+
+###  http://w3.dwbp.org/ucr#Data_enrichment
+
+:Data_enrichment rdf:type :Requirement ,
+                          owl:NamedIndividual ;
+                 
+                 rdfs:label "DataEnrichment"^^xsd:string ;
+                 
+                 dct:identifier "R-DataEnrichment"^^xsd:string ;
+                 
+                 dct:title "R-DataEnrichment"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#DatasetVersioning
+
+:DatasetVersioning rdf:type :UseCase ,
+                            owl:NamedIndividual ;
+                   
+                   rdfs:label "DatasetVersioning"^^xsd:string ;
+                   
+                   dct:identifier "2.32"^^xsd:string ;
+                   
+                   dct:title "Dataset Versioning and Dataset Replication"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#DesignatedThingsServiceProvdiers
+
+:DesignatedThingsServiceProvdiers rdf:type :Requirement ,
+                                           owl:NamedIndividual ;
+                                  
+                                  rdfs:label "DataProductionContext"^^xsd:string ;
+                                  
+                                  dct:description "Production context information should be associated with data if relevant, e.g. service/process descriptions. DataProductionContext is a type of metadata, so all metadata requirements also apply here."^^xsd:string ;
+                                  
+                                  dct:identifier "R-DataProductionContext"^^xsd:string ;
+                                  
+                                  dct:title "R-DataProductionContext"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#DigitalArchiving
+
+:DigitalArchiving rdf:type :UseCase ,
+                           owl:NamedIndividual ;
+                  
+                  rdfs:label "DigitalArchiving"^^xsd:string ;
+                  
+                  dct:identifier "2.8"^^xsd:string ;
+                  
+                  dct:title "Digital Archiving of Linked Data"^^xsd:string ;
+                  
+                  :defines :AccessLevel ,
+                           :PersistentIdentification ,
+                           :UniqueIdentifier ,
+                           :VocabReference .
+
+
+
+###  http://w3.dwbp.org/ucr#DutchBaseReg
+
+:DutchBaseReg rdf:type :UseCase ,
+                       owl:NamedIndividual ;
+              
+              rdfs:label "DutchBaseReg"^^xsd:string ;
+              
+              dct:identifier "2.6"^^xsd:string ;
+              
+              dct:title "Dutch Base Registers"^^xsd:string ;
+              
+              :defines :AccessLevel ,
+                       :FormatMultiple ,
+                       :PersistentIdentification ,
+                       :SensitivePrivacy ,
+                       :UniqueIdentifier ,
+                       :VocabReference .
+
+
+
+###  http://w3.dwbp.org/ucr#FormatLocalize
+
+:FormatLocalize rdf:type :Requirement ,
+                         owl:NamedIndividual ;
+                
+                rdfs:label "FormatLocalize"^^xsd:string ;
+                
+                dct:description "Information about locale parameters (data and number formts, language) should be made available."^^xsd:string ;
+                
+                dct:title "R-FormatLocalize	"^^xsd:string ;
+                
+                dct:identifier "R-FormatLocalize	"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#FormatMachineRead
+
+:FormatMachineRead rdf:type :Requirement ,
+                            owl:NamedIndividual ;
+                   
+                   rdfs:label "FormatMachineRead"^^xsd:string ;
+                   
+                   dct:description "Data should be available in a machine-readable format that is adequate for its intended or potential use"^^xsd:string ;
+                   
+                   dct:title "R-FormatMachineRead"^^xsd:string ;
+                   
+                   dct:identifier "R-FormatMachineRead"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#FormatMultiple
+
+:FormatMultiple rdf:type :Requirement ,
+                         owl:NamedIndividual ;
+                
+                rdfs:label "FormatMultiple"^^xsd:string ;
+                
+                dct:description "Data should be available in multiple formats."^^xsd:string ;
+                
+                dct:identifier "R-FormatMultiple"^^xsd:string ;
+                
+                dct:title "R-FormatMultiple"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#FormatOpen
+
+:FormatOpen rdf:type :Requirement ,
+                     owl:NamedIndividual ;
+            
+            rdfs:label "FormatOpen"^^xsd:string ;
+            
+            dct:description "Data should be available in an open format."^^xsd:string ;
+            
+            dct:title "R-FormatOpen"^^xsd:string ;
+            
+            dct:identifier "R-FormatOpen"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#FormatStandardized
+
+:FormatStandardized rdf:type :Requirement ,
+                             owl:NamedIndividual ;
+                    
+                    rdfs:label "FormatStandardized"^^xsd:string ;
+                    
+                    dct:description "Data should be available in a standarizedformat. Through standardization, interoperabiliyt isalso expected."^^xsd:string ;
+                    
+                    dct:title "R-FormatStandardized"^^xsd:string ;
+                    
+                    dct:identifier "R-FormatStandardized	"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#FreeOpenSLAs
+
+:FreeOpenSLAs rdf:type :UseCase ,
+                       owl:NamedIndividual ;
+              
+              rdfs:label "FreeOpenSLAs"^^xsd:string ;
+              
+              dct:identifier "2.31"^^xsd:string ;
+              
+              dct:title "Free Open Data SLAs for Open Data Publishing"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#GS1Digital
+
+:GS1Digital rdf:type :UseCase ,
+                     owl:NamedIndividual ;
+            
+            rdfs:label "GS1Digital"^^xsd:string ;
+            
+            dct:identifier "2.11"^^xsd:string ;
+            
+            dct:title "GS1 Digital"^^xsd:string ;
+            
+            :defines :AccessUpToDate ,
+                     :Citable ,
+                     :FormatMultiple ,
+                     :FormatStandardized ,
+                     :LicenseLiability ,
+                     :PersistentIdentification ,
+                     :ProvAvailable .
+
+
+
+###  http://w3.dwbp.org/ucr#GranularityLevels
+
+:GranularityLevels rdf:type :Requirement ,
+                            owl:NamedIndividual ;
+                   
+                   rdfs:label "GranularityLevels"^^xsd:string ;
+                   
+                   dct:description "Data available at different levels of granularity should be accessible and modelled in a common way."^^xsd:string ;
+                   
+                   dct:title "R-GranularityLevels"^^xsd:string ;
+                   
+                   dct:identifier "R-GranularityLevels"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#ISOGeo
+
+:ISOGeo rdf:type :UseCase ,
+                 owl:NamedIndividual ;
+        
+        rdfs:label "ISOGeo"^^xsd:string ;
+        
+        dct:identifier "2.5"^^xsd:string ;
+        
+        dct:title "ISO GEO Story"^^xsd:string ;
+        
+        :defines :AccessUpToDate ,
+                 :Data_enrichment ,
+                 :FormatLocalize ,
+                 :FormatMachineRead ,
+                 :GranularityLevels ,
+                 :LicenseAvailable ,
+                 :MetadataMachineRead ,
+                 :MetadataStandardized ,
+                 :PersistentIdentification ,
+                 :ProvAvailable ,
+                 :VocabReference .
+
+
+
+###  http://w3.dwbp.org/ucr#IndustryReuse
+
+:IndustryReuse rdf:type :Challenge ,
+                        owl:NamedIndividual ;
+               
+               rdfs:label "IndustryReuse"^^xsd:string ;
+               
+               :addressedby :SLAAvailable .
+
+
+
+###  http://w3.dwbp.org/ucr#LATimes
+
+:LATimes rdf:type :UseCase ,
+                  owl:NamedIndividual ;
+         
+         rdfs:label "LATimes"^^xsd:string ;
+         
+         dct:identifier "2.9"^^xsd:string ;
+         
+         dct:title "LA Times' Reporting of Ron Galperin's Infographic"^^xsd:string ;
+         
+         :defines :Citable ,
+                  :DataMissingIncomplete ,
+                  :DesignatedThingsServiceProvdiers ,
+                  :FormatMultiple ,
+                  :FormatOpen ,
+                  :LicenseAvailable ,
+                  :Location ,
+                  :MetadataAvailable ,
+                  :MetadataStandardized ,
+                  :QualityMetrics ,
+                  :TrackDataUsage ,
+                  :UniqueIdentifier .
+
+
+
+###  http://w3.dwbp.org/ucr#LandPortal
+
+:LandPortal rdf:type :UseCase ,
+                     owl:NamedIndividual ;
+            
+            rdfs:label "LandPortal"^^xsd:string ;
+            
+            dct:identifier "2.2"^^xsd:string ;
+            
+            dct:title "The Land Portal"^^xsd:string ;
+            
+            :defines :AccessBulk ,
+                     :AccessRealTime ,
+                     :DataVersion ,
+                     :Data_enrichment ,
+                     :FormatLocalize ,
+                     :FormatMachineRead ,
+                     :FormatMultiple ,
+                     :FormatStandardized ,
+                     :GranularityLevels ,
+                     :Location ,
+                     :MetadataAvailable ,
+                     :MetadataMachineRead ,
+                     :MetadataStandardized ,
+                     :PersistentIdentification ,
+                     :ProvAvailable ,
+                     :QualityCompleteness ,
+                     :QualityMetrics ,
+                     :TrackDataUsage ,
+                     :UniqueIdentifier ,
+                     :VocabDocum ,
+                     :VocabOpen ,
+                     :VocabReference ,
+                     :VocabVersion .
+
+
+
+###  http://w3.dwbp.org/ucr#LicenseAvailable
+
+:LicenseAvailable rdf:type :Requirement ,
+                           owl:NamedIndividual ;
+                  
+                  rdfs:label "LicenseAvailable"^^xsd:string ;
+                  
+                  dct:description "Datashould be associated with a license."^^xsd:string ;
+                  
+                  dct:identifier "R-LicenseAvailable"^^xsd:string ;
+                  
+                  dct:title "R-LicenseAvailable"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#LicenseLiability
+
+:LicenseLiability rdf:type :Requirement ,
+                           owl:NamedIndividual ;
+                  
+                  rdfs:label "LicenseLiability"^^xsd:string ;
+                  
+                  dct:description "Liability terms associated with usage of Data onthe Web should be clearly outlined."^^xsd:string ;
+                  
+                  dct:title "R-LicenseLiability"^^xsd:string ;
+                  
+                  dct:identifier "R-LicenseLiability"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#Licenses
+
+:Licenses rdf:type :Challenge ,
+                   owl:NamedIndividual ;
+          
+          rdfs:label "Licenses"^^xsd:string ;
+          
+          :addressedby :LicenseAvailable ,
+                       :LicenseLiability .
+
+
+
+###  http://w3.dwbp.org/ucr#Location
+
+:Location rdf:type :Requirement ,
+                   owl:NamedIndividual ;
+          
+          rdfs:label "GeographicalContext"^^xsd:string ;
+          
+          dct:description "Geographical context (countries, regions, cities, etc.) must be referred to consistently. GeographicalContext is a type of metadata, so all metadata requirements also apply here."^^xsd:string ;
+          
+          dct:title "R-GeographicalContext"^^xsd:string ;
+          
+          dct:identifier "R-GeographicalContext"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#LuSTRE
+
+:LuSTRE rdf:type :UseCase ,
+                 owl:NamedIndividual ;
+        
+        rdfs:label "LuSTRE"^^xsd:string ;
+        
+        dct:identifier "2.25"^^xsd:string ;
+        
+        dct:title "LuSTRE: Linked Thesaurus fRamework for Environment"^^xsd:string ;
+        
+        :defines :AccessBulk ,
+                 :Citable ,
+                 :DataVersion ,
+                 :Data_enrichment ,
+                 :FormatMachineRead ,
+                 :FormatMultiple ,
+                 :FormatOpen ,
+                 :FormatStandardized ,
+                 :LicenseAvailable ,
+                 :MetadataAvailable ,
+                 :MetadataDocum ,
+                 :MetadataMachineRead ,
+                 :MetadataStandardized ,
+                 :PersistentIdentification ,
+                 :ProvAvailable ,
+                 :QualityComparable ,
+                 :QualityCompleteness ,
+                 :QualityMetrics ,
+                 :QualityOpinions ,
+                 :TrackDataUsage ,
+                 :UniqueIdentifier ,
+                 :UsageFeedback ,
+                 :VocabDocum ,
+                 :VocabOpen ,
+                 :VocabReference ,
+                 :VocabVersion .
+
+
+
+###  http://w3.dwbp.org/ucr#MSI
+
+:MSI rdf:type :UseCase ,
+              owl:NamedIndividual ;
+     
+     rdfs:label "MSI"^^xsd:string ;
+     
+     dct:identifier "2.30"^^xsd:string ;
+     
+     dct:title "Mass Spectrometry Imaging (MSI)"^^xsd:string ;
+     
+     :defines :APIDocumented ,
+              :AccessRealTime ,
+              :Data_enrichment ,
+              :FormatMachineRead ,
+              :FormatOpen ,
+              :FormatStandardized ,
+              :MetadataAvailable ,
+              :MetadataDocum ,
+              :MetadataMachineRead ,
+              :SensitiveSecurity .
+
+
+
+###  http://w3.dwbp.org/ucr#MachReadIntLicenses
+
+:MachReadIntLicenses rdf:type :UseCase ,
+                              owl:NamedIndividual .
+
+
+
+###  http://w3.dwbp.org/ucr#Metadata
+
+:Metadata rdf:type :Challenge ,
+                   owl:NamedIndividual ;
+          
+          rdfs:label "Metadata"^^xsd:string ;
+          
+          :addressedby :DesignatedThingsServiceProvdiers ,
+                       :Location ,
+                       :MetadataAvailable ,
+                       :MetadataDocum ,
+                       :MetadataMachineRead ,
+                       :MetadataStandardized .
+
+
+
+###  http://w3.dwbp.org/ucr#MetadataAvailable
+
+:MetadataAvailable rdf:type :Requirement ,
+                            owl:NamedIndividual ;
+                   
+                   rdfs:label "MetadataAvailable"^^xsd:string ;
+                   
+                   dct:description "Metadata should be available."^^xsd:string ;
+                   
+                   dct:identifier "R-MetadataAvailable"^^xsd:string ;
+                   
+                   dct:title "R-MetadataAvailable"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#MetadataDocum
+
+:MetadataDocum rdf:type :Requirement ,
+                        owl:NamedIndividual ;
+               
+               rdfs:label "MetadataDocum"^^xsd:string ;
+               
+               dct:description "Metadata vocabulary, or values ifvocabulary is notstandarized, should be well-documented. "^^xsd:string ;
+               
+               dct:identifier "R-MetadataDocum"^^xsd:string ;
+               
+               dct:title "R-MetadataDocum"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#MetadataMachineRead
+
+:MetadataMachineRead rdf:type :Requirement ,
+                              owl:NamedIndividual ;
+                     
+                     rdfs:label "MetadataMachineRead"^^xsd:string ;
+                     
+                     dct:description "Metadata should be machine-readable."^^xsd:string ;
+                     
+                     dct:identifier "R-MetadataMachineRead"^^xsd:string ;
+                     
+                     dct:title "R-MetadataMachineRead"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#MetadataStandardized
+
+:MetadataStandardized rdf:type :Requirement ,
+                               owl:NamedIndividual ;
+                      
+                      rdfs:label "MetadataStandardized"^^xsd:string ;
+                      
+                      dct:description "Metadata should be standardized. Through standardization, interoperability is also expected. "^^xsd:string ;
+                      
+                      dct:title "R-MetadataStandardized"^^xsd:string ;
+                      
+                      dct:identifier "R-MetadataStandardized"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#OKFNTransport
+
+:OKFNTransport rdf:type :UseCase ,
+                        owl:NamedIndividual ;
+               
+               rdfs:label "OKFNTransport"^^xsd:string ;
+               
+               dct:identifier "2.18	"^^xsd:string ;
+               
+               dct:title "OKFN Transport WG"^^xsd:string ;
+               
+               :defines :APIDocumented ,
+                        :AccessBulk ,
+                        :AccessLevel ,
+                        :AccessRealTime ,
+                        :AccessUpToDate ,
+                        :DataMissingIncomplete ,
+                        :DesignatedThingsServiceProvdiers ,
+                        :FormatLocalize ,
+                        :FormatMachineRead ,
+                        :FormatOpen ,
+                        :LicenseAvailable ,
+                        :LicenseLiability ,
+                        :Location ,
+                        :MetadataAvailable ,
+                        :QualityComparable ,
+                        :QualityCompleteness ,
+                        :QualityMetrics ,
+                        :SLAAvailable ,
+                        :UsageFeedback ,
+                        :VocabOpen .
+
+
+
+###  http://w3.dwbp.org/ucr#OpenCityDataPipeline
+
+:OpenCityDataPipeline rdf:type :UseCase ,
+                               owl:NamedIndividual ;
+                      
+                      rdfs:label "OpenCityDataPipeline"^^xsd:string ;
+                      
+                      dct:identifier "2.20"^^xsd:string ;
+                      
+                      dct:title "Open City Data Pipeline"^^xsd:string ;
+                      
+                      :defines :DataMissingIncomplete ,
+                               :DesignatedThingsServiceProvdiers ,
+                               :FormatMachineRead ,
+                               :FormatOpen ,
+                               :FormatStandardized ,
+                               :FormatLocalize ,
+                               :LicenseAvailable ,
+                               :Location ,
+                               :MetadataAvailable ,
+                               :MetadataStandardized ,
+                               :QualityComparable ,
+                               :QualityCompleteness ,
+                               :VocabDocum ,
+                               :VocabOpen ,
+                               :VocabReference .
+
+
+
+###  http://w3.dwbp.org/ucr#OpenExperimentalFieldStudies
+
+:OpenExperimentalFieldStudies rdf:type :UseCase ,
+                                       owl:NamedIndividual ;
+                              
+                              rdfs:label "OpenExperimentalFieldStudies"^^xsd:string ;
+                              
+                              dct:identifier "2.29"^^xsd:string ;
+                              
+                              dct:title "Open Experimental Field Studies"^^xsd:string ;
+                              
+                              :defines :AccessRealTime ,
+                                       :DataIrreproducibility ,
+                                       :DataLifecycleStage ,
+                                       :DesignatedThingsServiceProvdiers ,
+                                       :FormatMachineRead ,
+                                       :FormatMultiple ,
+                                       :FormatStandardized ,
+                                       :TrackDataUsage ,
+                                       :UsageFeedback ,
+                                       :VocabOpen ,
+                                       :VocabReference ,
+                                       :UsageFeedback .
+
+
+
+###  http://w3.dwbp.org/ucr#Persistence
+
+:Persistence rdf:type :Challenge ,
+                      owl:NamedIndividual ;
+             
+             rdfs:label "Persistence"^^xsd:string ;
+             
+             :addressedby :PersistentIdentification .
+
+
+
+###  http://w3.dwbp.org/ucr#PersistentIdentification
+
+:PersistentIdentification rdf:type :Requirement ,
+                                   owl:NamedIndividual ;
+                          
+                          rdfs:label "PersistentIdentification"^^xsd:string ;
+                          
+                          dct:description "An identifier for a particular resource should be resolvable on the Web and associated for the foreseeable future with a single resource or with information about why the resource isno longer available."^^xsd:string ;
+                          
+                          dct:title "R-PersistentIdentification"^^xsd:string ;
+                          
+                          dct:identifier "R-PersistentIdentification"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#ProvAvailable
+
+:ProvAvailable rdf:type :Requirement ,
+                        owl:NamedIndividual ;
+               
+               rdfs:label "ProvAvailable"^^xsd:string ;
+               
+               dct:description "Data provenance information should be available. Provenance data is a type of metadata, so all metadata requirements also apply here. "^^xsd:string ;
+               
+               dct:title "R-ProvAvailable"^^xsd:string ;
+               
+               dct:identifier "R-ProvAvailable"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#Provenance
+
+:Provenance rdf:type :Challenge ,
+                     owl:NamedIndividual ;
+            
+            rdfs:label "Provenance"^^xsd:string ;
+            
+            :addressedby :DataVersion ,
+                         :ProvAvailable .
+
+
+
+###  http://w3.dwbp.org/ucr#QualityComparable
+
+:QualityComparable rdf:type :Requirement ,
+                            owl:NamedIndividual ;
+                   
+                   rdfs:label "QualityComparable"^^xsd:string ;
+                   
+                   dct:description "Data should be comparable with other datasets."^^xsd:string ;
+                   
+                   dct:title "R-QualityComparable"^^xsd:string ;
+                   
+                   dct:identifier "R-QualityComparable"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#QualityCompleteness
+
+:QualityCompleteness rdf:type :Requirement ,
+                              owl:NamedIndividual ;
+                     
+                     rdfs:label "QualityCompleteness"^^xsd:string ;
+                     
+                     dct:description "Data should be complete."^^xsd:string ;
+                     
+                     dct:title "R-QualityCompleteness"^^xsd:string ;
+                     
+                     dct:identifier "R-QualityCompleteness"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#QualityMetrics
+
+:QualityMetrics rdf:type :Requirement ,
+                         owl:NamedIndividual ;
+                
+                rdfs:label "QualityMetrics"^^xsd:string ;
+                
+                dct:description "Data should be associated with a set of objective, documented, and, if available, standardized quality metrics. This set of quality metrics may include user-defined or domain-specific metrics."^^xsd:string ;
+                
+                dct:title "R-QualityMetrics"^^xsd:string ;
+                
+                dct:identifier "R-QualityMetrics"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#QualityOpinions
+
+:QualityOpinions rdf:type :Requirement ,
+                          owl:NamedIndividual ;
+                 
+                 rdfs:label "QualityOpinions"^^xsd:string ;
+                 
+                 dct:identifier "R-QualityOpinions"^^xsd:string ;
+                 
+                 dct:title "R-QualityOpinions"^^xsd:string ;
+                 
+                 dct:description "Subjective quality opinions on the data should be supported."^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#RDESC
+
+:RDESC rdf:type :UseCase ,
+                owl:NamedIndividual ;
+       
+       rdfs:label "RDESC"^^xsd:string ;
+       
+       dct:identifier "2.24"^^xsd:string ;
+       
+       dct:title "Resource Discovery for Extreme Scale Collaboration (RDESC)"^^xsd:string ;
+       
+       :defines :AccessLevel ,
+                :AccessRealTime ,
+                :Citable ,
+                :DataLifecyclePrivacy ,
+                :DataMissingIncomplete ,
+                :FormatStandardized ,
+                :PersistentIdentification ,
+                :ProvAvailable ,
+                :SLAAvailable ,
+                :SensitiveSecurity ,
+                :TrackDataUsage ,
+                :UniqueIdentifier ,
+                :VocabOpen ,
+                :VocabReference ,
+                :UsageFeedback .
+
+
+
+###  http://w3.dwbp.org/ucr#RecifeOpenData
+
+:RecifeOpenData rdf:type :UseCase ,
+                         owl:NamedIndividual ;
+                
+                rdfs:label "RecifeOpenData"^^xsd:string ;
+                
+                dct:identifier "2.3"^^xsd:string ;
+                
+                dct:title "Recife Open Data Portal"^^xsd:string ;
+                
+                :defines :MetadataDocum ,
+                         :MetadataMachineRead ,
+                         :MetadataStandardized ,
+                         :QualityComparable ,
+                         :QualityCompleteness ,
+                         :VocabDocum ,
+                         :VocabOpen ,
+                         :VocabReference .
+
+
+
+###  http://w3.dwbp.org/ucr#RetratoDaViolencia
+
+:RetratoDaViolencia rdf:type :UseCase ,
+                             owl:NamedIndividual ;
+                    
+                    rdfs:label "RetratoDaViolencia"^^xsd:string ;
+                    
+                    dct:identifier "2.13"^^xsd:string ;
+                    
+                    dct:title "Retrato da Violencia (Violence Map)"^^xsd:string ;
+                    
+                    :defines :AccessUpToDate ,
+                             :MetadataAvailable ,
+                             :MetadataStandardized ,
+                             :PersistentIdentification ,
+                             :QualityCompleteness ,
+                             :SensitiveSecurity .
+
+
+
+###  http://w3.dwbp.org/ucr#SLAAvailable
+
+:SLAAvailable rdf:type :Requirement ,
+                       owl:NamedIndividual ;
+              
+              rdfs:label "SLAAvailable"^^xsd:string ;
+              
+              dct:title "R-SLAAvailable"^^xsd:string ;
+              
+              dct:identifier "R-SLAAvailable"^^xsd:string ;
+              
+              dct:description "Service Level Agreements (SLAs) for industry reuse of the data should be available if required (via a defined contact point). An SLA is a type of metadata, so all metadata requirements also apply here."^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#SensitiveData
+
+:SensitiveData rdf:type :Challenge ,
+                        owl:NamedIndividual ;
+               
+               rdfs:label "SensitiveData"^^xsd:string ;
+               
+               :addressedby :SensitivePrivacy ,
+                            :SensitiveSecurity .
+
+
+
+###  http://w3.dwbp.org/ucr#SensitivePrivacy
+
+:SensitivePrivacy rdf:type :Requirement ,
+                           owl:NamedIndividual ;
+                  
+                  rdfs:label "SensitivePrivacy"^^xsd:string ;
+                  
+                  dct:description "Data should not infringe a person's right to privacy."^^xsd:string ;
+                  
+                  dct:title "R-SensitivePrivacy"^^xsd:string ;
+                  
+                  dct:identifier "R-SensitivePrivacy"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#SensitiveSecurity
+
+:SensitiveSecurity rdf:type :Requirement ,
+                            owl:NamedIndividual ;
+                   
+                   rdfs:label "SensitiveSecurity"^^xsd:string ;
+                   
+                   dct:description "Data should not infringe an organization's security (local government, national government, business)."^^xsd:string ;
+                   
+                   dct:title "R-SensitiveSecurity"^^xsd:string ;
+                   
+                   dct:identifier "R-SensitiveSecurity"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#SharePSI
+
+:SharePSI rdf:type :UseCase ,
+                   owl:NamedIndividual ;
+          
+          rdfs:label "SharePSI"^^xsd:string ;
+          
+          dct:identifier "2.27"^^xsd:string ;
+          
+          dct:title "Share-PSI 2.0: Uses of Open Data Within Government for Innovation and Efficiency"^^xsd:string ;
+          
+          :defines :AccessRealTime ,
+                   :AccessUpToDate ,
+                   :Citable ,
+                   :Location ,
+                   :MetadataDocum ,
+                   :MetadataStandardized ,
+                   :ProvAvailable ,
+                   :QualityComparable ,
+                   :QualityOpinions ,
+                   :SensitivePrivacy ,
+                   :SensitiveSecurity ,
+                   :UsageFeedback ,
+                   :VocabReference .
+
+
+
+###  http://w3.dwbp.org/ucr#Tabulae
+
+:Tabulae rdf:type :UseCase ,
+                  owl:NamedIndividual ;
+         
+         rdfs:label "Tabulae"^^xsd:string ;
+         
+         dct:identifier "2.12"^^xsd:string ;
+         
+         dct:title "Tabulae - how to get value out of data"^^xsd:string ;
+         
+         :defines :AccessUpToDate ,
+                  :FormatLocalize ,
+                  :FormatMachineRead ,
+                  :FormatMultiple ,
+                  :FormatStandardized ,
+                  :ProvAvailable ,
+                  :QualityComparable ,
+                  :QualityCompleteness ,
+                  :SensitiveSecurity ,
+                  :VocabReference ,
+                  :VocabVersion .
+
+
+
+###  http://w3.dwbp.org/ucr#TrackDataUsage
+
+:TrackDataUsage rdf:type :Requirement ,
+                         owl:NamedIndividual ;
+                
+                rdfs:label "TrackDataUsage"^^xsd:string ;
+                
+                dct:description "It should be possible to track the usage of data."^^xsd:string ;
+                
+                dct:identifier "R-TrackDataUsage"^^xsd:string ;
+                
+                dct:title "R-TrackDataUsage"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#UKOpenResearchForum
+
+:UKOpenResearchForum rdf:type :UseCase ,
+                              owl:NamedIndividual ;
+                     
+                     rdfs:label "UKOpenResearchForum"^^xsd:string ;
+                     
+                     dct:identifier "2.28"^^xsd:string ;
+                     
+                     dct:title "UK Oopen Research Data Forum"^^xsd:string ;
+                     
+                     :defines :AccessBulk ,
+                              :Citable ,
+                              :FormatMachineRead ,
+                              :FormatOpen ,
+                              :FormatStandardized ,
+                              :LicenseAvailable ,
+                              :MetadataAvailable ,
+                              :MetadataDocum ,
+                              :MetadataMachineRead ,
+                              :MetadataStandardized ,
+                              :PersistentIdentification ,
+                              :ProvAvailable ,
+                              :SensitivePrivacy ,
+                              :SensitiveSecurity ,
+                              :TrackDataUsage ,
+                              :UniqueIdentifier .
+
+
+
+###  http://w3.dwbp.org/ucr#UniqueIdentifier
+
+:UniqueIdentifier rdf:type :Requirement ,
+                           owl:NamedIndividual ;
+                  
+                  rdfs:label "UniqueIdentifier"^^xsd:string ;
+                  
+                  dct:description "Each data resource should be associated with a unique identifier."^^xsd:string ;
+                  
+                  dct:title "R-UniqueIdentifier"^^xsd:string ;
+                  
+                  dct:identifier "R-UniqueIdentifier"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#UruguayOpenData
+
+:UruguayOpenData rdf:type :UseCase ,
+                          owl:NamedIndividual ;
+                 
+                 rdfs:label "UruguayOpenData"^^xsd:string ;
+                 
+                 dct:identifier "2.10	"^^xsd:string ;
+                 
+                 dct:title "Uruguay Open Data Catalog"^^xsd:string ;
+                 
+                 :defines :AccessLevel ,
+                          :DataMissingIncomplete ,
+                          :VocabReference ,
+                          :TrackDataUsage .
+
+
+
+###  http://w3.dwbp.org/ucr#UsageFeedback
+
+:UsageFeedback rdf:type :Requirement ,
+                        owl:NamedIndividual ;
+               
+               rdfs:label "UsageFeedback"^^xsd:string ;
+               
+               dct:description "It should be possible to provide feedback on and/or rate the data."^^xsd:string ;
+               
+               dct:identifier "R-UsageFeedback"^^xsd:string ;
+               
+               dct:title "R-UsageFeedback"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#VocabDocum
+
+:VocabDocum rdf:type :Requirement ,
+                     owl:NamedIndividual ;
+            
+            rdfs:label "VocabDocum"^^xsd:string ;
+            
+            dct:identifier "R-VocabDocum"^^xsd:string ;
+            
+            dct:title "R-VocabDocum"^^xsd:string ;
+            
+            dct:description "Vocabularies should be clearly documented."^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#VocabOpen
+
+:VocabOpen rdf:type :Requirement ,
+                    owl:NamedIndividual ;
+           
+           rdfs:label "VocabOpen"^^xsd:string ;
+           
+           dct:title "R-VocabOpen"^^xsd:string ;
+           
+           dct:identifier "R-VocabOpen"^^xsd:string ;
+           
+           dct:description "Vocabularies should be shared in an open way."^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#VocabReference
+
+:VocabReference rdf:type :Requirement ,
+                         owl:NamedIndividual ;
+                
+                rdfs:label "VocabReference"^^xsd:string ;
+                
+                dct:description "Existing reference vocabularies should be reused where possible. "^^xsd:string ;
+                
+                dct:identifier "R-VocabReference"^^xsd:string ;
+                
+                dct:title "R-VocabReference"^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#VocabVersion
+
+:VocabVersion rdf:type :Requirement ,
+                       owl:NamedIndividual ;
+              
+              rdfs:label "VocabVersion"^^xsd:string ;
+              
+              dct:title "R-VocabVersion"^^xsd:string ;
+              
+              dct:identifier "R-VocabVersion"^^xsd:string ;
+              
+              dct:description "Vocablaries should include versioning information."^^xsd:string .
+
+
+
+###  http://w3.dwbp.org/ucr#WebObservatory
+
+:WebObservatory rdf:type :UseCase ,
+                         owl:NamedIndividual ;
+                
+                rdfs:label "WebObservatory"^^xsd:string ;
+                
+                :defines :DataGranularity ,
+                         :Data_enrichment ,
+                         :MetadataDocum ,
+                         :MetadataMachineRead ,
+                         :MetadataStandardized ,
+                         :ProvAvailable ,
+                         :VocabDocum ,
+                         :VocabOpen ,
+                         :VocabReference .
+
+
+
+###  http://w3.dwbp.org/ucr#WindCharacterization
+
+:WindCharacterization rdf:type :UseCase ,
+                               owl:NamedIndividual ;
+                      
+                      rdfs:label "WindCharacterization"^^xsd:string ;
+                      
+                      dct:identifier "2.7"^^xsd:string ;
+                      
+                      dct:title "Wind Characterization Scientific Study"^^xsd:string ;
+                      
+                      :defines :AccessRealTime ,
+                               :FormatStandardized ,
+                               :VocabOpen ,
+                               :VocabReference .
+
+
+
+
+###  Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net
+
