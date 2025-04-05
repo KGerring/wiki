@@ -1,0 +1,185 @@
+@prefix indicator: <http://linkeddata.es/resource/ldqm/QualityIndicator/> .
+@prefix dqm:   <http://www.diachron-fp7.eu/dqm#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix uri4uri: <http://uri4uri.net/vocab#> .
+@prefix dqv:   <http://www.w3.org/ns/dqv#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix scale: <http://linkeddata.es/resource/ldqm/Scale/> .
+@prefix technique: <http://linkeddata.es/resource/ldqm/AssessmentTechnique/> .
+@prefix basemeasure: <http://linkeddata.es/resource/ldqm/BaseMeasure/> .
+@prefix evaluation: <http://linkeddata.es/resource/ldqm/evaluation/> .
+@prefix qmo:   <http://purl.org/net/QualityModel#> .
+@prefix defect: <http://linkeddata.es/resource/ldqm/Defect/> .
+@prefix daq:   <http://purl.org/eis/vocab/daq#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix derivedmeasure: <http://linkeddata.es/resource/ldqm/DerivedMeasure/> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix dimension: <http://linkeddata.es/resource/ldqm/Dimension/> .
+@prefix qpro:  <http://purl.org/eis/vocab/qpro#> .
+@prefix om18:  <http://www.wurvoc.org/vocabularies/om-1.8/> .
+@prefix eval:  <http://purl.org/net/EvaluationResult#> .
+@prefix measure: <http://linkeddata.es/resource/ldqm/measure/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dbr:   <http://dbpedia.org/resource/> .
+@prefix ldq:   <http://www.linkeddata.es/ontology/ldq#> .
+@prefix report: <http://linkeddata.es/resource/ldqm/report/> .
+@prefix http:  <http://www.w3.org/2011/http#> .
+@prefix category: <http://linkeddata.es/resource/ldqm/SubjectCategory/> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+dimension:Accessibility
+        a                   qmo:QualityCharacteristic , dqv:Dimension , daq:Dimension ;
+        dc:title            "Accessibility quality characteristic (dimension)"@en ;
+        qmo:isMeasuredWith  indicator:Averageiridereferenceability , indicator:Averagesubjectdereferenceability , indicator:Averagepredicatedereferenceability , indicator:Averageobjectdereferenceability ;
+        owl:sameAs          dqm:Accessibility ;
+        skos:definition     "The degree to which data can be accessed in a specific context of use." ;
+        skos:prefLabel      "Accessibility quality characteristic (dimension)"@en .
+
+indicator:Averagesubjectdereferenceability
+        a                           qmo:QualityMeasure , dqv:Metric , qmo:QualityIndicator ;
+        dc:description              "Average of dereferenceable IRIs in a triple, dataset, or a graph."@en , "Average of dereferenceable IRI subjects in a triple, dataset, or a graph."@en ;
+        dc:title                    "Average IRI dereferenceability"@en , "Average IRI subject dereferenceability"@en ;
+        qmo:hasScale                scale:percentageHigherBest ;
+        qmo:measuresCharacteristic  dimension:Availability ;
+        ldq:hasAspect               ldq:LinkedDataServer ;
+        ldq:hasGranularity          ldq:Graph , ldq:Dataset ;
+        skos:definition             "(Number of dereferenceable IRIs/ Number of distinct IRIs) * 100 %" , "(Number of dereferenceable IRI subjects / Number of distinct IRI subjects) * 100 %" ;
+        skos:prefLabel              "Average IRI dereferenceability"@en , "Average IRI subject dereferenceability"@en ;
+        dqv:expectedDataType        xsd:double ;
+        dqv:inDimension             dimension:Availability ;
+        prov:wasDerivedFrom         basemeasure:Numberofdistinctsubjects , derivedmeasure:Numberofdereferenceablesubjects .
+
+indicator:Averagepredicatedereferenceability
+        a                           qmo:QualityMeasure , dqv:Metric , qmo:QualityIndicator ;
+        dc:description              "Average of dereferenceable IRI predicates in a triple, dataset, or a graph."@en ;
+        dc:title                    "Average IRI predicate dereferenceability"@en ;
+        qmo:hasScale                scale:percentageHigherBest ;
+        qmo:measuresCharacteristic  dimension:Availability ;
+        ldq:hasAspect               ldq:LinkedDataServer ;
+        ldq:hasGranularity          ldq:Graph , ldq:Dataset ;
+        skos:definition             "(Number of dereferenceable IRI predicates / Number of distinct IRI predicates) * 100 %" ;
+        skos:prefLabel              "Average IRI predicate dereferenceability"@en ;
+        dqv:expectedDataType        xsd:double ;
+        dqv:inDimension             dimension:Availability ;
+        prov:wasDerivedFrom         basemeasure:Numberofdistinctsubjects , derivedmeasure:Numberofdereferenceablesubjects .
+
+indicator:Averageobjectdereferenceability
+        a                           qmo:QualityMeasure , dqv:Metric , qmo:QualityIndicator ;
+        dc:description              "Average of dereferenceable IRI predicates in a triple, dataset, or a graph."@en ;
+        dc:title                    "Average IRI predicate dereferenceability"@en ;
+        qmo:hasScale                scale:percentageHigherBest ;
+        qmo:measuresCharacteristic  dimension:Availability ;
+        ldq:hasAspect               ldq:LinkedDataServer ;
+        ldq:hasGranularity          ldq:Graph , ldq:Dataset ;
+        skos:definition             "(Number of dereferenceable IRI predicates / Number of distinct IRI predicates) * 100 %" ;
+        skos:prefLabel              "Average IRI predicate dereferenceability"@en ;
+        dqv:expectedDataType        xsd:double ;
+        dqv:inDimension             dimension:Availability ;
+        prov:wasDerivedFrom         basemeasure:Numberofdistinctsubjects , derivedmeasure:Numberofdereferenceablesubjects .
+
+derivedmeasure:Numberofdereferenceableiris
+        a                     qmo:QualityMeasure , dqv:Metric , qmo:DerivedMeasure ;
+        dc:description        "Number of dereferenceable IRIs in a triple, dataset, or a graph."@en ;
+        dc:title              "Number of dereferenceable IRIs"@en ;
+        qmo:hasScale          scale:countHigherBest ;
+        ldq:calculatedWith    technique:UrlDereferencing ;
+        ldq:hasGranularity    ldq:Triple , ldq:Graph , ldq:Dataset ;
+        skos:definition       "Count the number of IRIs that return a successful (2xx) HTTP response (after redirection)."@en ;
+        skos:prefLabel        "Number of dereferenceable IRIs"@en ;
+        dqv:expectedDataType  xsd:positiveInteger .
+
+derivedmeasure:Numberofdereferenceablesubjects
+        a                     qmo:QualityMeasure , dqv:Metric , qmo:DerivedMeasure ;
+        dc:description        "Number of dereferenceable IRI subjects in a triple, dataset, or a graph."@en ;
+        dc:title              "Number of dereferenceable IRI subjects"@en ;
+        qmo:hasScale          scale:countHigherBest ;
+        ldq:calculatedWith    technique:UrlDereferencing ;
+        ldq:hasGranularity    ldq:Triple , ldq:Graph , ldq:Dataset ;
+        skos:definition       "Count the number of subject IRIs that return a successful(2xx) HTTP response (after redirection)."@en ;
+        skos:prefLabel        "Number of dereferenceable IRI subjects"@en ;
+        dqv:expectedDataType  xsd:positiveInteger .
+
+derivedmeasure:Numberofdereferenceablepredicates
+        a                     qmo:QualityMeasure , dqv:Metric , qmo:DerivedMeasure ;
+        dc:description        "Number of dereferenceable IRI predicates in a triple, dataset, or a graph."@en ;
+        dc:title              "Number of dereferenceable IRI predicates"@en ;
+        qmo:hasScale          scale:countHigherBest ;
+        ldq:calculatedWith    technique:UrlDereferencing ;
+        ldq:hasGranularity    ldq:Triple , ldq:Graph , ldq:Dataset ;
+        skos:definition       "Count the number of predicates IRIs that return a successful(2xx) HTTP response (after redirection)."@en ;
+        skos:prefLabel        "Number of dereferenceable IRI predicates"@en ;
+        dqv:expectedDataType  xsd:positiveInteger .
+
+derivedmeasure:Numberofdereferenceableobjects
+        a                     qmo:QualityMeasure , dqv:Metric , qmo:DerivedMeasure ;
+        dc:description        "Number of dereferenceable IRI predicates in a triple, dataset, or a graph."@en ;
+        dc:title              "Number of dereferenceable IRI predicates"@en ;
+        qmo:hasScale          scale:countHigherBest ;
+        ldq:calculatedWith    technique:UrlDereferencing ;
+        ldq:hasGranularity    ldq:Triple , ldq:Graph , ldq:Dataset ;
+        skos:definition       "Count the number of predicates IRIs that return a successful(2xx) HTTP response (after redirection)."@en ;
+        skos:prefLabel        "Number of dereferenceable IRI predicates"@en ;
+        dqv:expectedDataType  xsd:positiveInteger .
+
+basemeasure:Numberofdistinctiris
+        a                     qmo:BaseMeasure , qmo:QualityMeasure , dqv:Metric ;
+        dc:description        "Number of distinct IRIs in a triple, graph, or dataset."@en ;
+        dc:title              "Number of distinct IRIs"@en ;
+        qmo:hasScale          scale:countHigherBest ;
+        ldq:calculatedWith    technique:IriCounting ;
+        ldq:hasGranularity    ldq:Triple , ldq:Graph , ldq:Dataset ;
+        skos:definition       "SPARQL query: '' " ;
+        skos:prefLabel        "Number of distinct IRIs"@en ;
+        dqv:expectedDataType  xsd:positiveInteger .
+
+basemeasure:Numberofdistinctsubjects
+        a                     qmo:BaseMeasure , qmo:QualityMeasure , dqv:Metric ;
+        dc:description        "Number of distinct IRI subjects in a graph or dataset."@en ;
+        dc:title              "Number of distinct IRI subjects"@en ;
+        qmo:hasScale          scale:countHigherBest ;
+        ldq:calculatedWith    technique:IriCounting ;
+        ldq:hasGranularity    ldq:Graph , ldq:Dataset ;
+        skos:definition       "SPARQL query: 'select (count(distinct ?s) as ?c) where {?s ?p ?o FILTER (isIRI(?s))}'" ;
+        skos:prefLabel        "Number of distinct IRI subjects"@en ;
+        dqv:expectedDataType  xsd:positiveInteger .
+
+basemeasure:Numberofdistinctpredicates
+        a                     qmo:BaseMeasure , qmo:QualityMeasure , dqv:Metric ;
+        dc:description        "Number of distinct predicates in a graph or dataset."@en ;
+        dc:title              "Number of distinct predicates"@en ;
+        qmo:hasScale          scale:countHigherBest ;
+        ldq:calculatedWith    technique:IriCounting ;
+        ldq:hasGranularity    ldq:Graph , ldq:Dataset ;
+        skos:definition       "SPARQL query: 'select (count(distinct ?p) as ?c) where {?s ?p ?o FILTER (isIRI(?p))}'" ;
+        skos:prefLabel        "Number of distinct predicates"@en ;
+        dqv:expectedDataType  xsd:positiveInteger .
+
+basemeasure:Numberofdistinctobjects
+        a                     qmo:BaseMeasure , qmo:QualityMeasure , dqv:Metric ;
+        dc:description        "Number of distinct IRI objects in a graph or dataset."@en , "If an IRI can be dereferenced using HTTP protocol."@en ;
+        dc:title              "Number of distinct IRI objects"@en , "IRI Dereferenceability"@en ;
+        qmo:hasScale          scale:countHigherBest , scale:Ordinal ;
+        ldq:calculatedWith    technique:IriCounting , technique:UrlDereferencing ;
+        ldq:hasGranularity    ldq:Graph , ldq:Dataset , ldq:Iri ;
+        skos:definition       "SPARQL query: 'select (count(distinct ?o) as ?c) where {?s ?p ?o FILTER (isIRI(?o))}'" , "True if the IRI returns a successful (2xx) HTTP response (after redirection), false otherwise." ;
+        skos:prefLabel        "Number of distinct IRI objects"@en , "IRI Dereferenceability"@en ;
+        dqv:expectedDataType  xsd:positiveInteger , xsd:boolean .
+
+scale:percentageHigherBest
+        a                       om18:Ratio_scale ;
+        qmo:hasLowerBoundary    0 ;
+        qmo:hasRankingFunction  qmo:HigherBest ;
+        qmo:hasUpperBoundary    100 .
+
+technique:IriCounting
+        a                       ldq:AssessmentTechnique ;
+        dc:description          "Distinct IRI counts for a given RDF graph are calculated with a SPARQL query. This technique is used to count distinct iris, subjects, predicates, objects, etc."@en ;
+        ldq:hasAutomationLevel  ldq:Automatic ;
+        ldq:isSubjective        false .
+
+technique:UrlDereferencing
+        a                       ldq:AssessmentTechnique ;
+        dc:description          "Each URI is dereferenced using the HTTP HEAD method, and if fails using the HTTP GET method. Resources with 2XX responses (after redirection) are considered dereferenceable."@en ;
+        ldq:hasAutomationLevel  ldq:Automatic ;
+        ldq:isSubjective        false .
