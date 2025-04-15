@@ -1,0 +1,1906 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:zapi="http://zotero.org/ns/api">
+  <title>Zotero / FAIR-IMPACT_T4.3 Group / Top-Level Items</title>
+  <id>http://zotero.org/groups/5018631/items/top?direction=asc&amp;sort=dateModified</id>
+  <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/5018631/items/top?direction=asc&amp;format=atom&amp;sort=dateModified"/>
+  <link rel="first" type="application/atom+xml" href="https://api.zotero.org/groups/5018631/items/top?direction=asc&amp;format=atom&amp;sort=dateModified"/>
+  <link rel="next" type="application/atom+xml" href="https://api.zotero.org/groups/5018631/items/top?direction=asc&amp;format=atom&amp;sort=dateModified&amp;start=25"/>
+  <link rel="last" type="application/atom+xml" href="https://api.zotero.org/groups/5018631/items/top?direction=asc&amp;format=atom&amp;sort=dateModified&amp;start=75"/>
+  <link rel="alternate" type="text/html" href="https://www.zotero.org/groups/5018631/items/top"/>
+  <updated>2023-05-16T13:45:22Z</updated>
+  <entry>
+    <title>Research data management toolkit</title>
+    <author>
+      <name>Sabrina Granger</name>
+      <uri>http://zotero.org/users/1126475</uri>
+    </author>
+    <id>http://zotero.org/groups/5018631/items/A6ZH7TE4</id>
+    <published>2023-04-06T09:03:02Z</published>
+    <updated>2023-04-06T09:03:02Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/5018631/items/A6ZH7TE4?format=atom"/>
+    <link rel="alternate" type="text/html" href="https://www.zotero.org/groups/fair-impact_t4.3/items/A6ZH7TE4"/>
+    <zapi:key>A6ZH7TE4</zapi:key>
+    <zapi:version>2</zapi:version>
+    <zapi:lastModifiedByUser>Sabrina Granger</zapi:lastModifiedByUser>
+    <zapi:itemType>webpage</zapi:itemType>
+    <zapi:creatorSummary>Jisc</zapi:creatorSummary>
+    <zapi:parsedDate>2018-03-30</zapi:parsedDate>
+    <zapi:numChildren>0</zapi:numChildren>
+    <content zapi:type="html" type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Item Type</th>
+            <td>Web Page</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Jisc</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>https://www.jisc.ac.uk/guides/rdm-toolkit</td>
+          </tr>
+          <tr class="date">
+            <th style="text-align: right">Date</th>
+            <td>2018-03-30</td>
+          </tr>
+          <tr class="accessDate">
+            <th style="text-align: right">Accessed</th>
+            <td>2023-04-06 09:01:45</td>
+          </tr>
+          <tr class="language">
+            <th style="text-align: right">Language</th>
+            <td>en-GB</td>
+          </tr>
+          <tr class="abstractNote">
+            <th style="text-align: right">Abstract</th>
+            <td>This toolkit aims to support you through the entire lifecycle of research data management (RDM). It explains what you should consider and signposts resources from a wide range of websites and organisations.</td>
+          </tr>
+          <tr class="websiteTitle">
+            <th style="text-align: right">Website Title</th>
+            <td>Research data management toolkit</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+  <entry>
+    <title>OpenAIRE Guidelines for Software Repository Managers — OpenAIRE Guidelines for Software Repository Managers 1.0 alpha documentation</title>
+    <author>
+      <name>Sabrina Granger</name>
+      <uri>http://zotero.org/users/1126475</uri>
+    </author>
+    <id>http://zotero.org/groups/5018631/items/AYIV4IV6</id>
+    <published>2023-04-06T09:06:06Z</published>
+    <updated>2023-04-06T09:06:06Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/5018631/items/AYIV4IV6?format=atom"/>
+    <link rel="alternate" type="text/html" href="https://www.zotero.org/groups/fair-impact_t4.3/items/AYIV4IV6"/>
+    <zapi:key>AYIV4IV6</zapi:key>
+    <zapi:version>3</zapi:version>
+    <zapi:lastModifiedByUser>Sabrina Granger</zapi:lastModifiedByUser>
+    <zapi:itemType>webpage</zapi:itemType>
+    <zapi:creatorSummary>OpenAIRE et al.</zapi:creatorSummary>
+    <zapi:numChildren>0</zapi:numChildren>
+    <content zapi:type="html" type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Item Type</th>
+            <td>Web Page</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>OpenAIRE</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Miriam Baglioni</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Alessia Bardi</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Paolo Manghi</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Leo Mack</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>https://software-guidelines.readthedocs.io/en/latest/</td>
+          </tr>
+          <tr class="accessDate">
+            <th style="text-align: right">Accessed</th>
+            <td>2023-04-06 09:04:15</td>
+          </tr>
+          <tr class="abstractNote">
+            <th style="text-align: right">Abstract</th>
+            <td>The OpenAIRE Guidelines for Software Repository Managers 1.0 provide orientation for software repository managers to define and implement their local software management policies in exposing metadata for software products. These guidelines are intended to provide indications on how to make software products citable in order to make them first-level citizen of an Open Science, interlinked scholarly communication ecosystem. By adhering to the guidlines exposure, visibility, and re-use of repository content will be significantly increased.</td>
+          </tr>
+          <tr class="websiteTitle">
+            <th style="text-align: right">Website Title</th>
+            <td>OpenAIRE</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Data and software citation deposit guide</title>
+    <author>
+      <name>Sabrina Granger</name>
+      <uri>http://zotero.org/users/1126475</uri>
+    </author>
+    <id>http://zotero.org/groups/5018631/items/LD3MW7TA</id>
+    <published>2023-04-06T09:06:44Z</published>
+    <updated>2023-04-06T09:06:44Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/5018631/items/LD3MW7TA?format=atom"/>
+    <link rel="alternate" type="text/html" href="https://www.zotero.org/groups/fair-impact_t4.3/items/LD3MW7TA"/>
+    <zapi:key>LD3MW7TA</zapi:key>
+    <zapi:version>3</zapi:version>
+    <zapi:lastModifiedByUser>Sabrina Granger</zapi:lastModifiedByUser>
+    <zapi:itemType>webpage</zapi:itemType>
+    <zapi:creatorSummary>Hendricks</zapi:creatorSummary>
+    <zapi:numChildren>0</zapi:numChildren>
+    <content zapi:type="html" type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Item Type</th>
+            <td>Web Page</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Ginny Hendricks</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>https://www.crossref.org/documentation/reference-linking/data-and-software-citation-deposit-guide/</td>
+          </tr>
+          <tr class="rights">
+            <th style="text-align: right">Rights</th>
+            <td>CC BY 4.0</td>
+          </tr>
+          <tr class="accessDate">
+            <th style="text-align: right">Accessed</th>
+            <td>2023-04-06 09:06:33</td>
+          </tr>
+          <tr class="websiteType">
+            <th style="text-align: right">Website Type</th>
+            <td>website</td>
+          </tr>
+          <tr class="language">
+            <th style="text-align: right">Language</th>
+            <td>en</td>
+          </tr>
+          <tr class="abstractNote">
+            <th style="text-align: right">Abstract</th>
+            <td>As well as providing persistent links to scholarly content, we also provide community infrastructure by linking publications to associated content, making research easy to find, cite, link, and assess. Data citations are a core part of this service, linking publications to their supporting data, making both the research itself and the research process more transparent and reproducible.
+Data citations are references to data, just as bibliographic citations make reference to other scholarly sources.</td>
+          </tr>
+          <tr class="websiteTitle">
+            <th style="text-align: right">Website Title</th>
+            <td>Crossref</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Software Deposit Guidance for Researchers</title>
+    <author>
+      <name>Sabrina Granger</name>
+      <uri>http://zotero.org/users/1126475</uri>
+    </author>
+    <id>http://zotero.org/groups/5018631/items/2MBKA8CW</id>
+    <published>2023-04-06T09:09:30Z</published>
+    <updated>2023-04-06T09:09:30Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/5018631/items/2MBKA8CW?format=atom"/>
+    <link rel="alternate" type="text/html" href="https://www.zotero.org/groups/fair-impact_t4.3/items/2MBKA8CW"/>
+    <zapi:key>2MBKA8CW</zapi:key>
+    <zapi:version>4</zapi:version>
+    <zapi:lastModifiedByUser>Sabrina Granger</zapi:lastModifiedByUser>
+    <zapi:itemType>document</zapi:itemType>
+    <zapi:creatorSummary>The Software Sustainability Institute</zapi:creatorSummary>
+    <zapi:parsedDate>2018</zapi:parsedDate>
+    <zapi:numChildren>0</zapi:numChildren>
+    <content zapi:type="html" type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Item Type</th>
+            <td>Document</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>The Software Sustainability Institute</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>https://softwaresaved.github.io/software-deposit-guidance/</td>
+          </tr>
+          <tr class="date">
+            <th style="text-align: right">Date</th>
+            <td>2018</td>
+          </tr>
+          <tr class="accessDate">
+            <th style="text-align: right">Accessed</th>
+            <td>2023-04-06</td>
+          </tr>
+          <tr class="abstractNote">
+            <th style="text-align: right">Abstract</th>
+            <td>Depositing research software into a digital repository can offer significant benefits. By depositing not just papers, but software, and data sets, as well, researchers can store a more complete record of this ecosystem for future use to both the researchers who undertook the research and also the wider research community. Making research software available allows other researchers to inspect, replicate, reproduce and reuse the research, as manifested in the software, in the short term and to inspect, for the historical record, in the long term. It allows research software to remain available beyond the lifetime of any current project, or a researcher's current employment at a specific institution. Digital repositories can also provide unique persistent digital identifiers for software which can be cited and help researchers to get attribution and credit for their research software when it is used by others.
+
+The Software Sustainability Institute, funded by Jisc, developed a set of complementary guides covering the main aspects of depositing software into digital repositories. These guides are intended for researchers, principal investigators and research leaders and research data and digital repository managers.</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Data and Software for Authors</title>
+    <author>
+      <name>Sabrina Granger</name>
+      <uri>http://zotero.org/users/1126475</uri>
+    </author>
+    <id>http://zotero.org/groups/5018631/items/TV8HP9JU</id>
+    <published>2023-04-06T09:12:34Z</published>
+    <updated>2023-04-06T09:14:13Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/5018631/items/TV8HP9JU?format=atom"/>
+    <link rel="alternate" type="text/html" href="https://www.zotero.org/groups/fair-impact_t4.3/items/TV8HP9JU"/>
+    <zapi:key>TV8HP9JU</zapi:key>
+    <zapi:version>9</zapi:version>
+    <zapi:lastModifiedByUser>Sabrina Granger</zapi:lastModifiedByUser>
+    <zapi:itemType>blogPost</zapi:itemType>
+    <zapi:creatorSummary>American Geophysical Union</zapi:creatorSummary>
+    <zapi:numChildren>0</zapi:numChildren>
+    <content zapi:type="html" type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Item Type</th>
+            <td>Blog Post</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>American Geophysical Union</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>https://www.agu.org/Publish-with-AGU/Publish/Author-Resources/Data-and-Software-for-Authors</td>
+          </tr>
+          <tr class="accessDate">
+            <th style="text-align: right">Accessed</th>
+            <td>2023-04-06 09:12:34</td>
+          </tr>
+          <tr class="language">
+            <th style="text-align: right">Language</th>
+            <td>en</td>
+          </tr>
+          <tr class="abstractNote">
+            <th style="text-align: right">Abstract</th>
+            <td>How to comply with AGU data and software requirements for your manuscript.
+AGU requires that the underlying data needed to understand, evaluate, and build upon the reported research be available at the time of peer review and publication. Additionally, authors should make available software that has a significant impact on the research. This entails:
+Depositing the data and software in a community accepted, trusted repository, as appropriate, and preferably with a DOI
+Including an Availability Statement as a separate paragraph in the Open Research section explaining to the reader where and how to access the data and software
+And including citation(s) to the deposited data and software, in the Reference Section.</td>
+          </tr>
+          <tr class="blogTitle">
+            <th style="text-align: right">Blog Title</th>
+            <td>American Geophysical Union</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Committing to Data Quality Review</title>
+    <author>
+      <name>Sabrina Granger</name>
+      <uri>http://zotero.org/users/1126475</uri>
+    </author>
+    <id>http://zotero.org/groups/5018631/items/UZYGAXBT</id>
+    <published>2023-04-06T09:22:53Z</published>
+    <updated>2023-04-06T09:22:53Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/5018631/items/UZYGAXBT?format=atom"/>
+    <link rel="alternate" type="text/html" href="https://www.zotero.org/groups/fair-impact_t4.3/items/UZYGAXBT"/>
+    <zapi:key>UZYGAXBT</zapi:key>
+    <zapi:version>13</zapi:version>
+    <zapi:lastModifiedByUser>Sabrina Granger</zapi:lastModifiedByUser>
+    <zapi:itemType>journalArticle</zapi:itemType>
+    <zapi:creatorSummary>Peer et al.</zapi:creatorSummary>
+    <zapi:parsedDate>2014-06-17</zapi:parsedDate>
+    <zapi:numChildren>0</zapi:numChildren>
+    <content zapi:type="html" type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Item Type</th>
+            <td>Journal Article</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Limor Peer</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Ann Green</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Elizabeth Stephenson</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>http://www.ijdc.net/article/view/9.1.263</td>
+          </tr>
+          <tr class="volume">
+            <th style="text-align: right">Volume</th>
+            <td>9</td>
+          </tr>
+          <tr class="issue">
+            <th style="text-align: right">Issue</th>
+            <td>1</td>
+          </tr>
+          <tr class="pages">
+            <th style="text-align: right">Pages</th>
+            <td>263-291</td>
+          </tr>
+          <tr class="publicationTitle">
+            <th style="text-align: right">Publication</th>
+            <td>International Journal of Digital Curation</td>
+          </tr>
+          <tr class="ISSN">
+            <th style="text-align: right">ISSN</th>
+            <td>1746-8256</td>
+          </tr>
+          <tr class="date">
+            <th style="text-align: right">Date</th>
+            <td>2014-06-17</td>
+          </tr>
+          <tr class="journalAbbreviation">
+            <th style="text-align: right">Journal Abbr</th>
+            <td>IJDC</td>
+          </tr>
+          <tr class="DOI">
+            <th style="text-align: right">DOI</th>
+            <td>10.2218/ijdc.v9i1.317</td>
+          </tr>
+          <tr class="accessDate">
+            <th style="text-align: right">Accessed</th>
+            <td>2023-04-06 09:22:53</td>
+          </tr>
+          <tr class="libraryCatalog">
+            <th style="text-align: right">Library Catalog</th>
+            <td>DOI.org (Crossref)</td>
+          </tr>
+          <tr class="abstractNote">
+            <th style="text-align: right">Abstract</th>
+            <td>Amid the pressure and enthusiasm for researchers to share data, a rapidly growing number of tools and services have emerged. What do we know about the quality of these data? Why does quality matter? And who should be responsible for data quality? We believe an essential measure of data quality is the ability to engage in informed reuse, which requires that data are independently understandable. In practice, this means that data must undergo quality review, a process whereby data and associated files are assessed and required actions are taken to ensure files are independently understandable for informed reuse. This paper explains what we mean by data quality review, what measures can be applied to it, and how it is practiced in three domain-specific archives. We explore a selection of other data repositories in the research data ecosystem, as well as the roles of researchers, academic libraries, and scholarly journals in regard to their application of data quality measures in practice. We end with thoughts about the need to commit to data quality and who might be able to take on those tasks.</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Curating research artifacts to support scientific integrity</title>
+    <author>
+      <name>Sabrina Granger</name>
+      <uri>http://zotero.org/users/1126475</uri>
+    </author>
+    <id>http://zotero.org/groups/5018631/items/2D5WEZV6</id>
+    <published>2023-04-06T09:23:31Z</published>
+    <updated>2023-04-06T09:24:53Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/5018631/items/2D5WEZV6?format=atom"/>
+    <link rel="alternate" type="text/html" href="https://www.zotero.org/groups/fair-impact_t4.3/items/2D5WEZV6"/>
+    <zapi:key>2D5WEZV6</zapi:key>
+    <zapi:version>20</zapi:version>
+    <zapi:lastModifiedByUser>Sabrina Granger</zapi:lastModifiedByUser>
+    <zapi:itemType>blogPost</zapi:itemType>
+    <zapi:creatorSummary>CURE Consortium</zapi:creatorSummary>
+    <zapi:parsedDate>2021</zapi:parsedDate>
+    <zapi:numChildren>0</zapi:numChildren>
+    <content zapi:type="html" type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Item Type</th>
+            <td>Blog Post</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>CURE Consortium</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>https://curating4reproducibility.org/</td>
+          </tr>
+          <tr class="date">
+            <th style="text-align: right">Date</th>
+            <td>2021-2022</td>
+          </tr>
+          <tr class="accessDate">
+            <th style="text-align: right">Accessed</th>
+            <td>2023-04-06 09:23:31</td>
+          </tr>
+          <tr class="language">
+            <th style="text-align: right">Language</th>
+            <td>en-US</td>
+          </tr>
+          <tr class="abstractNote">
+            <th style="text-align: right">Abstract</th>
+            <td>The CUrating for REproducibility (CuRe) Consortium supports curation of research data and review of code and associated digital scholarly objects for the purpose of facilitating the digital preservation of the evidence-base necessary for future understanding, evaluation, and reproducibility of scientific claims.</td>
+          </tr>
+          <tr class="blogTitle">
+            <th style="text-align: right">Blog Title</th>
+            <td>CUrating for REproducibility</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Common Workflow Language User Guide</title>
+    <author>
+      <name>Sabrina Granger</name>
+      <uri>http://zotero.org/users/1126475</uri>
+    </author>
+    <id>http://zotero.org/groups/5018631/items/BRAUJ4LV</id>
+    <published>2023-04-06T10:55:30Z</published>
+    <updated>2023-04-06T10:55:30Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/5018631/items/BRAUJ4LV?format=atom"/>
+    <link rel="alternate" type="text/html" href="https://www.zotero.org/groups/fair-impact_t4.3/items/BRAUJ4LV"/>
+    <zapi:key>BRAUJ4LV</zapi:key>
+    <zapi:version>27</zapi:version>
+    <zapi:lastModifiedByUser>Sabrina Granger</zapi:lastModifiedByUser>
+    <zapi:itemType>webpage</zapi:itemType>
+    <zapi:creatorSummary>Crusoe et al.</zapi:creatorSummary>
+    <zapi:parsedDate>2022</zapi:parsedDate>
+    <zapi:numChildren>0</zapi:numChildren>
+    <content zapi:type="html" type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Item Type</th>
+            <td>Web Page</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Michael R. Crusoe</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Sanne Abeln</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Alexandru Iosup</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Peter Amstutz</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>John Chilton</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Nebojša Tijanić</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Hervé Ménager</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Stian Soiland-Reyes</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Bogdan Gavrilović</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Carole Goble</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>The CWL Community</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>https://www.commonwl.org/user_guide/</td>
+          </tr>
+          <tr class="date">
+            <th style="text-align: right">Date</th>
+            <td>2022</td>
+          </tr>
+          <tr class="accessDate">
+            <th style="text-align: right">Accessed</th>
+            <td>2023-04-06 08:43:48</td>
+          </tr>
+          <tr class="abstractNote">
+            <th style="text-align: right">Abstract</th>
+            <td>This guide will introduce you to writing workflows using the Common Workflow Language (CWL) open standards. This guide describes the latest specification v1.2.</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+  <entry>
+    <title>FAIR Computational Workflows</title>
+    <author>
+      <name>Sabrina Granger</name>
+      <uri>http://zotero.org/users/1126475</uri>
+    </author>
+    <id>http://zotero.org/groups/5018631/items/TXKFJMNE</id>
+    <published>2023-04-06T10:55:35Z</published>
+    <updated>2023-04-06T10:55:35Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/5018631/items/TXKFJMNE?format=atom"/>
+    <link rel="alternate" type="text/html" href="https://www.zotero.org/groups/fair-impact_t4.3/items/TXKFJMNE"/>
+    <zapi:key>TXKFJMNE</zapi:key>
+    <zapi:version>27</zapi:version>
+    <zapi:lastModifiedByUser>Sabrina Granger</zapi:lastModifiedByUser>
+    <zapi:itemType>journalArticle</zapi:itemType>
+    <zapi:creatorSummary>Goble et al.</zapi:creatorSummary>
+    <zapi:parsedDate>2020-01-01</zapi:parsedDate>
+    <zapi:numChildren>0</zapi:numChildren>
+    <content zapi:type="html" type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Item Type</th>
+            <td>Journal Article</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Carole Goble</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Sarah Cohen-Boulakia</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Stian Soiland-Reyes</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Daniel Garijo</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Yolanda Gil</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Michael R. Crusoe</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Kristian Peters</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Daniel Schober</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>https://doi.org/10.1162/dint_a_00033</td>
+          </tr>
+          <tr class="volume">
+            <th style="text-align: right">Volume</th>
+            <td>2</td>
+          </tr>
+          <tr class="issue">
+            <th style="text-align: right">Issue</th>
+            <td>1-2</td>
+          </tr>
+          <tr class="pages">
+            <th style="text-align: right">Pages</th>
+            <td>108-121</td>
+          </tr>
+          <tr class="publicationTitle">
+            <th style="text-align: right">Publication</th>
+            <td>Data Intelligence</td>
+          </tr>
+          <tr class="ISSN">
+            <th style="text-align: right">ISSN</th>
+            <td>2641-435X</td>
+          </tr>
+          <tr class="date">
+            <th style="text-align: right">Date</th>
+            <td>2020-01-01</td>
+          </tr>
+          <tr class="journalAbbreviation">
+            <th style="text-align: right">Journal Abbr</th>
+            <td>Data Intelligence</td>
+          </tr>
+          <tr class="DOI">
+            <th style="text-align: right">DOI</th>
+            <td>10.1162/dint_a_00033</td>
+          </tr>
+          <tr class="accessDate">
+            <th style="text-align: right">Accessed</th>
+            <td>2023-04-06 08:53:36</td>
+          </tr>
+          <tr class="libraryCatalog">
+            <th style="text-align: right">Library Catalog</th>
+            <td>Silverchair</td>
+          </tr>
+          <tr class="abstractNote">
+            <th style="text-align: right">Abstract</th>
+            <td>Computational workflows describe the complex multi-step methods that are used for
+data collection, data preparation, analytics, predictive modelling, and
+simulation that lead to new data products. They can inherently contribute to the
+FAIR data principles: by processing data according to established metadata; by
+creating metadata themselves during the processing of data; and by tracking and
+recording data provenance. These properties aid data quality assessment and
+contribute to secondary data usage. Moreover, workflows are digital objects in
+their own right. This paper argues that FAIR principles for workflows need to
+address their specific nature in terms of their composition of executable
+software steps, their provenance, and their development.</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+  <entry xmlns:default="http://www.w3.org/1999/xhtml">
+    <title>Introduction to Workflows with Common Workflow Language</title>
+    <author>
+      <name>Sabrina Granger</name>
+      <uri>http://zotero.org/users/1126475</uri>
+    </author>
+    <id>http://zotero.org/groups/5018631/items/N8K9R3KC</id>
+    <published>2023-04-06T10:57:27Z</published>
+    <updated>2023-04-06T10:57:27Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/5018631/items/N8K9R3KC?format=atom"/>
+    <link rel="alternate" type="text/html" href="https://www.zotero.org/groups/fair-impact_t4.3/items/N8K9R3KC"/>
+    <zapi:key>N8K9R3KC</zapi:key>
+    <zapi:version>30</zapi:version>
+    <zapi:lastModifiedByUser>Sabrina Granger</zapi:lastModifiedByUser>
+    <zapi:itemType>webpage</zapi:itemType>
+    <zapi:creatorSummary>The Carpentries</zapi:creatorSummary>
+    <zapi:numChildren>0</zapi:numChildren>
+    <content zapi:type="html" type="xhtml">
+      <default:div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Item Type</th>
+            <td>Web Page</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>The Carpentries</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>https://carpentries-incubator.github.io/cwl-novice-tutorial/</td>
+          </tr>
+          <tr class="accessDate">
+            <th style="text-align: right">Accessed</th>
+            <td>2023-04-06 08:42:05</td>
+          </tr>
+          <tr class="abstractNote">
+            <th style="text-align: right">Abstract</th>
+            <td>This tutorial guides you through the the fundamentals of designing and building an analysis workflow. It assumes no previous knowledge or experience of workflows or Common Workflow Language (CWL), but does assume some experience with the Unix command line.</td>
+          </tr>
+          <tr class="websiteTitle">
+            <th style="text-align: right">Website Title</th>
+            <td>The Carpentries</td>
+          </tr>
+        </table>
+      </default:div>
+    </content>
+  </entry>
+  <entry>
+    <title>FAIR-enabling Data Policy Checklist</title>
+    <author>
+      <name>Sabrina Granger</name>
+      <uri>http://zotero.org/users/1126475</uri>
+    </author>
+    <id>http://zotero.org/groups/5018631/items/SCE7A2M5</id>
+    <published>2023-04-06T10:59:30Z</published>
+    <updated>2023-04-06T10:59:30Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/5018631/items/SCE7A2M5?format=atom"/>
+    <link rel="alternate" type="text/html" href="https://www.zotero.org/groups/fair-impact_t4.3/items/SCE7A2M5"/>
+    <zapi:key>SCE7A2M5</zapi:key>
+    <zapi:version>31</zapi:version>
+    <zapi:lastModifiedByUser>Sabrina Granger</zapi:lastModifiedByUser>
+    <zapi:itemType>document</zapi:itemType>
+    <zapi:creatorSummary>Davidson et al.</zapi:creatorSummary>
+    <zapi:parsedDate>2022-02-22</zapi:parsedDate>
+    <zapi:numChildren>0</zapi:numChildren>
+    <content zapi:type="html" type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Item Type</th>
+            <td>Document</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Joy Davidson</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Marjan Grootveld</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Maaike Verburg</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>René van Horik</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Ryan O'Connor</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Claudia Engelhardt</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Federica Garbuglia</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>André Vieira</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Elizabeth Newbold</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Vanessa Proudman</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Laurence Horton</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>https://doi.org/10.5281/zenodo.6225775</td>
+          </tr>
+          <tr class="date">
+            <th style="text-align: right">Date</th>
+            <td>2022-02-22</td>
+          </tr>
+          <tr class="extra">
+            <th style="text-align: right">Extra</th>
+            <td>Publisher: Zenodo</td>
+          </tr>
+          <tr class="accessDate">
+            <th style="text-align: right">Accessed</th>
+            <td>2023-04-06 08:54:11</td>
+          </tr>
+          <tr class="libraryCatalog">
+            <th style="text-align: right">Library Catalog</th>
+            <td>Zenodo</td>
+          </tr>
+          <tr class="abstractNote">
+            <th style="text-align: right">Abstract</th>
+            <td>This checklist helps policy-makers to assess whether elements of their data policies are FAIR-enabling as well as providing recommendations on what should be addressed in policies. The checklist is broken into three sections each dealing with a different policy aspects. These include: Context of the policy such as the title and the year the policy came into effect Content of the policy focusing on the suggested and required aspects of RDM and data sharing Support for adhering with the policy and compliance monitoring</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+  <entry>
+    <title>How to use Software Heritage for archiving and referencing your source code: guidelines and walkthrough</title>
+    <author>
+      <name>Sabrina Granger</name>
+      <uri>http://zotero.org/users/1126475</uri>
+    </author>
+    <id>http://zotero.org/groups/5018631/items/4CCF8ZEV</id>
+    <published>2023-04-06T10:59:48Z</published>
+    <updated>2023-04-06T10:59:48Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/5018631/items/4CCF8ZEV?format=atom"/>
+    <link rel="alternate" type="text/html" href="https://www.zotero.org/groups/fair-impact_t4.3/items/4CCF8ZEV"/>
+    <zapi:key>4CCF8ZEV</zapi:key>
+    <zapi:version>31</zapi:version>
+    <zapi:lastModifiedByUser>Sabrina Granger</zapi:lastModifiedByUser>
+    <zapi:itemType>document</zapi:itemType>
+    <zapi:creatorSummary>Di Cosmo</zapi:creatorSummary>
+    <zapi:parsedDate>2019-04-05</zapi:parsedDate>
+    <zapi:numChildren>0</zapi:numChildren>
+    <content zapi:type="html" type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Item Type</th>
+            <td>Document</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Roberto Di Cosmo</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>https://hal.archives-ouvertes.fr/hal-02263344</td>
+          </tr>
+          <tr class="date">
+            <th style="text-align: right">Date</th>
+            <td>2019/04/05</td>
+          </tr>
+          <tr class="accessDate">
+            <th style="text-align: right">Accessed</th>
+            <td>2019-12-19 15:26:40</td>
+          </tr>
+          <tr class="libraryCatalog">
+            <th style="text-align: right">Library Catalog</th>
+            <td>hal.inria.fr</td>
+          </tr>
+          <tr class="language">
+            <th style="text-align: right">Language</th>
+            <td>en</td>
+          </tr>
+          <tr class="abstractNote">
+            <th style="text-align: right">Abstract</th>
+            <td>Software source code is an essential research output, and many research communities strongly encourage making the source code of the artefact available by archiving it in publicly-accessible long-term archives. Software Heritage is a non profit, long term universal archive specifically designed for software source code, and able to store not only a software artifact, but also its full development history. It provides the ideal place to preserve research software artifacts, and offers powerful mechanisms to enhance research articles with precise references to relevant fragments of your source code. Using Software Heritage for your research software artifacts is straightforward and involves three simple steps. This document details each of these three steps, providing guidelines for making the most out of Software Heritage for your research.</td>
+          </tr>
+          <tr class="shortTitle">
+            <th style="text-align: right">Short Title</th>
+            <td>How to use Software Heritage for archiving and referencing your source code</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+  <entry>
+    <title>The Geoscience Paper of the Future Initiative</title>
+    <author>
+      <name>Sabrina Granger</name>
+      <uri>http://zotero.org/users/1126475</uri>
+    </author>
+    <id>http://zotero.org/groups/5018631/items/UPGUPC5M</id>
+    <published>2023-04-06T11:00:10Z</published>
+    <updated>2023-04-06T11:00:10Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/5018631/items/UPGUPC5M?format=atom"/>
+    <link rel="alternate" type="text/html" href="https://www.zotero.org/groups/fair-impact_t4.3/items/UPGUPC5M"/>
+    <zapi:key>UPGUPC5M</zapi:key>
+    <zapi:version>31</zapi:version>
+    <zapi:lastModifiedByUser>Sabrina Granger</zapi:lastModifiedByUser>
+    <zapi:itemType>blogPost</zapi:itemType>
+    <zapi:creatorSummary>EarthCube OntoSoft project</zapi:creatorSummary>
+    <zapi:numChildren>0</zapi:numChildren>
+    <content zapi:type="html" type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Item Type</th>
+            <td>Blog Post</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>EarthCube OntoSoft project</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>https://www.scientificpaperofthefuture.org/gpf/</td>
+          </tr>
+          <tr class="accessDate">
+            <th style="text-align: right">Accessed</th>
+            <td>2023-04-06</td>
+          </tr>
+          <tr class="abstractNote">
+            <th style="text-align: right">Abstract</th>
+            <td>The Geoscience Papers of the Future (GPF) is an initiative to encourage geoscientists to publish papers together with the associated digital products of their research. This means that a paper would include: 1) Documentation of datasets, including descriptions, unique identifiers, and availability in public repositories; 2) Documentation of software, including pre-processing of data and visualization steps, described with metadata and with unique identifiers and pointers to public code repositories; 3) Documentation of the provenance and workflow for each figure or result.</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Software and Services Citation Guidelines and Examples</title>
+    <author>
+      <name>Sabrina Granger</name>
+      <uri>http://zotero.org/users/1126475</uri>
+    </author>
+    <id>http://zotero.org/groups/5018631/items/6ZWS9GXW</id>
+    <published>2023-04-06T11:00:38Z</published>
+    <updated>2023-04-06T11:00:38Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/5018631/items/6ZWS9GXW?format=atom"/>
+    <link rel="alternate" type="text/html" href="https://www.zotero.org/groups/fair-impact_t4.3/items/6ZWS9GXW"/>
+    <zapi:key>6ZWS9GXW</zapi:key>
+    <zapi:version>31</zapi:version>
+    <zapi:lastModifiedByUser>Sabrina Granger</zapi:lastModifiedByUser>
+    <zapi:itemType>document</zapi:itemType>
+    <zapi:creatorSummary>Earth Science Information Partners (ESIP) Software and Services Citation Cluster et al.</zapi:creatorSummary>
+    <zapi:parsedDate>2019-02-20</zapi:parsedDate>
+    <zapi:numChildren>0</zapi:numChildren>
+    <content zapi:type="html" type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Item Type</th>
+            <td>Document</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Earth Science Information Partners (ESIP) Software and Services Citation Cluster</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Jessica Hausman</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Shelley Stall</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>James Gallagher</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Mingfang Wu</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>https://doi.org/10.6084/m9.figshare.7640426.v4</td>
+          </tr>
+          <tr class="date">
+            <th style="text-align: right">Date</th>
+            <td>2019/02/20</td>
+          </tr>
+          <tr class="extra">
+            <th style="text-align: right">Extra</th>
+            <td>Publisher: ESIP</td>
+          </tr>
+          <tr class="accessDate">
+            <th style="text-align: right">Accessed</th>
+            <td>2023-04-06 08:30:44</td>
+          </tr>
+          <tr class="libraryCatalog">
+            <th style="text-align: right">Library Catalog</th>
+            <td>esip.figshare.com</td>
+          </tr>
+          <tr class="language">
+            <th style="text-align: right">Language</th>
+            <td>en</td>
+          </tr>
+          <tr class="abstractNote">
+            <th style="text-align: right">Abstract</th>
+            <td>This document presents guidelines on how to cite software and services for authors of journal articles. Journal publishers can also provide this as a reference to their authors on how to cite software and services. These guidelines were developed by the Earth Science Information Partners (ESIP) Software and Services Citation Cluster and endorsed by the ESIP Assembly in January 2019.</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Evaluation Criteria Checklist for Repositories and Scientific gateways</title>
+    <author>
+      <name>Sabrina Granger</name>
+      <uri>http://zotero.org/users/1126475</uri>
+    </author>
+    <id>http://zotero.org/groups/5018631/items/3MSUJU93</id>
+    <published>2023-04-06T11:00:55Z</published>
+    <updated>2023-04-06T11:00:55Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/5018631/items/3MSUJU93?format=atom"/>
+    <link rel="alternate" type="text/html" href="https://www.zotero.org/groups/fair-impact_t4.3/items/3MSUJU93"/>
+    <zapi:key>3MSUJU93</zapi:key>
+    <zapi:version>31</zapi:version>
+    <zapi:lastModifiedByUser>Sabrina Granger</zapi:lastModifiedByUser>
+    <zapi:itemType>webpage</zapi:itemType>
+    <zapi:creatorSummary>International Neuroinformatics Coordinating Facility (INCF)</zapi:creatorSummary>
+    <zapi:numChildren>0</zapi:numChildren>
+    <content zapi:type="html" type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Item Type</th>
+            <td>Web Page</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>International Neuroinformatics Coordinating Facility (INCF)</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>https://www.incf.org/criteria-checklist</td>
+          </tr>
+          <tr class="accessDate">
+            <th style="text-align: right">Accessed</th>
+            <td>2022-11-28 15:45:51</td>
+          </tr>
+          <tr class="language">
+            <th style="text-align: right">Language</th>
+            <td>EN</td>
+          </tr>
+          <tr class="abstractNote">
+            <th style="text-align: right">Abstract</th>
+            <td>Repositories and science gateways are key resources for the neuroscience community, but users often have a hard time orienting themselves in the service landscape to find the best fit for their particular needs. On the other hand, service developers lack authoritative guidance to develop their platforms. INCF wants to help neuroscience researchers and students choose good services for their specific use cases; we also want to help service providers make good and future-proof decisions for setup and operations.
+
+To this end, the INCF Infrastructure Committee has developed a set of recommendations and this checklist of associated criteria for choosing or setting up and running a repository or scientific gateway, intended for the neuroscience community, with a FAIR neuroscience perspective. The committee is aiming for an inclusive set of recommendations that can apply to a wide and diverse range of digital services, both repositories and science gateways, for data as well as software.
+
+The criteria checklist is meant to be a living document, continuously updated. Please give us your feedback by emailing info@incf.org.</td>
+          </tr>
+          <tr class="websiteTitle">
+            <th style="text-align: right">Website Title</th>
+            <td>International Neuroinformatics Coordinating Facility (INCF)</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Credit Lost: Two Decades of Software Citation in Astronomy</title>
+    <author>
+      <name>Sabrina Granger</name>
+      <uri>http://zotero.org/users/1126475</uri>
+    </author>
+    <id>http://zotero.org/groups/5018631/items/45SCH25L</id>
+    <published>2023-04-06T11:04:04Z</published>
+    <updated>2023-04-06T11:04:04Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/5018631/items/45SCH25L?format=atom"/>
+    <link rel="alternate" type="text/html" href="https://www.zotero.org/groups/fair-impact_t4.3/items/45SCH25L"/>
+    <zapi:key>45SCH25L</zapi:key>
+    <zapi:version>33</zapi:version>
+    <zapi:lastModifiedByUser>Sabrina Granger</zapi:lastModifiedByUser>
+    <zapi:itemType>journalArticle</zapi:itemType>
+    <zapi:creatorSummary>Bouquin et al.</zapi:creatorSummary>
+    <zapi:parsedDate>2020-06</zapi:parsedDate>
+    <zapi:numChildren>0</zapi:numChildren>
+    <content zapi:type="html" type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Item Type</th>
+            <td>Journal Article</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Daina R. Bouquin</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Daniel A. Chivvis</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Edwin Henneken</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Kelly Lockhart</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>August Muench</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Jennifer Koch</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>https://dx.doi.org/10.3847/1538-4365/ab7be6</td>
+          </tr>
+          <tr class="volume">
+            <th style="text-align: right">Volume</th>
+            <td>249</td>
+          </tr>
+          <tr class="issue">
+            <th style="text-align: right">Issue</th>
+            <td>1</td>
+          </tr>
+          <tr class="pages">
+            <th style="text-align: right">Pages</th>
+            <td>8</td>
+          </tr>
+          <tr class="publicationTitle">
+            <th style="text-align: right">Publication</th>
+            <td>The Astrophysical Journal Supplement Series</td>
+          </tr>
+          <tr class="ISSN">
+            <th style="text-align: right">ISSN</th>
+            <td>0067-0049</td>
+          </tr>
+          <tr class="date">
+            <th style="text-align: right">Date</th>
+            <td>2020-06</td>
+          </tr>
+          <tr class="extra">
+            <th style="text-align: right">Extra</th>
+            <td>Publisher: The American Astronomical Society</td>
+          </tr>
+          <tr class="journalAbbreviation">
+            <th style="text-align: right">Journal Abbr</th>
+            <td>ApJS</td>
+          </tr>
+          <tr class="DOI">
+            <th style="text-align: right">DOI</th>
+            <td>10.3847/1538-4365/ab7be6</td>
+          </tr>
+          <tr class="accessDate">
+            <th style="text-align: right">Accessed</th>
+            <td>2023-03-07 15:43:57</td>
+          </tr>
+          <tr class="libraryCatalog">
+            <th style="text-align: right">Library Catalog</th>
+            <td>Institute of Physics</td>
+          </tr>
+          <tr class="language">
+            <th style="text-align: right">Language</th>
+            <td>en</td>
+          </tr>
+          <tr class="abstractNote">
+            <th style="text-align: right">Abstract</th>
+            <td>Software has been a crucial contributor to scientific progress in astronomy for decades, but practices that enable machine-actionable citations have not been consistently applied to software itself. Instead, software citation behaviors developed independently from standard publication mechanisms and policies, resulting in human-readable citations that remain hidden over time and that cannot represent the influence software has had in the field. These historical software citation behaviors need to be understood in order to improve software citation guidance and develop relevant publishing practices that fully support the astronomy community. To this end, a 23 year retrospective analysis of software citation practices in astronomy was developed. Astronomy publications were mined for 410 aliases associated with nine software packages and analyzed to identify past practices and trends that prevent software citations from benefiting software authors.</td>
+          </tr>
+          <tr class="shortTitle">
+            <th style="text-align: right">Short Title</th>
+            <td>Credit Lost</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+  <entry xmlns:default="http://www.w3.org/1999/xhtml">
+    <title>State of the art regarding digital badge issuing technologies</title>
+    <author>
+      <name>Sabrina Granger</name>
+      <uri>http://zotero.org/users/1126475</uri>
+    </author>
+    <id>http://zotero.org/groups/5018631/items/GDVD9HLJ</id>
+    <published>2023-04-06T11:04:25Z</published>
+    <updated>2023-04-06T11:04:25Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/5018631/items/GDVD9HLJ?format=atom"/>
+    <link rel="alternate" type="text/html" href="https://www.zotero.org/groups/fair-impact_t4.3/items/GDVD9HLJ"/>
+    <zapi:key>GDVD9HLJ</zapi:key>
+    <zapi:version>33</zapi:version>
+    <zapi:lastModifiedByUser>Sabrina Granger</zapi:lastModifiedByUser>
+    <zapi:itemType>journalArticle</zapi:itemType>
+    <zapi:creatorSummary>Moltó et al.</zapi:creatorSummary>
+    <zapi:parsedDate>2020</zapi:parsedDate>
+    <zapi:numChildren>0</zapi:numChildren>
+    <content zapi:type="html" type="xhtml">
+      <default:div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Item Type</th>
+            <td>Journal Article</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Germán Moltó</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Isabel Campos</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Marcus Hardt</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Ignacio Blanquer</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Miguel Caballer</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Pablo Orviz</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Mario David</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Jorge Gomes</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>EOSC-SYNERGY</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>https://digital.csic.es/handle/10261/206348</td>
+          </tr>
+          <tr class="rights">
+            <th style="text-align: right">Rights</th>
+            <td>openAccess</td>
+          </tr>
+          <tr class="date">
+            <th style="text-align: right">Date</th>
+            <td>2020</td>
+          </tr>
+          <tr class="extra">
+            <th style="text-align: right">Extra</th>
+            <td>Accepted: 2020-04-03T07:09:19Z</td>
+          </tr>
+          <tr class="DOI">
+            <th style="text-align: right">DOI</th>
+            <td>10.13039/501100000780</td>
+          </tr>
+          <tr class="accessDate">
+            <th style="text-align: right">Accessed</th>
+            <td>2023-04-06 09:00:18</td>
+          </tr>
+          <tr class="libraryCatalog">
+            <th style="text-align: right">Library Catalog</th>
+            <td>digital.csic.es</td>
+          </tr>
+          <tr class="language">
+            <th style="text-align: right">Language</th>
+            <td>eng</td>
+          </tr>
+          <tr class="abstractNote">
+            <th style="text-align: right">Abstract</th>
+            <td>This document analyses the existing services and tools that allow issuing digital badges with the purpose of selecting the most appropriate one to be adopted by EOSC-SYNERGY in order to issue proper recognition stamps to software that complies with the Software Quality Levels (SQA) metrics defined in the project.</td>
+          </tr>
+        </table>
+      </default:div>
+    </content>
+  </entry>
+  <entry>
+    <title>Guidelines</title>
+    <author>
+      <name>Sabrina Granger</name>
+      <uri>http://zotero.org/users/1126475</uri>
+    </author>
+    <id>http://zotero.org/groups/5018631/items/JNQZLE7M</id>
+    <published>2023-04-06T11:06:44Z</published>
+    <updated>2023-04-06T11:06:44Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/5018631/items/JNQZLE7M?format=atom"/>
+    <link rel="alternate" type="text/html" href="https://www.zotero.org/groups/fair-impact_t4.3/items/JNQZLE7M"/>
+    <zapi:key>JNQZLE7M</zapi:key>
+    <zapi:version>35</zapi:version>
+    <zapi:lastModifiedByUser>Sabrina Granger</zapi:lastModifiedByUser>
+    <zapi:itemType>blogPost</zapi:itemType>
+    <zapi:creatorSummary>The Research Software Alliance</zapi:creatorSummary>
+    <zapi:parsedDate>2021-04-28</zapi:parsedDate>
+    <zapi:numChildren>0</zapi:numChildren>
+    <content zapi:type="html" type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Item Type</th>
+            <td>Blog Post</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>The Research Software Alliance</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>https://www.researchsoft.org/guidelines/</td>
+          </tr>
+          <tr class="date">
+            <th style="text-align: right">Date</th>
+            <td>2021-04-28T00:00:00+00:00</td>
+          </tr>
+          <tr class="accessDate">
+            <th style="text-align: right">Accessed</th>
+            <td>2023-04-06 11:06:14</td>
+          </tr>
+          <tr class="language">
+            <th style="text-align: right">Language</th>
+            <td>en-uk</td>
+          </tr>
+          <tr class="abstractNote">
+            <th style="text-align: right">Abstract</th>
+            <td>To help you identify key resources this page highlights those relevant to each of the ReSA themes: people, policy and infrastructure. These resources are mostly international recommendations, reports and guidelines that emphasise best practice. People Research Software Engineering (RSE) International Survey: 2022 results now available to help understand the RSE community, inform policies and create incentives that advance RSE interests, building on the 2018 and 2016 survey results.</td>
+          </tr>
+          <tr class="blogTitle">
+            <th style="text-align: right">Blog Title</th>
+            <td>The Research Software Alliance</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+  <entry xmlns:default="http://www.w3.org/1999/xhtml">
+    <title>Top 10 metrics for life science software good practices</title>
+    <author>
+      <name>Sabrina Granger</name>
+      <uri>http://zotero.org/users/1126475</uri>
+    </author>
+    <id>http://zotero.org/groups/5018631/items/EVY2VJ69</id>
+    <published>2023-04-06T09:03:28Z</published>
+    <updated>2023-04-06T12:48:12Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/5018631/items/EVY2VJ69?format=atom"/>
+    <link rel="alternate" type="text/html" href="https://www.zotero.org/groups/fair-impact_t4.3/items/EVY2VJ69"/>
+    <zapi:key>EVY2VJ69</zapi:key>
+    <zapi:version>36</zapi:version>
+    <zapi:lastModifiedByUser>Sabrina Granger</zapi:lastModifiedByUser>
+    <zapi:itemType>report</zapi:itemType>
+    <zapi:creatorSummary>Artaza et al.</zapi:creatorSummary>
+    <zapi:parsedDate>2016-08-16</zapi:parsedDate>
+    <zapi:numChildren>0</zapi:numChildren>
+    <content zapi:type="html" type="xhtml">
+      <default:div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Item Type</th>
+            <td>Report</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Haydee Artaza</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Neil P. Chue Hong</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Manuel Corpas</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Angel Corpuz</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Rob W. W. Hooft</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Rafael C. Jiménez</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Brane Leskošek</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Brett G. Olivier</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Jan Stourac</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Radka Svobodová Vařeková</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Thomas Van Parys</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Daniel Vaughan</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>https://f1000research.com/articles/5-2000</td>
+          </tr>
+          <tr class="rights">
+            <th style="text-align: right">Rights</th>
+            <td>http://creativecommons.org/licenses/by/4.0/</td>
+          </tr>
+          <tr class="date">
+            <th style="text-align: right">Date</th>
+            <td>2016-08-16</td>
+          </tr>
+          <tr class="extra">
+            <th style="text-align: right">Extra</th>
+            <td>DOI: 10.12688/f1000research.9206.1
+Type: article</td>
+          </tr>
+          <tr class="accessDate">
+            <th style="text-align: right">Accessed</th>
+            <td>2023-04-06 09:03:12</td>
+          </tr>
+          <tr class="institution">
+            <th style="text-align: right">Institution</th>
+            <td>F1000Research</td>
+          </tr>
+          <tr class="libraryCatalog">
+            <th style="text-align: right">Library Catalog</th>
+            <td>f1000research.com</td>
+          </tr>
+          <tr class="language">
+            <th style="text-align: right">Language</th>
+            <td>en</td>
+          </tr>
+          <tr class="abstractNote">
+            <th style="text-align: right">Abstract</th>
+            <td>Metrics for assessing adoption of good development practices are a useful way to ensure that software is sustainable, reusable and functional. Sustainability&amp;nbsp;means that the software used today will be available - and continue to be improved and supported - in the future. We report here an initial set of metrics that measure good practices in software development. This initiative differs from previously developed efforts in being a community-driven grassroots approach where experts from different organisations propose good software practices that have reasonable potential to be adopted by the communities they represent. We not only focus our efforts on understanding and prioritising good practices, we assess their feasibility for implementation and publish them here.</td>
+          </tr>
+          <tr class="reportNumber">
+            <th style="text-align: right">Report Number</th>
+            <td>5:2000</td>
+          </tr>
+        </table>
+      </default:div>
+    </content>
+  </entry>
+  <entry xmlns:default="http://www.w3.org/1999/xhtml">
+    <title>CodeRefinery: Training and e-Infrastructure for Research Software Development</title>
+    <author>
+      <name>Sabrina Granger</name>
+      <uri>http://zotero.org/users/1126475</uri>
+    </author>
+    <id>http://zotero.org/groups/5018631/items/SZGHV4ZV</id>
+    <published>2023-04-06T13:08:36Z</published>
+    <updated>2023-04-06T13:09:23Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/5018631/items/SZGHV4ZV?format=atom"/>
+    <link rel="alternate" type="text/html" href="https://www.zotero.org/groups/fair-impact_t4.3/items/SZGHV4ZV"/>
+    <zapi:key>SZGHV4ZV</zapi:key>
+    <zapi:version>41</zapi:version>
+    <zapi:lastModifiedByUser>Sabrina Granger</zapi:lastModifiedByUser>
+    <zapi:itemType>blogPost</zapi:itemType>
+    <zapi:creatorSummary>CodeRefinery</zapi:creatorSummary>
+    <zapi:numChildren>0</zapi:numChildren>
+    <content zapi:type="html" type="xhtml">
+      <default:div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Item Type</th>
+            <td>Blog Post</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>CodeRefinery</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>https://coderefinery.org/</td>
+          </tr>
+          <tr class="accessDate">
+            <th style="text-align: right">Accessed</th>
+            <td>2023-04-06 13:08:36</td>
+          </tr>
+          <tr class="language">
+            <th style="text-align: right">Language</th>
+            <td>en</td>
+          </tr>
+          <tr class="abstractNote">
+            <th style="text-align: right">Abstract</th>
+            <td>We teach all the essential tools which are usually skipped in academic education so everyone can make full use of software, computing, and data. We don't just give courses, but we are a training network that you can join to share the effort and bring better courses to your community.
+Our standard workshop is well known in Nordic academic circles and our engaging online teaching style is considered best-in-class even compared to in-person teaching. CodeRefinery aims to operate as a community project with support from academic organizations.</td>
+          </tr>
+          <tr class="blogTitle">
+            <th style="text-align: right">Blog Title</th>
+            <td>CodeRefinery</td>
+          </tr>
+        </table>
+      </default:div>
+    </content>
+  </entry>
+  <entry xmlns:default="http://www.w3.org/1999/xhtml">
+    <title>Defining Research Software: a controversial discussion</title>
+    <author>
+      <name>Sabrina Granger</name>
+      <uri>http://zotero.org/users/1126475</uri>
+    </author>
+    <id>http://zotero.org/groups/5018631/items/UXK9GL6N</id>
+    <published>2023-05-16T13:31:05Z</published>
+    <updated>2023-05-16T13:31:05Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/5018631/items/UXK9GL6N?format=atom"/>
+    <link rel="alternate" type="text/html" href="https://www.zotero.org/groups/fair-impact_t4.3/items/UXK9GL6N"/>
+    <zapi:key>UXK9GL6N</zapi:key>
+    <zapi:version>68</zapi:version>
+    <zapi:lastModifiedByUser>Sabrina Granger</zapi:lastModifiedByUser>
+    <zapi:itemType>report</zapi:itemType>
+    <zapi:creatorSummary>Gruenpeter, Morane et al.</zapi:creatorSummary>
+    <zapi:parsedDate>2021-09-13</zapi:parsedDate>
+    <zapi:numChildren>0</zapi:numChildren>
+    <content zapi:type="html" type="xhtml">
+      <default:div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Item Type</th>
+            <td>Report</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Gruenpeter, Morane</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Katz, Daniel S.</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Lamprecht, Anna-Lena</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Honeyman, Tom</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Garijo, Daniel</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Struck, Alexander</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Niehues, Anna</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Martinez, Paula Andrea</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Castro, Leyla Jael</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Rabemanantsoa, Tovo</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Chue Hong, Neil P.</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Martinez-Ortiz, Carlos</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Sesink, Laurents</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Liffers, Matthias</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Fouilloux, Anne Claire</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Erdmann, Chris</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Peroni, Silvio</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Martinez Lavanchy, Paula</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Todorov, Ilian</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Author</th>
+            <td>Sinha, Manodeep</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>https://zenodo.org/record/5504016</td>
+          </tr>
+          <tr class="rights">
+            <th style="text-align: right">Rights</th>
+            <td>Creative Commons Attribution 4.0 International, Open Access</td>
+          </tr>
+          <tr class="date">
+            <th style="text-align: right">Date</th>
+            <td>2021-09-13</td>
+          </tr>
+          <tr class="extra">
+            <th style="text-align: right">Extra</th>
+            <td>Version Number: 1
+DOI: 10.5281/ZENODO.5504016</td>
+          </tr>
+          <tr class="accessDate">
+            <th style="text-align: right">Accessed</th>
+            <td>2023-05-16 13:30:51</td>
+          </tr>
+          <tr class="institution">
+            <th style="text-align: right">Institution</th>
+            <td>Zenodo</td>
+          </tr>
+          <tr class="libraryCatalog">
+            <th style="text-align: right">Library Catalog</th>
+            <td>DOI.org (Datacite)</td>
+          </tr>
+          <tr class="abstractNote">
+            <th style="text-align: right">Abstract</th>
+            <td>Software is essential in modern research; it plays vital roles at multiple stages of the research lifecycle. The term Research Software is widely used in the academic community but, what do we mean when we use these terms? Software and research? When you think of software, you may think of a digital object that is executed on a machine. Yet software is more than just this, it is a complex and evolving artifact. It may be a concept or a project designed to solve a puzzle by a team or a community that develops its functionalities and algorithms, which might not be digital objects. Furthermore, the software artifacts are digital objects, e.g., executables and source code files for different environments. These digital artifacts, which are used in a scholarly setting, might be important in the research process, but should all these be considered Research Software? This report is the result of a discussion examining the scope of the community definition of the FAIR principles for Research Software as part of the work in the FAIR for Research Software working group (FAIR4RS). We aim to clarify the scope of the FAIR principles by identifying which software artifacts the FAIR principles should apply to. This discussion portrayed a complex landscape of software uses in research and existing definitions that can help to better understand the complexity of different types of software in academia. Finally we determine the scope of the FAIR4RS with a short and concise definition of Research Software as a separate metaphor of software in research.</td>
+          </tr>
+          <tr class="shortTitle">
+            <th style="text-align: right">Short Title</th>
+            <td>Defining Research Software</td>
+          </tr>
+        </table>
+      </default:div>
+    </content>
+  </entry>
+  <entry>
+    <title>An overview of the metadata landscape &amp; descriptive metadata curation</title>
+    <author>
+      <name>Sabrina Granger</name>
+      <uri>http://zotero.org/users/1126475</uri>
+    </author>
+    <id>http://zotero.org/groups/5018631/items/D5A7HLW8</id>
+    <published>2023-05-16T13:35:06Z</published>
+    <updated>2023-05-16T13:36:19Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/5018631/items/D5A7HLW8?format=atom"/>
+    <link rel="alternate" type="text/html" href="https://www.zotero.org/groups/fair-impact_t4.3/items/D5A7HLW8"/>
+    <zapi:key>D5A7HLW8</zapi:key>
+    <zapi:version>74</zapi:version>
+    <zapi:lastModifiedByUser>Sabrina Granger</zapi:lastModifiedByUser>
+    <zapi:itemType>presentation</zapi:itemType>
+    <zapi:creatorSummary>Gruenpeter, Morane</zapi:creatorSummary>
+    <zapi:parsedDate>2023-03-24</zapi:parsedDate>
+    <zapi:numChildren>0</zapi:numChildren>
+    <content zapi:type="html" type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Item Type</th>
+            <td>Presentation</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Presenter</th>
+            <td>Gruenpeter, Morane</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>https://zenodo.org/record/7771642</td>
+          </tr>
+          <tr class="rights">
+            <th style="text-align: right">Rights</th>
+            <td>Creative Commons Attribution 4.0 International, Open Access</td>
+          </tr>
+          <tr class="place">
+            <th style="text-align: right">Place</th>
+            <td>Gothenburg</td>
+          </tr>
+          <tr class="date">
+            <th style="text-align: right">Date</th>
+            <td>2023-03-24</td>
+          </tr>
+          <tr class="extra">
+            <th style="text-align: right">Extra</th>
+            <td>Publisher: Zenodo</td>
+          </tr>
+          <tr class="accessDate">
+            <th style="text-align: right">Accessed</th>
+            <td>2023-05-16 13:35:06</td>
+          </tr>
+          <tr class="meetingName">
+            <th style="text-align: right">Meeting Name</th>
+            <td>Research Data Alliance Plenary Session</td>
+          </tr>
+          <tr class="language">
+            <th style="text-align: right">Language</th>
+            <td>en</td>
+          </tr>
+          <tr class="abstractNote">
+            <th style="text-align: right">Abstract</th>
+            <td>This presentation was part of the Research Software workshop, co-located event with the RDA P20 in Gothenburg. An overview of the current landscape of metadata vocabularies and tools to support descriptive metadata curation using different platforms and the CodeMeta vocabulary. Presenting also the session A activity: identifying the use cases that can be achieved with a specific metadata property, identifying who is responsible to provide the metadata, where it can be found, the challenges that we encounter with this metadata, how can we improve the quality of the metadata and what is the level of the priority (MUST, SHOULD, MAY) in the literature.</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+  <entry>
+    <title>An overview of FAIR4RS and existing tools to assess FAIRness of software</title>
+    <author>
+      <name>Sabrina Granger</name>
+      <uri>http://zotero.org/users/1126475</uri>
+    </author>
+    <id>http://zotero.org/groups/5018631/items/N34MM4A5</id>
+    <published>2023-05-16T13:33:45Z</published>
+    <updated>2023-05-16T13:37:16Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/5018631/items/N34MM4A5?format=atom"/>
+    <link rel="alternate" type="text/html" href="https://www.zotero.org/groups/fair-impact_t4.3/items/N34MM4A5"/>
+    <zapi:key>N34MM4A5</zapi:key>
+    <zapi:version>77</zapi:version>
+    <zapi:lastModifiedByUser>Sabrina Granger</zapi:lastModifiedByUser>
+    <zapi:itemType>presentation</zapi:itemType>
+    <zapi:creatorSummary>Chue Hong, Neil</zapi:creatorSummary>
+    <zapi:parsedDate>2023-03-24</zapi:parsedDate>
+    <zapi:numChildren>0</zapi:numChildren>
+    <content zapi:type="html" type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Item Type</th>
+            <td>Presentation</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Presenter</th>
+            <td>Chue Hong, Neil</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>https://zenodo.org/record/7805608</td>
+          </tr>
+          <tr class="rights">
+            <th style="text-align: right">Rights</th>
+            <td>Creative Commons Attribution 4.0 International, Open Access</td>
+          </tr>
+          <tr class="place">
+            <th style="text-align: right">Place</th>
+            <td>Gothenburg</td>
+          </tr>
+          <tr class="date">
+            <th style="text-align: right">Date</th>
+            <td>2023-03-24</td>
+          </tr>
+          <tr class="extra">
+            <th style="text-align: right">Extra</th>
+            <td>Publisher: Zenodo</td>
+          </tr>
+          <tr class="accessDate">
+            <th style="text-align: right">Accessed</th>
+            <td>2023-05-16 13:33:45</td>
+          </tr>
+          <tr class="meetingName">
+            <th style="text-align: right">Meeting Name</th>
+            <td>Research Data Alliance Plenary Session</td>
+          </tr>
+          <tr class="language">
+            <th style="text-align: right">Language</th>
+            <td>en</td>
+          </tr>
+          <tr class="abstractNote">
+            <th style="text-align: right">Abstract</th>
+            <td>This presentation was part of the Research Software workshop, a co-located event with the RDA P20 in Gothenburg. It gives an overview of the FAIR Principles for Research Software (FAIR4RS) and of the current landscape of FAIR metrics, and FAIR metrics tools with a particular emphasis on metrics for software. It also presents the session B activity: identifying indicators and metrics for different FAIR4RS principles - the results of this activity are recorded separately in the main dataset from this workshop.</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+  <entry>
+    <title>EOSC Software Infrastructures for Research Software: J. B. Gonzalez Lopez (CERN)</title>
+    <author>
+      <name>Sabrina Granger</name>
+      <uri>http://zotero.org/users/1126475</uri>
+    </author>
+    <id>http://zotero.org/groups/5018631/items/4IGMV7KS</id>
+    <published>2023-05-16T13:41:50Z</published>
+    <updated>2023-05-16T13:41:50Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/5018631/items/4IGMV7KS?format=atom"/>
+    <link rel="alternate" type="text/html" href="https://www.zotero.org/groups/fair-impact_t4.3/items/4IGMV7KS"/>
+    <zapi:key>4IGMV7KS</zapi:key>
+    <zapi:version>80</zapi:version>
+    <zapi:lastModifiedByUser>Sabrina Granger</zapi:lastModifiedByUser>
+    <zapi:itemType>videoRecording</zapi:itemType>
+    <zapi:creatorSummary>Software Heritage</zapi:creatorSummary>
+    <zapi:parsedDate>2022-01-27</zapi:parsedDate>
+    <zapi:numChildren>0</zapi:numChildren>
+    <content zapi:type="html" type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Item Type</th>
+            <td>Video Recording</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Director</th>
+            <td>Software Heritage</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>https://www.youtube.com/watch?v=dc1fbSStYBw</td>
+          </tr>
+          <tr class="date">
+            <th style="text-align: right">Date</th>
+            <td>2022-01-27</td>
+          </tr>
+          <tr class="accessDate">
+            <th style="text-align: right">Accessed</th>
+            <td>2023-05-16 13:41:50</td>
+          </tr>
+          <tr class="libraryCatalog">
+            <th style="text-align: right">Library Catalog</th>
+            <td>YouTube</td>
+          </tr>
+          <tr class="runningTime">
+            <th style="text-align: right">Running Time</th>
+            <td>16:32</td>
+          </tr>
+          <tr class="abstractNote">
+            <th style="text-align: right">Abstract</th>
+            <td>Software Heritage mission is to collect, preserve, and share all software that is publicly available in source code form. On November 30th, the SWH community celebrated 5th anniversary of the project, this event is an opportunity to take stock of the achievements and status of the project, and to highlight the relevance of its mission in the context of today’s dynamic digital innovation landscape. 
+
+Jose Benito Gonzalez Lopez, CERN presented EOSC Software Infrastructures for Research Software and the SIRS report, which was published in December 2020.
+https://doi.org/10.2777/28598
+"The Task Force on Scholarly Infrastructures of Research Software, as part of the Architecture WG of the European Open Science Cloud (EOSC) Executive Board, has established a set of recommendations to allow EOSC to include software, next to other research outputs like publications and data, in the realm of its research artifacts. This work is built upon a survey and documentation of a representative panel of current operational infrastructures across Europe, comparing their scopes and approaches. This report summarises the state of the art, identifies best practices, as well as open problems, and paves the way for federating the different approaches in view of supporting the software pillar of EOSC."
+
+You too, you can be part of this wonderful mission and contribute to the community, by:
+- Becoming a sponsor: sponsorship.softwareheritage.org
+- Contributing to the code: forge.softwareheritage.org
+- Building a mirror: mirrors.softwareheritage.org
+- Spreading the word: testimonials.softwareheritage.org
+
+Would you like to stay up to date with our latest news? Subscribe to our newsletter: https://www.softwareheritage.org/news...
+
+Learn more about Software Heritage: https://www.softwareheritage.org/</td>
+          </tr>
+          <tr class="shortTitle">
+            <th style="text-align: right">Short Title</th>
+            <td>EOSC Software Infrastructures for Research Software</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+  <entry>
+    <title>The SWH-ID: a digital fingerprint identifying software source code</title>
+    <author>
+      <name>Sabrina Granger</name>
+      <uri>http://zotero.org/users/1126475</uri>
+    </author>
+    <id>http://zotero.org/groups/5018631/items/LLCEC2DI</id>
+    <published>2023-05-16T13:44:14Z</published>
+    <updated>2023-05-16T13:45:22Z</updated>
+    <link rel="self" type="application/atom+xml" href="https://api.zotero.org/groups/5018631/items/LLCEC2DI?format=atom"/>
+    <link rel="alternate" type="text/html" href="https://www.zotero.org/groups/fair-impact_t4.3/items/LLCEC2DI"/>
+    <zapi:key>LLCEC2DI</zapi:key>
+    <zapi:version>84</zapi:version>
+    <zapi:lastModifiedByUser>Sabrina Granger</zapi:lastModifiedByUser>
+    <zapi:itemType>presentation</zapi:itemType>
+    <zapi:creatorSummary>Di Cosmo and Gruenpeter</zapi:creatorSummary>
+    <zapi:parsedDate>2020-01-29</zapi:parsedDate>
+    <zapi:numChildren>1</zapi:numChildren>
+    <content zapi:type="html" type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <tr class="itemType">
+            <th style="text-align: right">Item Type</th>
+            <td>Presentation</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Presenter</th>
+            <td>Roberto Di Cosmo</td>
+          </tr>
+          <tr class="creator">
+            <th style="text-align: right">Presenter</th>
+            <td>Morane Gruenpeter</td>
+          </tr>
+          <tr class="url">
+            <th style="text-align: right">URL</th>
+            <td>https://zenodo.org/record/3630124</td>
+          </tr>
+          <tr class="rights">
+            <th style="text-align: right">Rights</th>
+            <td>Creative Commons Attribution 4.0 International, Open Access</td>
+          </tr>
+          <tr class="date">
+            <th style="text-align: right">Date</th>
+            <td>2020-01-29</td>
+          </tr>
+          <tr class="extra">
+            <th style="text-align: right">Extra</th>
+            <td>Publisher: Zenodo</td>
+          </tr>
+          <tr class="accessDate">
+            <th style="text-align: right">Accessed</th>
+            <td>2023-05-16 13:44:14</td>
+          </tr>
+          <tr class="language">
+            <th style="text-align: right">Language</th>
+            <td>en</td>
+          </tr>
+          <tr class="abstractNote">
+            <th style="text-align: right">Abstract</th>
+            <td>The Software Heritage universal archive of software source code relies on&lt;br&gt; well established techniques used in software development communities to&lt;br&gt; identify the over 20 billion code artifacts it preserves with cryptographic hashes in a Merkle DAG data structure.</td>
+          </tr>
+          <tr class="shortTitle">
+            <th style="text-align: right">Short Title</th>
+            <td>The SWH-ID</td>
+          </tr>
+        </table>
+      </div>
+    </content>
+  </entry>
+</feed>
