@@ -1,10 +1,12 @@
 #/usr/bin/env bash
+ #/Users/kristen/Library/CloudStorage/Source/wiki/API_KEYS.sh
 
 
 
-
+export SCICRUNCH_API_KEY="39hws5krMT3rZPhysVwTBiVIBsVGmcDe"
 
 export ADS_TOKEN=“E2qOsvGu9xpcwQsIqZmhyAK6aq0Wbn7YSCM7X8yG”
+
 ##
 ##curl -H 'Authorization: Bearer E2qOsvGu9xpcwQsIqZmhyAK6aq0Wbn7YSCM7X8yG' 'https://api.adsabs.harvard.edu/v1/search/query?q=star&fl=bibcode'
 
