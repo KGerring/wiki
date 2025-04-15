@@ -1,0 +1,75 @@
+### Exisiting top-level ontologies
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+### Existing ontologies related to RDF resource assessment
+@prefix dqv: <http://www.w3.org/ns/dqv#> .  # data Quality Vocabulary
+@prefix ldqd: <https://www.w3.org/2016/05/ldqd#> .   # Linked data Quality Dimension
+@prefix dqm:  <http://purl.org/eis/vocab/dqm#> .
+
+### Newly-defined vocabularies
+@prefix fqm:<http://purl.org/fqm#> .
+
+fqm:
+	a owl:Ontology ;
+    dct:title "Foundational Quality Metrics (FQM)"@en ;
+    dct:description "The Foundational Quality Metrics(FQM) vocabulary describes a set of objective metrics as the fundamental requirements that RDF resources must meet to maximize the potential of linked resources. "@en ;
+    dct:creator [
+    		foaf:name "Shuxin Zhang";
+    		foaf:mbox <mailto:s.x.zhang@amsterdamumc.nl>
+    	] ;
+    dct:modified "2022-06-03"^^xsd:date ;
+    dct:language "en"^^xsd:language ;
+	foaf:homepage <http://purl.org/fqm#> .
+
+fqm:uriNonResolvableMetric
+    a dqv:Metric ;
+    rdfs:label 'Non-resolvable URIs' ;
+    skos:definition '1) Check if an RDF resource is resolvable (Boolean), or 2) check if URIs in that RDF resource are resolvable, and measure the proportion of non-resolvable URIs to all unique URIs.' ;
+    dqv:inDimension ldqd:availability ;
+    skos:relatd dqm:DereferenceabilityMetric .
+
+fqm:uriNonParsableMetric
+    a dqv:Metric ;
+    rdfs:label 'Non-parsable URIs' ;
+    skos:definition '1) Check if an RDF resource is parsable (Boolean), or 2) check if URIs in that RDF resource which already indicate RDF content-type are parsable, and measure the proportion of non-parsable URIs to all unique URIs in that RDF resource;' ;
+    dqv:inDimension ldqd:availability ;
+    skos:relatd dqm:MisreportedContentTypesMetric .
+
+fqm:uriUndefinedMetric
+    a dqv:Metric ;
+    rdfs:label 'Undefined URIs' ;
+    skos:definition 'Measure the proportion of undefined URIs to all unique URIs in an RDF resource. ' ;
+    dqv:inDimension ldqd:consistency, ldqd:interpretability ;
+    skos:relatd dqm:UndefinedClassesAndPropertiesMetric .
+
+fqm:misplacedClassesOrPropertiesMetric
+    a dqv:Metric ;
+    rdfs:label 'Misplaced classes or properties metric' ;
+    skos:definition '1)Measure the proportion of classes which are incorrectly used as a predicate to all unique classes; or 2) measure the proportion of properties which are incorrectly used as a class to all unique properties.' ;
+    dqv:inDimension ldqd:consistency ;
+    skos:relatd dqm:MisplacedClassesOrPropertiesMetric .
+
+fqm:misusedOwlDatatypeOrObjectPropertiesMetric
+    a dqv:Metric ;
+    rdfs:label 'Misuse Owl datatype or object properties metric' ;
+    skos:definition 'Measure the proportion of misused ‘owl:datatypeProperty‘ (or ‘owl:objectProperty‘ ) properties to all properties.' ;
+    dqv:inDimension ldqd:consistency ;
+    skos:relatd dqm:MisusedOwlDatatypeOrObjectPropertiesMetric .
+
+fqm:usageOfDeprecatedClassesOrProperties
+    a dqv:Metric ;
+    rdfs:label 'Usage of Deprecated Classes or Deprecated Properties' ;
+    skos:definition "Measure the proportion of deprecated classes or properties to all unique classes or properties." ;
+    dqv:inDimension ldqd:consistency ;
+    skos:relatd dqm:UsageOfDeprecatedClassesOrProperties .
+
+
+
+
+
