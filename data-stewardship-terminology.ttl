@@ -127,21 +127,9 @@ dct:rightsHolder skos:exactMatch sshocterm:data_rights_holder_108 .
 <https://semanticscience.org/resource/SIO_001051.rdf> skos:exactMatch sshocterm:data_analysis_18 .
 
 sshocterm:available_data_6 a skos:Concept ;
-    skos:definition "Der Begriff Hilfsdaten bezieht sich auf Daten, die kontextbezogene Informationen über die Studie und seine Datensätze liefern, die aber ausserhalb der Forschungseinrichtung erhoben werden, beispielsweise Informationen über Musterbilder, Herkunft und Vorbereitung, Datenverarbeitungsskripte, Verarbeitungsumgebung, wie z. B. die verwendeten Programme und Versionen, usw."@de,
-        "Δεδομένα που τίθενται στη διάθεση ενός χρήστη, συνήθως στο πλαίσιο μιας μελέτης ή ενός εγγράφου/επιστημονικού άρθρου."@el,
-        "Data made available to a user, usually in the context of a study or paper."@en,
-        "Données mises à la disposition d'utilisatrices et utilisateurs, généralement dans le cadre d'une étude ou d'un article."@fr,
-        "Dati messi a disposizione ad un utente, di solito nel contesto di uno studio o di un documento."@it,
-        "Gegevens die ter beschikking van een gebruiker worden gesteld, gewoonlijk in de context van een studie of een paper."@nl,
-        "Podatki, ki so na voljo uporabniku, običajno v okviru raziskave ali poročila."@sl ;
+    skos:definition "Data made available to a user, usually in the context of a study or paper."@en ;
     skos:inScheme sshocterm: ;
-    skos:prefLabel "Hilfsdaten"@de,
-        "διαθέσιμα δεδομένα"@el,
-        "available data"@en,
-        "données disponibles"@fr,
-        "dati disponibili"@it,
-        "beschikbare gegevens"@nl,
-        "razpoložljivi podatki"@sl ;
+    skos:prefLabel "available data"@en ;
     skos:topConceptOf sshocterm: .
 
 sshocterm:big_data_7 a skos:Concept ;
