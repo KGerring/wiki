@@ -2,7 +2,6 @@
 [props.json](https://hay.toolforge.org/propbrowse/props.json)
 
 
-
 [Properties software](https://m.wikidata.org/wiki/Q21126229)
 
 [Wikidata property for items about scholarly articles](https://m.wikidata.org/wiki/Q29548341)
