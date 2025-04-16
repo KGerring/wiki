@@ -9,7 +9,6 @@
 @base <http://w3.dwbp.org/ucr> .
 
 <http://w3.dwbp.org/ucr> rdf:type owl:Ontology ;
-                         
                          owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
 
 
@@ -35,9 +34,7 @@
 
 
 ###  http://w3.dwbp.org/ucr#addresses
-
 :addresses rdf:type owl:ObjectProperty ;
-           
            rdfs:label "addresses"^^xsd:string ;
            
            rdfs:range :Challenge ;
@@ -117,7 +114,6 @@ dct:title rdf:type owl:DatatypeProperty ;
 ###  http://w3.dwbp.org/ucr#Action
 
 :Action rdf:type owl:Class ;
-        
         rdfs:label "Action"^^xsd:string .
 
 
@@ -125,15 +121,13 @@ dct:title rdf:type owl:DatatypeProperty ;
 ###  http://w3.dwbp.org/ucr#Challenge
 
 :Challenge rdf:type owl:Class ;
-           
-           rdfs:label "Challenge"^^xsd:string .
+        rdfs:label "Challenge"^^xsd:string .
 
+         
 
 
 ###  http://w3.dwbp.org/ucr#Issue
-
 :Issue rdf:type owl:Class ;
-       
        rdfs:label "Issue"^^xsd:string .
 
 
