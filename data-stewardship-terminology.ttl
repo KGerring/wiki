@@ -6,74 +6,41 @@
 @prefix sshocterm: <https://vocabs.sshopencloud.eu/vocabularies/sshocterm/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+
 <http://data.loterre.fr/ark:/67375/TSO-B25PW4X4-N> skos:exactMatch sshocterm:data_stewardship_119 .
-
 <http://data.loterre.fr/ark:/67375/TSO-BRLNRV51-S> skos:exactMatch sshocterm:linked_data_154 .
-
 <http://data.loterre.fr/ark:/67375/TSO-CQ4SCZ0X-J> skos:exactMatch sshocterm:data_scientist_109 .
-
 <http://data.loterre.fr/ark:/67375/TSO-D9HJPTL6-X> skos:exactMatch sshocterm:fair_data_principles_145 .
-
 <http://data.loterre.fr/ark:/67375/TSO-D9Q06DCP-R> skos:exactMatch sshocterm:data_curator_38 .
-
 <http://data.loterre.fr/ark:/67375/TSO-DP8MN2RF-P> skos:exactMatch sshocterm:research_data_185 .
-
 <http://data.loterre.fr/ark:/67375/TSO-DWM5ZS1M-P> skos:exactMatch sshocterm:data_dictionary_41 .
-
 <http://data.loterre.fr/ark:/67375/TSO-F2SDG44T-9> skos:exactMatch sshocterm:pseudonymisation_178 .
-
 <http://data.loterre.fr/ark:/67375/TSO-G7SL6X3J-9> skos:exactMatch sshocterm:data_mining_69 .
-
 <http://data.loterre.fr/ark:/67375/TSO-GDCXNW8F-5> skos:exactMatch sshocterm:research_data_management_188 .
-
 <http://data.loterre.fr/ark:/67375/TSO-GN16Q9CK-8> skos:exactMatch sshocterm:data_steward_118 .
-
 <http://data.loterre.fr/ark:/67375/TSO-GQVTBXJ4-X> skos:exactMatch sshocterm:data_governance_51 .
-
 <http://data.loterre.fr/ark:/67375/TSO-H5ZG6DX6-4> skos:exactMatch sshocterm:persistent_identifier_171 .
-
 <http://data.loterre.fr/ark:/67375/TSO-HCPMHK1V-X> skos:exactMatch sshocterm:uniform_resource_identifier_207 .
-
 <http://data.loterre.fr/ark:/67375/TSO-JFJGKFN2-H> skos:exactMatch sshocterm:open_science_167 .
-
 <http://data.loterre.fr/ark:/67375/TSO-LJ49Q4WZ-R> skos:exactMatch sshocterm:trustworthy_repository_206 .
-
 <http://data.loterre.fr/ark:/67375/TSO-MGRQT12J-W> skos:exactMatch sshocterm:sensitive_data_197 .
-
 <http://data.loterre.fr/ark:/67375/TSO-MJZBK64J-5> skos:exactMatch sshocterm:data_management_plan_65 .
-
 <http://data.loterre.fr/ark:/67375/TSO-N9ZH1LS9-X> skos:exactMatch sshocterm:data_fairness_48 .
-
 <http://data.loterre.fr/ark:/67375/TSO-NJ1CVNL6-F> skos:exactMatch sshocterm:data_management_63 .
-
 <http://data.loterre.fr/ark:/67375/TSO-NL8G713M-N> skos:exactMatch sshocterm:data_visualisation_133 .
-
 <http://data.loterre.fr/ark:/67375/TSO-PFB9HPBS-6> skos:exactMatch sshocterm:public_data_180 .
-
 <http://data.loterre.fr/ark:/67375/TSO-PVGCQB0S-C> skos:exactMatch sshocterm:data_librarian_58 .
-
 <http://data.loterre.fr/ark:/67375/TSO-QWKTFN2F-N> skos:exactMatch sshocterm:data_sharing_114 .
-
 <http://data.loterre.fr/ark:/67375/TSO-R30X16GJ-L> skos:exactMatch sshocterm:data_lifecycle_60 .
-
 <http://data.loterre.fr/ark:/67375/TSO-RH261KDT-S> skos:exactMatch sshocterm:personal_data_172 .
-
 <http://data.loterre.fr/ark:/67375/TSO-STWL5MWS-W> skos:exactMatch sshocterm:open_access_166 .
-
 <http://data.loterre.fr/ark:/67375/TSO-T487PDFX-7> skos:exactMatch sshocterm:digital_object_identifier_140 .
-
 <http://data.loterre.fr/ark:/67375/TSO-V08MCZVP-H> skos:exactMatch sshocterm:open_research_data_165 .
-
 <http://data.loterre.fr/ark:/67375/TSO-VDVFXBCR-C> skos:exactMatch sshocterm:data_retrieval_104 .
-
 <http://data.loterre.fr/ark:/67375/TSO-VNNFL8WB-H> skos:exactMatch sshocterm:anonymisation_3 .
-
 <http://data.loterre.fr/ark:/67375/TSO-WBDZJK00-P> skos:exactMatch sshocterm:data_integration_54 .
-
 <http://data.loterre.fr/ark:/67375/TSO-WJBVSL22-1> skos:exactMatch sshocterm:data_discovery_43 .
-
 <http://data.loterre.fr/ark:/67375/TSO-X1K9R85M-K> skos:exactMatch sshocterm:linked_open_data_155 .
-
 <http://data.loterre.fr/ark:/67375/TSO-XK0JJTS6-2> skos:exactMatch sshocterm:data_reuse_106 .
 
 <http://id.loc.gov/vocabulary/relators/dtm> skos:exactMatch sshocterm:data_manager_67 .
@@ -2553,16 +2520,12 @@ sshocterm:version_control_211 a skos:Concept ;
 <https://w3id.org/skgo/modsci#DataMining> skos:exactMatch sshocterm:data_mining_69 .
 
 <https://www.w3.org/ns/prov#Attribution> skos:exactMatch sshocterm:data_attribution_23 .
-
 <http://data.loterre.fr/ark:/67375/TSO-C676TDJV-H> skos:exactMatch sshocterm:data_interoperability_56,
         sshocterm:interoperable_data_151 .
-
 <http://data.loterre.fr/ark:/67375/TSO-JDVCT02T-P> skos:exactMatch sshocterm:data_findability_49,
         sshocterm:findable_data_146 .
-
 <http://data.loterre.fr/ark:/67375/TSO-KHFX8870-5> skos:exactMatch sshocterm:accessible_data_1,
         sshocterm:data_accessibility_15 .
-
 <http://data.loterre.fr/ark:/67375/TSO-X4ZW5XQD-G> skos:exactMatch sshocterm:data_reusability_105,
         sshocterm:reusable_data_192 .
 
@@ -3877,7 +3840,6 @@ sshocterm:uniform_resource_identifier_207 a skos:Concept ;
         "Uniform Resource Identifier"@nl,
         "Uniform Resource Identifier"@sl ;
     skos:topConceptOf sshocterm: .
-
 <http://data.loterre.fr/ark:/67375/TSO-MJLHMDNM-S> skos:exactMatch sshocterm:data_processing_82 ;
     skos:narrowMatch sshocterm:data_enrichment_45 ;
     skos:narrower sshocterm:data_enrichment_45 .
@@ -4756,13 +4718,11 @@ sshocterm:personal_data_172 a skos:Concept ;
         "persoonsgegevens"@nl,
         "osebni podatki"@sl ;
     skos:topConceptOf sshocterm: .
-
 <http://data.loterre.fr/ark:/67375/TSO-ZQ5PMX6N-7> skos:exactMatch sshocterm:data_set_113 ;
     skos:narrowMatch sshocterm:collection_of_research_data_8,
         sshocterm:data_holding_52 ;
     skos:narrower sshocterm:collection_of_research_data_8,
         sshocterm:data_holding_52 .
-
 <http://data.loterre.fr/ark:/67375/TSO-VF5K6BGT-F> skos:exactMatch sshocterm:metadata_158 ;
     skos:narrowMatch sshocterm:discovery_metadata_141,
         sshocterm:functional_metadata_147,
@@ -4772,7 +4732,6 @@ sshocterm:personal_data_172 a skos:Concept ;
         sshocterm:functional_metadata_147,
         sshocterm:operational_metadata_168,
         sshocterm:standardised_metadata_200 .
-
 <http://data.loterre.fr/ark:/67375/TSO-MJRKBMDW-Q> skos:exactMatch sshocterm:data_type_126 ;
     skos:narrowMatch sshocterm:administrative_data_2,
         sshocterm:auxiliary_data_5,
