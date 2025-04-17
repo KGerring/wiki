@@ -24,6 +24,7 @@
 @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+
 <http://eosc.eu/vocabularies/sqaaas/fair/fen/> a skos:ConceptScheme;
   dct:description "Implementation of the FAIR Metrics maturity indicators (https://github.com/FAIRMetrics/Metrics) in python to evaluate the FAIRness of a resource metadata and data available at a URL (such as a dataset).";
   dct:title "FAIR Enough data maturity indicators";
