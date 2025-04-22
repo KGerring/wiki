@@ -2,19 +2,11 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
-@prefix fair: <https://w3id.org/fair/principles/terms/> .
-@prefix fen: <https://w3id.org/fair-enough/metrics/tests/> .
-@prefix feva: <http://fairevaluator.digitalcsic.es/vocabularies/fe/> .
-@prefix fm: <https://w3id.org/FAIR_Tests/tests/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix fsf: <http://fairisfair.net/vocabularies/fair/metrics/> .
-@prefix fuji: <http://fuji.net/vocabularies/fuji/> .
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix qb: <http://purl.org/linked-data/cube#> .
-@prefix rda: <http://rda.net/vocabularies/fair/indicators/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
@@ -23,6 +15,17 @@
 @prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
 @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix fair: <https://w3id.org/fair/principles/terms/> .
+@prefix fen: <https://w3id.org/fair-enough/metrics/tests/> .
+@prefix feva: <http://fairevaluator.digitalcsic.es/vocabularies/fe/> .
+@prefix fm: <https://w3id.org/FAIR_Tests/tests/> .
+@prefix fsf: <http://fairisfair.net/vocabularies/fair/metrics/> .
+@prefix fuji: <http://fuji.net/vocabularies/fuji/> .
+@prefix rda: <http://rda.net/vocabularies/fair/indicators/> .
+
 
 <http://eosc.eu/vocabularies/sqaaas/fair/fen/> a skos:ConceptScheme;
   dct:description "Implementation of the FAIR Metrics maturity indicators (https://github.com/FAIRMetrics/Metrics) in python to evaluate the FAIRness of a resource metadata and data available at a URL (such as a dataset).";
@@ -262,6 +265,7 @@ fen:r1-community-standards a skos:Concept;
   skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fen/>;
   skos:prefLabel "Conforms to community standards"@en;
   skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fen/> .
+
 
 <http://eosc.eu/vocabularies/sqaaas/fair/rda/> a skos:ConceptScheme;
   dct:description "An indicator aims to measure the state or level of a digital resource with regard to a specific FAIR principle.";
@@ -754,6 +758,7 @@ rda:RDA-R1.3-02D a skos:Concept;
   skos:relatedMatch fsf:FsF-R1.3-02D;
   skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
 
+
 <http://eosc.eu/vocabularies/sqaaas/fair/fm/> a skos:ConceptScheme;
   dct:description "FAIR Maturity Indicators from FAIRsharing";
   dct:title "FAIR Metrics Gen2";
@@ -985,6 +990,7 @@ fm:gen2_metadata_includes_license_weak a skos:Concept;
   skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fm/>;
   skos:prefLabel "Metadata Includes License (weak) (R1.1)"@en;
   skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fm/> .
+
 
 <http://eosc.eu/vocabularies/sqaaas/fair/fsf/> a skos:ConceptScheme;
   dct:description "FAIRsFAIR Data Object Assessment Metrics";

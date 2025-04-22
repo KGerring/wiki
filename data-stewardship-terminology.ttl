@@ -7,51 +7,30 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://data.loterre.fr/ark:/67375/TSO-B25PW4X4-N> skos:exactMatch sshocterm:data_stewardship_119 .
-
 <http://data.loterre.fr/ark:/67375/TSO-BRLNRV51-S> skos:exactMatch sshocterm:linked_data_154 .
-
 <http://data.loterre.fr/ark:/67375/TSO-CQ4SCZ0X-J> skos:exactMatch sshocterm:data_scientist_109 .
-
-<http://data.loterre.fr/ark:/67375/TSO-D9HJPTL6-X> skos:exactMatch sshocterm:fair_data_principles_145 .
-
+<http://data.loterre.fr/ark:/67375/TSO-D9HJPTL6-X> skos:exactMatch sshocterm:fair_data_principles_145 
 <http://data.loterre.fr/ark:/67375/TSO-D9Q06DCP-R> skos:exactMatch sshocterm:data_curator_38 .
-
 <http://data.loterre.fr/ark:/67375/TSO-DP8MN2RF-P> skos:exactMatch sshocterm:research_data_185 .
-
 <http://data.loterre.fr/ark:/67375/TSO-DWM5ZS1M-P> skos:exactMatch sshocterm:data_dictionary_41 .
-
 <http://data.loterre.fr/ark:/67375/TSO-F2SDG44T-9> skos:exactMatch sshocterm:pseudonymisation_178 .
-
 <http://data.loterre.fr/ark:/67375/TSO-G7SL6X3J-9> skos:exactMatch sshocterm:data_mining_69 .
-
 <http://data.loterre.fr/ark:/67375/TSO-GDCXNW8F-5> skos:exactMatch sshocterm:research_data_management_188 .
-
 <http://data.loterre.fr/ark:/67375/TSO-GN16Q9CK-8> skos:exactMatch sshocterm:data_steward_118 .
-
 <http://data.loterre.fr/ark:/67375/TSO-GQVTBXJ4-X> skos:exactMatch sshocterm:data_governance_51 .
-
 <http://data.loterre.fr/ark:/67375/TSO-H5ZG6DX6-4> skos:exactMatch sshocterm:persistent_identifier_171 .
-
 <http://data.loterre.fr/ark:/67375/TSO-HCPMHK1V-X> skos:exactMatch sshocterm:uniform_resource_identifier_207 .
 
 <http://data.loterre.fr/ark:/67375/TSO-JFJGKFN2-H> skos:exactMatch sshocterm:open_science_167 .
-
 <http://data.loterre.fr/ark:/67375/TSO-LJ49Q4WZ-R> skos:exactMatch sshocterm:trustworthy_repository_206 .
-
 <http://data.loterre.fr/ark:/67375/TSO-MGRQT12J-W> skos:exactMatch sshocterm:sensitive_data_197 .
-
-<http://data.loterre.fr/ark:/67375/TSO-MJZBK64J-5> skos:exactMatch sshocterm:data_management_plan_65 .
+<> skos:exactMatch sshocterm:data_management_plan_65 .
 
 <http://data.loterre.fr/ark:/67375/TSO-N9ZH1LS9-X> skos:exactMatch sshocterm:data_fairness_48 .
-
 <http://data.loterre.fr/ark:/67375/TSO-NJ1CVNL6-F> skos:exactMatch sshocterm:data_management_63 .
-
 <http://data.loterre.fr/ark:/67375/TSO-NL8G713M-N> skos:exactMatch sshocterm:data_visualisation_133 .
-
 <http://data.loterre.fr/ark:/67375/TSO-PFB9HPBS-6> skos:exactMatch sshocterm:public_data_180 .
-
 <http://data.loterre.fr/ark:/67375/TSO-PVGCQB0S-C> skos:exactMatch sshocterm:data_librarian_58 .
-
 <http://data.loterre.fr/ark:/67375/TSO-QWKTFN2F-N> skos:exactMatch sshocterm:data_sharing_114 .
 
 <http://data.loterre.fr/ark:/67375/TSO-R30X16GJ-L> skos:exactMatch sshocterm:data_lifecycle_60 .
@@ -67,47 +46,36 @@
 <http://data.loterre.fr/ark:/67375/TSO-VDVFXBCR-C> skos:exactMatch sshocterm:data_retrieval_104 .
 
 <http://data.loterre.fr/ark:/67375/TSO-VNNFL8WB-H> skos:exactMatch sshocterm:anonymisation_3 .
-
 <http://data.loterre.fr/ark:/67375/TSO-WBDZJK00-P> skos:exactMatch sshocterm:data_integration_54 .
-
 <http://data.loterre.fr/ark:/67375/TSO-WJBVSL22-1> skos:exactMatch sshocterm:data_discovery_43 .
-
 <http://data.loterre.fr/ark:/67375/TSO-X1K9R85M-K> skos:exactMatch sshocterm:linked_open_data_155 .
-
 <http://data.loterre.fr/ark:/67375/TSO-XK0JJTS6-2> skos:exactMatch sshocterm:data_reuse_106 .
+
 
 <http://id.loc.gov/vocabulary/relators/dtm> skos:exactMatch sshocterm:data_manager_67 .
 
 <http://ontology.ethereal.cz/irao/Accessibility> skos:exactMatch sshocterm:data_accessibility_15 .
-
 <http://ontology.ethereal.cz/irao/DataModel> skos:exactMatch sshocterm:data_model_70 .
 
 <http://purl.obolibrary.org/obo/OBI_0002110> skos:exactMatch sshocterm:digital_object_identifier_140 .
-
 <http://purl.obolibrary.org/obo/OBI_0200000> skos:exactMatch sshocterm:data_transformation_125 .
-
 <http://purl.obolibrary.org/obo/OBI_0302914> skos:exactMatch sshocterm:digital_curation_138 .
 
 <http://purl.org/cerif/frapo/DataRepository> skos:exactMatch sshocterm:data_repository_100 .
-
 <http://purl.org/cwmo/#DataType> skos:exactMatch sshocterm:data_type_126 .
 
-dct:provenance skos:exactMatch sshocterm:data_provenance_90 .
 
+dct:provenance skos:exactMatch sshocterm:data_provenance_90 .
 dct:rightsHolder skos:exactMatch sshocterm:data_rights_holder_108 .
 
 <http://purl.org/net/provenance/ns#DataPublisher> skos:exactMatch sshocterm:data_publisher_94 .
 
 <http://purl.org/net/wf-motifs#DataCleaning> skos:exactMatch sshocterm:data_cleaning_31 .
-
 <http://purl.org/net/wf-motifs#DataVisualization> skos:exactMatch sshocterm:data_visualisation_133 .
 
 <http://purl.org/spar/fabio/ControlledVocabulary> skos:exactMatch sshocterm:controlled_vocabulary_11 .
-
 <http://purl.org/spar/fabio/DataMangementPlan> skos:exactMatch sshocterm:data_management_plan_65 .
-
 <http://purl.org/spar/fabio/DataRepository> skos:exactMatch sshocterm:data_repository_100 .
-
 <http://purl.org/spar/fabio/Metadata> skos:exactMatch sshocterm:metadata_158 .
 
 <http://rdfs.org/ns/void#Dataset> skos:exactMatch sshocterm:data_set_113 .
@@ -117,14 +85,12 @@ dct:rightsHolder skos:exactMatch sshocterm:data_rights_holder_108 .
 <http://semanticscience.org/resource/SIO_000594> skos:exactMatch sshocterm:data_transformation_125 .
 
 <http://www.data-knowledge.org/dk/DataAsset> skos:exactMatch sshocterm:data_asset_22 .
-
 <http://www.data-knowledge.org/dk/DataLifecycle> skos:exactMatch sshocterm:data_lifecycle_60 .
-
 <http://www.data-knowledge.org/dk/DataManagementProcess> skos:exactMatch sshocterm:data_management_63 .
 
 <https://semanticscience.org/resource/SIO_000115.rdf> skos:exactMatch sshocterm:identifier_150 .
-
 <https://semanticscience.org/resource/SIO_001051.rdf> skos:exactMatch sshocterm:data_analysis_18 .
+
 
 sshocterm:available_data_6 a skos:Concept ;
     skos:definition "Data made available to a user, usually in the context of a study or paper."@en ;
@@ -326,29 +292,11 @@ sshocterm:data_archiving_21 a skos:Concept ;
 
 sshocterm:data_availability_24 a skos:Concept ;
     dct:source "CASRAI Research Data Management Glossary, \"Data availability\", https://casrai.org/rdm-glossary/"^^xsd:string ;
-    skos:altLabel "Verfügbarkeit von (Forschungs-)Daten"@de,
-        "διαθεσιμότητα (ερευνητικών) δεδομένων"@el,
-        "availability of (research) data"@en,
-        "disponibilité des données (de recherche)"@fr,
-        "disponibilità di dati (di ricerca)"@it,
-        "beschikbaarheid van (onderzoeks)gegevens"@nl,
-        "razpoložljivost (raziskovalnih) podatkov."@sl ;
-    skos:definition "Zustand der Daten zum vom Benutzer / von der Benutzerin gewünschten Ort, zum erforderlichen Zeitpunktt und in der benötigten Form."@de,
-        "Η κατάσταση κατά την οποία τα δεδομένα βρίσκονται στη θέση που χρειάζεται ο χρήστης, τη στιγμή που τα χρειάζεται ο χρήστης και στη μορφή που χρειάζεται ο χρήστης."@el,
-        "The state when data are in the place needed by the user, at the time the user needs them, and in the form needed by the user."@en,
-        "L'état dans lequel les données se trouvent à l'endroit requis par l'utilisateur·trice, au moment où l'utilisateur·trice en a besoin et sous la forme requise par l'utilisateur·trice."@fr,
-        "Lo stato in cui i dati sono nel posto necessario all'utente, nel momento in cui l'utente ne ha bisogno, e nella forma necessaria all'utente."@it,
-        "De toestand waarin gegevens zich bevinden op de plaats die de gebruiker nodig heeft, op het tijdstip waarop de gebruiker ze nodig heeft, en in de vorm die de gebruiker nodig heeft."@nl,
-        "Stanje, ko so podatki na mestu in ob času ter v obliki, kakor jih potrebuje uporabnik."@sl ;
+    skos:altLabel "availability of (research) data"@en, ;
+    skos:definition "The state when data are in the place needed by the user, at the time the user needs them, and in the form needed by the user."@en,;
     skos:inScheme sshocterm: ;
     skos:note "https://github.com/terms4fairskills/FAIRterminology/T4FS_0000404" ;
-    skos:prefLabel "Datenverfügbarkeit"@de,
-        "διαθεσιμότητα δεδομένων"@el,
-        "data availability"@en,
-        "disponibilité des données"@fr,
-        "disponibilità dei dati"@it,
-        "beschikbaarheid van gegevens"@nl,
-        "razpoložljivost podatkov"@sl ;
+    skos:prefLabel "data availability"@en ; 
     skos:topConceptOf sshocterm: .
 
 sshocterm:data_availability_statement_25 a skos:Concept ;
@@ -465,40 +413,15 @@ sshocterm:data_citation_30 a skos:Concept ;
 
 sshocterm:data_collection_32 a skos:Concept ;
     dct:source "https://semanticscience.org/resource/SIO_001052.rdf"^^xsd:string ;
-    skos:altLabel "Daten sammeln"@de,
-        "συλλέγω δεδομένα"@el,
-        "collect data"@en,
-        "recueillir des données"@fr,
-        "récolte de données"@fr,
-        "raccogliere i dati"@it,
-        "gegevens verzamelen"@nl,
-        "zbirati podatke"@sl ;
-    skos:definition "Datenerhebung ist der Prozess der Informationsbeschaffung."@de,
-        "Η συλλογή δεδομένων είναι η διαδικασία απόκτησης πληροφοριών."@el,
-        "Data collection is the process of acquiring information."@en,
-        "La collecte de données est le processus d'acquisition d'informations."@fr,
-        "La raccolta dei dati è il processo di acquisizione delle informazioni."@it,
-        "Gegevensverzameling is het proces van het verwerven van informatie."@nl,
-        "Zbiranje podatkov je postopek pridobivanja informacij."@sl ;
+    skos:altLabel "collect data"@en;
+    skos:definition "Data collection is the process of acquiring information."@en, ;
     skos:inScheme sshocterm: ;
-    skos:prefLabel "Datenerfassung"@de,
-        "συλλογή δεδομένων"@el,
-        "data collection"@en,
-        "collecte de données"@fr,
-        "raccolta dati"@it,
-        "gegevensverzameling"@nl,
-        "zbiranje podatkov"@sl ;
+    skos:prefLabel "data collection"@en;
     skos:topConceptOf sshocterm: .
 
 sshocterm:data_consumer_33 a skos:Concept ;
     dct:source "W3C Recommendations, https://www.w3.org/TR/2017/REC-dwbp-20170131/"^^xsd:string ;
-    skos:definition "Ein*e Datenkonsument*in ist eine Person oder Gruppe, die auf Daten zugreift, sie verwendet und eventuell Nachbearbeitungsschritte durchführen kann."@de,
-        "Ο καταναλωτής δεδομένων είναι ένα άτομο ή μια ομάδα που έχει πρόσβαση και χρησιμοποιεί δεδομένα και ενδεχομένως εκτελεί βήματα μεταγενέστερης επεξεργασίας πάνω σε αυτά."@el,
-        "A data consumer is a person or group accessing, using, and potentially performing post-processing steps on data."@en,
-        "Une consommatrice ou un consommateur de données est une personne ou un groupe qui accède à des données, les utilise et peut éventuellement effectuer des étapes de post-traitement."@fr,
-        "Un consumatore di dati è una persona o un gruppo che accede, usa e potenzialmente esegue passi di post-elaborazione sui dati."@it,
-        "Een gegevensconsument is een persoon of een groep die toegang heeft tot de gegevens, ze gebruikt en er eventueel nabewerkingsstappen mee uitvoert."@nl,
-        "Uporabnik podatkov je oseba ali skupina, ki dostopa do podatkov, jih uporablja in po potrebi izvaja dodatno procesiranje podatkov."@sl ;
+    skos:definition "A data consumer is a person or group accessing, using, and potentially performing post-processing steps on data."@en;
     skos:inScheme sshocterm: ;
     skos:note "ISO/TR 3985:2021(en), 3.4" ;
     skos:prefLabel "Datenabnehmer*in (Datenkonsument*in)"@de,
