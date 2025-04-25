@@ -1,0 +1,712 @@
+
+npm install @citation-js/core @citation-js/plugin-doi @citation-js/plugin-doi
+
+npm install @citation-js/plugin-software-formats
+
+plugin-wikidata
+plugin-isbn
+plugin-orcid
+plugin-pubmed
+
+
+
+
+
+
+
+application/x-bibtex (BibTeX),
+application/vnd.citationstyles.csl+json (CiteProc JSON),
+application/x-research-info-systems (RIS),
+application/vnd.datacite.datacite+xml (DataCite XML),
+application/vnd.datacite.datacite+json (DataCite JSON),
+application/vnd.jats+xml (JATS),
+application/vnd.codemeta.ld+json (Codemeta),
+text/x-bibliography (Formatted text citation).
+
+application/linkset+json
+
+
+
+https://export.arxiv.org/oai2
+
+
+
+
+https://api.specref.org/bibrefs?refs=FileAPI,rfc2119
+
+
+https://scicrunch.org/resolver/SCR_014212/mentions?q=&i=rrid:scr_014212
+
+https://vocabularies.coar-repositories.org/resource_types/c_7acd/
+
+http://amp.pharm.mssm.edu/datasets2tools
+
+
+
+
+
+[
+  {
+    "item": "http://www.wikidata.org/entity/Q16323066",
+    "itemLabel": "KulturNav",
+    "bartoc": "http://bartoc.org/en/node/1818"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q18814247",
+    "itemLabel": "Datahub",
+    "bartoc": "http://bartoc.org/en/node/1715"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q22230760",
+    "itemLabel": "Ontology Lookup Service",
+    "bartoc": "http://bartoc.org/en/node/17808"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q22279816",
+    "itemLabel": "Basic Register of Thesauri, Ontologies & Classifications owned by Esquiress Lyndsey Watson Copyright \u00a9",
+    "bartoc": "http://bartoc.org/en/node/2054"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q24589713",
+    "itemLabel": "Aristotle Metadata Registry",
+    "bartoc": "http://bartoc.org/en/node/1924"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q47069651",
+    "itemLabel": "Ontobee",
+    "bartoc": "http://bartoc.org/en/node/1727"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q108057909",
+    "itemLabel": "NFDI4Ing Terminology Service",
+    "bartoc": "http://bartoc.org/en/node/18935"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q108057929",
+    "itemLabel": "TIB Terminology Service",
+    "bartoc": "http://bartoc.org/en/node/18934"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q6030413",
+    "itemLabel": "Info URI scheme"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q7120402",
+    "itemLabel": "PRONOM"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q19605500",
+    "itemLabel": "Global Digital Format Registry"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q27977290",
+    "itemLabel": "TOTEM"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q30253149",
+    "itemLabel": "Open Metadata Registry"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q30439946",
+    "itemLabel": "CORES Registry"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q39391396",
+    "itemLabel": "JISC Information Environment Metadata Schema Registry"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q39392701",
+    "itemLabel": "Linked Open Vocabularies"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q41147961",
+    "itemLabel": "Research Vocabularies Australia"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q85058439",
+    "itemLabel": "RDA registry"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q89014718",
+    "itemLabel": "Community Owned Digital Preservation Tool Registry"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q107580559",
+    "itemLabel": "Unified Digital Format Registry"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q113622504",
+    "itemLabel": "Anime TAIZEN"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q14005",
+    "itemLabel": "MusicBrainz"
+  }
+]
+
+
+https://autodesc.toolforge.org/?q=$1&links=wikipedia&lang=en&mode=long&format=html&redlinks=reasonator
+
+https://scholia.toolforge.org/$1
+https://scholia.toolforge.org/doi/$1
+https://dissem.in/$1
+http://api.crossref.org/works/$1
+https://oadoi.org/$1
+http://api.semanticscholar.org/$1
+https://portal.toolforge.org/$1
+https://hub.toolforge.org/$1
+http://wikitop.org/user/$1
+https://w3id.org/isil/$1
+http://api.semanticscholar.org/arXiv:$1
+https://dblp.org/doi/$1
+https://keybase.io/_/api/1.0/user/lookup.json?github=$1
+https://scholia.toolforge.org/github/$1
+https://unavatar.now.sh/github/$1
+https://commons.datacite.org/ror.org/{wd:P6782}
+https://scholia.toolforge.org/$1
+https://scholia.toolforge.org/doi/$1
+https://dissem.in/$1
+http://api.crossref.org/works/$1
+https://oadoi.org/$1
+http://api.semanticscholar.org/$1
+https://portal.toolforge.org/$1
+https://hub.toolforge.org/$1
+http://wikitop.org/user/$1
+https://w3id.org/isil/$1
+http://api.semanticscholar.org/arXiv:$1
+https://dblp.org/doi/$1
+https://keybase.io/_/api/1.0/user/lookup.json?github=$1
+https://scholia.toolforge.org/github/$1
+https://unavatar.now.sh/github/$1
+https://commons.datacite.org/ror.org/{wd:P6782}
+
+
+curl -H 'Authorization: Bearer E2qOsvGu9xpcwQsIqZmhyAK6aq0Wbn7YSCM7X8yG' 'https://api.adsabs.harvard.edu/v1/search/query?q=star&fl=bibcode'
+
+https://ui.adsabs.harvard.edu/public-libraries/y65HuNC9SmGAFrqNI7x-vw
+
+
+
+
+
+https://www.wikidata.org/wiki/User:Fnielsen/Autolists/Datasets
+https://www.wikidata.org/wiki/Q15303972
+https://www.wikidata.org/wiki/User:Infovarius/Queries
+
+https://www.wikidata.org/wiki/User:D1gggg/Wikidata model and SPARQL
+https://www.wikidata.org/wiki/User:Marianika/Historical Bibliographic Data
+https://www.wikidata.org/wiki/User:SR5/Test/10
+https://www.wikidata.org/wiki/User:SR5/Test/7
+https://www.wikidata.org/wiki/User:Stevesuny/sandbox-for-queries
+
+https://www.wikidata.org/wiki/Category:WikiProject_Property_constraints
+https://www.wikidata.org/wiki/Category:WikiProject_Limits_of_Wikidata
+https://www.wikidata.org/wiki/Category:WikiProject_Duplicates
+https://www.wikidata.org/wiki/Category:WikiProject_Conflation
+https://www.wikidata.org/wiki/Category:WikiProject_Categories
+https://www.wikidata.org/wiki/Category:WikiProject_Wikimedia_Foundation
+https://www.wikidata.org/wiki/Category:WikiProject_Supertemplates
+https://www.wikidata.org/wiki/Category:WikiProject_Schemas
+https://www.wikidata.org/wiki/Category:Reimagining_Wikidata_from_the_margins
+https://www.wikidata.org/wiki/Category:WikiProject_Reasoning
+https://www.wikidata.org/wiki/Category:WikiProject_Labels_and_descriptions
+https://www.wikidata.org/wiki/Category:WikiProject_Infoboxes
+https://www.wikidata.org/wiki/Category:WikiProject_Disambiguation
+
+
+https://www.wikidata.org/wiki/Category:CopyClear
+https://www.wikidata.org/wiki/Category:WikiProject_Commons
+
+https://www.wikidata.org/wiki/Wikidata:WikiProject_Interesting_Content
+https://www.wikidata.org/wiki/Wikidata:WikiProject_Documentation
+https://www.wikidata.org/wiki/User:Chicagohill
+
+https://www.wikidata.org/wiki/Wikidata:WikiProject_Lists
+https://www.wikidata.org/wiki/User:LydiaPintscher/DataQualityDraft
+https://www.wikidata.org/wiki/Wikidata:WikiProject_MediaWiki
+https://www.wikidata.org/wiki/Wikidata:WikiProject_Tabular_data
+https://www.wikidata.org/wiki/Wikidata:WikiProject_Templates
+
+
+https://www.wikidata.org/wiki/Wikidata:Wikibase_documentation
+https://www.wikidata.org/wiki/Wikidata:WikiProject_Wikidata_subsets
+https://www.wikidata.org/wiki/Wikidata:WikiProject_Categories
+https://www.wikidata.org/wiki/Wikidata:WikiProject_Counter-Vandalism
+https://www.wikidata.org/wiki/Wikidata:WikiProject_Documentation/Participants
+https://www.wikidata.org/wiki/Wikidata:WikiProject_Properties
+
+
+#https://listeria.toolforge.org/index.php?action=update&project=wikidata&page=
+
+
+#https://www.wikidata.org/wiki/Special:EntityData/Q96472645.json
+#http://www.wikidata.org/entity/Q2470288
+
+
+
+
+
+"""
+#Ontologies item list
+Q300426|A Greek–English Lexicon
+Q4652028|AI winter
+Q224055|Abstraction (computer science)
+Q11862829|Academic discipline
+Q30232|Agile software development
+Q3893330|Alphabet of human thought
+Q35497|Ancient Greek
+Q729|Animal
+Q4781603|Applied ontology
+Q118398|ArXiv
+Q63107058|Arabic Ontology
+Q1645946|Argument map
+Q11660|Artificial intelligence
+Q30267|Aspect-oriented programming
+Q2555318|Automated reasoning
+Q17736|Axiom
+Q4836223|BORO
+Q4837690|BabelNet
+Q844605|Backward compatibility
+Q809101|Barry Smith (ontologist)
+Q4866972|Basic Formal Ontology
+Q25754|Bibcode
+Q603441|Bibliometrics
+Q4925836|Bled eConference
+Q5001864|Business decision mapping
+Q28136854|CI/CD
+Q624005|CIDOC Conceptual Reference Model
+Q428361|Capability Maturity Model Integration
+Q5035695|Capital asset
+Q217413|Category theory
+Q543|Censorship
+Q2142306|Characteristica universalis
+Q2715061|CiteSeerX
+Q192210|Cladistics
+Q4479242|Class (computer programming)
+Q13582682|Classification
+Q5962346|Classification scheme (information science)
+Q1778434|Cognitive map
+Q1778809|Coherentism
+Q432197|Collective intelligence
+Q5153278|Common Algebraic Specification Language
+Q5153563|Common Logic
+Q1603203|Commonsense knowledge (artificial intelligence)
+Q907342|Compatibility layer
+Q440972|Compatibility mode
+Q609588|Component-based software engineering
+Q245423|Compound (linguistics)
+Q3685360|Computational Linguistics (journal)
+Q1122506|Computational model
+Q104843592|Computer Science Ontology
+Q1195806|Computer compatibility
+Q66221|Computer data storage
+Q428691|Computer engineering
+Q3966|Computer hardware
+Q80006|Computer programming
+Q21198|Computer science
+Q830115|Concept map
+Q1420493|Conceptual graph
+Q864213|Conservative extension
+Q2845197|Constructive analysis
+Q5164501|Constructive set theory
+Q28324909|Content completeness problem
+Q1469824|Controlled vocabulary
+Q210272|Cultural heritage
+Q1143546|Cultural studies
+Q1147294|Cyc
+Q3890214|CycL
+Q1151701|DARPA Agent Markup Language
+Q5205836|DOAP
+Q5205860|DOGMA
+Q59525794|Dale Jacquette
+Q6504956|Data and information visualization
+Q1172480|Data model
+Q367664|Data modeling
+Q8513|Database
+Q370685|Dataspace
+Q5248328|Deborah McGuinness
+Q831366|Decision tree
+Q15192747|Defining vocabulary
+Q1967139|Degree of truth
+Q1957903|Dendrogram
+Q387196|Description logic
+Q5264368|Design rationale
+Q3025536|DevOps
+Q5270387|Diagrammatic reasoning
+Q3844169|Dialetheism
+Q1026962|Digital humanities
+Q212805|Digital library
+Q25670|Digital object identifier
+Q5282129|Disease Ontology
+Q2088941|Domain knowledge
+Q1228944|Domain of discourse
+Q624610|Dublin Core
+Q104841357|Dynamic semantics
+Q82268|Eclipse (software)
+Q5369989|Embedded RDF
+Q109973292|Empirical software engineering
+Q3480159|Endurantism
+Q1048431|Enterprise architecture
+Q1128549|Enterprise unified process
+Q624546|Entity–relationship model
+Q9471|Epistemology
+Q190995|Essence
+Q85759650|Essential systems analysis
+Q35245|Etymology
+Q5419762|Executable UML
+Q468777|Existence
+Q5421170|Experimental software engineering
+Q209711|Extreme programming
+Q1266004|F-logic
+Q5424440|FAO Country Profiles
+Q1389366|FOAF
+Q3625572|Facebook Platform
+Q536351|First principle
+Q4055684|First-order logic
+Q494291|Folksonomy
+Q82151|Food and Agriculture Organization
+Q1437394|Formal concept analysis
+Q192161|Formal language
+Q1049183|Formal methods
+Q1437388|Formal ontology
+Q1192648|Forward compatibility
+Q1406710|Foundational Model of Anatomy
+Q1355086|Foundationalism
+Q5474962|Four-valued logic
+Q5508775|Function model
+Q16914225|Functional specification
+Q864475|Functor
+Q5511122|Fuzzy finite element
+Q224821|Fuzzy logic
+Q5511139|Fuzzy rule
+Q1055058|Fuzzy set
+Q5511133|Fuzzy set operations
+Q2742807|GRDDL
+Q2648698|Gellish
+Q5530471|Gellish English dictionary
+Q135085|Gene Ontology
+Q124668863|General Concept Lattice
+Q5532347|General formal ontology
+Q146233|Genitive case
+Q222046|Genomics
+Q483130|Geographic information system
+Q3112318|Geopolitical ontology
+Q852595|Geotagging
+Q58300|Geovisualization
+Q18527768|Gideon Harvey
+Q859161|Glossary
+Q739462|Graph drawing
+Q5597151|Graphic communication
+Q4308|Graphics card
+Q672496|HAtom
+Q306432|HCalendar
+Q85327|HCard
+Q5635764|HProduct
+Q5635823|HRecipe
+Q3125181|HReview
+Q8777|HTTP
+Q870895|Health informatics
+Q649971|Henry Liddell
+Q2026602|Herbert Enderton
+Q5548813|Heyting arithmetic
+Q574023|Hyperbolic tree
+Q12200340|Hyperdata
+Q93241|Hypertext
+Q17092253|IDEAS Group
+Q1515863|IDEF
+Q5969997|IDEF5
+Q5970233|IEEE 1164
+Q33057|ISBN
+Q1196809|ISO/IEC 15504
+Q15934753|Incremental build model
+Q1341685|Inference engine
+Q845734|Infographic
+Q4027615|Informatics
+Q2343231|Information Systems (journal)
+Q593289|Information access
+Q845921|Information architecture
+Q18418842|Information behavior
+Q1365082|Information design
+Q1662562|Information extraction
+Q579488|Information management
+Q1662581|Information model
+Q816826|Information retrieval
+Q16387|Information science
+Q189900|Information security
+Q3772297|Information seeking
+Q184708|Information society
+Q11661|Information technology
+Q212542|Inheritance (object-oriented programming)
+Q60741432|Inquisitive semantics
+Q3308639|Intellectual freedom
+Q131257|Intellectual property
+Q5361594|Intermediate logic
+Q424583|Internationalized Resource Identifier
+Q75|Internet
+Q749647|Interoperability
+Q6058693|Intrinsic and extrinsic properties (philosophy)
+Q10879018|Intuitionism
+Q176786|Intuitionistic logic
+Q6059147|Intuitionistic type theory
+Q1101080|Is-a
+Q6088396|Issue tree
+Q17101851|Issue-based information system
+Q1543216|Iterative and incremental development
+Q6108942|JSON-LD
+Q4356643|Jacob Lorhard
+Q17951|Jargon
+Q92665|John F. Sowa
+Q354163|Knowledge Interchange Format
+Q6423340|Knowledge acquisition
+Q1540472|Knowledge engineering
+Q1582085|Knowledge extraction
+Q33002955|Knowledge graph
+Q192060|Knowledge management
+Q6423384|Knowledge modeling
+Q1929761|Knowledge organization
+Q3478658|Knowledge representation and reasoning
+Q1412694|Knowledge-based systems
+Q595364|Lattice (order)
+Q6505531|Layered graph drawing
+Q951437|Level of measurement
+Q387956|Library 2.0
+Q13420675|Library and information science
+Q48473|Library classification
+Q6551037|Lincoln Stein
+Q841728|Linear logic
+Q29254314|Ling Liu (computer scientist)
+Q777864|Linguistic description
+Q515701|Linked data
+Q16000149|List of concept- and mind-mapping software
+Q173198|Logic synthesis
+Q6147849|Longman Dictionary of Contemporary English
+Q79798|Machine translation
+Q185502|Many-valued logic
+Q854537|Marxian economics
+Q6801272|McGill–Queen's University Press
+Q492|Memory
+Q1851867|Mental model
+Q866209|Meta-Object Facility
+Q180160|Metadata
+Q193983|Metalanguage
+Q1925081|Metamodeling
+Q35277|Metaphysics
+Q6828277|Michael Ashburner
+Q15429296|Michael Gruninger
+Q3312185|Microdata (HTML)
+Q848031|Microformat
+Q192833|Mind map
+Q1941909|Model-driven engineering
+Q1941921|Modeling language
+Q1898737|Morphological analysis (problem-solving)
+Q44044|N-Triples
+Q1049494|Name reaction
+Q30642|Natural language processing
+Q1929599|Natural semantic metalanguage
+Q1893837|Nature Biotechnology
+Q1248221|Neo-Latin
+Q3686701|Neoclassical compound
+Q3875032|NeuroLex
+Q11695472|Neuroscience Information Framework
+Q654102|Nicola Guarino
+Q239179|Non-classical logic
+Q2488768|Non-monotonic logic
+Q288156|Normativity
+Q1424987|Notation3
+Q7072326|OBO Foundry
+Q2553356|OWL-S
+Q252733|Object Management Group
+Q1116105|Object model
+Q79872|Object-oriented programming
+Q1694402|Object–role modeling
+Q7088492|Olog
+Q1188617|Online Etymology Dictionary
+Q7095036|OntoUML
+Q44325|Ontology
+Q324254|Ontology (information science)
+Q3882789|Ontology Inference Layer
+Q4339878|Ontology alignment
+Q7095049|Ontology chart
+Q7095057|Ontology components
+Q1027508|Ontology engineering
+Q7095051|Ontology for Biomedical Investigations
+Q7095059|Ontology language
+Q3620938|Ontology learning
+Q18215948|Open Semantic Framework
+Q232932|Open access
+Q852602|Organizational chart
+Q7112613|Outline of economics
+Q7112667|Outline of information science
+Q44996|Oxford English Dictionary
+Q426592|Paraconsistent logic
+Q814722|Participle
+Q6502323|Particular
+Q7144770|Pathfinder network
+Q3480239|Perdurantism
+Q639661|Perseus Digital Library
+Q5891|Philosophy
+Q1257388|Philosophy and economics
+Q2629585|Philosophy of information
+Q484761|Philosophy of language
+Q47883|Playing card
+Q80131|Poker
+Q192613|Present tense
+Q830393|Preservation (library and archive)
+Q188728|Privacy
+Q28403894|ProbOnto
+Q200726|Probability distribution
+Q24900852|Problem structuring methods
+Q229289|Process
+Q188267|Programming paradigm
+Q179012|Project management
+Q471857|Proteomics
+Q2066865|Protégé (software)
+Q180686|PubMed
+Q229883|PubMed Central
+Q189603|Public health
+Q183414|Punched card
+Q2122216|Quantum information science
+Q1751819|RDF Schema
+Q48940|RDF/XML
+Q507673|RDFa
+Q20991891|RXNO Ontology
+Q7280281|Radial tree
+Q795549|Rapid application development
+Q1334113|Reference (computer science)
+Q176630|Relevance logic
+Q376937|Requirements engineering
+Q54872|Resource Description Framework
+Q4583003|Richard M. Durbin
+Q189447|Risk management
+Q747540|Robert Scott (philologist)
+Q1509981|Round-trip engineering
+Q92692|Rudi Studer
+Q64272|Rudolph Goclenius
+Q1857202|Rule Interchange Format
+Q1417149|Rule-based system
+Q1113529|S-expression
+Q17066392|SAPPHIRE (health care)
+Q5400393|SAWSDL
+Q29377821|SHACL
+Q1753883|SNOMED CT
+Q54871|SPARQL
+Q298521|Saul Kripke
+Q1051200|Schema (psychology)
+Q3475322|Schema.org
+Q23876293|SciCrunch
+Q2445082|Science and technology studies
+Q460387|Scrum (software development)
+Q7441615|Search-based software engineering
+Q7449026|Semantic Application Design Language
+Q1189978|Semantic HTML
+Q22908627|Semantic Scholar
+Q54837|Semantic Web
+Q3478367|Semantic Web Rule Language
+Q7449046|Semantic analytics
+Q7449048|Semantic broker
+Q7449051|Semantic computing
+Q7449068|Semantic mapper
+Q7449072|Semantic matching
+Q1045785|Semantic network
+Q7449080|Semantic publishing
+Q3929429|Semantic reasoner
+Q1891170|Semantic search
+Q7449086|Semantic service-oriented architecture
+Q7449091|Semantic technology
+Q3539534|Semantic triple
+Q638153|Semantic wiki
+Q2445314|Semantically Interlinked Online Communities
+Q796212|Semantics
+Q1437428|Semantics (computer science)
+Q7449106|Semantics of Business Vocabulary and Business Rules
+Q3511065|Sequence (biology)
+Q81661803|Sequence Ontology
+Q220644|Service-oriented architecture
+Q2288360|Simple Knowledge Organization System
+Q56351687|Site reliability engineering
+Q215|Slovenia
+Q7551380|Social software engineering
+Q1186132|Sociogram
+Q7554009|Soft ontology
+Q7397|Software
+Q7554247|Software archaeology
+Q846636|Software architecture
+Q613566|Software configuration management
+Q2297740|Software deployment
+Q857102|Software design
+Q2904257|Software development process
+Q80993|Software engineering
+Q7554305|Software incompatibility
+Q940053|Software maintenance
+Q576460|Software prototyping
+Q1412670|Software quality
+Q613918|Software quality assurance
+Q2429814|Software system
+Q188522|Software testing
+Q7921330|Software verification and validation
+Q55408718|Solid (web decentralization project)
+Q165400|SourceForge
+Q1460738|Spiral model
+Q41506|Stanford University
+Q4548693|Structural rule
+Q119727|Structured analysis
+Q839490|Substructural logic
+Q7635093|Suggested Upper Merged Ontology
+Q752498|Swoogle
+Q2377160|Systems Biology Ontology
+Q679871|Systems analysis
+Q559486|Systems development life cycle
+Q682496|Systems engineering
+Q12070446|Systems modeling
+Q2117885|Systems modeling language
+Q7670396|TIME-ITEM
+Q12071317|TOVE Project
+Q7211|Taxonomy
+Q2748079|Terminology extraction
+Q676880|Text mining
+Q1929956|Three-state logic
+Q185443|Three-valued logic
+Q186117|Timeline
+Q7816025|Tom Gruber
+Q1064031|Topic map
+Q2067937|Tree structure
+Q838583|Treemapping
+Q7839811|TriG (syntax)
+Q7839826|TriX (serialization format)
+Q114409|Turtle (syntax)
+Q7865085|UMBEL
+Q7876491|Uberon
+Q169411|Unified Modeling Language
+Q3258398|Unified process
+Q61694|Uniform Resource Identifier
+Q3551307|Universal (metaphysics)
+Q7894081|Universal Systems Language
+Q3882785|Upper ontology
+Q3297086|V-model (software development)
+Q209455|VHDL
+Q24905|Verb
+Q827773|Verilog
+Q925858|View model
+Q2528440|Visual analytics
+Q1659648|Visual language
+Q451553|Visualization (graphics)
+Q478175|Waterfall model
+Q648266|Wayback Machine
+Q7977959|Weak ontology
+Q131164|Web 2.0
+Q826165|Web Ontology Language
+Q1202144|Web Science Trust
+Q1196135|Web engineering
+Q3427877|Web resource
+Q533822|WordNet
+Q466|World Wide Web
+Q959950|XBRL
+Q2115|XML
+Q21062168|Yves Pigneur
+Q8071747|ZigZag (software)
+Q8080919|Łukasiewicz logic"""
+
+
+
+
+

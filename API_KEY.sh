@@ -10,6 +10,9 @@ export ADS_TOKEN="E2qOsvGu9xpcwQsIqZmhyAK6aq0Wbn7YSCM7X8yG"
 ##
 ##curl -H 'Authorization: Bearer E2qOsvGu9xpcwQsIqZmhyAK6aq0Wbn7YSCM7X8yG' 'https://api.adsabs.harvard.edu/v1/search/query?q=star&fl=bibcode'
 
+export OPEN_API_KEY="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"
+
+
 export MQI_ID="71"
 export MQI_PASSWORD="57HYLKUXR6"
 
