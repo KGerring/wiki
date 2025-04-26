@@ -1,0 +1,1205 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix fair: <https://w3id.org/fair/principles/terms/> .
+@prefix fen: <https://w3id.org/fair-enough/metrics/tests/> .
+@prefix feva: <http://fairevaluator.digitalcsic.es/vocabularies/fe/> .
+@prefix fm: <https://w3id.org/FAIR_Tests/tests/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix fsf: <http://fairisfair.net/vocabularies/fair/metrics/> .
+@prefix fuji: <http://fuji.net/vocabularies/fuji/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rda: <http://rda.net/vocabularies/fair/indicators/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://eosc.eu/vocabularies/sqaaas/fair/fen/> a skos:ConceptScheme;
+  dct:description "Implementation of the FAIR Metrics maturity indicators (https://github.com/FAIRMetrics/Metrics) in python to evaluate the FAIRness of a resource metadata and data available at a URL (such as a dataset).";
+  dct:title "FAIR Enough data maturity indicators";
+  skos:hasTopConcept fen:a1-data-authorization, fen:a1-data-protocol, fen:a1-metadata-authorization,
+    fen:a1-metadata-protocol, fen:a2-metadata-persistent, fen:f1-data-identifier-persistent,
+    fen:f1-metadata-identifier-persistent, fen:f1-metadata-identifier-unique, fen:f2-grounded-metadata,
+    fen:f2-structured-metadata, fen:f3-data-identifier-in-metadata, fen:f3-metadata-identifier-in-metadata,
+    fen:f4-searchable, fen:i1-data-knowledge-representation-semantic, fen:i1-data-knowledge-representation-structured,
+    fen:i1-metadata-knowledge-representation-semantic, fen:i1-metadata-knowledge-representation-structured,
+    fen:i2-fair-vocabularies-known, fen:i2-fair-vocabularies-resolve, fen:i3-metadata-contains-outward-links,
+    fen:r1-community-standards, fen:r1-includes-license, fen:r1-includes-standard-license .
+
+fen:a1-data-protocol a skos:Concept;
+  dct:description "Data may be retrieved by an open and free protocol. Tests metadata GUID for its resolution protocol. Successful if the subject is a URL.";
+  skos:broadMatch fair:A1.1;
+  skos:closeMatch rda:RDA-A1.1-01D;
+  skos:code "a1-data-protocol";
+  skos:exactMatch fm:gen2_data_protocol;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fen/>;
+  skos:prefLabel "Uses an open free protocol for data retrieval"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fen/> .
+
+fen:a1-metadata-protocol a skos:Concept;
+  dct:description "Metadata may be retrieved by an open and free protocol. Tests metadata GUID for its resolution protocol. Accept URLs.";
+  skos:broadMatch fair:A1.1;
+  skos:closeMatch rda:RDA-A1.1-01M;
+  skos:code "a1-metadata-protocol";
+  skos:exactMatch fm:gen2_metadata_protocol;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fen/>;
+  skos:prefLabel "Metadata uses an open free protocol for metadata retrieval"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fen/> .
+
+fen:a1-data-authorization a skos:Concept;
+  dct:description "Test a discovered data GUID for the ability to implement authentication and authorization in its resolution protocol. Successful if the subject is a URL. It also searches the metadata for the Dublin Core dc:accessRights property, which may point to a document describing the data access process.";
+  skos:broadMatch fair:A1.2;
+  skos:closeMatch rda:RDA-A1.2-02D;
+  skos:code "a1-data-authorization";
+  skos:exactMatch fm:gen2_data_authorization;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fen/>;
+  skos:prefLabel "Data authentication and authorization"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fen/> .
+
+fen:a1-metadata-authorization a skos:Concept;
+  dct:description "Tests metadata GUID for the ability to implement authentication and authorization in its resolution protocol. Accept URLs.";
+  skos:broadMatch fair:A1.2;
+  skos:code "a1-metadata-authorization";
+  skos:exactMatch fm:gen2_metadata_authorization;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fen/>;
+  skos:prefLabel "Metadata authentication and authorization"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fen/> .
+
+fen:a2-metadata-persistent a skos:Concept;
+  dct:description "Metric to test if the metadata contains a persistence policy, explicitly identified by a persistencePolicy key (in hashed data) or a http://www.w3.org/2000/10/swap/pim/doc#persistencePolicy predicate in Linked Data.";
+  skos:broadMatch fair:A2;
+  skos:closeMatch fsf:FsF-A2-01M, rda:RDA-A2-01M;
+  skos:code "a2-metadata-persistent";
+  skos:exactMatch fm:gen2_metadata_persistence;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fen/>;
+  skos:prefLabel "Metadata is persistent"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fen/> .
+
+fen:f1-data-identifier-persistent a skos:Concept;
+  dct:description "Metric to test if the unique identifier of the data resource is likely to be persistent. We test known URL persistence schemas (purl, doi, w3id, identifiers.org).";
+  skos:broadMatch fair:F1;
+  skos:closeMatch fsf:FsF-F1-02D, rda:RDA-F1-01D;
+  skos:code "f1-data-identifier-persistent";
+  skos:exactMatch fm:gen2_data_identifier_persistence;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fen/>;
+  skos:prefLabel "Data identifier is persistent"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fen/> .
+
+fen:f1-metadata-identifier-persistent a skos:Concept;
+  dct:description "Metric to test if the unique identifier of the metadata resource is likely to be persistent. We test known URL persistence schemas (purl, doi, w3id, identifiers.org).";
+  skos:broadMatch fair:F1;
+  skos:closeMatch rda:RDA-F1-01M;
+  skos:code "f1-metadata-identifier-persistent";
+  skos:exactMatch fm:gen2_metadata_identifier_persistence;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fen/>;
+  skos:prefLabel "Resource identifier is persistent"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fen/> .
+
+fen:f1-metadata-identifier-unique a skos:Concept;
+  dct:description "Metric to test if the metadata resource has a unique identifier. This is done by checking if the GUID is a URL";
+  skos:broadMatch fair:F1;
+  skos:closeMatch rda:RDA-F1-02M;
+  skos:code "f1-metadata-identifier-unique";
+  skos:exactMatch fm:gen2_unique_identifier;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fen/>;
+  skos:prefLabel "Resource metadata identifier is unique"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fen/> .
+
+fen:f2-grounded-metadata a skos:Concept;
+  dct:description "Tests whether a machine is able to find 'grounded' metadata. i.e. metadata terms that are in a resolvable namespace, where resolution leads to a definition of the meaning of the term. Examples include JSON-LD, embedded schema, or any form of RDF. This assessment will try to extract metadata from the resource URI: Extract metadata from the HTML landing page using extruct; Use HTTP requests with content-negotiation (RDF, JSON-LD); Check for Signposting links redirection (aka. Web Linking)";
+  skos:broadMatch fair:F2;
+  skos:code "f2-grounded-metadata";
+  skos:exactMatch fm:gen2_grounded_metadata;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fen/>;
+  skos:prefLabel "Metadata is grounded and machine-readable"@en;
+  skos:relatedMatch fsf:FsF-F2-01M, rda:RDA-F2-01M;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fen/> .
+
+fen:f2-structured-metadata a skos:Concept;
+  dct:description "Tests whether a machine is able to find structured metadata. This could be (for example) RDFa, embedded json, json-ld, or content-negotiated structured metadata such as RDF Turtle. This assessment will try to extract metadata from the resource URI: Search for structured metadata at the resource URI; Use HTTP requests with content-negotiation (RDF, JSON-LD, JSON, YAML); Extract metadata from the HTML landing page using extruct";
+  skos:broadMatch fair:F2;
+  skos:code "f2-structured-metadata";
+  skos:exactMatch fm:gen2_structured_metadata;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fen/>;
+  skos:prefLabel "Metadata is structured"@en;
+  skos:relatedMatch fsf:FsF-F2-01M, rda:RDA-F2-01M;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fen/> .
+
+fen:f3-data-identifier-in-metadata a skos:Concept;
+  dct:description "Metric to test if the metadata contains the unique identifier to the data. This is done by searching for a variety of properties, including foaf:primaryTopic, schema:mainEntity, schema:distribution, sio:is-about, iao:is-about, and schema:codeRepository.";
+  skos:broadMatch fair:F3;
+  skos:closeMatch fsf:FsF-F3-01M, rda:RDA-F3-01M;
+  skos:code "f3-data-identifier-in-metadata";
+  skos:exactMatch fm:gen2_data_identifier_in_metadata;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fen/>;
+  skos:prefLabel "Data identifier explicitly in metadata"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fen/> .
+
+fen:f3-metadata-identifier-in-metadata a skos:Concept;
+  dct:description "Metric to test if the metadata contains the unique identifier to the metadata itself. Whether the metadata document contains the globally unique and persistent identifier for the digital resource. Parse the metadata to search for the given digital resource GUID. If found, retrieve informations about this resource (title, description, date created, etc)";
+  skos:broadMatch fair:F3;
+  skos:code "f3-metadata-identifier-in-metadata";
+  skos:exactMatch fm:gen2_metadata_identifier_in_metadata;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fen/>;
+  skos:prefLabel "Metadata identifier explicitly in metadata"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fen/> .
+
+fen:f4-searchable a skos:Concept;
+  dct:description "Extract the title from RDF metadata, or from the DataCite API (in case it is a DOI), then search for the resource URL in popular search engines using the extracted title: DuckDuckGo search engine (no limitations, but it misses some scientific data repositories); Google custom search API (results are not as good as the regular Google search though, limited to 100 queries per day); Bing search engine (qualitative results, but limited to 1000 queries per months, used as last recourse)";
+  skos:broadMatch fair:F4;
+  skos:code "f4-searchable";
+  skos:exactMatch fm:gen2_searchable;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fen/>;
+  skos:prefLabel "The resource is indexed in a searchable resource"@en;
+  skos:relatedMatch fsf:FsF-F4-01M, rda:RDA-F4-01M;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fen/> .
+
+fen:i1-data-knowledge-representation-semantic a skos:Concept;
+  dct:description "Maturity Indicator to test if the data uses a formal language broadly applicable for knowledge representation. This particular test takes a broad view of what defines a 'knowledge representation language'; in this evaluation, a knowledge representation language is interpreted as one in which terms are semantically-grounded in ontologies. Any form of ontologically-grounded linked data will pass this test.";
+  skos:broadMatch fair:I1;
+  skos:closeMatch rda:RDA-I1-02D;
+  skos:code "i1-data-knowledge-representation-semantic";
+  skos:exactMatch fm:gen2_data_kr_language_strong;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fen/>;
+  skos:prefLabel "Data uses a formal semantic knowledge representation language"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fen/> .
+
+fen:i1-data-knowledge-representation-structured a skos:Concept;
+  dct:description "Maturity Indicator to test if the data uses a formal language broadly applicable for knowledge representation. This particular test takes a broad view of what defines a 'knowledge representation language'; in this evaluation, anything that can be represented as structured data will be accepted";
+  skos:broadMatch fair:I1;
+  skos:closeMatch rda:RDA-I1-01D;
+  skos:code "i1-data-knowledge-representation-structured";
+  skos:exactMatch fm:gen2_data_kr_language_weak;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fen/>;
+  skos:prefLabel "Data uses a formal structured knowledge representation language"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fen/> .
+
+fen:i1-metadata-knowledge-representation-semantic a skos:Concept;
+  dct:description "Maturity Indicator to test if the metadata uses a formal language broadly applicable for knowledge representation. This particular test takes a broad view of what defines a 'knowledge representation language'; in this evaluation, a knowledge representation language is interpreted as one in which terms are semantically-grounded in ontologies. Any form of RDF will pass this test";
+  skos:broadMatch fair:I1;
+  skos:closeMatch fsf:FsF-I1-02M, rda:RDA-I1-02M;
+  skos:code "i1-metadata-knowledge-representation-semantic";
+  skos:exactMatch fm:gen2_metadata_kr_language_strong;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fen/>;
+  skos:prefLabel "Metadata uses a formal semantic knowledge representation language"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fen/> .
+
+fen:i1-metadata-knowledge-representation-structured a skos:Concept;
+  dct:description "Maturity Indicator to test if the metadata uses a formal language broadly applicable for knowledge representation. This particular test takes a broad view of what defines a 'knowledge representation language'; in this evaluation, anything that can be represented as structured data will be accepted";
+  skos:broadMatch fair:I1;
+  skos:closeMatch fsf:FsF-I1-01M, rda:RDA-I1-01M;
+  skos:code "i1-metadata-knowledge-representation-structured";
+  skos:exactMatch fm:gen2_metadata_kr_language_weak;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fen/>;
+  skos:prefLabel "Metadata uses a formal structured knowledge representation language"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fen/> .
+
+fen:i2-fair-vocabularies-resolve a skos:Concept;
+  dct:description "Maturity Indicator to test if the linked data metadata uses terms that resolve to linked (FAIR) data. One predicate from each hostname is tested, the test is successful if more than 60% of the hostnames resolve to RDF.";
+  skos:broadMatch fair:I2;
+  skos:closeMatch rda:RDA-I2-01M;
+  skos:code "i2-fair-vocabularies-resolve";
+  skos:exactMatch fm:gen2_metadata_uses_fair_vocabularies_strong;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fen/>;
+  skos:prefLabel "Metadata uses resolvable FAIR Vocabularies"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fen/> .
+
+fen:i2-fair-vocabularies-known a skos:Concept;
+  dct:description "The metadata values and qualified relations should themselves be FAIR, for example, terms from open, community-accepted vocabularies published in an appropriate knowledge-exchange format. Check if at least 1 of the namespace used can be found in the Linked Open Vocabularies repository.";
+  skos:broadMatch fair:I2;
+  skos:code "i2-fair-vocabularies-known";
+  skos:exactMatch fm:gen2_metadata_uses_fair_vocabularies_weak;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fen/>;
+  skos:prefLabel "Metadata uses FAIR Vocabularies registered in known repositories"@en;
+  skos:relatedMatch rda:RDA-I2-01M;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fen/> .
+
+fen:i3-metadata-contains-outward-links a skos:Concept;
+  dct:description "Maturity Indicator to test if the metadata links outward to third-party resources. It only tests metadata that can be represented as Linked Data. It will succeed if you have at least 1 object in your metadata that uses a different host than the subject URI evaluated.";
+  skos:broadMatch fair:I3;
+  skos:closeMatch fsf:FsF-I3-01M;
+  skos:code "i3-metadata-contains-outward-links";
+  skos:exactMatch fm:gen2_metadata_contains_outward_links;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fen/>;
+  skos:prefLabel "Metadata contains outward references"@en;
+  skos:relatedMatch rda:RDA-I3-01M;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fen/> .
+
+fen:r1-includes-standard-license a skos:Concept;
+  dct:description "Maturity Indicator to test if the linked data metadata contains an explicit pointer to the license. Tests: xhtml, dvia, dcterms, cc, data.gov.au, and Schema license predicates in linked data. And validates the license is a standard license defined in the SPDX licenses list.";
+  skos:broadMatch fair:R1.1;
+  skos:closeMatch rda:RDA-R1.1-03M;
+  skos:code "r1-includes-standard-license";
+  skos:exactMatch fm:gen2_metadata_includes_license_strong;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fen/>;
+  skos:prefLabel "Metadata includes a standard License"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fen/> .
+
+fen:r1-includes-license a skos:Concept;
+  dct:description "Maturity Indicator to test if the linked data metadata contains an explicit pointer to the license. Tests: xhtml, dvia, dcterms, cc, data.gov.au, and Schema license predicates in linked data.";
+  skos:broadMatch fair:R1.1;
+  skos:closeMatch fsf:FsF-R1.1-01M, rda:RDA-R1.1-01M;
+  skos:code "r1-includes-license";
+  skos:exactMatch fm:gen2_metadata_includes_license_weak;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fen/>;
+  skos:prefLabel "Metadata includes a License"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fen/> .
+
+fen:r1-community-standards a skos:Concept;
+  dct:description "Check metadata schema conforms to a specific SHACL shape.";
+  skos:broadMatch fair:R1.3;
+  skos:code "r1-community-standards";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fen/>;
+  skos:prefLabel "Conforms to community standards"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fen/> .
+
+<http://eosc.eu/vocabularies/sqaaas/fair/rda/> a skos:ConceptScheme;
+  dct:description "An indicator aims to measure the state or level of a digital resource with regard to a specific FAIR principle.";
+  dct:title "RDA FAIR data maturity model indicators";
+  skos:hasTopConcept rda:RDA-A1-01M, rda:RDA-A1-02D, rda:RDA-A1-02M, rda:RDA-A1-03D,
+    rda:RDA-A1-03M, rda:RDA-A1-04D, rda:RDA-A1-04M, rda:RDA-A1-05D, rda:RDA-A1.1-01D,
+    rda:RDA-A1.1-01M, rda:RDA-A1.2-02D, rda:RDA-A2-01M, rda:RDA-F1-01D, rda:RDA-F1-01M,
+    rda:RDA-F1-02D, rda:RDA-F1-02M, rda:RDA-F2-01M, rda:RDA-F3-01M, rda:RDA-F4-01M, rda:RDA-I1-01D,
+    rda:RDA-I1-01M, rda:RDA-I1-02D, rda:RDA-I1-02M, rda:RDA-I2-01D, rda:RDA-I2-01M, rda:RDA-I3-01D,
+    rda:RDA-I3-01M, rda:RDA-I3-02D, rda:RDA-I3-02M, rda:RDA-I3-03M, rda:RDA-I3-04M, rda:RDA-R1-01M,
+    rda:RDA-R1.1-01M, rda:RDA-R1.1-02M, rda:RDA-R1.1-03M, rda:RDA-R1.2-01M, rda:RDA-R1.2-02M,
+    rda:RDA-R1.3-01D, rda:RDA-R1.3-01M, rda:RDA-R1.3-02D, rda:RDA-R1.3-02M .
+
+rda:RDA-F1-01M a skos:Concept;
+  feva:practicaltests "Search within a predefined list of potential metadata terms to identify the metadata (dc.identifier.uri and dc.identifier.doi) if any information is available.";
+  dct:description "This indicator evaluates whether or not the metadata is identified by a persistent identifier. A persistent identifier ensures that the metadata will remain findable over time and reduces the risk of broken links.";
+  rda:priority "Essential";
+  skos:broadMatch fair:F1;
+  skos:closeMatch fm:gen2_metadata_identifier_persistence, fen:f1-metadata-identifier-persistent;
+  skos:code "RDA-F1-01M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Los metadatos están identificados por un identificador persistente"@es,
+    "Metadata is identified by a persistent identifier"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-F1-01D a skos:Concept;
+  feva:practicaltests "Search within a predefined list of potential metadata terms (dc.identifier.uri, dc.identifier.doi and dc.relation.publisherversion) to identify the data if any information is available.";
+  dct:description "This indicator evaluates whether or not the data is identified by a persistent identifier. A persistent identifier ensures that the data will remain findable over time and reduces the risk of broken links.";
+  rda:priority "Essential";
+  skos:broadMatch fair:F1;
+  skos:closeMatch fsf:FsF-F1-02D, fm:gen2_data_identifier_persistence, fen:f1-data-identifier-persistent;
+  skos:code "RDA-F1-01D";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Data is identified by a persistent identifier"@en, "Los datos están identificados por un identificador persistente"@es;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-F1-02M a skos:Concept;
+  feva:practicaltests "Checks the type of the identifiers thanks to the idutils package. It identifies valid identifiers. If it is not a persistent identifier (like an URL), the test fails";
+  dct:description "The indicator serves to evaluate whether the identifier of the metadata is globally unique, i.e. that there are no two identical identifiers that identify different metadata records.";
+  rda:priority "Essential";
+  skos:broadMatch fair:F1;
+  skos:closeMatch fm:gen2_unique_identifier, fen:f1-metadata-identifier-unique;
+  skos:code "RDA-F1-02M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Los metadatos están identificados por un identificador persistente global"@es,
+    "Metadata is identified by a globally unique identifier"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-F1-02D a skos:Concept;
+  feva:practicaltests "If the repository/system where the digital object is stored has both data and metadata integrated, this method only need to call RDA-F1-02M . Otherwise, it needs to be re-defined. DIGITAL.CSIC: both data and metadata are stored in the same landing page.";
+  dct:description "The indicator serves to evaluate whether the identifier of the data is globally unique, i.e. that there are no two people that would use that same identifier for two different digital objects.";
+  rda:priority "Essential";
+  skos:broadMatch fair:F1;
+  skos:closeMatch fsf:FsF-F1-01D;
+  skos:code "RDA-F1-02D";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Data is identified by a globally unique identifier"@en, "Los datos están identificados por un identificador persistente global"@es;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-F2-01M a skos:Concept;
+  feva:practicaltests "Two different tests to evaluate generic and disciplinar metadata if needed. Check if all the Dublin Core terms are OK. For disciplinar metadata, this test should be more complex. For example, for multi-domain repositories, Dublin Core can be considered OK, but it can be extended to check other community metadata formats.";
+  dct:description "The indicator is about the presence of metadata, but also about how much metadata is provided and how well the provided metadata supports discovery.";
+  rda:priority "Essential";
+  skos:broadMatch fair:F2;
+  skos:closeMatch fsf:FsF-F2-01M;
+  skos:code "RDA-F2-01M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Hay metadatos suficientemente ricos para permitir descubrir el recurso"@es,
+    "Rich metadata is provided to allow discovery"@en;
+  skos:relatedMatch fm:gen2_grounded_metadata, fm:gen2_structured_metadata, fen:f2-grounded-metadata,
+    fen:f2-structured-metadata;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-F3-01M a skos:Concept;
+  feva:practicaltests "Check the metadata term where the object is identified (dc.identifier.doi y dc.relation.publisherversion)";
+  dct:description "The indicator deals with the inclusion of the reference (i.e. the identifier) of the digital object in the metadata so that the digital object can be accessed.";
+  rda:priority "Essential";
+  skos:broadMatch fair:F3;
+  skos:closeMatch fsf:FsF-F3-01M, fm:gen2_data_identifier_in_metadata, fen:f3-data-identifier-in-metadata;
+  skos:code "RDA-F3-01M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Los metadatos incluyen el identificador de los datos"@es, "Metadata includes the identifier for the data"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-F4-01M a skos:Concept;
+  feva:practicaltests "Checks if the metadata can be harvested via OAI-PMH";
+  dct:description "The indicator tests whether the metadata is offered in such a way that it can be indexed. In some cases, metadata could be provided together with the data to a local institutional repository or to a domain-specific or regional portal, or metadata could be included in a landing page where it can be harvested by a search engine. The indicator remains broad enough on purpose not to limit the way how and by whom the harvesting and indexing of the data might be done.";
+  rda:priority "Essential";
+  skos:broadMatch fair:F4;
+  skos:closeMatch fsf:FsF-F4-01M;
+  skos:code "RDA-F4-01M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Los metadatos se ofrecen de una forma por la cual pueden ser recogidos e indexados"@es,
+    "Metadata is offered in such a way that it can be harvested and indexed"@en;
+  skos:relatedMatch fm:gen2_searchable, fen:f4-searchable;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-A1-01M a skos:Concept;
+  feva:practicaltests "Check metadata record for access info and Parse HTML in order to find the potential file(s) in order to find the digital object.";
+  dct:description "The indicator refers to the information that is necessary to allow the requester to gain access to the digital object. It is about (i) restrictions to access the data (i.e. access to the data may be open, restricted or closed), (ii) the actions to be taken by a person who is interested to access the data, in particular when the data has not been published on the Web or (iii) specifications that the resources are available through specified authentication/authorisation system including single sign-on providers such as eduGAIN17 or through specialised solutions such as proposed for EPOS.";
+  rda:priority "Important";
+  skos:broadMatch fair:A1;
+  skos:code "RDA-A1-01M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Los metadatos contienen información sobre cómo el usuario puede acceder a los datos"@es,
+    "Metadata contains information to enable the user to get access to the data"@en;
+  skos:relatedMatch fsf:FsF-A1-01M;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-A1-02M a skos:Concept;
+  feva:practicaltests "Look for the metadata terms in HTML in order to know if they can be accessed manually";
+  dct:description "The indicator refers to any human interactions that are needed if the requester wants to access metadata. The FAIR principle refers mostly to automated interactions where a machine is able to access the metadata, but there may also be metadata that require human interactions. This may be important in cases where the metadata itself contains sensitive information. Human interaction might involve sending an e-mail to the metadata owner, or calling by telephone to receive instructions.";
+  rda:priority "Essential";
+  skos:broadMatch fair:A1;
+  skos:code "RDA-A1-02M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Los metadatos son accesibles de forma manual"@es, "Metadata can be accessed manually (i.e. with human intervention)"@en;
+  skos:relatedMatch fsf:FsF-A1-02M;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-A1-02D a skos:Concept;
+  feva:practicaltests "Checks the presence of an access metadata term";
+  dct:description "The indicator refers to any human interactions that are needed if the requester wants to access the digital object. The FAIR principle refers mostly to automated interactions where a machine is able to access the digital object, but there may also be digital objects that require human interactions, such as clicking on a link on a landing page, sending an e-mail to the data owner, or even calling by telephone.";
+  rda:priority "Essential";
+  skos:broadMatch fair:A1;
+  skos:code "RDA-A1-02D";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Data can be accessed manually (i.e. with human intervention)"@en,
+    "Los datos son accesibles de forma manual"@es;
+  skos:relatedMatch fsf:FsF-A1-03D;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-A1-03M a skos:Concept;
+  feva:practicaltests "Converts identifier to URL and solves it to look for the metadata terms in HTML in order to know if they can be accessed manually";
+  dct:description "This indicator is about the resolution of the metadata identifier. The identifier assigned to the metadata should be associated with a resolution service that enables access to the metadata record.";
+  rda:priority "Essential";
+  skos:broadMatch fair:A1;
+  skos:code "RDA-A1-03M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "El identificador de los metadatos resuelve a un registro de metadatos"@es,
+    "Metadata identifier resolves to a metadata record"@en;
+  skos:relatedMatch fsf:FsF-A1-02M;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-A1-03D a skos:Concept;
+  feva:practicaltests "Converts identifier to URL and solves it to look for digital objects. Once found, it checks if the digital object can be downloaded";
+  dct:description "This indicator is about the resolution of the identifier that identifies the digital object. The identifier assigned to the data should be associated with a formally def ined retrieval/resolution mechanism that enables access to the digital object or provides access instructions for access in the case of human-mediated access. The FAIR principle and this indicator do not say anything about the mutability or immutability of the digital object that is identified by the data identifier -- this is an aspect that should be governed by a persistence policy of the data provider.";
+  rda:priority "Essential";
+  skos:broadMatch fair:A1;
+  skos:code "RDA-A1-03D";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Data identifier resolves to a digital object"@en, "El identificador de los datos resuelve a un objeto digital"@es;
+  skos:relatedMatch fsf:FsF-A1-03D;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-A1-04M a skos:Concept;
+  feva:practicaltests "Checks the protocol to access metadata (OAI-OMH, API..)";
+  dct:description "The indicator concerns the protocol through which the metadata is accessed and requires the protocol to be defined in a standard.";
+  rda:priority "Essential";
+  skos:broadMatch fair:A1;
+  skos:closeMatch fsf:FsF-A1-02M;
+  skos:code "RDA-A1-04M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Los metadatos son accesibles a través de un protocolo estándar"@es,
+    "Metadata is accessed through standardised protocol"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-A1-04D a skos:Concept;
+  feva:practicaltests "Thanks to the implemented test RDA-A1.03D, if the digital object can be downloaded, it can be done usting HTTP protocol";
+  dct:description "The indicator concerns the protocol through which the digital object is accessed and requires the protocol to be defined in a standard.";
+  rda:priority "Essential";
+  skos:broadMatch fair:A1;
+  skos:closeMatch fsf:FsF-A1-03D;
+  skos:code "RDA-A1-04D";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Data is accessible through standardised protocol"@en, "Los datos son accesibles a través de un protocolo estándar"@es;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-A1-05D a skos:Concept;
+  feva:practicaltests "Check certain ways to access data automatically. OAI-PMH does not support automatic access to data.";
+  dct:description "The indicator refers to automated interactions between machines to access digital objects. The way machines interact and grant access to the digital object will be evaluated by the indicator.";
+  rda:priority "Important";
+  skos:broadMatch fair:A1;
+  skos:code "RDA-A1-05D";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Data can be accessed automatically (i.e. by a computer program)"@en,
+    "Los datos son accesibles de forma automática"@es;
+  skos:relatedMatch fsf:FsF-A1-03D;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-A1.1-01M a skos:Concept;
+  feva:practicaltests "Checks the plugin access protocols";
+  dct:description "The indicator tests that the protocol that enables the requester to access metadata can be freely used. Such free use of the protocol enhances data reusability.";
+  rda:priority "Essential";
+  skos:broadMatch fair:A1.1;
+  skos:closeMatch fm:gen2_metadata_protocol, fen:a1-metadata-protocol;
+  skos:code "RDA-A1.1-01M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Los metadatos son accesibles a través de un protocolo libre ABIERTO Y GRATUITO MEJOR?"@es,
+    "Metadata is accessible through a free access protocol"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-A1.1-01D a skos:Concept;
+  feva:practicaltests "With RDA-A1.3D the HTTP protocol to access the data is tested.";
+  dct:description "The indicator requires that the protocol can be used free of charge which facilitates unfettered access.";
+  rda:priority "Important";
+  skos:broadMatch fair:A1.1;
+  skos:closeMatch fm:gen2_data_protocol, fen:a1-data-protocol;
+  skos:code "RDA-A1.1-01D";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Data is accessible through a free access protocol"@en, "Los datos son accesibles a través de un protocolo libre"@es;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-A1.2-02D a skos:Concept;
+  feva:practicaltests "This test is implemented for each plugin. The generic way of accessing, OAI-PMH, is a open protocol without any Authorization or Authentication required";
+  dct:description "The indicator requires that if the data or local environment indicates a degree of additional protection then the access protocol must support authentication and authorisation of people and/or machines?";
+  rda:priority "Useful";
+  skos:broadMatch fair:A1.2;
+  skos:closeMatch fm:gen2_data_authorization, fen:a1-data-authorization;
+  skos:code "RDA-A1.2-02D";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Data is accessible through an access protocol that supports authentication and authorisation"@en,
+    "Los datos son accesibles a través de un protocolo que soporta autenticación y autorización"@es;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-A2-01M a skos:Concept;
+  feva:practicaltests "METADATA RETENTION and Preservation policy depends on the authority where this Digital Object is stored.";
+  dct:description "The indicator intends to verify that information about a digital object is still available af ter the object has been deleted or otherwise has become unavailable. If possible, the metadata that remains available should also indicate why the object is no longer available.";
+  rda:priority "Essential";
+  skos:broadMatch fair:A2;
+  skos:closeMatch fsf:FsF-A2-01M, fm:gen2_metadata_persistence, fen:a2-metadata-persistent;
+  skos:code "RDA-A2-01M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Metadata is guaranteed to remain available after data is no longer available"@en,
+    "Se garantiza que los metadatos permanecen disponibles incluso después de que los datos no lo estén."@es;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-I1-01M a skos:Concept;
+  feva:practicaltests "Checks metadata terms including controlled vocabulary information. So far, it checks GEONAMES, Library of Congress Subject Headings and ORCID, but it's being extended.";
+  dct:description "The indicator serves to determine that an appropriate standard is used to express knowledge, for example, controlled vocabularies for subject classifications.";
+  rda:priority "Important";
+  skos:broadMatch fair:I1;
+  skos:closeMatch fsf:FsF-I1-01M, fm:gen2_metadata_kr_language_weak, fen:i1-metadata-knowledge-representation-structured;
+  skos:code "RDA-I1-01M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Los metadatos utilizan alguna forma estandarizada de representación del conocimiento"@es,
+    "Metadata uses knowledge representation expressed in standardised format"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-I1-01D a skos:Concept;
+  feva:practicaltests "It checks that data format is within a list of accepted standards. It can be defined by each system/repository within their plugins. The generic plugin accepts: [\"pdf\", \"csv\", \"jpg\", \"jpeg\", \"nc\", \"hdf\", \"mp4\", \"mp3\", \"wav\", \"doc\", \"txt\", \"xls\", \"xlsx\", \"sgy\",\"zip\"]";
+  dct:description "The indicator serves to determine that an appropriate standard is used to express knowledge, in particular the data model and format.";
+  rda:priority "Important";
+  skos:broadMatch fair:I1;
+  skos:closeMatch fm:gen2_data_kr_language_weak, fen:i1-data-knowledge-representation-structured;
+  skos:code "RDA-I1-01D";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Data uses knowledge representation expressed in standardised format"@en,
+    "Los datos utilizan alguna forma estandarizada de representación del conocimiento"@es;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-I1-02M a skos:Concept;
+  feva:practicaltests "Checks, via OAI-PMH, if the metadata can be retrieved in a format like RDF";
+  dct:description "This indicator focuses on the machine-understandability aspect of the metadata. This means that metadata should be readable and thus interoperable for machines without any requirements such as specific translators or mappings.";
+  rda:priority "Important";
+  skos:broadMatch fair:I1;
+  skos:closeMatch fsf:FsF-I1-02M, fm:gen2_metadata_kr_language_strong, fen:i1-metadata-knowledge-representation-semantic;
+  skos:code "RDA-I1-02M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Los metadatos utilizan una forma de representación del conocimiento interpretable por máquinas"@es,
+    "Metadata uses machine-understandable knowledge representation"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-I1-02D a skos:Concept;
+  feva:practicaltests "This test implements the one carried out in RDA-I1-02M. It can be redefined by the plugin.";
+  dct:description "This indicator focuses on the machine-understandability aspect of the data. This means that data should be readable and thus interoperable for machines without any requirements such as specific translators or mappings.";
+  rda:priority "Important";
+  skos:broadMatch fair:I1;
+  skos:closeMatch fm:gen2_data_kr_language_strong, fen:i1-data-knowledge-representation-semantic;
+  skos:code "RDA-I1-02D";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Data uses machine-understandable knowledge representation"@en, "Los datos utilizan una forma de representación del conocimiento interpretable por máquinas"@es;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-I2-01M a skos:Concept;
+  feva:practicaltests "If the digital object includes information in a controlled vocabulary, it checks if the controlled vocabulary has a persistent identifier";
+  dct:description "The indicator requires the vocabulary used for the metadata to conform to the FAIR principles, and at least be documented and resolvable using globally unique and persistent identifiers. The documentation needs to be easily findable and accessible.";
+  rda:priority "Important";
+  skos:broadMatch fair:I2;
+  skos:code "RDA-I2-01M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Los metadatos utilizan vocabularios FAIR"@es, "Metadata uses FAIR-compliant vocabularies"@en;
+  skos:relatedMatch fm:gen2_metadata_uses_fair_vocabularies_strong, fm:gen2_metadata_uses_fair_vocabularies_weak,
+    fen:i2-fair-vocabularies-known, fen:i2-fair-vocabularies-resolve;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-I2-01D a skos:Concept;
+  feva:practicaltests "This test implements the one carried out in RDA-I1-01M. It can be redefined by the plugin.";
+  dct:description "The indicator requires the controlled vocabulary used for the data to conform to the FAIR principles, and at least be documented and resolvable using globally unique and persistent identifiers. The documentation needs to be easily findable and accessible.";
+  rda:priority "Useful";
+  skos:broadMatch fair:I2;
+  skos:code "RDA-I2-01D";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Data uses FAIR-compliant vocabularies"@en, "Los datos utilizan vocabularios FAIR"@es;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-I3-01M a skos:Concept;
+  feva:practicaltests "Checks metadata like relation or contributor. Checks ORCID so far.";
+  dct:description "The indicator is about the way that metadata is connected to other metadata, for example through links to information about organisations, people, places, projects or time periods that are related to the digital object that the metadata describes.";
+  rda:priority "Important";
+  skos:broadMatch fair:I3;
+  skos:code "RDA-I3-01M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Los metadatos incluyen referencias a otros metadatos"@es, "Metadata includes references to other metadata"@en;
+  skos:relatedMatch fsf:FsF-I3-01M, fm:gen2_metadata_contains_outward_links, fen:i3-metadata-contains-outward-links;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-I3-01D a skos:Concept;
+  feva:practicaltests "This test implements the one carried out in RDA-I3-01M. It can be redefined by the plugin.";
+  dct:description "This indicator is about the way data is connected to other data, for example linking to previous or related research data that provides additional context to the data.";
+  rda:priority "Useful";
+  skos:broadMatch fair:I3;
+  skos:code "RDA-I3-01D";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Data includes references to other data"@en, "Los datos incluyen referencias a otros datos"@es;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-I3-02M a skos:Concept;
+  feva:practicaltests "Checks metadata like relation or contributor and also if those links are Persistent identifiers (ORCID for people, DOIs or Handle, etc. for objects, thanks to idutils package)";
+  dct:description "This indicator is about the way metadata is connected to other data, for example linking to previous or related research data that provides additional context to the data. Please note that this is not about the link f rom the metadata to the data it describes; that link is considered in principle F3 and in indicator RDA-F3-01M.";
+  rda:priority "Useful";
+  skos:broadMatch fair:I3;
+  skos:code "RDA-I3-02M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Los metadatos incluyen referencias a otros datos"@es, "Metadata includes references to other data"@en;
+  skos:relatedMatch fsf:FsF-I3-01M, fm:gen2_metadata_contains_outward_links, fen:i3-metadata-contains-outward-links;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-I3-02D a skos:Concept;
+  feva:practicaltests "This test implements the one carried out in RDA-I1-02M. It can be redefined by the plugin.";
+  dct:description "This indicator is about the way data is connected to other data. The references need to be qualif ied which means that the relationship role of the related resource is specified, for example that a particular link is a specification of a unit of measurement, or the identification of the sensor with which the measurement was done.";
+  rda:priority "Useful";
+  skos:broadMatch fair:I3;
+  skos:code "RDA-I3-02D";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Data includes qualified references to other data"@en, "Los datos incluyen referencias cualificadas a otros datos"@es;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-I3-03M a skos:Concept;
+  feva:practicaltests "This test implements the one carried out in RDA-I1-02M. It can be redefined by the plugin.";
+  dct:description "This indicator is about the way metadata is connected to other metadata, for example to descriptions of related resources that provide additional context to the data. The references need to be qualified which means that the relationship of the related resource is specified, for example person Y is the author of dataset X.";
+  rda:priority "Important";
+  skos:broadMatch fair:I3;
+  skos:code "RDA-I3-03M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Los metadatos incluyen referencias cualificadas a otros metadatos"@es,
+    "Metadata includes qualified references to other metadata"@en;
+  skos:relatedMatch fsf:FsF-I3-01M, fm:gen2_metadata_contains_outward_links, fen:i3-metadata-contains-outward-links;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-I3-04M a skos:Concept;
+  feva:practicaltests "This test implements the one carried out in RDA-I1-02M. It can be redefined by the plugin.";
+  dct:description "This indicator is about the way metadata is connected to other data. The references need to be qualified which means that the relationship role of the related resource is specified, for example dataset X is derived f rom dataset Y.";
+  rda:priority "Useful";
+  skos:broadMatch fair:I3;
+  skos:code "RDA-I3-04M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Los metadatos incluyen referencias cualificadas a otros datos"@es,
+    "Metadata include qualified references to other data"@en;
+  skos:relatedMatch fsf:FsF-I3-01M, fm:gen2_metadata_contains_outward_links, fen:i3-metadata-contains-outward-links;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-R1-01M a skos:Concept;
+  feva:practicaltests "Depending on the metadata schema used, checks that at least the mandatory terms are filled (75%) and the number of terms are high (25%)";
+  dct:description "The indicator concerns the quantity but also the quality of metadata provided in order to enhance data reusability.";
+  rda:priority "Essential";
+  skos:broadMatch fair:R1;
+  skos:closeMatch fsf:FsF-R1-01MD;
+  skos:code "RDA-R1-01M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Plurality of accurate and relevant attributes are provided to allow reuse"@en,
+    "Se incluyen ciertos atributos indicativos de la posibilidad de reutilización"@es;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-R1.1-01M a skos:Concept;
+  feva:practicaltests "Checks if the license information is available in any format";
+  dct:description "This indicator is about the information that is provided in the metadata related to the conditions (e.g. obligations, restrictions) under which data can be reused. In the absence of licence information, data cannot be reused.";
+  rda:priority "Essential";
+  skos:broadMatch fair:R1.1;
+  skos:closeMatch fsf:FsF-R1.1-01M, fm:gen2_metadata_includes_license_weak, fen:r1-includes-license;
+  skos:code "RDA-R1.1-01M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Los metadatos incluyen información sobre la licencia sobre la cual se publican los datos para su reutilización"@es,
+    "Metadata includes information about the licence under which the data can be reused"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-R1.1-02M a skos:Concept;
+  feva:practicaltests "Checks the presence of license information in metadata and if it is included in the list https://spdx.org/licenses/licenses.json";
+  dct:description "This indicator requires the reference to the conditions of reuse to be a standard licence, rather than a locally defined licence.";
+  rda:priority "Important";
+  skos:broadMatch fair:R1.1;
+  skos:code "RDA-R1.1-02M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Los metadatos incluyen referencias a la licencia estándar sobre la cual se publican los datos para su reutilización"@es,
+    "Metadata refers to a standard reuse licence"@en;
+  skos:relatedMatch fsf:FsF-R1.1-01M, fm:gen2_metadata_includes_license_weak, fen:r1-includes-license;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-R1.1-03M a skos:Concept;
+  feva:practicaltests "Checks the presence of license information in metadata and if it uses an id from the list https://spdx.org/licenses/licenses.json";
+  dct:description "This indicator is about the way that the reuse licence is expressed. Rather than being a human-readable text, the licence should be expressed in such a way that it can be processed by machines, without human intervention, for example in automated searches.";
+  rda:priority "Important";
+  skos:broadMatch fair:R1.1;
+  skos:closeMatch fm:gen2_metadata_includes_license_strong, fen:r1-includes-standard-license;
+  skos:code "RDA-R1.1-03M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Los metadatos incluyen referencias a la licencia estándar interpretable por una máquina sobre la cual se publican los datos para su reutilización"@es,
+    "Metadata refers to a machine-understandable reuse licence"@en;
+  skos:relatedMatch fsf:FsF-R1.1-01M;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-R1.2-01M a skos:Concept;
+  feva:practicaltests "To be defined:";
+  dct:description "This indicator requires the metadata to include inform ation about the provenance of the data, i.e. information about the origin, history or workflow that generated the data, in a way that is compliant with the standards that are used in the community for which the data is curated.";
+  rda:priority "Important";
+  skos:broadMatch fair:R1.2;
+  skos:code "RDA-R1.2-01M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Los metadatos incluyen información sobre la procedencia de acuerdo a los principios de la comunidad"@es,
+    "Metadata includes provenance information according to community-specific standards"@en;
+  skos:relatedMatch fsf:FsF-R1.2-01M;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-R1.2-02M a skos:Concept;
+  feva:practicaltests "This test implements the one carried out in RDA-R1.2-01M. It can be redefined by the plugin.";
+  dct:description "This indicator requires that the metadata provides provenance information according to a cross-domain language.";
+  rda:priority "Useful";
+  skos:broadMatch fair:R1.2;
+  skos:closeMatch fsf:FsF-R1.2-01M;
+  skos:code "RDA-R1.2-02M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Los metadatos incluyen información sobre la procedencia de acuerdo a los principios de la comunidad y su posible transversalidad"@es,
+    "Metadata includes provenance information according to a crosscommunity language"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-R1.3-01M a skos:Concept;
+  feva:practicaltests "Checks metadata formats for a specific community. For a generic service, Dublin Core as metadata standard for multi-domain repositories";
+  dct:description "This indicator requires that metadata complies with community standards.";
+  rda:priority "Essential";
+  skos:broadMatch fair:R1.3;
+  skos:closeMatch fsf:FsF-R1.3-02M;
+  skos:code "RDA-R1.3-01M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Los metadatos cumplen con los estándares de la comunidad"@es, "Metadata complies with a community standard"@en;
+  skos:relatedMatch fsf:FsF-R1.3-01M;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-R1.3-01D a skos:Concept;
+  feva:practicaltests "This test implements the one carried out in RDA-R1-01D. It can be redefined by the plugin.";
+  dct:description "This indicator requires that data complies with community standards.";
+  rda:priority "Essential";
+  skos:broadMatch fair:R1.3;
+  skos:closeMatch fsf:FsF-R1.3-02D;
+  skos:code "RDA-R1.3-01D";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Data complies with a community standard"@en, "Los datos cumplen con los estándares de la comunidad"@es;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-R1.3-02M a skos:Concept;
+  feva:practicaltests "Checks if metadata is described using any machine format like XML or RDF schema";
+  dct:description "This indicator requires that the metadata follows a community standard that has a machine-understandable expression.";
+  rda:priority "Essential";
+  skos:broadMatch fair:R1.3;
+  skos:code "RDA-R1.3-02M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Los metadatos se expresan de forma automatizable y cumplen con los estándares de la comunidad"@es,
+    "Metadata is expressed in compliance with a machineunderstandable community standard"@en;
+  skos:relatedMatch fsf:FsF-R1.3-01M;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+rda:RDA-R1.3-02D a skos:Concept;
+  feva:practicaltests "This test implements the one carried out in RDA-R1-01D. It can be redefined by the plugin.";
+  dct:description "This indicator requires that the data follows a community standard that has a machine-understandable expression.";
+  rda:priority "Important";
+  skos:broadMatch fair:R1.3;
+  skos:code "RDA-R1.3-02D";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/rda/>;
+  skos:prefLabel "Data is expressed in compliance with a machine-understandable community standard"@en,
+    "Los datos se expresan de forma automatizable y cumplen con los estándares de la comunidad"@es;
+  skos:relatedMatch fsf:FsF-R1.3-02D;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/rda/> .
+
+<http://eosc.eu/vocabularies/sqaaas/fair/fm/> a skos:ConceptScheme;
+  dct:description "FAIR Maturity Indicators from FAIRsharing";
+  dct:title "FAIR Metrics Gen2";
+  skos:hasTopConcept fm:gen2_data_authorization, fm:gen2_data_identifier_in_metadata,
+    fm:gen2_data_identifier_persistence, fm:gen2_data_kr_language_strong, fm:gen2_data_kr_language_weak,
+    fm:gen2_data_protocol, fm:gen2_grounded_metadata, fm:gen2_metadata_authorization,
+    fm:gen2_metadata_contains_outward_links, fm:gen2_metadata_identifier_in_metadata,
+    fm:gen2_metadata_identifier_persistence, fm:gen2_metadata_includes_license_strong,
+    fm:gen2_metadata_includes_license_weak, fm:gen2_metadata_kr_language_strong, fm:gen2_metadata_kr_language_weak,
+    fm:gen2_metadata_persistence, fm:gen2_metadata_protocol, fm:gen2_metadata_uses_fair_vocabularies_strong,
+    fm:gen2_metadata_uses_fair_vocabularies_weak, fm:gen2_searchable, fm:gen2_structured_metadata,
+    fm:gen2_unique_identifier .
+
+fm:gen2_data_protocol a skos:Concept;
+  dct:description "Data may be retrieved by an open and free protocol. Tests data GUID for its resolution protocol. Currently passes InChI Keys, DOIs, Handles, and URLs. Recognition of other identifiers will be added upon request by the community.";
+  skos:broadMatch fair:A1.1;
+  skos:closeMatch rda:RDA-A1.1-01D;
+  skos:code "gen2_data_protocol";
+  skos:exactMatch fen:a1-data-protocol;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fm/>;
+  skos:prefLabel "Uses open free protocol for data retrieval (A1.1)"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fm/> .
+
+fm:gen2_metadata_protocol a skos:Concept;
+  dct:description "Metadata may be retrieved by an open and free protocol. Tests metadata GUID for its resolution protocol. Currently passes InChI Keys, DOIs, Handles, and URLs. Recognition of other identifiers will be added upon request by the community.";
+  skos:broadMatch fair:A1.1;
+  skos:closeMatch rda:RDA-A1.1-01M;
+  skos:code "gen2_metadata_protocol";
+  skos:exactMatch fen:a1-metadata-protocol;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fm/>;
+  skos:prefLabel "Uses open free protocol for metadata retrieval (A1.1)"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fm/> .
+
+fm:gen2_data_authorization a skos:Concept;
+  dct:description "Test a discovered data GUID for the ability to implement authentication and authorization in its resolution protocol. Currently passes InChI Keys, DOIs, Handles, and URLs. It also searches the metadata for the Dublin Core 'accessRights' property, which may point to a document describing the data access process. Recognition of other identifiers will be added upon request by the community.";
+  skos:broadMatch fair:A1.2;
+  skos:closeMatch rda:RDA-A1.2-02D;
+  skos:code "gen2_data_authorization";
+  skos:exactMatch fen:a1-data-authorization;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fm/>;
+  skos:prefLabel "Data authentication and authorization (A1.2)"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fm/> .
+
+fm:gen2_metadata_authorization a skos:Concept;
+  dct:description "Tests metadata GUID for the ability to implement authentication and authorization in its resolution protocol. Currently passes InChI Keys, DOIs, Handles, and URLs. Recognition of other identifiers will be added upon request by the community.";
+  skos:broadMatch fair:A1.2;
+  skos:code "gen2_metadata_authorization";
+  skos:exactMatch fen:a1-metadata-authorization;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fm/>;
+  skos:prefLabel "Metadata authentication and authorization (A1.2)"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fm/> .
+
+fm:gen2_metadata_persistence a skos:Concept;
+  dct:description "Metric to test if the metadata contains a persistence policy, explicitly identified by a persistencePolicy key (in hashed data) or a http://www.w3.org/2000/10/swap/pim/doc#persistencePolicy predicate in Linked Data.";
+  skos:broadMatch fair:A2;
+  skos:closeMatch fsf:FsF-A2-01M, rda:RDA-A2-01M;
+  skos:code "gen2_metadata_persistence";
+  skos:exactMatch fen:a2-metadata-persistent;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fm/>;
+  skos:prefLabel "Metadata Persistence (A2)"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fm/> .
+
+fm:gen2_data_identifier_persistence a skos:Concept;
+  dct:description "Metric to test if the unique identifier of the data resource is likely to be persistent. Known schema are registered in FAIRSharing ). For URLs that don't follow a schema in FAIRSharing we test known URL persistence schemas (purl, oclc, fdlp, purlz, w3id, ark).";
+  skos:broadMatch fair:F1;
+  skos:closeMatch fsf:FsF-F1-02D, rda:RDA-F1-01D;
+  skos:code "gen2_data_identifier_persistence";
+  skos:exactMatch fen:f1-data-identifier-persistent;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fm/>;
+  skos:prefLabel "Data Identifier Persistence (F1)"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fm/> .
+
+fm:gen2_metadata_identifier_persistence a skos:Concept;
+  dct:description "Metric to test if the unique identifier of the metadata resource is likely to be persistent. Known schema are registered in FAIRSharing. For URLs that don't follow a schema in FAIRSharing we test known URL persistence schemas (purl, oclc, fdlp, purlz, w3id, ark).";
+  skos:broadMatch fair:F1;
+  skos:closeMatch rda:RDA-F1-01M;
+  skos:code "gen2_metadata_identifier_persistence";
+  skos:exactMatch fen:f1-metadata-identifier-persistent;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fm/>;
+  skos:prefLabel "Identifier Persistence (F1)"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fm/> .
+
+fm:gen2_unique_identifier a skos:Concept;
+  dct:description "Metric to test if the metadata resource has a unique identifier. This is done by comparing the GUID to the patterns (by regexp) of known GUID schemas such as URLs and DOIs. Known schema are registered in FAIRSharing";
+  skos:broadMatch fair:F1;
+  skos:closeMatch rda:RDA-F1-02M;
+  skos:code "gen2_unique_identifier";
+  skos:exactMatch fen:f1-metadata-identifier-unique;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fm/>;
+  skos:prefLabel "Unique Identifier (F1)"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fm/> .
+
+fm:gen2_grounded_metadata a skos:Concept;
+  dct:description "Tests whether a machine is able to find 'grounded' metadata. i.e. metadata terms that are in a resolvable namespace, where resolution leads to a definition of the meaning of the term. Examples include JSON-LD, embedded schema, or any form of RDF. This test currently excludes XML, even when terms are namespaced. Future versions of this test may be more flexible.";
+  skos:broadMatch fair:F2;
+  skos:code "gen2_grounded_metadata";
+  skos:exactMatch fen:f2-grounded-metadata;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fm/>;
+  skos:prefLabel "Grounded Metadata (F2)"@en;
+  skos:relatedMatch fsf:FsF-F2-01M, rda:RDA-F2-01M;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fm/> .
+
+fm:gen2_structured_metadata a skos:Concept;
+  dct:description "Tests whether a machine is able to find structured metadata. This could be (for example) RDFa, embedded json, json-ld, or content-negotiated structured metadata such as RDF Turtle";
+  skos:broadMatch fair:F2;
+  skos:code "gen2_structured_metadata";
+  skos:exactMatch fen:f2-structured-metadata;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fm/>;
+  skos:prefLabel "Structured Metadata (F2)"@en;
+  skos:relatedMatch fsf:FsF-F2-01M, rda:RDA-F2-01M;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fm/> .
+
+fm:gen2_data_identifier_in_metadata a skos:Concept;
+  dct:description "Metric to test if the metadata contains the unique identifier to the data. This is done by searching for a variety of properties, including foaf:primaryTopic, schema:mainEntity, schema:distribution, sio:is-about, and iao:is-about. schema codeRepository is used for software releases.";
+  skos:broadMatch fair:F3;
+  skos:closeMatch fsf:FsF-F3-01M, rda:RDA-F3-01M;
+  skos:code "gen2_data_identifier_in_metadata";
+  skos:exactMatch fen:f3-data-identifier-in-metadata;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fm/>;
+  skos:prefLabel "Data Identifier Explicitly In Metadata (F3)"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fm/> .
+
+fm:gen2_metadata_identifier_in_metadata a skos:Concept;
+  dct:description "Metric to test if the metadata contains the unique identifier to the metadata itself. This is done using a variety of 'scraping' tools, including DOI metadata resolution, the use of the 'extruct' Python tool, and others...";
+  skos:broadMatch fair:F3;
+  skos:code "gen2_metadata_identifier_in_metadata";
+  skos:exactMatch fen:f3-metadata-identifier-in-metadata;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fm/>;
+  skos:prefLabel "Metadata Identifier Explicitly In Metadata (F3)"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fm/> .
+
+fm:gen2_searchable a skos:Concept;
+  dct:description "Tests whether a machine is able to discover the resource by search, using Microsoft Bing";
+  skos:broadMatch fair:F4;
+  skos:code "gen2_searchable";
+  skos:exactMatch fen:f4-searchable;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fm/>;
+  skos:prefLabel "Searchable in major search engine (F4)"@en;
+  skos:relatedMatch fsf:FsF-F4-01M, rda:RDA-F4-01M;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fm/> .
+
+fm:gen2_data_kr_language_strong a skos:Concept;
+  dct:description "Maturity Indicator to test if the data uses a formal language broadly applicable for knowledge representation. This particular test takes a broad view of what defines a 'knowledge representation language'; in this evaluation, a knowledge representation language is interpreted as one in which terms are semantically-grounded in ontologies. Any form of ontologically-grounded linked data will pass this test.";
+  skos:broadMatch fair:I1;
+  skos:closeMatch rda:RDA-I1-02D;
+  skos:code "gen2_data_kr_language_strong";
+  skos:exactMatch fen:i1-data-knowledge-representation-semantic;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fm/>;
+  skos:prefLabel "Data Knowledge Representation Language (strong) (I1)"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fm/> .
+
+fm:gen2_data_kr_language_weak a skos:Concept;
+  dct:description "Maturity Indicator to test if the data uses a formal language broadly applicable for knowledge representation. This particular test takes a broad view of what defines a 'knowledge representation language'; in this evaluation, a knowledge representation language is interpreted as one in which terms are semantically-grounded in ontologies. Any form of structured data will pass this test";
+  skos:broadMatch fair:I1;
+  skos:closeMatch rda:RDA-I1-01D;
+  skos:code "gen2_data_kr_language_weak";
+  skos:exactMatch fen:i1-data-knowledge-representation-structured;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fm/>;
+  skos:prefLabel "Data Knowledge Representation Language (weak) (I1)"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fm/> .
+
+fm:gen2_metadata_kr_language_strong a skos:Concept;
+  dct:description "Maturity Indicator to test if the metadata uses a formal language broadly applicable for knowledge representation. This particular test takes a broad view of what defines a 'knowledge representation language'; in this evaluation, a knowledge representation language is interpreted as one in which terms are semantically-grounded in ontologies. Any form of RDF will pass this test (including RDF that is automatically extracted by third-party parsers such as Apache Tika)";
+  skos:broadMatch fair:I1;
+  skos:closeMatch fsf:FsF-I1-02M, rda:RDA-I1-02M;
+  skos:code "gen2_metadata_kr_language_strong";
+  skos:exactMatch fen:i1-metadata-knowledge-representation-semantic;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fm/>;
+  skos:prefLabel "Metadata Knowledge Representation Language (strong) (I1)"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fm/> .
+
+fm:gen2_metadata_kr_language_weak a skos:Concept;
+  dct:description "Maturity Indicator to test if the metadata uses a formal language broadly applicable for knowledge representation. This particular test takes a broad view of what defines a 'knowledge representation language'; in this evaluation, anything that can be represented as structured data will be accepted";
+  skos:broadMatch fair:I1;
+  skos:closeMatch fsf:FsF-I1-01M, rda:RDA-I1-01M;
+  skos:code "gen2_metadata_kr_language_weak";
+  skos:exactMatch fen:i1-metadata-knowledge-representation-structured;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fm/>;
+  skos:prefLabel "Metadata Knowledge Representation Language (weak) (I1)"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fm/> .
+
+fm:gen2_metadata_uses_fair_vocabularies_strong a skos:Concept;
+  dct:description "Maturity Indicator to test if the linked data metadata uses terms that resolve to linked (FAIR) data.";
+  skos:broadMatch fair:I2;
+  skos:closeMatch rda:RDA-I2-01M;
+  skos:code "gen2_metadata_uses_fair_vocabularies_strong";
+  skos:exactMatch fen:i2-fair-vocabularies-resolve;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fm/>;
+  skos:prefLabel "Metadata uses FAIR vocabularies (strong) (I2)"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fm/> .
+
+fm:gen2_metadata_uses_fair_vocabularies_weak a skos:Concept;
+  dct:description "Maturity Indicator to test if the linked data metadata uses terms that resolve. This tests only if they resolve, not if they resolve to FAIR data, therefore is a somewhat weak test.";
+  skos:broadMatch fair:I2;
+  skos:code "gen2_metadata_uses_fair_vocabularies_weak";
+  skos:exactMatch fen:i2-fair-vocabularies-known;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fm/>;
+  skos:prefLabel "Metadata uses FAIR vocabularies (weak) (I2)"@en;
+  skos:relatedMatch rda:RDA-I2-01M;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fm/> .
+
+fm:gen2_metadata_contains_outward_links a skos:Concept;
+  dct:description "Maturity Indicator to test if the metadata links outward to third-party resources. It only tests metadata that can be represented as Linked Data.";
+  skos:broadMatch fair:I3;
+  skos:closeMatch fsf:FsF-I3-01M;
+  skos:code "gen2_metadata_contains_outward_links";
+  skos:exactMatch fen:i3-metadata-contains-outward-links;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fm/>;
+  skos:prefLabel "Metadata contains qualified outward references (I3)"@en;
+  skos:relatedMatch rda:RDA-I3-01M;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fm/> .
+
+fm:gen2_metadata_includes_license_strong a skos:Concept;
+  dct:description "Maturity Indicator to test if the linked data metadata contains an explicit pointer to the license. Tests: xhtml, dvia, dcterms, cc, data.gov.au, and Schema license predicates in linked data, and validates the value of those properties.";
+  skos:broadMatch fair:R1.1;
+  skos:closeMatch rda:RDA-R1.1-03M;
+  skos:code "gen2_metadata_includes_license_strong";
+  skos:exactMatch fen:r1-includes-standard-license;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fm/>;
+  skos:prefLabel "Metadata Includes License (strong) (R1.1)"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fm/> .
+
+fm:gen2_metadata_includes_license_weak a skos:Concept;
+  dct:description "Maturity Indicator to test if the metadata contains an explicit pointer to the license. This 'weak' test will use a case-insensitive regular expression, and scan both key/value style metadata, as well as linked data metadata. Tests: xhtml, dvia, dcterms, cc, data.gov.au, and Schema license predicates in linked data, and validates the value of those properties .";
+  skos:broadMatch fair:R1.1;
+  skos:closeMatch fsf:FsF-R1.1-01M, rda:RDA-R1.1-01M;
+  skos:code "gen2_metadata_includes_license_weak";
+  skos:exactMatch fen:r1-includes-license;
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fm/>;
+  skos:prefLabel "Metadata Includes License (weak) (R1.1)"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fm/> .
+
+<http://eosc.eu/vocabularies/sqaaas/fair/fsf/> a skos:ConceptScheme;
+  dct:description "FAIRsFAIR Data Object Assessment Metrics";
+  dct:title "FAIRsFAIR Metrics";
+  skos:hasTopConcept fsf:FsF-A1-01M, fsf:FsF-A1-02M, fsf:FsF-A1-03D, fsf:FsF-A2-01M,
+    fsf:FsF-F1-01D, fsf:FsF-F1-02D, fsf:FsF-F2-01M, fsf:FsF-F3-01M, fsf:FsF-F4-01M, fsf:FsF-I1-01M,
+    fsf:FsF-I1-02M, fsf:FsF-I3-01M, fsf:FsF-R1-01MD, fsf:FsF-R1.1-01M, fsf:FsF-R1.2-01M,
+    fsf:FsF-R1.3-01M, fsf:FsF-R1.3-02D .
+
+fsf:FsF-F1-01D a skos:Concept;
+  fuji:practicaltests """The object is identified by an unique identifier (GUID or IRI) that follows a proper syntax.
+The identifier is web-accessible (not broken).""";
+  dct:description "A data object may be assigned with a globally unique identifier such that it can be referenced unambiguously by humans or machines. Globally unique means an identifier should be associated with only one resource at any time. Examples of unique identifiers of data are Internationalized Resource Identifier (IRI)16, Uniform Resource Identifier (URI) such as URL and URN, Digital Object Identifier (DOI), the Handle System, identifiers.org, w3id.org and Archival Resource Key (ARK). A data repository may assign a globally unique identifier to your data or metadata when you publish and make it available through its curation service.";
+  skos:broadMatch fair:F1;
+  skos:closeMatch rda:RDA-F1-02D;
+  skos:code "FsF-F1-01D";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fsf/>;
+  skos:prefLabel "Data is assigned a globally unique identifier"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fsf/> .
+
+fsf:FsF-F1-02D a skos:Concept;
+  fuji:practicaltests """A data identifier is specified based on a commonly accepted persistent identifier scheme suitable for research data.
+The identifier is web-accessible, i.e., it resolves to a landing page with metadata of the data object.""";
+  dct:description "In this specification, we make a distinction between the uniqueness and persistence of an identifier. An HTTP URL (the address of a given unique resource on the web) is globally unique, but may not be persistent as the URL of data may be not accessible (link rot problem) or the data available under the original URL may be changed (content drift problem). Identifiers based on, e.g., the Handle System, DOI, ARK are both globally unique and persistent. They are maintained and governed such that they remain stable and resolvable for the long term. The persistent identifier (PID) of a data object may be resolved (point) to a landingpage with metadata containing further information on how to access the data content, in some cases a downloadable artefact, or none if the data or repository is no longer maintained. Therefore, ensuring persistence is a shared responsibility between a PID service provider (e.g., datacite) and its clients (e.g., data repositories). For example, the DOI system guarantees the persistence of its identifiers through its social (e.g., policy) and technical infrastructures, whereas a data provider ensures the availability of the resource (e.g., landing page, downloadable artefact) associated with the identifier.";
+  skos:broadMatch fair:F1;
+  skos:closeMatch rda:RDA-F1-01D, fm:gen2_data_identifier_persistence, fen:f1-data-identifier-persistent;
+  skos:code "FsF-F1-02D";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fsf/>;
+  skos:prefLabel "Data is assigned a persistent identifier"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fsf/> .
+
+fsf:FsF-F2-01M a skos:Concept;
+  fuji:practicaltests """Some metadata (at all) has been made available via common (web) standards.
+Minimum core citation metadata is specified ( creator, title, publication date, publisher, and identifier)
+Minimum core descriptive metadata is specified (creator, title, publisher, publication date, summary, keywords, identifier) through appropriate metadata fields.""";
+  dct:description "Metadata is descriptive information about a data object. Since the metadata required differs depending on the users and their applications, this metric focuses on core metadata. The core metadata is the minimum descriptive information required to enable data finding, including citation which makes it easier to find data. We determine the required metadata based on common data citation guidelines (e.g., DataCite, ESIP, and IASSIST), and metadata recommendations for data discovery (e.g., EOSC Datasets Minimum Information (EDMI), DataCite Metadata Schema, W3C Recommendation Data on the Web Best Practices and Data Catalog Vocabulary). This metric focuses on domain-agnostic core metadata. Domain or discipline- specific metadata specifications are covered under metric FsF-R1.3-01M. A repository should adopt a schema that includes properties of core metadata, whereas data authors should take the responsibility of providing core metadata.";
+  skos:broadMatch fair:F2;
+  skos:closeMatch rda:RDA-F2-01M;
+  skos:code "FsF-F2-01M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fsf/>;
+  skos:prefLabel "Metadata includes descriptive core elements to support data findability"@en;
+  skos:relatedMatch fm:gen2_grounded_metadata, fm:gen2_structured_metadata, fen:f2-grounded-metadata,
+    fen:f2-structured-metadata;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fsf/> .
+
+fsf:FsF-F3-01M a skos:Concept;
+  fuji:practicaltests """Metadata contains a PID or URL which indicates the location of the downloadable data content
+A data identifier is included in the metadata and it matches the identifier provided as part of the assessment request.""";
+  dct:description "The metadata should explicitly specify the identifier of the data such that users can discover and access the data through the metadata. If the identifier specified is persistent and points to a landing page, the data identifier and links to download the data content should be taken into account in the assessment.";
+  skos:broadMatch fair:F3;
+  skos:closeMatch rda:RDA-F3-01M, fm:gen2_data_identifier_in_metadata, fen:f3-data-identifier-in-metadata;
+  skos:code "FsF-F3-01M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fsf/>;
+  skos:prefLabel "Metadata includes the identifier of the data it describes"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fsf/> .
+
+fsf:FsF-F4-01M a skos:Concept;
+  fuji:practicaltests """Metadata of the object is retrievable programmatically through at least one of the following methods:
+Structured data embedded in the landing page of the data object.
+Typed Links of metadata document or Signposting header links.
+Content negotiation with a PID provider service (e.g., DataCite).""";
+  dct:description "This metric refers to ways through which the metadata of data is exposed or provided in a standard and machine-readable format. Assessing this metric will require an understanding of the capabilities offered by the data repository used to host the data. Metadata may be available through multiple endpoints. For example, if data is hosted by a repository, the repository may disseminate its metadata through a metadata harvesting protocol (e.g., via OAI-PMH) and/or a web service. Metadata may also be embedded as structured data on a data page for use by web search engines such as Google and Bing or be available as linked (open) data.";
+  skos:broadMatch fair:F4;
+  skos:closeMatch rda:RDA-F4-01M;
+  skos:code "FsF-F4-01M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fsf/>;
+  skos:prefLabel "Metadata is offered in such a way that it can be retrieved by machines"@en;
+  skos:relatedMatch fm:gen2_searchable, fen:f4-searchable;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fsf/> .
+
+fsf:FsF-A1-01M a skos:Concept;
+  fuji:practicaltests """Metadata includes the level of data access (e.g., public, embargoed, restricted) and its access conditions using appropriate metadata fields.
+Access level metadata is machine-readable, and this is verified against controlled vocabularies:
+http://vocabularies.coar-repositories.org/documentation/access_rights/
+http://purl.org/eprint/accessRights
+http://publications.europa.eu/resource/authority/access-right""";
+  dct:description """This metric determines if the metadata includes the level of access to the data such as public, embargoed, restricted, or metadata-only access and its access conditions. Both access level and conditions are necessary information to potentially gain access to the data. It is recommended that data should be as open as possible and as closed as necessary.
+ - There are no access conditions for public data. Datasets should be released into the public domain (e.g., with an appropriate public-domain-equivalent license such as Creative Commons CC0 license) and openly accessible without restrictions when possible.
+ - Embargoed access refers to data that will be made publicly accessible at a specific date. For example, a data author may release their data after having published their findings from the data. Therefore, access conditions such as the date the data will be released publically is essential and should be specified in the metadata.
+ - Restricted access refers to data that can be accessed under certain conditions (e.g. because of commercial, sensitive, or other confidentiality reasons or the data is only accessible via a subscription or a fee). Restricted data may be available to a particular group of users or after permission is granted. For restricted data, the metadata should include the conditions of access to the data such as point of contact or instructions to access the data.
+ - Metadata-only access refers to data that is not made publicly available and for which only metadata is publicly available.""";
+  skos:broadMatch fair:A1;
+  skos:code "FsF-A1-01M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fsf/>;
+  skos:prefLabel "Metadata contains access level and access conditions of the data"@en;
+  skos:relatedMatch rda:RDA-A1-01M;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fsf/> .
+
+fsf:FsF-A1-02M a skos:Concept;
+  fuji:practicaltests """The metadata URI’s scheme is based on a common application protocol.
+The metadata is accessible through the identifier provided.""";
+  dct:description "Given an identifier of a dataset, the metadata of the dataset should be retrievable using a standard communication protocol. Consider, for example, the application layer protocols such as HTTP, HTTPS, FTP, TFTP, SFTP and AtomPub. Avoid disseminating metadata using a proprietary protocol (e.g., Apple Filing Protocol).";
+  skos:broadMatch fair:A1;
+  skos:closeMatch rda:RDA-A1-04M;
+  skos:code "FsF-A1-02M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fsf/>;
+  skos:prefLabel "Metadata is accessible through a standardized communication protocol"@en;
+  skos:relatedMatch rda:RDA-A1-02M, rda:RDA-A1-03M;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fsf/> .
+
+fsf:FsF-A1-03D a skos:Concept;
+  fuji:practicaltests """The data URI’s scheme is based on a shared application protocol.
+The data is accessible through the identifier provided.""";
+  dct:description "Given an identifier of a dataset, the dataset should be retrievable using a standard communication protocol such as HTTP, HTTPS, FTP, TFTP, SFTP, FTAM and AtomPub. Avoid disseminating data using a proprietary protocol.";
+  skos:broadMatch fair:A1;
+  skos:closeMatch rda:RDA-A1-04D;
+  skos:code "FsF-A1-03D";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fsf/>;
+  skos:prefLabel "Data is accessible through a standardized communication protocol"@en;
+  skos:relatedMatch rda:RDA-A1-02D, rda:RDA-A1-03D, rda:RDA-A1-05D;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fsf/> .
+
+fsf:FsF-A2-01M a skos:Concept;
+  fuji:practicaltests "Programmatic assessment of the preservation of metadata of a data object can only be tested if the object is deleted or replaced. So this test is only applicable for deleted, replaced or obsolete objects. Importantly, continued access to metadata depends on a data repository’s preservation practice. Therefore, we regard that the assessment of metric applies to at the level of a repository, not at the level of individual objects. For this reason, we excluded its assessment details from the F-UJI implementation.";
+  dct:description "This metric determines if the metadata will be preserved even when the data they represent are no longer available, replaced or lost. Similar to metric FsF-F4-01M, answering this metric will require an understanding of the capabilities offered, data preservation plan and policies implemented by the data repository and data services (e.g., Datacite PID service). Continued access to metadata depends on a data repository’s preservation practice which is usually documented in the repository’s service policies or statements. A trustworthy data repository offering DOIs and implementing a PID Policy should guarantee that metadata will remain accessible even when data is no longer available for any reason (e.g., by providing a tombstone page)";
+  skos:broadMatch fair:A2;
+  skos:closeMatch rda:RDA-A2-01M, fm:gen2_metadata_persistence, fen:a2-metadata-persistent;
+  skos:code "FsF-A2-01M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fsf/>;
+  skos:prefLabel "Metadata remains available, even if the data is no longer available"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fsf/> .
+
+fsf:FsF-I1-01M a skos:Concept;
+  fuji:practicaltests """The metadata of the object is available in a formal knowledge representation language, e.g., through at least one of the following mechanisms:
+Parsable, structured data is embedded in the landing page
+Parsable, formal metadata (e.g., RDF, JSON-LD) is accessible through content negotiation, typed links or sparql endpoint.""";
+  dct:description "Knowledge representation is vital for machine-processing of the knowledge of a domain. Expressing the metadata of a data object using a formal knowledge representation will enable machines to process it in a meaningful way and enable more data exchange possibilities. Examples of knowledge representation languages are RDF, RDFS, and OWL. These languages may be serialized (written) in different formats. For instance, RDF/XML, RDFa, Notation3, Turtle, N-Triples and N-Quads, and JSON-LD are RDF serialization formats.";
+  skos:broadMatch fair:I1;
+  skos:closeMatch rda:RDA-I1-01M, fm:gen2_metadata_kr_language_weak, fen:i1-metadata-knowledge-representation-structured;
+  skos:code "FsF-I1-01M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fsf/>;
+  skos:prefLabel "Metadata is represented using a formal knowledge representation language"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fsf/> .
+
+fsf:FsF-I1-02M a skos:Concept;
+  fuji:practicaltests "Namespaces of known semantic resources are present in the metadata of an object; exclude common namespaces (e.g., rdf, rdfs, xsd, owl) from the test.";
+  dct:description """A metadata document or selected parts of the document may incorporate additional terms from semantic resources (also referred as semantic artefacts) that unambiguously describe the contents so they can be processed automatically by machines. This metadata enrichment may facilitate enhanced data search and interoperability of data from different sources.
+Ontology, thesaurus, and taxonomy are kinds of semantic resources, and they come with varying degrees of expressiveness and computational complexity. Knowledge organization schemes such as thesaurus and taxonomy are semantically less formal than ontologies.""";
+  skos:broadMatch fair:I1;
+  skos:closeMatch rda:RDA-I1-02M, fm:gen2_metadata_kr_language_strong, fen:i1-metadata-knowledge-representation-semantic;
+  skos:code "FsF-I1-02M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fsf/>;
+  skos:prefLabel "Metadata uses semantic resources"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fsf/> .
+
+fsf:FsF-I3-01M a skos:Concept;
+  fuji:practicaltests """Metadata captures the relation between a data object and its related entity.
+The relation is expressed using a relation type according to PROV-O or DataCite relation types.
+Relations are preferably be expressed as actionable unique or persistent identifiers e.""";
+  dct:description "Linking data to its related entities will increase its potential for reuse. The linking information should be captured as part of the metadata. A dataset may be linked to its prior version, related datasets or resources (e.g. publication, physical sample, funder, repository, platform, site, or observing network registries). Links between data and its related entities should be expressed through relation types (e.g., DataCite Metadata Schema specifies relation types between research objects through the fields ‘RelatedIdentifier’ and ‘RelationType’), and preferably use persistent Identifiers for related entities (e.g., ORCID for contributors, DOI for publications, and ROR for institutions).";
+  skos:broadMatch fair:I3;
+  skos:closeMatch fm:gen2_metadata_contains_outward_links, fen:i3-metadata-contains-outward-links;
+  skos:code "FsF-I3-01M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fsf/>;
+  skos:prefLabel "Metadata includes links between the data and its related entities"@en;
+  skos:relatedMatch rda:RDA-I3-01D, rda:RDA-I3-01M, rda:RDA-I3-02M;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fsf/> .
+
+fsf:FsF-R1-01MD a skos:Concept;
+  fuji:practicaltests """Metadata includes the type of the object and the technical properties of its data file such as format, size, observed or measured variables.
+Metadata values of the properties comply with the actual data file.""";
+  dct:description "This metric evaluates if the content of the dataset is specified in the metadata, and it should be an accurate reflection of the actual data deposited. Examples of the properties specifying data content are resource type (e.g., data or a collection of data), variable(s) measured or observed, method, data format and size. Ideally, ontological vocabularies should be used to describe data content (e.g., variable) to support interdisciplinary reuse.";
+  skos:broadMatch fair:R1;
+  skos:closeMatch rda:RDA-R1-01M;
+  skos:code "FsF-R1-01MD";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fsf/>;
+  skos:prefLabel "Metadata specifies the content of the data"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fsf/> .
+
+fsf:FsF-R1.1-01M a skos:Concept;
+  fuji:practicaltests """Metadata contains license information represented using an appropriate metadata element.
+A standard, machine readable license is specified.""";
+  dct:description "This metric evaluates if data is associated with a license because otherwise users cannot reuse it in a clear legal context. We encourage the application of licenses for all kinds of data whether public, restricted or for specific users. Without an explicit license, users do not have a clear idea of what can be done with your data. Licenses can be of standard type (Creative Commons, Open Data Commons Open Database License) or bespoke licenses, and rights statements which indicate the conditions under which data can be reused. It is highly recommended to use a standard, machine-readable license such that it can be interpreted by machines and humans. In order to inform users about what rights they have to use a dataset, the license information should be specified as part of the dataset’s metadata.";
+  skos:broadMatch fair:R1.1;
+  skos:closeMatch rda:RDA-R1.1-01M, fm:gen2_metadata_includes_license_weak, fen:r1-includes-license;
+  skos:code "FsF-R1.1-01M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fsf/>;
+  skos:prefLabel "Metadata includes license information under which data can be reused"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fsf/> .
+
+fsf:FsF-R1.2-01M a skos:Concept;
+  fuji:practicaltests """Metadata includes properties representing data creation such as creator, contributors, creation and modification dates and version, source, and relations that indicate data creation activities.
+Provenance metadata is available in a machine-readable version of PROV-O or PAV.""";
+  dct:description """Data provenance (also known as lineage) represents a dataset’s history, including the people, entities, and processes involved in its creation, management and longer-term curation. It is essential that data producers provide provenance information about the data to enable informed use and reuse. The levels of provenance information needed can vary depending on the data type (e.g., measurement, observation, derived data, or data product) and research domains. For that reason, it is difficult to define a set of finite provenance properties that will be adequate for all domains. Based on existing work, we suggest that the following provenance properties of data generation or collection are included in the metadata record as a minimum.
+ - Sources of data, e.g., datasets the data is derived from and instruments
+ - Data creation or collection date
+ - Contributors involved in data creation and their roles
+ - Data publication, modification and versioning information
+There are various ways through which provenance information may be included in a metadata record. Some of the provenance properties (e.g., instrument, contributor) may be best represented using PIDs (such as DOIs for data, ORCIDs for researchers). This way, humans and systems can retrieve more information about each of the properties by resolving the PIDs. Alternatively, the provenance information can be given in a linked provenance record expressed explicitly in, e.g., PROV-O or PAV or Vocabulary of Interlinked Datasets (VoID).""";
+  skos:broadMatch fair:R1.2;
+  skos:closeMatch rda:RDA-R1.2-02M;
+  skos:code "FsF-R1.2-01M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fsf/>;
+  skos:prefLabel "Metadata includes provenance information about data creation or generation"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fsf/> .
+
+fsf:FsF-R1.3-01M a skos:Concept;
+  fuji:practicaltests "Metadata is available through at least one of the domain metadata standards listed in RDA Metadata Standards Catalog.";
+  dct:description "In addition to core metadata required to support data discovery (covered under metric FsF-F2-01M), metadata to support data reusability should be made available following community-endorsed metadata standards. Some communities have well-established metadata standards (e.g., geospatial: ISO19115; biodiversity: DarwinCore, ABCD, EML; social science: DDI; astronomy: International Virtual Observatory Alliance Technical Specifications) while others have limited standards or standards that are under development (e.g., engineering and linguistics). The use of community-endorsed metadata standards is usually encouraged and supported by domain and discipline-specific repositories.";
+  skos:broadMatch fair:R1.3;
+  skos:closeMatch rda:RDA-R1.3-01M;
+  skos:code "FsF-R1.3-01M";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fsf/>;
+  skos:prefLabel "Metadata follows a standard recommended by the target research community of the data"@en;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fsf/> .
+
+fsf:FsF-R1.3-02D a skos:Concept;
+  fuji:practicaltests """Data is available in a long-term file format as defined in ISO/TR 22299 
+Data is available in an open format (see e.g., https://en.wikipedia.org/wiki/List_of_open_formats)
+Data is available in a scientific file format (see e.g., Library of Congress dataset formats, Wolfram Alpha supported file formats)""";
+  dct:description "File formats refer to methods for encoding digital information. For example, CSV for tabular data, NetCDF for multidimensional data and GeoTIFF for raster imagery. Data should be made available in a file format that is backed by the research community to enable data sharing and reuse. Consider for example, file formats that are widely used and supported by the most commonly used software and tools. These formats also should be suitable for long-term storage and archiving, which are usually recommended by a data repository. The formats not only give a higher certainty that your data can be read in the future, but they will also help to increase the reusability and interoperability. Using community-endorsed formats enables data to be loaded directly into the software and tools used for data analysis. It makes it possible to easily integrate your data with other data using the same preferred format. The use of community-endorsed formats will also help to transform the format to a newer one, in case an older format gets outdated.";
+  skos:broadMatch fair:R1.3;
+  skos:closeMatch rda:RDA-R1.3-01D;
+  skos:code "FsF-R1.3-02D";
+  skos:inScheme <http://eosc.eu/vocabularies/sqaaas/fair/fsf/>;
+  skos:prefLabel "Data is available in a file format recommended by the target research community"@en;
+  skos:relatedMatch rda:RDA-R1.3-02D;
+  skos:topConceptOf <http://eosc.eu/vocabularies/sqaaas/fair/fsf/> .
