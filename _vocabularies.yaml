@@ -1,0 +1,57 @@
+affiliations:
+  pid-type: aff
+  data-file: vocabularies/affiliations_ror.yaml
+creatorsroles:
+  pid-type: crr
+  data-file: vocabularies/roles.yaml
+contributorsroles:
+  pid-type: cor
+  data-file: vocabularies/roles.yaml
+languages:
+  pid-type: lng
+  data-file: vocabularies/languages.yaml
+licenses:
+  pid-type: lic
+  data-file: vocabularies/licenses.csv
+resourcetypes:
+  pid-type: rsrct
+  data-file: vocabularies/resource_types.yaml
+descriptiontypes:
+  pid-type: dty
+  data-file: vocabularies/description_types.yaml
+datetypes:
+  pid-type: dat
+  data-file: vocabularies/date_types.yaml
+names:
+  pid-type: names
+  data-file: vocabularies/names_orcid.yaml
+relationtypes:
+  pid-type: rlt
+  data-file: vocabularies/relation_types.yaml
+removalreasons:
+  pid-type: rem
+  data-file: vocabularies/removal_reasons.yaml
+# 'subjects' type needs to be created to prevent querying errors in the facets
+# but they are highly dependent on the kind of InvenioRDM instance, so no
+# defaults are provided
+titletypes:
+  pid-type: ttyp
+  data-file: vocabularies/title_types.yaml
+communitytypes:
+  pid-type: comtyp
+  data-file: vocabularies/community_types.yaml
+funders:
+  pid-type: fun
+  data-file: vocabularies/funders.yaml
+# 'awards' contain a reference to a funder so the fixtures need to be run
+# after 'funders'
+awards:
+  pid-type: awa
+  data-file: vocabularies/awards.yaml
+# code meta controlled vocabularies
+code:developmentStatus:
+  pid-type: ds
+  data-file: vocabularies/contrib/codemeta/development_status.yaml
+code:programmingLanguages:
+  pid-type: pl
+  data-file: vocabularies/contrib/codemeta/programming_languages.yaml
