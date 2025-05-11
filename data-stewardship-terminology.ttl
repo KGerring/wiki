@@ -1480,7 +1480,7 @@ sshocterm:open_science_167 a skos:Concept ;
 
 sshocterm:persistent_identifier_171 a skos:Concept ;
     dct:source "Loterre Open Science Thesaurus, \"PID\", http://data.loterre.fr/ark:/67375/TSO-H5ZG6DX6-4"^^xsd:string ;
-    skos:altLabel "PID"@en,;
+    skos:altLabel "PID"@en;
     skos:definition "A unique and stable denomination (reference) of a digital resource (e.g. research data) through allocation of a code that can be persistently and explicitly referenced on the internet."@en,;
     skos:exactMatch <http://data.loterre.fr/ark:/67375/TSO-H5ZG6DX6-4> ;
     skos:inScheme sshocterm: ;
@@ -1554,15 +1554,7 @@ sshocterm:sensitive_personal_data_198 a skos:Concept ;
 
 sshocterm:trustworthy_repository_206 a skos:Concept ;
     dct:source "Loterre Open Science Thesaurus, \"certified repository\", http://data.loterre.fr/ark:/67375/TSO-LJ49Q4WZ-R"^^xsd:string ;
-    skos:altLabel "!el" ,
-        "trustworthy data repository"@en,
-        "trustworthy digital repository"@en,
-        "!fr" ,
-        "!it" ,
-        "!nl" ,
-        "!nl" ,
-        "zaupanja vreden digitalni repozitorij"@sl,
-        "!sl" ;
+    skos:altLabel "trustworthy data repository"@en, "trustworthy digital repository"@en;
     skos:definition "Data repository evaluated by an independent authority that endorsed its trustworthiness and awarded it a label."@en,;
     skos:exactMatch <http://data.loterre.fr/ark:/67375/TSO-LJ49Q4WZ-R> ;
     skos:inScheme sshocterm: ;
@@ -1608,8 +1600,7 @@ sshocterm:auxiliary_data_5 a skos:Concept ;
     dct:source "Gotz, A., Perrin, J.-F., Fangohr, H., Salvat, D., Gliksohn, F., Markvardsen, A., McBirnie, A., Gonzalez-Beltran, A., Taylor, J., and Matthews, B. (2020). PaNOSC FAIR Research Data Policy framework (1.1). Zenodo. https://doi.org/10.5281/zenodo.3862701"^^xsd:string ;
     skos:broadMatch <http://data.loterre.fr/ark:/67375/TSO-MJRKBMDW-Q> ;
     skos:broader <http://data.loterre.fr/ark:/67375/TSO-MJRKBMDW-Q> ;
-    skos:definition "The term auxiliary data refers to data that provide contextual information regarding the experiment and its datasets but which are collected outside the context of the experiment conducted at the research facility, such as information about the sample images, provenance and preparation, data processing scripts, processing environment information such as software tools and versions used, etc."@en,
-    ;
+    skos:definition "The term auxiliary data refers to data that provide contextual information regarding the experiment and its datasets but which are collected outside the context of the experiment conducted at the research facility, such as information about the sample images, provenance and preparation, data processing scripts, processing environment information such as software tools and versions used, etc."@en;
     skos:inScheme sshocterm: ;
     skos:prefLabel "auxiliary data"@en,;
     skos:topConceptOf sshocterm: .
@@ -1682,17 +1673,7 @@ sshocterm:data_lifecycle_60 a skos:Concept ;
 
 sshocterm:data_management_63 a skos:Concept ;
     dct:source "Waithira, N., Mutinda, B., and Cheah, P.Y (2019). Data Management and Sharing Policy: the First Step Towards Promoting Data Sharing. BMC Medicine. 2019 Apr;17(1):80. DOI: 10.1186/s12916-019-1315-8"^^xsd:string ;
-    skos:altLabel 
-        "!el" ,
-        "!el" ,
-        "manage data"@en,
-        "management of (research) data"@en,
-        "!fr" ,
-        "!it" ,
-        "!nl" ,
-        "!nl" ,
-        "ravnanje z (raziskovalnimi) podatki."@sl,
-        "!sl" ;
+    skos:altLabel "manage data"@en, "management of (research) data"@en;
     skos:definition "Data management refers to activities undertaken to organise and handle data throughout the study period – from study design and data collection, through to the dissemination of results, data sharing and archiving."@en,;
     skos:exactMatch <http://data.loterre.fr/ark:/67375/TSO-NJ1CVNL6-F>,
         <http://www.data-knowledge.org/dk/DataManagementProcess> ;
@@ -1851,14 +1832,14 @@ sshocterm:hierarchical_data_148 a skos:Concept ;
     skos:broader <http://data.loterre.fr/ark:/67375/TSO-MJRKBMDW-Q> ;
     skos:definition "Hierarchical data is defined as a set of data items that are related to each other by hierarchical relationships. Hierarchical relationships exist where one item of data is the parent of another item."@en,;
     skos:inScheme sshocterm: ;
-    skos:prefLabel "hierarchical data"@en,;
+    skos:prefLabel "hierarchical data"@en;
     skos:topConceptOf sshocterm: .
 
 sshocterm:hierarchical_data_type_149 a skos:Concept ;
     dct:source "Adapted from 'Data Type'"^^xsd:string ;
     skos:broadMatch <http://data.loterre.fr/ark:/67375/TSO-MJRKBMDW-Q> ;
     skos:broader <http://data.loterre.fr/ark:/67375/TSO-MJRKBMDW-Q> ;
-    skos:definition "Data types organised in a hierarchical way."@en,;
+    skos:definition "Data types organised in a hierarchical way."@en;
     skos:inScheme sshocterm: ;
     skos:prefLabel "hierarchical data type"@en,;
     skos:topConceptOf sshocterm: .
