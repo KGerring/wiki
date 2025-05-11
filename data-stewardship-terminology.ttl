@@ -1841,7 +1841,7 @@ sshocterm:hierarchical_data_type_149 a skos:Concept ;
     skos:broader <http://data.loterre.fr/ark:/67375/TSO-MJRKBMDW-Q> ;
     skos:definition "Data types organised in a hierarchical way."@en;
     skos:inScheme sshocterm: ;
-    skos:prefLabel "hierarchical data type"@en,;
+    skos:prefLabel "hierarchical data type"@en;
     skos:topConceptOf sshocterm: .
 
 sshocterm:metadata_158 a skos:Concept ;
@@ -1946,13 +1946,7 @@ sshocterm:third_party_data_205 a skos:Concept ;
 
 sshocterm:personal_data_172 a skos:Concept ;
     dct:source "GDPR"^^xsd:string ;
-    skos:definition "Alle Informationen, die sich auf eine bestimmte oder bestimmbare natürliche Person (\"Datensubjekt\"!de" ,
-        "Κάθε πληροφορία που αφορά ταυτοποιημένο ή ταυτοποιήσιμο φυσικό πρόσωπο (\"υποκείμενο των δεδομένων\"!el" ,
-        "Any information relating to an identified or identifiable natural person (‘data subject’)."@en,
-        "Toute information relative à une personne physique identifiée ou identifiable (\"personne concernée\"!fr" ,
-        "Qualsiasi informazione relativa a una persona fisica identificata o identificabile (\"persona interessata\"!it" ,
-        "Elke informatie betreffende een geïdentificeerde of identificeerbare natuurlijke persoon (\"betrokkene\"!nl" ,
-        "Vse informacije, ki se nanašajo na določeno ali določljivo fizično osebo (\"posameznik, na katerega se nanašajo osebni podatki\"!sl" ;
+    skos:definition "Any information relating to an identified or identifiable natural person (‘data subject’)."@en;
     skos:exactMatch <http://data.loterre.fr/ark:/67375/TSO-RH261KDT-S>,
         <https://w3id.org/GConsent#PersonalData>,
         <https://w3id.org/GDPRtEXT#PersonalData> ;
@@ -2011,13 +2005,7 @@ sshocterm: a skos:ConceptScheme ;
     dc:identifier "CLARIN resource identifier: http://hdl.handle.net/20.500.11752/ILC-568"@en ;
     dc:title "SSHOC Multilingual Data Stewardship Terminology"@en ;
     dct:created "2021-11-29"^^xsd:date ;
-    dct:language iso639-3:dut,
-        iso639-3:ell,
-        iso639-3:eng,
-        iso639-3:fra,
-        iso639-3:ger,
-        iso639-3:ita,
-        iso639-3:slv ;
+    dct:language iso639-3:eng;
     dct:modified "2021-12-17"^^xsd:date ;
     owl:versionInfo "1.0"^^xsd:string ;
     skos:hasTopConcept sshocterm:accessible_data_1,
