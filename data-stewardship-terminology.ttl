@@ -633,11 +633,10 @@ sshocterm:data_understandability_127 a skos:Concept ;
 
 sshocterm:data_usability_128 a skos:Concept ;
     dct:source "Thanos, C. (2017). Research Data Reusability: Conceptual Foundations, Barriers and Enabling Technologies. Publications. 5. 2. 10.3390/publications5010002"^^xsd:string ;
-    skos:altLabel "usability of data"@en,
-        "!sl" ;
+    skos:altLabel "usability of data"@en;
     skos:definition "By data (re)usability, we mean the ease of using data for legitimate scientific research by one or more communities of research (consumer communities) that is produced by other communities of research (producer communities)."@en,;
     skos:inScheme sshocterm: ;
-    skos:prefLabel "data usability"@en,;
+    skos:prefLabel "data usability"@en;
     skos:topConceptOf sshocterm: .
 
 sshocterm:data_user_130 a skos:Concept ;
@@ -681,9 +680,7 @@ sshocterm:descriptive_metadata_136 a skos:Concept ;
 
 sshocterm:digital_collection_137 a skos:Concept ;
     dct:source "ISO 21248:2019(en), 3.25"^^xsd:string ;
-    skos:definition "Sämtliche in elektronischer Form in der Bibliothek vorhandenen Ressourcen, ob digital \"geboren\"!de" ,
-        "!el" ,
-        "All resources in electronic form in the library collection, whether born digital or digitized."@en,;
+    skos:definition "All resources in electronic form in the library collection, whether born digital or digitized."@en;
     skos:inScheme sshocterm: ;
     skos:note "ISO 5127:2017(en), 3.6.1.06" ;
     skos:prefLabel "digital collection"@en,;
@@ -718,7 +715,7 @@ sshocterm:dynamic_data_142 a skos:Concept ;
     skos:inScheme sshocterm: ;
     skos:note "ISO 5127:2017(en), 3.1.10.07",
         "https://github.com/terms4fairskills/FAIRterminology/T4FS_0000080" ;
-    skos:prefLabel "dynamic data"@en,;
+    skos:prefLabel "dynamic data"@en;
     skos:topConceptOf sshocterm: .
 
 sshocterm:experimental_data_143 a skos:Concept ;
@@ -823,11 +820,7 @@ sshocterm:pid_resolver_174 a skos:Concept ;
 
 sshocterm:processed_data_176 a skos:Concept ;
     dct:source "Gotz, A., Perrin, J.-F., Fangohr, H., Salvat, D., Gliksohn, F., Markvardsen, A., McBirnie, A., Gonzalez-Beltran, A., Taylor, J., and Matthews, B. (2020). PaNOSC FAIR Research Data Policy framework (1.1). Zenodo. https://doi.org/10.5281/zenodo.3862701"^^xsd:string ;
-    skos:definition "Der Begriff \"verarbeitete Daten\"!de" ,
-        "!el" ,
-        "The term processed data pertains to the data obtained by processing raw data in an automated manner usually done at the facility."@en,
-        "Le terme \"données traitées\"!fr" ,
-        "Il termine \"dati elaborati\"!it" ,;
+    skos:definition "The term processed data pertains to the data obtained by processing raw data in an automated manner usually done at the facility."@en;
     skos:inScheme sshocterm: ;
     skos:note "ISO/IEC 14251:1995(en), 4.21" ;
     skos:prefLabel "processed data"@en,;
@@ -928,9 +921,7 @@ sshocterm:semantic_versioning_195 a skos:Concept ;
 
 sshocterm:semi-structured_data_196 a skos:Concept ;
     dct:source "CASRAI Research Data Management, \"Semi-structured data\", https://casrai-test.evision.ca/glossary-term/semi-structured-data/"^^xsd:string ;
-    skos:definition "Der Begriff \"halbstrukturierte Daten\"!de" ,
-        "!el" ,
-        "Data that have not been organized into a specialized repository, such as a database, but that nevertheless have associated information, such as metadata, that makes them more amenable to processing than raw data."@en,;
+    skos:definition "Data that have not been organized into a specialized repository, such as a database, but that nevertheless have associated information, such as metadata, that makes them more amenable to processing than raw data."@en;
     skos:inScheme sshocterm: ;
     skos:note "ISO/IEC 20944-1:2013(en), 3.21.12.21",
         "https://github.com/terms4fairskills/FAIRterminology/T4FS_0000431" ;
@@ -950,7 +941,7 @@ sshocterm:structured_data_202 a skos:Concept ;
     skos:definition "Structured data refers to information with a high degree of organization, making the data readily searchable by search engines."@en,;
     skos:inScheme sshocterm: ;
     skos:note "https://github.com/terms4fairskills/FAIRterminology/T4FS_0000295" ;
-    skos:prefLabel "structured data"@en,;
+    skos:prefLabel "structured data"@en;
     skos:topConceptOf sshocterm: .
 
 sshocterm:technical_interoperability_204 a skos:Concept ;
@@ -972,9 +963,7 @@ sshocterm:uniform_resource_locator_208 a skos:Concept ;
 
 sshocterm:universally_unique_identifier_209 a skos:Concept ;
     dct:source "ISO/IEC 18038:2020 (en), 3.11"^^xsd:string ;
-    skos:altLabel "globally unique identifier"@en,
-        "!it" ,
-        "!sl" ;
+    skos:altLabel "globally unique identifier"@en;
     skos:definition "128-bit number used to identify information in computer systems."@en,;
     skos:inScheme sshocterm: ;
     skos:note "ISO 5127:2017(en), 3.2.5.26",
