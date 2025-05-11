@@ -989,6 +989,7 @@ sshocterm:version_control_211 a skos:Concept ;
     skos:prefLabel "version control"@en,;
     skos:topConceptOf sshocterm: .
 
+
 <https://w3id.org/GConsent#DataController> skos:exactMatch sshocterm:data_controller_34 .
 
 <https://w3id.org/GConsent#DataRestriction> skos:exactMatch sshocterm:data_restriction_102 .
@@ -1029,7 +1030,8 @@ sshocterm:version_control_211 a skos:Concept ;
 
 <https://w3id.org/skgo/modsci#DataMining> skos:exactMatch sshocterm:data_mining_69 .
 
-<https://www.w3.org/ns/prov#Attribution> skos:exactMatch sshocterm:data_attribution_23 .
+<https://www.w3.org/ns/prov#Attribution> skos:exactMatch sshocterm:data_attribution_23 . 
+
 <http://data.loterre.fr/ark:/67375/TSO-C676TDJV-H> skos:exactMatch sshocterm:data_interoperability_56,
         sshocterm:interoperable_data_151 .
 <http://data.loterre.fr/ark:/67375/TSO-JDVCT02T-P> skos:exactMatch sshocterm:data_findability_49,
@@ -1103,10 +1105,7 @@ sshocterm:data_breach_26 a skos:Concept ;
 
 sshocterm:data_cleaning_31 a skos:Concept ;
     dct:source "ISO 5127:2017(en), 3.1.11.21"^^xsd:string ;
-    skos:altLabel "data cleansing"@en,
-        "data cleanup"@en,
-        "prečiščevanje podatkov"@sl,
-        "!sl" ;
+    skos:altLabel "data cleansing"@en, "data cleanup"@en; 
     skos:definition "Process used to improve data quality by detecting and correcting (or removing) defects and errors in data."@en,;
     skos:exactMatch <http://purl.org/net/wf-motifs#DataCleaning> ;
     skos:inScheme sshocterm: ;
@@ -1191,11 +1190,7 @@ sshocterm:data_integration_54 a skos:Concept ;
 
 sshocterm:data_interoperability_56 a skos:Concept ;
     dct:source "Translated from Loterre Open Science Thesaurus, \"intéropérable\", http://data.loterre.fr/ark:/67375/TSO-C676TDJV-H"^^xsd:string ;
-    skos:altLabel "interoperability"@en,
-        "interoperability of data"@en,
-        "!nl" ,
-        "interoperabilnost"@sl,
-        "!sl" ;
+    skos:altLabel "interoperability"@en, "interoperability of data"@en; 
     skos:definition "FAIR principle that can be decomposed in: downloadable, usable, understandable and combinable with other data, by both humans and machines. a current implementation of this principle consists in using Semantic Web technologies (RDF, OWL, SKOS) to represent and link data and metadata."@en,;
     skos:exactMatch <http://data.loterre.fr/ark:/67375/TSO-C676TDJV-H> ;
     skos:inScheme sshocterm: ;
@@ -1233,13 +1228,7 @@ sshocterm:data_manager_67 a skos:Concept ;
 
 sshocterm:data_minimisation_68 a skos:Concept ;
     dct:source "European Data Protection Supervisor, Data Protection Glossary, \"Data minimization\", https://edps.europa.eu/data-protection/data-protection/glossary/d_en"^^xsd:string ;
-    skos:definition "Gemäss dem Grundsatz der \"Datenminimierung\"!de" ,
-        "Η αρχή της \"ελαχιστοποίησης των δεδομένων\"!el" ,
-        "The principle of “data minimisation” means that a data controller should limit the collection of personal information to what is directly relevant and necessary to accomplish a specified purpose. They should also retain the data only for as long as is necessary to fulfil that purpose."@en,
-        "Le principe de \"minimisation des données\"!fr" ,
-        "Il principio della \"minimizzazione dei dati\"!it" ,
-        "Het beginsel van \"gegevensminimalisering\"!nl" ,
-        "Načelo \"zmanjšavanja obsega podatkov\"!sl" ;
+    skos:definition "The principle of “data minimisation” means that a data controller should limit the collection of personal information to what is directly relevant and necessary to accomplish a specified purpose. They should also retain the data only for as long as is necessary to fulfil that purpose."@en;
     skos:exactMatch <https://w3id.org/GDPRtEXT#DataMinimisation> ;
     skos:inScheme sshocterm: ;
     skos:prefLabel "data minimisation"@en,;
@@ -1257,15 +1246,7 @@ sshocterm:data_model_70 a skos:Concept ;
 
 sshocterm:data_processing_82 a skos:Concept ;
     dct:source "ISO 5127:2017(en), 3.1.12.01"^^xsd:string ;
-    skos:altLabel 
-        "!el" ,
-        "process data"@en,
-        "processing of data"@en,
-        "!it" ,
-        "!nl" ,
-        "!nl" ,
-        "obdelava podatkov"@sl,
-        "!sl" ;
+    skos:altLabel "process data"@en,"processing of data"@en;
     skos:definition "Systematic performance of operations upon data."@en,;
     skos:exactMatch <http://data.loterre.fr/ark:/67375/TSO-MJLHMDNM-S> ;
     skos:inScheme sshocterm: ;
