@@ -1257,10 +1257,7 @@ sshocterm:data_processing_82 a skos:Concept ;
 
 sshocterm:data_protection_officer_89 a skos:Concept ;
     dct:source "European Data Protection Supervisor, Data Protection Glossary, \"Data protection officer\", https://edps.europa.eu/data-protection/data-protection/reference-library/data-protection-officer-dpo_en"^^xsd:string ;
-    skos:definition "Die Hauptaufgabe des*der Datenschutzbeauftragten (DSB) besteht darin, dafür zu sorgen, dass seine Organisation die personenbezogenen Daten ihrer Mitarbeiter*innen, Kunden*innen, Anbieter*innen oder anderer Personen (auch \"betroffene Personen\"!de" ,
-        "!el" ,
-        "The primary role of the data protection officer (DPO) is to ensure that her organisation processes the personal data of its staff, customers, providers or any other individuals (also referred to as data subjects) in compliance with the applicable data protection rules."@en,
-    ;
+    skos:definition "The primary role of the data protection officer (DPO) is to ensure that her organisation processes the personal data of its staff, customers, providers or any other individuals (also referred to as data subjects) in compliance with the applicable data protection rules."@en;
     skos:exactMatch <https://w3id.org/GDPRov#DPO> ;
     skos:inScheme sshocterm: ;
     skos:note "ISO/IEC TS 27570:2021(en), 3.7" ;
@@ -1305,8 +1302,7 @@ sshocterm:data_restriction_102 a skos:Concept ;
 
 sshocterm:data_reusability_105 a skos:Concept ;
     dct:source "Translated from Loterre Open Science Thesaurus, \"réutilisable\", http://data.loterre.fr/ark:/67375/TSO-X4ZW5XQD-G"^^xsd:string ;
-    skos:altLabel "reusability of data"@en,
-        "!sl" ;
+    skos:altLabel "reusability of data"@en;
     skos:definition "FAIR principle concerning those characteristics that make data usable by future researchs or different purposes (teaching, innovation, science reproduction/transparency). In order for the data to be reusable by others, their sharing must be accompanied by a license specifying their usage conditions. Then, it is useful to describe their provenance and provide all information needed to contextualise them."@en,;
     skos:exactMatch <http://data.loterre.fr/ark:/67375/TSO-X4ZW5XQD-G> ;
     skos:inScheme sshocterm: ;
@@ -1336,7 +1332,7 @@ sshocterm:data_scientist_109 a skos:Concept ;
     skos:definition "Expert of information extraction and exploitation, starting with metadata, that he organises, manages and interprets with the support of different tools."@en,;
     skos:exactMatch <http://data.loterre.fr/ark:/67375/TSO-CQ4SCZ0X-J> ;
     skos:inScheme sshocterm: ;
-    skos:prefLabel "data scientist"@en,;
+    skos:prefLabel "data scientist"@en;
     skos:topConceptOf sshocterm: .
 
 sshocterm:data_security_110 a skos:Concept ;
@@ -1360,7 +1356,7 @@ sshocterm:data_steward_118 a skos:Concept ;
 
 sshocterm:data_stewardship_119 a skos:Concept ;
     dct:source "FAIRsFAIR, https://www.fairsfair.eu/articles-publications/norf-collaborates-fairsfair-and-eosc-synergy-data-stewardship-training"^^xsd:string ;
-    skos:altLabel "εποπτεία δεδομένων"@el ;
+    skos:altLabel "data supervision"@en ;
     skos:definition "Data stewardship can be defined as the tasks and responsibilities that relate to the management, sharing, and preservation of research data throughout the research lifecycle and beyond."@en,;
     skos:exactMatch <http://data.loterre.fr/ark:/67375/TSO-B25PW4X4-N> ;
     skos:inScheme sshocterm: ;
@@ -1387,15 +1383,8 @@ sshocterm:data_transfer_124 a skos:Concept ;
 
 sshocterm:data_usage_129 a skos:Concept ;
     dct:source "The GDPR Provenance Ontology, \"Data Usage Activity\", https://w3id.org/GDPRov#DataUsageActivity"^^xsd:string ;
-    skos:altLabel "use of data"@en,
-        "!it" ,;
-    skos:definition "Ein Vorgang, bei dem Daten verwendet werden. Kann auch als \"Datenverarbeitung\"!de" ,
-        "Είναι μια δραστηριότητα που χρησιμοποιεί δεδομένα. Μπορεί επίσης να ονομαστεί ως \"επεξεργασία\"!el" ,
-        "Is an activity that uses data. Can also be termed as 'Processing' of data."@en,
-        "C'est une activité qui utilise des données. On peut également parler de \"traitement\"!fr" ,
-        "È un'attività che utilizza i dati. Può anche essere definita come \"elaborazione\"!it" ,
-        "Is een activiteit waarbij gegevens worden gebruikt. Kan ook worden aangeduid als \"verwerking\"!nl" ,
-        "Je dejavnost, pri kateri se uporabljajo podatki. Lahko se imenuje tudi \"obdelava\"!sl" ;
+    skos:altLabel "use of data"@en;
+    skos:definition "Is an activity that uses data. Can also be termed as 'Processing' of data."@en;
     skos:exactMatch <https://w3id.org/GDPRov#DataUsageActivity> ;
     skos:inScheme sshocterm: ;
     skos:prefLabel "data usage"@en,;
@@ -1441,14 +1430,12 @@ sshocterm:interoperable_data_151 a skos:Concept ;
     skos:definition "Data that conform to the FAIR principle of interoperability."@en,;
     skos:exactMatch <http://data.loterre.fr/ark:/67375/TSO-C676TDJV-H> ;
     skos:inScheme sshocterm: ;
-    skos:prefLabel "interoperable data"@en,;
+    skos:prefLabel "interoperable data"@en;
     skos:topConceptOf sshocterm: .
 
 sshocterm:linked_data_154 a skos:Concept ;
     dct:source "Loterre Open Science Thesaurus, \"linked data\", http://data.loterre.fr/ark:/67375/TSO-BRLNRV51-S"^^xsd:string ;
-    skos:definition "Eine Reihe von Best Practices für die Veröffentlichung und Verknüpfung strukturierter Daten im Internet. Diese bewährten Verfahren wurden von Tim Berners-Lee in seiner Notiz zur Web-Architektur \"Linked Data\" eingeführt und sind als \"Linked-Data-Prinzipien\"!de" ,
-        "Ένα σύνολο βέλτιστων πρακτικών για τη δημοσίευση και τη διασύνδεση δομημένων δεδομένων στον Παγκόσμιο Ιστό. Αυτές οι βέλτιστες πρακτικές εισήχθησαν από τον Tim Berners-Lee στο σημείωμά του για την αρχιτεκτονική του Παγκόσμιου Ιστού \"Συνδεδεμένα δεδομένα\"!el" ,
-        "A set of best practices for publishing and interlinking structured data on the Web. These best practices were introduced by Tim Berners-Lee in his Web architecture note Linked Data and have become known as the Linked Data principles."@en,;
+    skos:definition "A set of best practices for publishing and interlinking structured data on the Web. These best practices were introduced by Tim Berners-Lee in his Web architecture note Linked Data and have become known as the Linked Data principles."@en;
     skos:exactMatch <http://data.loterre.fr/ark:/67375/TSO-BRLNRV51-S> ;
     skos:inScheme sshocterm: ;
     skos:note "ISO 5127:2017(en), 3.1.10.03" ;
