@@ -123,7 +123,6 @@ def add_authors(uri, work):
             g.add((authorship_uri, VIVO.rank, Literal(str(rank), datatype=XSD.integer)))
             g.add((authorship_uri, VIVO.relates, author_uri))
             g.add((authorship_uri, VIVO.relates, uri))
-
     return g
 
 
@@ -143,13 +142,7 @@ def add_vcard(uri, work):
     vcard_figshare_uri = URIRef(str(vcard_uri) + "-figshare")
     g.add((vcard_figshare_uri, RDF.type, VCARD.URL))
     g.add((vcard_uri, VCARD.hasURL, vcard_figshare_uri))
-    g.add(
-        (
-            vcard_figshare_uri,
-            VCARD.url,
-            Literal(work["figshare_url"].strip(), datatype=XSD.anyURI),
-        )
-    )
+    g.add((vcard_figshare_uri, VCARD.url, Literal(work["figshare_url"].strip(), datatype=XSD.anyURI),))
     g.add((vcard_figshare_uri, VIVO.rank, Literal(str(url_rank), datatype=XSD.integer)))
     g.add((vcard_figshare_uri, RDFS.label, Literal("Figshare Page")))
     return g
@@ -306,8 +299,9 @@ def make_figshare_rdf(work):
     return g
 
 
-def _main():
 #   Main starts here
+
+def _main():
     figshare_graph = Graph()
     triples_file = open("figshare.rdf", "w")
 
