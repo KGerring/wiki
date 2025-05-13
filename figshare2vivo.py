@@ -306,8 +306,8 @@ def make_figshare_rdf(work):
     return g
 
 
+def _main():
 #   Main starts here
-if __name__ == "__main__":
     figshare_graph = Graph()
     triples_file = open("figshare.rdf", "w")
 
@@ -369,3 +369,10 @@ if __name__ == "__main__":
     print(len(doi_set), "works with unique DOI added")
     print(figshare_graph.serialize(format="n3"), file=triples_file)
     triples_file.close()
+
+
+if __name__ == "__main__": _main()        
+
+
+
+
