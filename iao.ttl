@@ -5470,3 +5470,7 @@ obo:IAO_0000120 a obo:IAO_0000078,
     owl:annotatedSource obo:BFO_0000003 ;
     owl:annotatedTarget "(forall (x) (if (Occurrent x) (exists (r) (and (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion x r))))) // axiom label in BFO2 CLIF: [108-001] " .
 
+
+
+
+
