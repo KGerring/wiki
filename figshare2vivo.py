@@ -160,11 +160,11 @@ def get_figshare_articles_by_tag(tag):
     :param tag: articles with the specified tag will be returned
     :return: JSON object containing Figshare metadata
     """
-    import urllib2
+    import urllib.request, urllib.error, urllib.parse
     url = 'https://api.figshare.com/v2/articles/search'
     data = '{ "search_for": "{}", "page_size": 1000}'.replace('{}', tag)
-    req = urllib2.Request(url, data)
-    rsp = urllib2.urlopen(req)
+    req = urllib.request.Request(url, data)
+    rsp = urllib.request.urlopen(req)
     article_results = json.loads(rsp.read())
     return article_results
 
@@ -176,11 +176,11 @@ def get_figshare_articles_by_orcid_id(orcid_id):
     :param orcid_id: orcid_id
     :return: JSON object containing Figshare metadata
     """
-    import urllib2
+    import urllib.request, urllib.error, urllib.parse
     url = 'https://api.figshare.com/v2/articles/search'
     data = '{ "search_for": "{}", "page_size": 1000}'.replace('{}', orcid_id)
-    req = urllib2.Request(url, data)
-    rsp = urllib2.urlopen(req)
+    req = urllib.request.Request(url, data)
+    rsp = urllib.request.urlopen(req)
     article_results = json.loads(rsp.read())
     return article_results
 
@@ -281,16 +281,16 @@ if __name__ == '__main__':
     #         added += 1
 
     works_2018 = get_figshare_articles_by_tag('vivo2018')
-    print len(works_2018), "works identified by vivo2018 tag"
+    print(len(works_2018), "works identified by vivo2018 tag")
 
     works_h2018 = get_figshare_articles_by_tag('#vivo2018')
-    print len(works_h2018), "works identified by #vivo2018 tag"
+    print(len(works_h2018), "works identified by #vivo2018 tag")
 
     works_18 = get_figshare_articles_by_tag('vivo18')
-    print len(works_18), "works identified by vivo18 tag"
+    print(len(works_18), "works identified by vivo18 tag")
 
     works_h18 = get_figshare_articles_by_tag('#vivo18')
-    print len(works_h18), "works identified by #vivo18 tag"
+    print(len(works_h18), "works identified by #vivo18 tag")
 
     # works_collection = get_figshare_articles('131')  # 36 is VIVO, 131 is Force18
     # print works_collection
@@ -306,7 +306,7 @@ if __name__ == '__main__':
     for figshare_work in works_2018 + works_18 + works_h2018 + works_h18:
         count += 1
         if count % 10 == 0:
-            print count
+            print(count)
         article = get_figshare_article(str(figshare_work['id']))
         if 'vivo2018' in [x.lower() for x in article['tags']] \
                 or 'vivo18' in [x.lower() for x in article['tags']]\
@@ -317,6 +317,6 @@ if __name__ == '__main__':
             if return_graph is not None:
                 figshare_graph += return_graph
 
-    print len(doi_set), "works with unique DOI added"
-    print >>triples_file, figshare_graph.serialize(format='n3')
+    print(len(doi_set), "works with unique DOI added")
+    print(figshare_graph.serialize(format='n3'), file=triples_file)
     triples_file.close()
