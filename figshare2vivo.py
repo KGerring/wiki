@@ -182,7 +182,7 @@ def get_figshare_articles_by_tag(tag):
     import urllib.request, urllib.error, urllib.parse
 
     url = "https://api.figshare.com/v2/articles/search"
-    data = '{ "search_for": "{}", "page_size": 1000}'.replace("{}", tag)
+    data = { "page_size": '1000', "search_for": f'{tag!r}'}
     req = urllib.request.Request(url, data)
     rsp = urllib.request.urlopen(req)
     article_results = json.loads(rsp.read())
