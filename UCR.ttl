@@ -41,11 +41,8 @@
 ###  http://w3.dwbp.org/ucr#definedby
 
 :definedby rdf:type owl:ObjectProperty ;
-           
            rdfs:label "definedby"^^xsd:string ;
-           
            rdfs:domain :Requirement ;
-           
            rdfs:range :UseCase .
 
 
@@ -53,18 +50,10 @@
 ###  http://w3.dwbp.org/ucr#defines
 
 :defines rdf:type owl:ObjectProperty ;
-         
          rdfs:label "defines"^^xsd:string ;
-         
          rdfs:range :Requirement ;
-         
          rdfs:domain :UseCase ;
-         
          owl:inverseOf :definedby .
-
-
-
-
 
 #################################################################
 #
