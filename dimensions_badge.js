@@ -1,8 +1,8 @@
 
 
+#/Users/kristen/Library/CloudStorage/Source/wiki/dimensions_badge.js
+
 <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
-
-
 
 
 <span class="__dimensions_badge_embed__" data-doi="10.1001/jama.2016.9797" data-hide-zero-citations="true"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
@@ -20,7 +20,7 @@
 
 
 
-"""
+//"""
 Attribute| Description| Example
 data-doi	| DOI of the publication to display | data-doi="10.1001/jama.2016.9797"
 data-pmid| PubMed ID of the publication to display| data-pmid="27400401"
@@ -49,9 +49,10 @@ ___
   data-hide-zero-citations
   
         
-"""
+//"""
 
-Tc ="""
+
+Tc =//"""
 Medium circle badge for DOI 10.1038/nplants.2015.7
 <span class="__dimensions_badge_embed__" data-doi="10.1038/nplants.2015.7"></span>
 
