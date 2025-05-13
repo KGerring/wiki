@@ -111,7 +111,7 @@ obo:IAO_0000012 a owl:Class ;
     obo:IAO_0000115 "A digital entity is an information entity which is a collection of bits that can be interpreted by a computer. Two digital entities are the same if they are bitwise identical."@en ;
     obo:IAO_0000116 """3/22/2009 Alan Ruttenberg, obsoleted per http://groups.google.com/group/information-ontology/browse_thread/thread/789ad4b7708d5cf4 
     Superclass was 'digitial quality'"""@en ;
-    
+
     obo:IAO_0000117 "person:Chris Stoeckert"@en ;
     obo:IAO_0000119 "OBI_0000261"^^xsd:string,
         "group:OBI"@en ;
@@ -156,7 +156,7 @@ obo:IAO_0000019 a owl:Class ;
     obo:IAO_0000112 "MS Word document, ZIP file, DICOM file, JPEG file"@en ;
     obo:IAO_0000115 "A binary digital entity is a digital entity that is encoded in a way that is not easily human readable and that contains other than text characters."@en ;
     obo:IAO_0000116 """3/22/2009 Alan Ruttenberg, obsoleted per http://groups.google.com/group/information-ontology/browse_thread/thread/789ad4b7708d5cf4
-Superclass was 'digital entity'"""@en,
+    Superclass was 'digital entity' """@en,
         "digital_entity"@en ;
     obo:IAO_0000117 "person:Chris Stoeckert"@en ;
     obo:IAO_0000119 "OBI_0000244"^^xsd:string,
@@ -238,7 +238,7 @@ obo:IAO_0000047 a owl:Class ;
     obo:IAO_0000112 "XML file, C++ source code file"@en ;
     obo:IAO_0000115 "A text based digital entity is a digital entity that is encoded so that it only contains text characters."@en ;
     obo:IAO_0000116 """3/22/2009 Alan Ruttenberg, obsoleted per http://groups.google.com/group/information-ontology/browse_thread/thread/789ad4b7708d5cf4
-superclass was 'digital document'"""@en,
+    superclass was 'digital document' """@en,
         "digital_entity"@en ;
     obo:IAO_0000117 "person:Chris Stoeckert"@en ;
     obo:IAO_0000119 "OBI_0000132"^^xsd:string,
