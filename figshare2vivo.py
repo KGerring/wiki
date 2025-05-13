@@ -220,7 +220,7 @@ def get_figshare_articles_by_institution(institution_id):
     return article_results
 
 
-def make_figshare_rdf(work):
+def make_figshare_rdf(work: dict):
     """
     Given a work in JSON format, from Figshare, add triples to the graph representing the work
 
