@@ -22,15 +22,10 @@
 ###  http://w3.dwbp.org/ucr#addressedby
 
 :addressedby rdf:type owl:ObjectProperty ;
-             
              rdfs:label "addressedby"^^xsd:string ;
-             
              rdfs:domain :Challenge ;
-             
              rdfs:range :Requirement ;
-             
              owl:inverseOf :addresses .
-
 
 
 ###  http://w3.dwbp.org/ucr#addresses
@@ -46,11 +41,8 @@
 ###  http://w3.dwbp.org/ucr#definedby
 
 :definedby rdf:type owl:ObjectProperty ;
-           
            rdfs:label "definedby"^^xsd:string ;
-           
            rdfs:domain :Requirement ;
-           
            rdfs:range :UseCase .
 
 
@@ -58,18 +50,10 @@
 ###  http://w3.dwbp.org/ucr#defines
 
 :defines rdf:type owl:ObjectProperty ;
-         
          rdfs:label "defines"^^xsd:string ;
-         
          rdfs:range :Requirement ;
-         
          rdfs:domain :UseCase ;
-         
          owl:inverseOf :definedby .
-
-
-
-
 
 #################################################################
 #
@@ -88,16 +72,14 @@ dct:description rdf:type owl:DatatypeProperty ;
 
 ###  http://purl.org/dc/terms/identifier
 
-dct:identifier rdf:type owl:DatatypeProperty ;
-               
+dct:identifier rdf:type owl:DatatypeProperty ;               
                rdfs:label "identifier"^^xsd:string .
 
 
 
 ###  http://purl.org/dc/terms/title
 
-dct:title rdf:type owl:DatatypeProperty ;
-          
+dct:title rdf:type owl:DatatypeProperty ;          
           rdfs:label "title"^^xsd:string .
 
 

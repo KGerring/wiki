@@ -1,32 +1,34 @@
-@prefix indicator: <http://linkeddata.es/resource/ldqm/QualityIndicator/> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
 @prefix dqm:   <http://www.diachron-fp7.eu/dqm#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix uri4uri: <http://uri4uri.net/vocab#> .
 @prefix dqv:   <http://www.w3.org/ns/dqv#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix scale: <http://linkeddata.es/resource/ldqm/Scale/> .
-@prefix technique: <http://linkeddata.es/resource/ldqm/AssessmentTechnique/> .
-@prefix basemeasure: <http://linkeddata.es/resource/ldqm/BaseMeasure/> .
-@prefix evaluation: <http://linkeddata.es/resource/ldqm/evaluation/> .
-@prefix qmo:   <http://purl.org/net/QualityModel#> .
-@prefix defect: <http://linkeddata.es/resource/ldqm/Defect/> .
 @prefix daq:   <http://purl.org/eis/vocab/daq#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix derivedmeasure: <http://linkeddata.es/resource/ldqm/DerivedMeasure/> .
 @prefix prov:  <http://www.w3.org/ns/prov#> .
-@prefix dimension: <http://linkeddata.es/resource/ldqm/Dimension/> .
 @prefix qpro:  <http://purl.org/eis/vocab/qpro#> .
 @prefix om18:  <http://www.wurvoc.org/vocabularies/om-1.8/> .
 @prefix eval:  <http://purl.org/net/EvaluationResult#> .
-@prefix measure: <http://linkeddata.es/resource/ldqm/measure/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix dbr:   <http://dbpedia.org/resource/> .
 @prefix ldq:   <http://www.linkeddata.es/ontology/ldq#> .
-@prefix report: <http://linkeddata.es/resource/ldqm/report/> .
 @prefix http:  <http://www.w3.org/2011/http#> .
-@prefix category: <http://linkeddata.es/resource/ldqm/SubjectCategory/> .
-@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+@prefix defect:        <http://linkeddata.es/resource/ldqm/Defect/> .
+@prefix derivedmeasure: <http://linkeddata.es/resource/ldqm/DerivedMeasure/> .
+@prefix evaluation:   <http://linkeddata.es/resource/ldqm/evaluation/> .
+@prefix basemeasure: <http://linkeddata.es/resource/ldqm/BaseMeasure/> .
+@prefix technique:   <http://linkeddata.es/resource/ldqm/AssessmentTechnique/> .
+@prefix scale:       <http://linkeddata.es/resource/ldqm/Scale/> .
+@prefix category:   <http://linkeddata.es/resource/ldqm/SubjectCategory/> .
+@prefix indicator:  <http://linkeddata.es/resource/ldqm/QualityIndicator/> .
+@prefix dimension: <http://linkeddata.es/resource/ldqm/Dimension/> .
+@prefix measure:  <http://linkeddata.es/resource/ldqm/measure/> .
+@prefix report:  <http://linkeddata.es/resource/ldqm/report/> .
+
+@prefix qmo:   <http://purl.org/net/QualityModel#> .
 
 dimension:Accessibility
         a                   qmo:QualityCharacteristic , dqv:Dimension , daq:Dimension ;
@@ -183,3 +185,6 @@ technique:UrlDereferencing
         dc:description          "Each URI is dereferenced using the HTTP HEAD method, and if fails using the HTTP GET method. Resources with 2XX responses (after redirection) are considered dereferenceable."@en ;
         ldq:hasAutomationLevel  ldq:Automatic ;
         ldq:isSubjective        false .
+
+
+
