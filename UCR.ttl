@@ -22,15 +22,10 @@
 ###  http://w3.dwbp.org/ucr#addressedby
 
 :addressedby rdf:type owl:ObjectProperty ;
-             
              rdfs:label "addressedby"^^xsd:string ;
-             
              rdfs:domain :Challenge ;
-             
              rdfs:range :Requirement ;
-             
              owl:inverseOf :addresses .
-
 
 
 ###  http://w3.dwbp.org/ucr#addresses
