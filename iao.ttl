@@ -709,8 +709,9 @@ obo:IAO_0000307 a owl:Class ;
     rdfs:label "table of abbreviations"@en ;
     obo:IAO_0000111 "table of abbreviations"@en ;
     obo:IAO_0000112 """IAO  information artifact ontology
-OBI  ontology of biomedical investiations
-GO   gene ontology"""@en ;
+    OBI  ontology of biomedical investiations
+    GO   gene ontology"""@en ;
+
     obo:IAO_0000114 obo:IAO_0000125 ;
     obo:IAO_0000115 "A table where the constituent texts are abbreviations and their expansions"@en ;
     obo:IAO_0000117 "PERSON: Lawrence Hunter"@en ;
@@ -2002,6 +2003,8 @@ No owl-axioms header
 No imports"""@en ;
     rdfs:seeAlso <http://owlcollab.github.io/oboformat/doc/obo-syntax.html#6.2> ;
     rdfs:subClassOf obo:IAO_8000017 .
+
+##
 
 obo:IAO_8000020 a owl:Class ;
     rdfs:label "EL++ ontology module"@en ;
