@@ -2333,8 +2333,7 @@ obo:IAO_0000009 a owl:Class ;
     obo:IAO_0000115 "A label is a symbol that is part of some other datum and is used to either partially define  the denotation of that datum or to provide a means for identifying the datum as a member of the set of data with the same label"@en ;
     obo:IAO_0000116 "http://www.golovchenko.org/cgi-bin/wnsearch?q=label#4n"@en ;
     obo:IAO_0000117 "GROUP: IAO"@en ;
-    obo:IAO_0000232 """9/22/11 BP: changed the rdfs:label for this class from 'label' to 'datum label' to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum. 
-""" ;
+    obo:IAO_0000232 """9/22/11 BP: changed the rdfs:label for this class from 'label' to 'datum label' to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum.""" ;
     rdfs:subClassOf obo:IAO_0000030 .
 
 obo:IAO_0000013 a owl:Class ;
