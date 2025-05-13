@@ -1987,20 +1987,20 @@ obo:IAO_8000018 a owl:Class ;
     obo:IAO_0000111 "obo basic subset ontology module"@en ;
     obo:IAO_0000115 """A subset ontology that is designed for basic applications to continue to make certain simplifying assumptions; many of these simplifying assumptions were based on the initial version of the Gene Ontology, and have become enshrined in many popular and useful tools such as term enrichment tools.
 
-Examples of such assumptions include: traversing the ontology graph ignoring relationship types using a naive algorithm will not lead to cycles (i.e. the ontology is a DAG); every referenced term is declared in the ontology (i.e. there are no dangling clauses).
-
-An ontology is OBO Basic if and only if it has the following characteristics:
-DAG
-Unidirectional
-No Dangling Clauses
-Fully Asserted
-Fully Labeled
-No equivalence axioms
-Singly labeled edges
-No qualifier lists
-No disjointness axioms
-No owl-axioms header
-No imports"""@en ;
+        Examples of such assumptions include: traversing the ontology graph ignoring relationship types using a naive algorithm will not lead to cycles (i.e. the ontology is a DAG); every referenced term is declared in the ontology (i.e. there are no dangling clauses).
+        
+        An ontology is OBO Basic if and only if it has the following characteristics:
+        DAG
+        Unidirectional
+        No Dangling Clauses
+        Fully Asserted
+        Fully Labeled
+        No equivalence axioms
+        Singly labeled edges
+        No qualifier lists
+        No disjointness axioms
+        No owl-axioms header
+        No imports"""@en ;
     rdfs:seeAlso <http://owlcollab.github.io/oboformat/doc/obo-syntax.html#6.2> ;
     rdfs:subClassOf obo:IAO_8000017 .
 
