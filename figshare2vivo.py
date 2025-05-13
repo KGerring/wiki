@@ -158,9 +158,7 @@ def get_figshare_article(article_id):
     import re
 
     version = re.compile("v[0-9]*")
-    article_result = requests.get(
-        "https://api.figshare.com/v2/articles/{}".format(article_id)
-    ).content
+    article_result = requests.get(f"https://api.figshare.com/v2/articles/{article_id}").content
     article_result = json.loads(article_result)
 
     #   Figshare uses versioned DOI.  VIVO is only interested in the most recent version.
