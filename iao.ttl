@@ -4421,7 +4421,10 @@ obo:BFO_0000040 a owl:Class ;
     rdfs:subClassOf obo:BFO_0000004 ;
     owl:disjointWith obo:BFO_0000141 .
 
-obo:iao.owl a owl:Ontology ;
+
+####
+
+obo:iao a owl:Ontology ;
     protege:defaultLanguage "en"^^xsd:string ;
     dc:contributor "Adam Goldstein"@en,
         "Alan Ruttenberg"@en,
@@ -4468,6 +4471,7 @@ obo:iao.owl a owl:Ontology ;
     rdfs:seeAlso <https://github.com/information-artifact-ontology/IAO> ;
     owl:versionIRI <http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl> ;
     owl:versionInfo "2022-11-07"^^xsd:string .
+
 
 obo:BFO_0000002 a owl:Class ;
     rdfs:label "continuant"@en ;
