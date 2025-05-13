@@ -9,7 +9,7 @@
   
 <div
     class="scite-badge"
-    data-doi="10.1016/j.biopsych.2005.08.012"
+    data-doi='10.1016/j.biopsych.2005.08.012'
     data-tally-show='true'
     data-show-labels='true'
     data-section-tally-show='false'
@@ -26,9 +26,7 @@
      data-tally-show="true">
 </div>
 
-<script async type="application/javascript" 
-src="https://cdn.scite.ai/badge/scite-badge-latest.min.js">
-</script>
+
 
 
 
