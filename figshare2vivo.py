@@ -215,11 +215,7 @@ def get_figshare_articles_by_institution(institution_id):
     """
     import requests
 
-    article_results = requests.get(
-        "https://api.figshare.com/v2/articles?institution={}&page_size=1000".format(
-            institution_id
-        )
-    ).content
+    article_results = requests.get(f"https://api.figshare.com/v2/articles?institution={institution_id}&page_size=1000").content
     article_results = json.loads(article_results)
     return article_results
 
