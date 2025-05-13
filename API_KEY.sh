@@ -2,7 +2,7 @@
 
 #/usr/bin/env bash
 
-
+#/Users/kristen/proj/sshoc-skosmapping/data/stewardshipterminology.rdf
 
 export SCICRUNCH_API_KEY="39hws5krMT3rZPhysVwTBiVIBsVGmcDe"
 
@@ -22,7 +22,7 @@ export LIBRARIES_IO_API_KEY="e49c64d56761dca6fd0f15af5b3fe48d"
 
 
 export ZENODO_TOKEN="NpbLFvNYNJj96c6JcoUPgxW2FQriZn07uyBUYyKETyoWzpgOLxv2P4Eo3IUB"
-
+export ZENODO_TOKEN_="RbaFQsqwhPyPnawyk7prbbCpZceqsisZ6X5eOUIBpZ5p4UKYjCwk9dZJ3HU0"
 
 export AGROPORTAL_API_KEY="a224572e-028f-4389-ba27-7dad00853a99"
 
@@ -37,7 +37,6 @@ export TRIPLY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJ1bmtub3duIiwiaXNz
 
 export SEMGREP_API_TOKEN="52c946bee92144ed90608008c0f77884d80c878df07bf3a99c7da170690dac2a"
 
-export ZENODO_TOKEN="RbaFQsqwhPyPnawyk7prbbCpZceqsisZ6X5eOUIBpZ5p4UKYjCwk9dZJ3HU0"
 
 
 export _API_KEY="e49c64d56761dca6fd0f15af5b3fe48d"
