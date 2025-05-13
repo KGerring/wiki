@@ -499,6 +499,8 @@ Pattern of magnetic domains on scattered pieces of a hard disk platter as mark w
     rdfs:subPropertyOf oboInOwl:ObsoleteProperty ;
     owl:deprecated true .
 
+##
+
 obo:IAO_0000140 a owl:Class ;
     rdfs:label "setting datum"@en ;
     obo:IAO_0000114 obo:IAO_0000123 ;
