@@ -72,16 +72,14 @@ dct:description rdf:type owl:DatatypeProperty ;
 
 ###  http://purl.org/dc/terms/identifier
 
-dct:identifier rdf:type owl:DatatypeProperty ;
-               
+dct:identifier rdf:type owl:DatatypeProperty ;               
                rdfs:label "identifier"^^xsd:string .
 
 
 
 ###  http://purl.org/dc/terms/title
 
-dct:title rdf:type owl:DatatypeProperty ;
-          
+dct:title rdf:type owl:DatatypeProperty ;          
           rdfs:label "title"^^xsd:string .
 
 
