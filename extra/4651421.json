@@ -1,1 +1,191 @@
-{"created": "2021-03-31T15:45:58.516006+00:00", "modified": "2024-07-19T05:42:15.759820+00:00", "id": 4651421, "conceptrecid": "4651420", "doi": "10.5281/zenodo.4651421", "conceptdoi": "10.5281/zenodo.4651420", "doi_url": "https://doi.org/10.5281/zenodo.4651421", "metadata": {"title": "SEMAF: A Proposal for a Flexible Semantic Mapping Framework", "doi": "10.5281/zenodo.4651421", "publication_date": "2021-03-31", "description": "<p>This report presents a study for a&nbsp;flexible framework to create, document and publish semantic&nbsp;mappings and cross-walks linking different semantic artefacts within a particular scientific&nbsp;community and across scientific domains. These mappings and cross-walks should be FAIR, as proposed in the FAIR Semantics recommendations.&nbsp;The study draws on the broad expertise of the authors and 25 interviews conducted with community experts. A description for&nbsp;a proposed follow-up implementation project is part of the report.</p>", "access_right": "open", "creators": [{"name": "Broeder, Daan", "affiliation": "CLARIN ERIC", "orcid": "0000-0002-8446-3410"}, {"name": "Budroni, Paolo", "affiliation": "TU Wien", "orcid": "0000-0001-7490-5716"}, {"name": "Degl'Innocenti, Emiliano", "affiliation": "CNR-OVI, ERIHS", "orcid": "0000-0002-3839-9024"}, {"name": "Le Franc, Yann", "affiliation": "e-Science Data Factory", "orcid": "0000-0003-4631-418X"}, {"name": "Hugo, Wim", "affiliation": "e-Science Data Factory, KNAW/DANS", "orcid": "0000-0002-0255-5101"}, {"name": "Jeffery, Keith", "affiliation": "Keith G Jeffery Consultants, EPOS-ERIC and British Geological Survey", "orcid": "0000-0003-4053-7825"}, {"name": "Weiland, Claus", "affiliation": "Senckenberg - Leibniz Institution for Biodiversity and Earth System Research", "orcid": "0000-0003-0351-6523"}, {"name": "Wittenburg, Peter", "affiliation": "Max Planck Computing and Data Facility", "orcid": "0000-0003-3538-0106"}, {"name": "Zwolf, Carlo Maria", "affiliation": "LERMA, Observatoire de Paris, PSL Research University, CNRS", "orcid": "0000-0002-5762-6747"}], "keywords": ["research data infrastructure", "semantic interoperability", "FAIR principles", "Open Science", "semantic artefacts", "EOSC", "RDA", "semantics"], "version": "1.0", "language": "eng", "resource_type": {"title": "Report", "type": "publication", "subtype": "report"}, "license": {"id": "cc-by-4.0"}, "grants": [{"code": "831644", "internal_id": "10.13039/501100000780::831644", "funder": {"name": "European Commission", "doi": "10.13039/501100000780", "acronym": "EC"}, "title": "EOSCsecretariat.eu", "acronym": "EOSCsecretariat.eu", "program": "H2020-EU.1.4.", "url": "https://cordis.europa.eu/projects/831644"}], "communities": [{"id": "eoscsecretariat"}, {"id": "eu"}], "relations": {"version": [{"index": 0, "is_last": true, "parent": {"pid_type": "recid", "pid_value": "4651420"}}]}}, "title": "SEMAF: A Proposal for a Flexible Semantic Mapping Framework", "links": {"self": "https://zenodo.org/api/records/4651421", "self_html": "https://zenodo.org/records/4651421", "preview_html": "https://zenodo.org/records/4651421?preview=1", "doi": "https://doi.org/10.5281/zenodo.4651421", "self_doi": "https://doi.org/10.5281/zenodo.4651421", "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.4651421", "reserve_doi": "https://zenodo.org/api/records/4651421/draft/pids/doi", "parent": "https://zenodo.org/api/records/4651420", "parent_html": "https://zenodo.org/records/4651420", "parent_doi": "https://doi.org/10.5281/zenodo.4651420", "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.4651420", "self_iiif_manifest": "https://zenodo.org/api/iiif/record:4651421/manifest", "self_iiif_sequence": "https://zenodo.org/api/iiif/record:4651421/sequence/default", "files": "https://zenodo.org/api/records/4651421/files", "media_files": "https://zenodo.org/api/records/4651421/media-files", "thumbnails": {"10": "https://zenodo.org/api/iiif/record:4651421:SEMAF_%20A%20Proposal%20for%20a%20Flexible%20Semantic%20Mapping%20Framework%20V1.0.pdf/full/%5E10,/0/default.jpg", "50": "https://zenodo.org/api/iiif/record:4651421:SEMAF_%20A%20Proposal%20for%20a%20Flexible%20Semantic%20Mapping%20Framework%20V1.0.pdf/full/%5E50,/0/default.jpg", "100": "https://zenodo.org/api/iiif/record:4651421:SEMAF_%20A%20Proposal%20for%20a%20Flexible%20Semantic%20Mapping%20Framework%20V1.0.pdf/full/%5E100,/0/default.jpg", "250": "https://zenodo.org/api/iiif/record:4651421:SEMAF_%20A%20Proposal%20for%20a%20Flexible%20Semantic%20Mapping%20Framework%20V1.0.pdf/full/%5E250,/0/default.jpg", "750": "https://zenodo.org/api/iiif/record:4651421:SEMAF_%20A%20Proposal%20for%20a%20Flexible%20Semantic%20Mapping%20Framework%20V1.0.pdf/full/%5E750,/0/default.jpg", "1200": "https://zenodo.org/api/iiif/record:4651421:SEMAF_%20A%20Proposal%20for%20a%20Flexible%20Semantic%20Mapping%20Framework%20V1.0.pdf/full/%5E1200,/0/default.jpg"}, "archive": "https://zenodo.org/api/records/4651421/files-archive", "archive_media": "https://zenodo.org/api/records/4651421/media-files-archive", "latest": "https://zenodo.org/api/records/4651421/versions/latest", "latest_html": "https://zenodo.org/records/4651421/latest", "versions": "https://zenodo.org/api/records/4651421/versions", "draft": "https://zenodo.org/api/records/4651421/draft", "access_links": "https://zenodo.org/api/records/4651421/access/links", "access_grants": "https://zenodo.org/api/records/4651421/access/grants", "access_users": "https://zenodo.org/api/records/4651421/access/users", "access_request": "https://zenodo.org/api/records/4651421/access/request", "access": "https://zenodo.org/api/records/4651421/access", "communities": "https://zenodo.org/api/records/4651421/communities", "communities-suggestions": "https://zenodo.org/api/records/4651421/communities-suggestions", "requests": "https://zenodo.org/api/records/4651421/requests"}, "updated": "2024-07-19T05:42:15.759820+00:00", "recid": "4651421", "revision": 7, "files": [{"id": "144253d9-e2f1-42fc-b472-25c43df51317", "key": "SEMAF_ A Proposal for a Flexible Semantic Mapping Framework V1.0.pdf", "size": 735315, "checksum": "md5:797841495e3dc1885cd02b0b5f5e8619", "links": {"self": "https://zenodo.org/api/records/4651421/files/SEMAF_ A Proposal for a Flexible Semantic Mapping Framework V1.0.pdf/content"}}], "swh": {}, "owners": [{"id": "207941"}], "status": "published", "stats": {"downloads": 1986, "unique_downloads": 1794, "views": 3458, "unique_views": 3192, "version_downloads": 1984, "version_unique_downloads": 1792, "version_unique_views": 3183, "version_views": 3449}, "state": "done", "submitted": true}
+{
+  "conceptdoi": "10.5281/zenodo.4651420",
+  "conceptrecid": "4651420",
+  "created": "2021-03-31T15:45:58.516006+00:00",
+  "doi": "10.5281/zenodo.4651421",
+  "doi_url": "https://doi.org/10.5281/zenodo.4651421",
+  "files": [
+    {
+      "checksum": "md5:797841495e3dc1885cd02b0b5f5e8619",
+      "id": "144253d9-e2f1-42fc-b472-25c43df51317",
+      "key": "SEMAF_ A Proposal for a Flexible Semantic Mapping Framework V1.0.pdf",
+      "links": {
+        "self": "https://zenodo.org/api/records/4651421/files/SEMAF_ A Proposal for a Flexible Semantic Mapping Framework V1.0.pdf/content"
+      },
+      "size": 735315
+    }
+  ],
+  "id": 4651421,
+  "links": {
+    "access": "https://zenodo.org/api/records/4651421/access",
+    "access_grants": "https://zenodo.org/api/records/4651421/access/grants",
+    "access_links": "https://zenodo.org/api/records/4651421/access/links",
+    "access_request": "https://zenodo.org/api/records/4651421/access/request",
+    "access_users": "https://zenodo.org/api/records/4651421/access/users",
+    "archive": "https://zenodo.org/api/records/4651421/files-archive",
+    "archive_media": "https://zenodo.org/api/records/4651421/media-files-archive",
+    "communities": "https://zenodo.org/api/records/4651421/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/4651421/communities-suggestions",
+    "doi": "https://doi.org/10.5281/zenodo.4651421",
+    "draft": "https://zenodo.org/api/records/4651421/draft",
+    "files": "https://zenodo.org/api/records/4651421/files",
+    "latest": "https://zenodo.org/api/records/4651421/versions/latest",
+    "latest_html": "https://zenodo.org/records/4651421/latest",
+    "media_files": "https://zenodo.org/api/records/4651421/media-files",
+    "parent": "https://zenodo.org/api/records/4651420",
+    "parent_doi": "https://doi.org/10.5281/zenodo.4651420",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.4651420",
+    "parent_html": "https://zenodo.org/records/4651420",
+    "preview_html": "https://zenodo.org/records/4651421?preview=1",
+    "requests": "https://zenodo.org/api/records/4651421/requests",
+    "reserve_doi": "https://zenodo.org/api/records/4651421/draft/pids/doi",
+    "self": "https://zenodo.org/api/records/4651421",
+    "self_doi": "https://doi.org/10.5281/zenodo.4651421",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.4651421",
+    "self_html": "https://zenodo.org/records/4651421",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:4651421/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:4651421/sequence/default",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:4651421:SEMAF_%20A%20Proposal%20for%20a%20Flexible%20Semantic%20Mapping%20Framework%20V1.0.pdf/full/%5E10,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:4651421:SEMAF_%20A%20Proposal%20for%20a%20Flexible%20Semantic%20Mapping%20Framework%20V1.0.pdf/full/%5E100,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:4651421:SEMAF_%20A%20Proposal%20for%20a%20Flexible%20Semantic%20Mapping%20Framework%20V1.0.pdf/full/%5E1200,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:4651421:SEMAF_%20A%20Proposal%20for%20a%20Flexible%20Semantic%20Mapping%20Framework%20V1.0.pdf/full/%5E250,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:4651421:SEMAF_%20A%20Proposal%20for%20a%20Flexible%20Semantic%20Mapping%20Framework%20V1.0.pdf/full/%5E50,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:4651421:SEMAF_%20A%20Proposal%20for%20a%20Flexible%20Semantic%20Mapping%20Framework%20V1.0.pdf/full/%5E750,/0/default.jpg"
+    },
+    "versions": "https://zenodo.org/api/records/4651421/versions"
+  },
+  "metadata": {
+    "access_right": "open",
+    "communities": [
+      {
+        "id": "eoscsecretariat"
+      },
+      {
+        "id": "eu"
+      }
+    ],
+    "creators": [
+      {
+        "affiliation": "CLARIN ERIC",
+        "name": "Broeder, Daan",
+        "orcid": "0000-0002-8446-3410"
+      },
+      {
+        "affiliation": "TU Wien",
+        "name": "Budroni, Paolo",
+        "orcid": "0000-0001-7490-5716"
+      },
+      {
+        "affiliation": "CNR-OVI, ERIHS",
+        "name": "Degl'Innocenti, Emiliano",
+        "orcid": "0000-0002-3839-9024"
+      },
+      {
+        "affiliation": "e-Science Data Factory",
+        "name": "Le Franc, Yann",
+        "orcid": "0000-0003-4631-418X"
+      },
+      {
+        "affiliation": "e-Science Data Factory, KNAW/DANS",
+        "name": "Hugo, Wim",
+        "orcid": "0000-0002-0255-5101"
+      },
+      {
+        "affiliation": "Keith G Jeffery Consultants, EPOS-ERIC and British Geological Survey",
+        "name": "Jeffery, Keith",
+        "orcid": "0000-0003-4053-7825"
+      },
+      {
+        "affiliation": "Senckenberg - Leibniz Institution for Biodiversity and Earth System Research",
+        "name": "Weiland, Claus",
+        "orcid": "0000-0003-0351-6523"
+      },
+      {
+        "affiliation": "Max Planck Computing and Data Facility",
+        "name": "Wittenburg, Peter",
+        "orcid": "0000-0003-3538-0106"
+      },
+      {
+        "affiliation": "LERMA, Observatoire de Paris, PSL Research University, CNRS",
+        "name": "Zwolf, Carlo Maria",
+        "orcid": "0000-0002-5762-6747"
+      }
+    ],
+    "description": "<p>This report presents a study for a&nbsp;flexible framework to create, document and publish semantic&nbsp;mappings and cross-walks linking different semantic artefacts within a particular scientific&nbsp;community and across scientific domains. These mappings and cross-walks should be FAIR, as proposed in the FAIR Semantics recommendations.&nbsp;The study draws on the broad expertise of the authors and 25 interviews conducted with community experts. A description for&nbsp;a proposed follow-up implementation project is part of the report.</p>",
+    "doi": "10.5281/zenodo.4651421",
+    "grants": [
+      {
+        "acronym": "EOSCsecretariat.eu",
+        "code": "831644",
+        "funder": {
+          "acronym": "EC",
+          "doi": "10.13039/501100000780",
+          "name": "European Commission"
+        },
+        "internal_id": "10.13039/501100000780::831644",
+        "program": "H2020-EU.1.4.",
+        "title": "EOSCsecretariat.eu",
+        "url": "https://cordis.europa.eu/projects/831644"
+      }
+    ],
+    "keywords": [
+      "research data infrastructure",
+      "semantic interoperability",
+      "FAIR principles",
+      "Open Science",
+      "semantic artefacts",
+      "EOSC",
+      "RDA",
+      "semantics"
+    ],
+    "language": "eng",
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "publication_date": "2021-03-31",
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "4651420"
+          }
+        }
+      ]
+    },
+    "resource_type": {
+      "subtype": "report",
+      "title": "Report",
+      "type": "publication"
+    },
+    "title": "SEMAF: A Proposal for a Flexible Semantic Mapping Framework",
+    "version": "1.0"
+  },
+  "modified": "2024-07-19T05:42:15.759820+00:00",
+  "owners": [
+    {
+      "id": "207941"
+    }
+  ],
+  "recid": "4651421",
+  "revision": 7,
+  "state": "done",
+  "stats": {
+    "downloads": 1986,
+    "unique_downloads": 1794,
+    "unique_views": 3192,
+    "version_downloads": 1984,
+    "version_unique_downloads": 1792,
+    "version_unique_views": 3183,
+    "version_views": 3449,
+    "views": 3458
+  },
+  "status": "published",
+  "submitted": true,
+  "swh": {},
+  "title": "SEMAF: A Proposal for a Flexible Semantic Mapping Framework",
+  "updated": "2024-07-19T05:42:15.759820+00:00"
+}
