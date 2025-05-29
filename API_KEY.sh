@@ -4,6 +4,9 @@
 
 #/Users/kristen/proj/sshoc-skosmapping/data/stewardshipterminology.rdf
 
+
+export SCOPUS_API_KEY="096784d9efa90634c2c66eb27c447ae0"
+
 export SCICRUNCH_API_KEY="39hws5krMT3rZPhysVwTBiVIBsVGmcDe"
 
 export ADS_TOKEN="E2qOsvGu9xpcwQsIqZmhyAK6aq0Wbn7YSCM7X8yG"
