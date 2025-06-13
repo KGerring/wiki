@@ -72,6 +72,12 @@ obo:IAO_0000111 a owl:AnnotationProperty ;
     obo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ;
     rdfs:isDefinedBy obo:iao.owl .
 
+obo:IAO_0000114 a owl:AnnotationProperty ;
+    rdfs:label "has curation status"@en ;
+    obo:IAO_0000111 "has curation status"@en ;
+    obo:IAO_0000117 "PERSON:Alan Ruttenberg"@en,
+        "PERSON:Bill Bug"@en,
+        "PERSON:Melanie Courtot"@en .
 
 obo:APOLLO_SV_00000522 a owl:Class ;
     rdfs:label "source code repository"@en ;
@@ -464,12 +470,6 @@ obo:IAO_0000113 a owl:AnnotationProperty ;
     obo:IAO_0000117 "GROUP:OBI"@en ;
     obo:IAO_0000119 "OBI_0000277"@en .
 
-obo:IAO_0000114 a owl:AnnotationProperty ;
-    rdfs:label "has curation status"@en ;
-    obo:IAO_0000111 "has curation status"@en ;
-    obo:IAO_0000117 "PERSON:Alan Ruttenberg"@en,
-        "PERSON:Bill Bug"@en,
-        "PERSON:Melanie Courtot"@en .
 
 obo:IAO_0000128 a owl:Class ;
     rdfs:label "obsolete_identifier"^^xsd:string ;
