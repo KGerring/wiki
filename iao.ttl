@@ -79,6 +79,29 @@ obo:IAO_0000114 a owl:AnnotationProperty ;
         "PERSON:Bill Bug"@en,
         "PERSON:Melanie Courtot"@en .
 
+obo:IAO_0000118 a owl:AnnotationProperty ;
+    rdfs:label "alternative label"@en ;
+    obo:IAO_0000111 "alternative label"@en ;
+    obo:IAO_0000114 obo:IAO_0000125 ;
+    obo:IAO_0000115 "A label for a class or property that can be used to refer to the class or property instead of the preferred rdfs:label. Alternative labels should be used to indicate community- or context-specific labels, abbreviations, shorthand forms and the like."@en ;
+    obo:IAO_0000117 "OBO Operations committee",
+        "PERSON:Daniel Schober"@en ;
+    obo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ;
+    rdfs:comment "Consider re-defing to: An alternative name for a class or property which can mean the same thing as the preferred name (semantically equivalent, narrow, broad or related)." .
+
+
+obo:IAO_0000233 a owl:AnnotationProperty ;
+    rdfs:label "term tracker item"@en ;
+    obo:IAO_0000111 "term tracker item"@en ;
+    obo:IAO_0000112 "the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/"@en ;
+    obo:IAO_0000114 obo:IAO_0000125 ;
+    obo:IAO_0000115 "An IRI or similar locator for a request or discussion of an ontology term."@en ;
+    obo:IAO_0000117 "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"@en ;
+    obo:IAO_0000119 "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"@en ;
+    rdfs:comment "The 'tracker item' can associate a tracker with a specific ontology term."@en .
+
+##
+
 obo:APOLLO_SV_00000522 a owl:Class ;
     rdfs:label "source code repository"@en ;
     obo:IAO_0000111 "software source code version control repository"@en ;
@@ -95,6 +118,7 @@ obo:APOLLO_SV_00000522 a owl:Class ;
                                 owl:onProperty obo:IAO_0000136 ;
                                 owl:someValuesFrom obo:IAO_0000096 ] ) ] ],
         obo:IAO_0000310 .
+
 
 obo:APOLLO_SV_00000524 a owl:Class ;
     rdfs:label "compiling software"@en ;
@@ -716,16 +740,6 @@ obo:IAO_0000232 a owl:AnnotationProperty ;
     obo:IAO_0000115 "An administrative note of use for a curator but of no use for a user"@en ;
     obo:IAO_0000117 "PERSON:Alan Ruttenberg"@en ;
     rdfs:isDefinedBy obo:iao.owl .
-
-obo:IAO_0000233 a owl:AnnotationProperty ;
-    rdfs:label "term tracker item"@en ;
-    obo:IAO_0000111 "term tracker item"@en ;
-    obo:IAO_0000112 "the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/"@en ;
-    obo:IAO_0000114 obo:IAO_0000125 ;
-    obo:IAO_0000115 "An IRI or similar locator for a request or discussion of an ontology term."@en ;
-    obo:IAO_0000117 "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"@en ;
-    obo:IAO_0000119 "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"@en ;
-    rdfs:comment "The 'tracker item' can associate a tracker with a specific ontology term."@en .
 
 obo:IAO_0000234 a owl:AnnotationProperty ;
     rdfs:label "ontology term requester"@en ;
@@ -1376,6 +1390,7 @@ obo:IAO_0000604 a owl:AnnotationProperty ;
     obo:IAO_0000115 "relates a class of CRID to the date after which further instances should not be made, according to the central authority"^^xsd:string ;
     obo:IAO_0000116 "In OWL 2 add AnnotationPropertyRange xsd:dateTimeStamp"@en ;
     obo:IAO_0000117 "Alan Ruttenberg"@en .
+
 
 obo:IAO_0000606 a owl:Class ;
     rdfs:label "abbreviations section"@en ;
@@ -3676,15 +3691,6 @@ obo:IAO_0000102 a owl:Class ;
     obo:IAO_0000117 "Person:Alan Ruttenberg"@en ;
     rdfs:subClassOf obo:IAO_0000027 .
 
-obo:IAO_0000118 a owl:AnnotationProperty ;
-    rdfs:label "alternative label"@en ;
-    obo:IAO_0000111 "alternative label"@en ;
-    obo:IAO_0000114 obo:IAO_0000125 ;
-    obo:IAO_0000115 "A label for a class or property that can be used to refer to the class or property instead of the preferred rdfs:label. Alternative labels should be used to indicate community- or context-specific labels, abbreviations, shorthand forms and the like."@en ;
-    obo:IAO_0000117 "OBO Operations committee",
-        "PERSON:Daniel Schober"@en ;
-    obo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ;
-    rdfs:comment "Consider re-defing to: An alternative name for a class or property which can mean the same thing as the preferred name (semantically equivalent, narrow, broad or related)." .
 
 obo:IAO_0000124 a obo:IAO_0000078,
         owl:NamedIndividual ;
@@ -3696,9 +3702,9 @@ obo:IAO_0000306 a owl:Class ;
     rdfs:label "table"@en ;
     obo:IAO_0000111 "table"@en ;
     obo:IAO_0000112 """| T     F
---+-----
-T   | T     F
-F   |  F    F"""@en ;
+    --+-----
+    T   | T     F
+    F   |  F    F"""@en ;
     obo:IAO_0000114 obo:IAO_0000125 ;
     obo:IAO_0000115 "A textual entity that contains a two-dimensional arrangement of texts repeated at regular intervals across a spatial range, such that the spatial relationships among the constituent texts expresses propositions"@en ;
     obo:IAO_0000117 "PERSON: Lawrence Hunter"@en ;
