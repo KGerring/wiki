@@ -89,7 +89,6 @@ obo:IAO_0000118 a owl:AnnotationProperty ;
     obo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ;
     rdfs:comment "Consider re-defing to: An alternative name for a class or property which can mean the same thing as the preferred name (semantically equivalent, narrow, broad or related)." .
 
-
 obo:IAO_0000233 a owl:AnnotationProperty ;
     rdfs:label "term tracker item"@en ;
     obo:IAO_0000111 "term tracker item"@en ;
@@ -100,7 +99,6 @@ obo:IAO_0000233 a owl:AnnotationProperty ;
     obo:IAO_0000119 "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"@en ;
     rdfs:comment "The 'tracker item' can associate a tracker with a specific ontology term."@en .
 
-##
 
 obo:APOLLO_SV_00000522 a owl:Class ;
     rdfs:label "source code repository"@en ;
@@ -118,7 +116,6 @@ obo:APOLLO_SV_00000522 a owl:Class ;
                                 owl:onProperty obo:IAO_0000136 ;
                                 owl:someValuesFrom obo:IAO_0000096 ] ) ] ],
         obo:IAO_0000310 .
-
 
 obo:APOLLO_SV_00000524 a owl:Class ;
     rdfs:label "compiling software"@en ;
