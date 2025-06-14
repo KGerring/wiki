@@ -8,12 +8,6 @@ plugin-isbn
 plugin-orcid
 plugin-pubmed
 
-
-
-
-
-
-
 application/x-bibtex (BibTeX),
 application/vnd.citationstyles.csl+json (CiteProc JSON),
 application/x-research-info-systems (RIS),
@@ -22,23 +16,15 @@ application/vnd.datacite.datacite+json (DataCite JSON),
 application/vnd.jats+xml (JATS),
 application/vnd.codemeta.ld+json (Codemeta),
 text/x-bibliography (Formatted text citation).
-
 application/linkset+json
-
-
-
 https://export.arxiv.org/oai2
 
 
 
 
 https://api.specref.org/bibrefs?refs=FileAPI,rfc2119
-
-
 https://scicrunch.org/resolver/SCR_014212/mentions?q=&i=rrid:scr_014212
-
 https://vocabularies.coar-repositories.org/resource_types/c_7acd/
-
 http://amp.pharm.mssm.edu/datasets2tools
 
 
@@ -146,6 +132,7 @@ http://amp.pharm.mssm.edu/datasets2tools
 
 
 https://autodesc.toolforge.org/?q=$1&links=wikipedia&lang=en&mode=long&format=html&redlinks=reasonator
+
 
 https://scholia.toolforge.org/$1
 https://scholia.toolforge.org/doi/$1
