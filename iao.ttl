@@ -99,7 +99,6 @@ obo:IAO_0000233 a owl:AnnotationProperty ;
     obo:IAO_0000119 "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"@en ;
     rdfs:comment "The 'tracker item' can associate a tracker with a specific ontology term."@en .
 
-
 obo:APOLLO_SV_00000522 a owl:Class ;
     rdfs:label "source code repository"@en ;
     obo:IAO_0000111 "software source code version control repository"@en ;
