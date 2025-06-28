@@ -11,9 +11,6 @@ plugin-pubmed
 
 
 
-
-
-
 application/x-bibtex (BibTeX),
 application/vnd.citationstyles.csl+json (CiteProc JSON),
 application/x-research-info-systems (RIS),
