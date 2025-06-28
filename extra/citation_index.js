@@ -14,6 +14,7 @@ const CITEREF = 'citeref';
 const CITELIST = 'citelist';
 const KEYS = new Set(['doi', 's2id']);
 
+
 export default async function(ast, context) {
   const { metadata, article } = ast;
   const { cache, fetch, inputDir, logger } = context;
