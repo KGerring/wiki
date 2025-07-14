@@ -4,6 +4,7 @@
 
 #/Users/kristen/proj/sshoc-skosmapping/data/stewardshipterminology.rdf
 
+export STACK_APP="rl_BsLjNGW3HLYEzcZM8x19KHAdE"
 
 export SCOPUS_API_KEY="096784d9efa90634c2c66eb27c447ae0"
 
