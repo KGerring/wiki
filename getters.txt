@@ -27,8 +27,6 @@ application/linkset+json
 https://export.arxiv.org/oai2
 
 
-
-
 https://api.specref.org/bibrefs?refs=FileAPI,rfc2119
 
 
