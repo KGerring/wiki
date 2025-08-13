@@ -359,7 +359,8 @@ def _main():
     triples_file.close()
 
 
-if __name__ == "__main__": _main()        
+if __name__ == "__main__": 
+    _main()        
 
 
 
