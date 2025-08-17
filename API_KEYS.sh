@@ -1,6 +1,7 @@
 #/usr/bin/env bash
  #/Users/kristen/Library/CloudStorage/Source/wiki/API_KEYS.sh
 
+export READ_THE_DOCS="dc00f17ec6082e30a4ca4c06f3266f26ba627e70"
 export SCICRUNCH_API_KEY="39hws5krMT3rZPhysVwTBiVIBsVGmcDe"
 
 export ADS_TOKEN=“E2qOsvGu9xpcwQsIqZmhyAK6aq0Wbn7YSCM7X8yG”

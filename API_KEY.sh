@@ -43,6 +43,7 @@ export _API_KEY="e49c64d56761dca6fd0f15af5b3fe48d"
 
 export IEEEXPLORE_API_TOKEN="96c6860dac188a7215d7c15c6f7623bfd7d3f567"
 
+export RTD="dc00f17ec6082e30a4ca4c06f3266f26ba627e70"
 
 
 
