@@ -33,8 +33,22 @@ pyimport
 pydoc.locate
 pydoc.pathdir
 
+universal_build._utilities
+universal_build.build_utils
+
+maison.config
+maison.config_sources
 
 
+maison.config_sources.base_source
+maison.config_sources.ini_source
+maison.config_sources.toml_source
+maison.config_sources.pyproject_source
+
+dotenv
+dotenv.parser
+dotenv.variables
+dotenv.main
 
 
 
