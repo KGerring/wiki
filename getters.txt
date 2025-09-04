@@ -29,6 +29,7 @@ with_suffix
 
 dump
 ensure
+fnmatch
 
 
 
