@@ -20,6 +20,7 @@ __orig_bases__
 __parameters__
 flattened_own_members
 inherited_members
+members
 
 
 
