@@ -20,9 +20,9 @@ __orig_bases__
 __parameters__
 __fspath__
 __slots__
-_scandir
 open
 resolve
+
 with_stem
 with_suffix
 
