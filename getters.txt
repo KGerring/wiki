@@ -34,7 +34,7 @@ listdir
 pyimport
 pypkgpath
 
-sysexec
+
 sysfind
 
 pyimport
