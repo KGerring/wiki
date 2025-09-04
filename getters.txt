@@ -36,7 +36,7 @@ pydoc.pathdir
 universal_build._utilities
 universal_build.build_utils
 
-maison.config
+maison.utils
 maison.config_sources
 
 
