@@ -21,10 +21,6 @@ __parameters__
 __fspath__
 __slots__
 _scandir
-as_posix
-as_uri
-expanduser
-iterdir
 open
 resolve
 with_stem
