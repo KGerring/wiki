@@ -21,6 +21,7 @@ __parameters__
 flattened_own_members
 inherited_members
 members
+own_members
 
 
 
