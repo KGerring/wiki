@@ -35,6 +35,7 @@ pyimport
 pypkgpath
 
 
+sysexec
 sysfind
 
 pyimport
