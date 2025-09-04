@@ -12,6 +12,8 @@ plugin-pubmed
 __type_params__
 __annotations__
 __wrapped__
+__subclasshook__
+__type_params__
 
 
 
