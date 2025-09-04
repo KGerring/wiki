@@ -14,6 +14,10 @@ __annotations__
 __wrapped__
 __subclasshook__
 __type_params__
+__abstractmethods__
+__class_getitem__
+__orig_bases__
+__parameters__
 
 
 
