@@ -19,6 +19,18 @@ __class_getitem__
 __orig_bases__
 __parameters__
 flattened_own_members
+_members_by_origin
+source
+source_file
+source_lines
+obj
+is_package
+_var_annotations
+_var_docstrings
+_member_objects
+_members_by_origin
+_func_docstrings
+
 
 
 
