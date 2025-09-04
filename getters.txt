@@ -27,20 +27,18 @@ with_stem
 with_suffix
 
 
-dump
-ensure
+
 fnmatch
 listdir
-load
-purebasename
-pyimport
-pypkgpath
-sysexec
-sysfind
-Visit
 
 pyimport
-dump
+pypkgpath
+
+sysexec
+sysfind
+
+pyimport
+
 
 
 
