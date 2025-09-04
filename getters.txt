@@ -23,19 +23,7 @@ __slots__
 open
 resolve
 
-with_stem
-with_suffix
 
-
-
-fnmatch
-listdir
-
-
-
-
-sysexec
-sysfind
 
 
 pypkgpath
