@@ -30,6 +30,12 @@ pypkgpath
 pyimport
 
 
+pydoc.importfile
+pydoc.locate
+pydoc.pathdir
+pydoc.resolve
+
+
 
 
 
