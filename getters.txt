@@ -9,6 +9,48 @@ plugin-orcid
 plugin-pubmed
 
 
+__type_params__
+__annotations__
+__wrapped__
+__subclasshook__
+__type_params__
+__abstractmethods__
+__class_getitem__
+__orig_bases__
+__parameters__
+__fspath__
+__slots__
+open
+resolve
+
+
+
+
+pypkgpath
+pyimport
+
+
+pydoc.locate
+pydoc.pathdir
+
+universal_build._utilities
+universal_build.build_utils
+
+maison.utils
+maison.config_sources
+
+
+maison.config_sources.base_source
+maison.config_sources.ini_source
+maison.config_sources.toml_source
+maison.config_sources.pyproject_source
+
+
+dotenv
+dotenv.parser
+dotenv.variables
+dotenv.main
+
 
 
 application/x-bibtex (BibTeX),
