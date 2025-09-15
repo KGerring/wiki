@@ -1,14 +1,4 @@
 
-npm install @citation-js/core @citation-js/plugin-doi @citation-js/plugin-doi
-
-npm install @citation-js/plugin-software-formats
-
-plugin-wikidata
-plugin-isbn
-plugin-orcid
-plugin-pubmed
-
-
 __type_params__
 __annotations__
 __wrapped__
@@ -19,8 +9,7 @@ __orig_bases__
 __parameters__
 __fspath__
 __slots__
-open
-resolve
+
 
 
 
@@ -40,15 +29,14 @@ dotenv.main
 
 
 
-application/x-bibtex (BibTeX),
-application/vnd.citationstyles.csl+json (CiteProc JSON),
-application/x-research-info-systems (RIS),
-application/vnd.datacite.datacite+xml (DataCite XML),
-application/vnd.datacite.datacite+json (DataCite JSON),
-application/vnd.jats+xml (JATS),
-application/vnd.codemeta.ld+json (Codemeta),
-text/x-bibliography (Formatted text citation).
-
+application/x-bibtex
+application/vnd.citationstyles.csl+json
+application/x-research-info-systems
+application/vnd.datacite.datacite+xml 
+application/vnd.datacite.datacite+json
+application/vnd.jats+xml 
+application/vnd.codemeta.ld+json 
+text/x-bibliography
 application/linkset+json
 
 
