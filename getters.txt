@@ -1,27 +1,15 @@
 
-npm install @citation-js/core @citation-js/plugin-doi @citation-js/plugin-doi
-
-npm install @citation-js/plugin-software-formats
-
-plugin-wikidata
-plugin-isbn
-plugin-orcid
-plugin-pubmed
-
-
 __type_params__
 __annotations__
 __wrapped__
 __subclasshook__
-__type_params__
 __abstractmethods__
 __class_getitem__
 __orig_bases__
 __parameters__
 __fspath__
 __slots__
-open
-resolve
+
 
 
 
@@ -33,18 +21,6 @@ pyimport
 pydoc.locate
 pydoc.pathdir
 
-universal_build._utilities
-universal_build.build_utils
-
-maison.utils
-maison.config_sources
-
-
-maison.config_sources.base_source
-maison.config_sources.ini_source
-maison.config_sources.toml_source
-maison.config_sources.pyproject_source
-
 
 dotenv
 dotenv.parser
@@ -53,15 +29,14 @@ dotenv.main
 
 
 
-application/x-bibtex (BibTeX),
-application/vnd.citationstyles.csl+json (CiteProc JSON),
-application/x-research-info-systems (RIS),
-application/vnd.datacite.datacite+xml (DataCite XML),
-application/vnd.datacite.datacite+json (DataCite JSON),
-application/vnd.jats+xml (JATS),
-application/vnd.codemeta.ld+json (Codemeta),
-text/x-bibliography (Formatted text citation).
-
+application/x-bibtex
+application/vnd.citationstyles.csl+json
+application/x-research-info-systems
+application/vnd.datacite.datacite+xml 
+application/vnd.datacite.datacite+json
+application/vnd.jats+xml 
+application/vnd.codemeta.ld+json 
+text/x-bibliography
 application/linkset+json
 
 
