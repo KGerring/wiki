@@ -18,9 +18,6 @@ pypkgpath
 pyimport
 
 
-pydoc.locate
-pydoc.pathdir
-
 
 dotenv
 dotenv.parser
