@@ -4,7 +4,7 @@
 
 #/Users/kristen/proj/sshoc-skosmapping/data/stewardshipterminology.rdf
 
-
+export SERP_API_KEY="e43d4828e82a7fc723d964693ad985e8cb0319d3479f60a3ed8c86c83c0e39aa"
 export ALGOLIA_APP_ID="C7X3CXBSF7"
 export SEARCH_API_KEY="c81ac3c0d41f3e0f211fbf502cde9b2f"
 export WRITE_API_KEY="39900a9aa0a8bafc5af5a76cdb13d5f8"
