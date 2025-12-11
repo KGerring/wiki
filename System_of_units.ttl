@@ -1,4 +1,0 @@
-
-<http://www.wurvoc.org/vocabularies/om-1.8/System_of_units> a <http://www.w3.org/2002/07/owl#Class> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "In order to achieve a coherent, interdependent set of units of measure in the wide variety of units that exist, units are organised in systems of units. A system of units is based on a set of units chosen by convention to be the system’s base units, units that are considered to be mutually independent (i.e., can’t be expressed in terms of each other)."@en ;
-	<http://www.w3.org/2000/01/rdf-schema#label> "system of units"@en .
