@@ -11,7 +11,12 @@ import pypandoc
 from pypandoc.pandoc_download import download_pandoc
 import pywikibot
 from pywikibot.site._extensions import EchoMixin
-from utils.regex import wikidata_id_regex, spinachbot_top_regex, spinachbot_bottom_regex
+#from utils.regex import wikidata_id_regex, spinachbot_top_regex, spinachbot_bottom_regex
+
+wikidata_id_regex = re.compile('P\d+|Q\d+', re.I)
+spinachbot_top_regex = re.compile('\{\{spinachbot top\}\}', re.I)
+spinachbot_bottom_regex = re.compile('\{\{spinachbot bottom\}\}', re.I)
+
 
 # Load environment variables
 load_dotenv()
