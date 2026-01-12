@@ -1,0 +1,553 @@
+@base <http://purl.oreilly.com/ns/meta/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix omprod: <../../product-types/> .
+@prefix protege: <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix xsp: <http://www.owl-ontologies.com/2005/08/07/xsp.owl#> .
+@prefix om: <> .
+@prefix dce: <http://purl.org/dc/elements/1.1/> .
+@prefix wordnet: <http://xmlns.com/wordnet/1.6/> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix contact: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix omformat: <../../formats/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix dmci: <http://purl.org/dc/dcmitype/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+
+<>
+    dc:title "O'Reilly Namespace for metadata terms in the http://oreilly.com/ns/meta/ namespace"^^xsd:string ;
+    a owl:Ontology ;
+    rdfs:comment """To comment on this schema,
+      please contact metadata@oreilly.com."""^^xsd:string ;
+    owl:imports <../../formats/>, <../../product-types/>, <http://purl.org/dc/elements/1.1/>, <http://purl.org/dc/terms/>, <http://xmlns.com/foaf/spec/index.rdf> .
+
+om:DurativeProduct
+    a rdfs:Class ;
+    rdfs:comment """A product with a duration, like a DVD, Video, Audio CD, Podcast, webcast,
+      etc."""@en ;
+    rdfs:label "Durative Product"@en ;
+    rdfs:subClassOf om:Product .
+
+om:EarlyReleaseProduct
+    a owl:Class ;
+    rdfs:comment "An early release product does not qualify as a final \"release\" of the IP family. It is generally an early or preview release, available for sale before content is finalized."^^<http://www.w3.org/2001/XMLSchmea#string> ;
+    rdfs:subClassOf om:Product .
+
+om:EditoralProduct
+    a owl:Class ;
+    rdfs:subClassOf om:Product ;
+    owl:equivalentClass [
+        a owl:Class ;
+        owl:intersectionOf ([
+                a owl:Restriction ;
+                owl:minCardinality "1"^^xsd:int ;
+                owl:onProperty dc:creator
+            ]
+            [
+                a owl:Restriction ;
+                owl:cardinality "1"^^xsd:int ;
+                owl:onProperty dc:title
+            ]
+        )
+    ] .
+
+om:ElectroniclyDeliveredProduct
+    a owl:Class ;
+    rdfs:subClassOf om:NonInventoriedProduct .
+
+om:Format
+    a rdfs:Class ;
+    rdfs:comment "A media format for a document"@en ;
+    rdfs:label "Media Format"@en ;
+    rdfs:subClassOf dc:FileFormat .
+
+om:InventoriedProduct
+    a owl:Class ;
+    rdfs:subClassOf om:Product .
+
+om:NonInventoriedProduct
+    a owl:Class ;
+    rdfs:subClassOf om:Product .
+
+om:PaginatedProduct
+    a rdfs:Class ;
+    rdfs:comment """A product with pages or which we expect to be displayed to the user in a paginated
+      form, like a printed book, PDF, eBook, etc."""@en ;
+    rdfs:label "Paginated Product"@en ;
+    rdfs:subClassOf om:Product .
+
+om:Product
+    om:identifiedBy "urn:x-domain:oreilly.com:product:"^^xsd:string ;
+    dc:description """Examples include books, consulting services and conference
+      registrations"""@en-us ;
+    a rdfs:Class, owl:Class ;
+    rdfs:comment "Good or service which can be bought and sold."@en-us ;
+    rdfs:label "Product"^^xsd:string .
+
+om:ProductBiography
+    a owl:Class ;
+    owl:equivalentClass [
+        a owl:Class ;
+        owl:intersectionOf ([
+                a owl:Restriction ;
+                owl:minCardinality "1"^^xsd:int ;
+                owl:onProperty om:forProduct
+            ]
+            [
+                a owl:Class ;
+                owl:intersectionOf ([
+                        a owl:Restriction ;
+                        owl:maxCardinality "1"^^xsd:int ;
+                        owl:onProperty om:bio
+                    ]
+                    [
+                        a owl:Restriction ;
+                        owl:maxCardinality "1"^^xsd:int ;
+                        owl:onProperty om:longBio
+                    ]
+                    [
+                        a owl:Restriction ;
+                        owl:maxCardinality "1"^^xsd:int ;
+                        owl:onProperty om:webBio
+                    ]
+                )
+            ]
+            [
+                a owl:Restriction ;
+                owl:cardinality "1"^^xsd:int ;
+                owl:onProperty om:biographicalSubject
+            ]
+        )
+    ] .
+
+om:additionalInformation
+    a rdf:Property ;
+    rdfs:comment "Catch-all additional information for inclusion on, eg, a sellsheet or other industry-focused publication."@en ;
+    rdfs:label "Additional Information"@en .
+
+om:allProductsAvailableThrough
+    a rdf:Property ;
+    rdfs:comment """All appropriate products from a given publisher should be available through a given
+    channel.
+    
+    Availability encompasses concepts like \"advertised\" or \"listed\" as well as \"delivers\" or \"takes
+    money for.\""""@en ;
+    rdfs:domain <http://xmlns.com/foaf/0.1/Organization> ;
+    rdfs:label "All Products Available Through"@en .
+
+om:androidPackage
+    a rdf:Property ;
+    rdfs:comment "Unique identifier for an application in the Android Market."@en ;
+    rdfs:label "Android Package"@en ;
+    rdfs:subPropertyOf dc:identifier .
+
+om:asciiTitle
+    a rdfs:Property ;
+    rdfs:comment "A title that removes all special characters. Useful for systems that have trouble with the full range of Unicode."@en ;
+    rdfs:label "ASCII Title"@en ;
+    rdfs:subPropertyOf dc:title .
+
+om:assteditor
+    a rdf:Property ;
+    rdfs:label "Assistant Editor"^^xsd:string ;
+    rdfs:range dc:Agent ;
+    rdfs:subPropertyOf dc:contributor .
+
+om:audienceDescription
+    a rdf:Property ;
+    rdfs:comment "A short description of intended market, usually for consumption by retailers and distributors."@en ;
+    rdfs:label "Audience Description"@en .
+
+om:availableIn
+    a rdf:Property ;
+    rdfs:comment """A Product can be available in a channel. This can be inferred by the butcher
+    based on a combination of the Product's type being availableThrough that channel and its
+    publisher having allProductsAvailableThrough that channel, or it can be set explicitly."""@en ;
+    rdfs:domain om:Product ;
+    rdfs:label "Available In"@en .
+
+om:availableThrough
+    a rdf:Property ;
+    rdfs:comment """A Product Type should be availableThrough a particular channel.
+      
+    Availability encompasses concepts like \"advertised\" or \"listed\" as well as \"delivers\" or \"takes
+    money for.\""""@en ;
+    rdfs:domain rdf:Class ;
+    rdfs:label "Available Through"@en .
+
+om:binding
+    a rdf:Property ;
+    rdfs:comment "Description of binding used."^^xsd:string ;
+    rdfs:label "Binding"^^xsd:string ;
+    rdfs:subPropertyOf dc:medium .
+
+om:bio
+    a rdf:Property ;
+    rdfs:comment "Biography of a person"^^xsd:string ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf (<http://xmlns.com/foaf/0.1/Person>
+            om:ProductBiography
+        )
+    ] ;
+    rdfs:isDefinedBy <> ;
+    rdfs:label "Biography"^^xsd:string ;
+    rdfs:range rdfs:Literal .
+
+om:biographicalSubject
+    a rdf:Property ;
+    rdfs:comment "Refinement of subject."^^xsd:string ;
+    rdfs:label "Biographical Subject"^^xsd:string ;
+    rdfs:range dc:Agent ;
+    rdfs:subPropertyOf dc:subject .
+
+om:biographySubject
+    rdfs:comment ""^^xsd:string .
+
+om:byline
+    a rdf:Property ;
+    rdfs:comment "Plain text crediting the creators of or contributors to a body of text."@en ;
+    rdfs:label "Byline"@en .
+
+om:cancelled
+    a rdfs:Property ;
+    rdfs:comment "When a product was cancelled. Cancelled products had their development terminated at some point before they were available for sale."@en ;
+    rdfs:label "Cancelled"@en .
+
+om:competition
+    a rdf:Property ;
+    rdfs:comment "A competing resource"@en, "Products expected to directly compete with the resource."@en ;
+    rdfs:label "Competition"@en ;
+    rdfs:subPropertyOf dc:relation .
+
+om:couponCode
+    a rdf:Property ;
+    rdfs:comment "A code that can be redeemed as part of a sales promotion."^^xsd:string ;
+    rdfs:label "Coupon Code"^^xsd:string .
+
+om:cover
+    a rdf:Property ;
+    rdfs:comment "Cover image, or cover file or description of cover"@en ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf (omprod:BOOK
+            omprod:PDF
+        )
+    ] ;
+    rdfs:label "Cover Resource"@en .
+
+om:creditedEditor
+    a rdf:Property ;
+    rdfs:comment "Used to indicate an editor credited similarly to authors of a work."@en ;
+    rdfs:label "Edited By"@en ;
+    rdfs:subPropertyOf <../../relators/DisplayableContributor>, dc:contributor, <http://www.loc.gov/loc.terms/relators/EDT> ;
+    owl:sameAs <../../onix/17/B01> .
+
+om:customerTitle
+    a rdfs:Property ;
+    rdfs:comment "A title intended for display to customers. Should be structured to ensure maximum clarity."@en ;
+    rdfs:label "Customer Title"@en ;
+    rdfs:subPropertyOf dc:title .
+
+om:discount
+    a rdf:Property ;
+    rdfs:comment "Discount method/percentage to be used with this product.."^^xsd:string ;
+    rdfs:domain om:Product ;
+    rdfs:label "Discount"^^xsd:string .
+
+om:displayableContributorList
+    a rdf:Property ;
+    rdfs:comment "A list of all contributors to a body of text that are to be displayed in a byline."@en ;
+    rdfs:label "Displayable Contributors"@en ;
+    rdfs:subPropertyOf <http://purl.org/ontology/bibo/contributorList> .
+
+om:division
+    a rdf:Property ;
+    rdfs:comment "The division, or business unit, of O'Reilly responsible for a project."@en ;
+    rdfs:label "Division"@en .
+
+om:downloadedon
+    a rdf:Property ;
+    rdfs:comment "Datetime when the resource was downloaded."@en ;
+    rdfs:label "Downloaded On"@en .
+
+om:dvdDownloadKey
+    a owl:ObjectProperty ;
+    rdfs:comment "A key for downloading DVDs of registered ebooks."@en ;
+    rdfs:label "DVD Download Key"@en .
+
+om:editorTitle
+    a rdfs:Property ;
+    rdfs:comment "A title intended for display to internal employees. Should be either Title or Title, 2E."@en ;
+    rdfs:label "Editor Title"@en ;
+    rdfs:subPropertyOf dc:title .
+
+om:endOfAvailability
+    a rdfs:Property ;
+    rdfs:comment """When a product stopped being available for sale or distribution. For example, when a book went Out of Print.
+    
+    This is only sensible for things that were at one point available for sale or distribution. For representing the termination of things that were never available, see om:cancelled."""@en ;
+    rdfs:label "End of Availability"@en .
+
+om:estimatedIssue
+    a rdf:Property ;
+    rdfs:comment "Date that the resource is expected to become available."^^xsd:string ;
+    rdfs:label "Estimated Issue"^^xsd:string ;
+    rdfs:range dc:W3CDTF ;
+    rdfs:subPropertyOf dc:available .
+
+om:excludesDataTarget
+    a rdf:Property ;
+    rdfs:comment "ETLs can filter out product types with this property to prevent propagation to data targets."@en ;
+    rdfs:domain rdf:Class ;
+    rdfs:label "Excludes Data Target"@en .
+
+om:extension
+    a rdf:Property ;
+    rdfs:comment "File extention specification, used after a . when naming a file"^^xsd:string ;
+    rdfs:label "File Extenstion"^^xsd:string ;
+    rdfs:subPropertyOf dc:format .
+
+om:filename
+    a rdf:Property ;
+    rdfs:comment "The filename of the original resource"^^xsd:string ;
+    rdfs:label "filename"^^xsd:string .
+
+om:forProduct
+    a rdf:Property ;
+    rdfs:comment "Reference to a product."^^xsd:string ;
+    rdfs:label "For Product"^^xsd:string ;
+    rdfs:range om:Product ;
+    rdfs:subPropertyOf dc:references .
+
+om:hasFormat
+    a rdf:Property ;
+    rdfs:comment "Formats a product or product type is available in."^^xsd:string ;
+    rdfs:label "has format"^^xsd:string ;
+    rdfs:range om:Format ;
+    rdfs:subPropertyOf dc:hasFormat .
+
+om:hasimprint
+    a rdf:Property ;
+    rdfs:comment "Brand name under which an Organization publishes materal."@en ;
+    rdfs:label "Has Imprint"@en .
+
+om:identifiedBy
+    a rdf:Property ;
+    rdfs:comment "Controlled space from which identifiers for this class our drawn"^^xsd:string ;
+    rdfs:label "Identified By"^^xsd:string .
+
+om:imprint
+    a rdf:Property ;
+    rdfs:comment "Brand name under which a book was published."@en ;
+    rdfs:label "Imprint"@en ;
+    rdfs:subPropertyOf dc:publisher .
+
+om:includedIn
+    a rdf:Property ;
+    rdfs:comment "Included solely due to MarkLogic limitations."@en ;
+    rdfs:label "Included In"^^xsd:string ;
+    owl:inverseOf <http://purl.org/goodrelations/includes> .
+
+om:indexer
+    a rdf:Property ;
+    rdfs:label "Indexer"^^xsd:string ;
+    rdfs:range dc:Agent ;
+    rdfs:subPropertyOf dc:contributor .
+
+om:legalName
+    dc:description "The legal name of a business is the name under which the business conducts its operations. The legal name of a person is often the name which appears on their birth certificate or marriage certificate"^^xsd:string ;
+    a rdf:Property ;
+    rdfs:comment "A legally accepted name for some thing."^^xsd:string ;
+    rdfs:label "Legal name"^^xsd:string ;
+    rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/> .
+
+om:longBio
+    a rdf:Property ;
+    rdfs:comment "Longer biography of a person"^^xsd:string ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf (<http://xmlns.com/foaf/0.1/Person>
+            om:ProductBiography
+        )
+    ] ;
+    rdfs:isDefinedBy <> ;
+    rdfs:label "Long Biography"^^xsd:string ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf om:bio .
+
+om:memberOf
+    a owl:ObjectProperty ;
+    rdfs:comment "A Person is a member of a Group."@en ;
+    rdfs:label "Member Of"@en ;
+    owl:inverseOf <http://xmlns.com/foaf/0.1/member> .
+
+om:notAvailableIn
+    a rdf:Property ;
+    rdfs:comment """Products can be marked as being explicitly not available in a channel. This should
+    override all other concerns - if a product is both availableIn and notAvailableIn a channel,
+    notAvailableIn should take precedence."""@en ;
+    rdfs:domain om:Product ;
+    rdfs:label "Not Available In"@en .
+
+om:oracleCode
+    a rdf:Property ;
+    rdfs:comment "The codeing used in O'Reilly's Oracle eBusiness application suite for the given resource."@en ;
+    rdfs:label "Oracle Code"@en .
+
+om:oracleSuffix
+    a rdf:Property ;
+    rdfs:comment "The Oracle segment two identifier used for a given product."^^xsd:string ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf (om:Product
+            rdfs:Class
+        )
+    ] ;
+    rdfs:label "Oracle Suffix"^^xsd:string ;
+    rdfs:subPropertyOf dc:identifier .
+
+om:pdfDownloadKey
+    a owl:ObjectProperty ;
+    rdfs:comment "A key for downloading PDFs of registered print books."@en ;
+    rdfs:label "PDF Download Key"@en .
+
+om:price
+    a rdf:Property ;
+    rdfs:comment "Price of a resource"^^xsd:string ;
+    rdfs:label "Price"^^xsd:string .
+
+om:primarySubject
+    a rdf:Property ;
+    rdfs:comment "The primary topic of the resource. Expected once per subject in a given vocabulary encoding."@en-us ;
+    rdfs:label "Primary Subject"^^xsd:string ;
+    rdfs:subPropertyOf dc:subject .
+
+om:printingstatus
+    a rdf:Property ;
+    rdfs:comment "Ask Tim Hinton ;)"@en ;
+    rdfs:label "Printing Status"@en .
+
+om:prodeditor
+    a rdf:Property ;
+    rdfs:label "Production Editor"^^xsd:string ;
+    rdfs:range dc:Agent ;
+    rdfs:subPropertyOf dc:contributor .
+
+om:prodmanager
+    a rdf:Property ;
+    rdfs:label "Production Manager"^^xsd:string ;
+    rdfs:range dc:Agent ;
+    rdfs:subPropertyOf dc:contributor .
+
+om:projectmanager
+    a rdf:Property ;
+    rdfs:label "Project Manager"^^xsd:string ;
+    rdfs:range dc:Agent ;
+    rdfs:subPropertyOf dc:contributor .
+
+om:sample
+    a rdf:Property ;
+    rdfs:comment "Sample content for the product."@en ;
+    rdfs:label "Sample"@en .
+
+om:sellingPoints
+    a rdf:Property ;
+    rdfs:comment "Ordered, point-form list of selling points for a title."@en ;
+    rdfs:label "Key Selling Points"@en .
+
+om:sellsheetHighlight
+    a rdf:Property ;
+    rdfs:comment "A summary of content and relevance, useful for deciding the sales potential of the resource."@en ;
+    rdfs:label "Sellsheet Highlight"@en .
+
+om:sellslike
+    a rdf:Property ;
+    rdfs:comment "A resource which is expected to have similar sales"@en ;
+    rdfs:label "Sells like"@en ;
+    rdfs:subPropertyOf dc:relation .
+
+om:series
+    a rdf:Property ;
+    rdfs:comment "A products branding"^^xsd:string ;
+    rdfs:domain om:Product ;
+    rdfs:label "Series Brand"^^xsd:string ;
+    rdfs:range xsd:string .
+
+om:shelving
+    a rdf:Property ;
+    rdfs:comment """Topic direction to retailers as to where this product should be shelved.
+    
+    On printed books, frequently found printed on the back of the book."""@en ;
+    rdfs:label "Shelving"@en .
+
+om:sortableTitle
+    a rdf:Property ;
+    rdfs:comment "A title reformatted for ordering products in an alphabetical list. Stripped of any leading articles or other uninteresting tokens and normalized to lowercase."@en ;
+    rdfs:label "Sortable Title"@en ;
+    rdfs:subPropertyOf dc:title .
+
+om:storedOn
+    a rdf:Property ;
+    rdfs:comment "Media, content, or files are stored on a particular service, server, or repository."@en ;
+    rdfs:label "Stored On"@en .
+
+om:subscribeat
+    a rdf:Property ;
+    rdfs:comment "Location where a subscription for a product can purchased."@en ;
+    rdfs:label "Subscribe at"@en .
+
+om:subtitle
+    dc:description "Often appear below the title in a less prominent typeface or following the title after a colon."^^xsd:string ;
+    a rdf:Property ;
+    rdfs:comment "An explanatory name for the resource."^^xsd:string ;
+    rdfs:label "Sub-title"^^xsd:string ;
+    rdfs:subPropertyOf dc:alternative .
+
+om:tagline
+    a rdf:Property ;
+    rdfs:comment "Short phrase of marketing text that tends to appear on the cover of a book."^^xsd:string ;
+    rdfs:label "Tagline"^^xsd:string ;
+    rdfs:subPropertyOf dc:alternative .
+
+om:tmsReturnCode
+    a rdf:Property ;
+    rdfs:comment "The code used in Ingram's TMS system for returns."@en ;
+    rdfs:label "TMS Return Code"@en .
+
+om:videoPreview
+    a rdf:Property ;
+    rdfs:comment "An XHTML block for an embedded preview of a video."@en ;
+    rdfs:label "Video Preview"@en ;
+    rdfs:subPropertyOf dc:description .
+
+om:webBio
+    a rdf:Property ;
+    rdfs:comment "Biography of a person intended for use on the web"^^xsd:string ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf (<http://xmlns.com/foaf/0.1/Person>
+            om:ProductBiography
+        )
+    ] ;
+    rdfs:isDefinedBy <> ;
+    rdfs:label "Web Biography"^^xsd:string ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf om:bio .
+
+om:whyToBuy
+    a rdf:Property ;
+    rdfs:comment "A short sentence or paragraph summarizing reasons to purchase this item."@en ;
+    rdfs:label "Why To Buy"@en .
+
+om:willSellLike
+    a rdf:Property ;
+    rdfs:comment "A description of other products whose sales profiles this resource is expected to follow."@en ;
+    rdfs:label "Will Sell Like"@en .
+
+<http://xmlns.com/foaf/0.1/>
+    a rdf:Property .
+
