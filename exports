@@ -1,0 +1,48 @@
+
+export HISTCONTROL=ignoreboth:erasedups
+
+Copy
+export HISTFILESIZE=
+export HISTSIZE=
+export HISTTIMEFORMAT="[%F %T] "
+
+export HISTFILE=~/.bash_myhistory
+PROMPT_COMMAND="history -a; history -r; $PROMPT_COMMAND"
+
+export HISTCONTROL=ignoreboth:erasedups
+
+PROMPT_COMMAND="history -a"
+
+hrep() {
+    history | grep $1 | sed 's/^[ ]*[0-9]*[ ]*//g'
+}
+
+
+find ~ -type d -name .git | sed 's?/\.git$??' | awk '{ print "-------------------------"; print "\033[1;32mGit Repo:\033[0m " $0; system("git --git-dir=\""$0"\"/.git --work-tree=\""$0"\" status")}'
+
+find . -type f -empty -prune -o -type f -printf "%s\t" -exec file --brief --mime-type '{}' \; | awk 'BEGIN {printf("%12s\t%12s\n", "bytes", "type")} {type = $2; a[type] += $1} END {for (i in a) printf("%12u\t%12s\n", a[i], i) | "sort -nr"}'
+
+find . -name .DS_Store -exec git rm --ignore-unmatch --cached {} +
+
+find . -type f | perl -ne 'print $1 if /\.([^.\/]+)$/' | sort -u
+
+
+
+
+"""Explanation
+
+find . look in current directory
+-type f -empty -prune -o -type f all non-empty files
+-printf "%s\t" -exec file --brief --mime-type '{}' \; print file size, [tab], and run the file command to obtain mime-type
+| awk 'BEGIN {printf("%12s\t%12s\n","bytes","type")} pipe to awk, print column headers
+{type = $2; a[type] += $1} build a dictionary of mime-types, increment value by file size. this creates a running total of size per file-type.
+END {for (i in a) printf("%12u\t%12s\n", a[i], i) |"sort -nr"}' print the result, sorted
+"""
+
+
+
+
+
+
+
+
