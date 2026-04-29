@@ -9,6 +9,7 @@ __orig_bases__
 __parameters__
 __fspath__
 __slots__
+__set_name__
 
 
 
